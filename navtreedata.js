@@ -61,7 +61,7 @@ var NAVTREEINDEX =
 "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_manager.html#a86793668b25bf928c875a89e959d3d7b",
 "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_device_cache.html#a97f2828ada6a12a7c3b0f4310129376a",
 "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#a8ef1b7a4426c8f726cea31d0084c0674",
-"interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1wifibackup_1_1api_1_1_i_tuya_wifi_backup.html"
+"interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_tuya_room_manager.html#a8526ff5e7b98e83be396f5e25da2b1fd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
