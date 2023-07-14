@@ -149,9 +149,9 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract &lt;T&gt; boolean</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=ISmartCacheManager.Entity.html#put(int,String,T)>put</a>(int keyType, String key, <a href=../IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a> value) </code>
+                                            <th class="colSecond" scope="row"><code><a href=ISmartCacheManager.Entity.html#put(int,String,T)>put</a>(int keyType, String key, <a href=../IThingGetBeanCallback.html>T</a> value) </code>
                                             </th>
-                                            <td class="colLast">Put data into cache</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISmartCacheManager.Entity.html#get(int,String)>get</a>(int keyType, String key) </code>
                                             </th>
-                                            <td class="colLast">Get data from cache</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISmartCacheManager.Entity.html#getKeys(int)>getKeys</a>(int keyType) </code>
                                             </th>
-                                            <td class="colLast">Get all keys from disk cache</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISmartCacheManager.Entity.html#remove(int,String)>remove</a>(int keyType, String key) </code>
                                             </th>
-                                            <td class="colLast">Remove data from cache</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISmartCacheManager.Entity.html#clear(int)>clear</a>(int keyType) </code>
                                             </th>
-                                            <td class="colLast">Clear all cache by keyClass</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -243,25 +243,8 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                           >
                                     <li class="blockList">
                                         <h4>put</h4>
-                                        <pre class="methodSignature"> abstract &lt;T&gt; boolean <a href=ISmartCacheManager.Entity.html#put(int,String,T)>put</a>(int keyType, String key, <a href=../IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a> value)</pre>
-                                        <div class="block"><p>Put data into cache</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>keyType</code> - the cache type CacheType</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>key</code> - the unique key</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>value</code> - the cache object</dd>
-                                            
-                                            
-                                        </dl>
+                                        <pre class="methodSignature"> abstract &lt;T&gt; boolean <a href=ISmartCacheManager.Entity.html#put(int,String,T)>put</a>(int keyType, String key, <a href=../IThingGetBeanCallback.html>T</a> value)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -291,20 +274,7 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                     <li class="blockList">
                                         <h4>get</h4>
                                         <pre class="methodSignature"> abstract &lt;T&gt; CacheObj&lt;T&gt; <a href=ISmartCacheManager.Entity.html#get(int,String)>get</a>(int keyType, String key)</pre>
-                                        <div class="block"><p>Get data from cache</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>keyType</code> - the cache type CacheType</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>key</code> - the unique key</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -319,7 +289,7 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                     <li class="blockList">
                                         <h4>getKeys</h4>
                                         <pre class="methodSignature"> abstract Set&lt;String&gt; <a href=ISmartCacheManager.Entity.html#getKeys(int)>getKeys</a>(int keyType)</pre>
-                                        <div class="block"><p>Get all keys from disk cache</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -334,20 +304,7 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                     <li class="blockList">
                                         <h4>remove</h4>
                                         <pre class="methodSignature"> abstract &lt;T&gt; boolean <a href=ISmartCacheManager.Entity.html#remove(int,String)>remove</a>(int keyType, String key)</pre>
-                                        <div class="block"><p>Remove data from cache</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>keyType</code> - the cache type CacheType</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>key</code> - the unique key</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -362,16 +319,7 @@ public interface <span class="typeNameLabel"><a href=ISmartCacheManager.Entity.h
                                     <li class="blockList">
                                         <h4>clear</h4>
                                         <pre class="methodSignature"> abstract &lt;T&gt; boolean <a href=ISmartCacheManager.Entity.html#clear(int)>clear</a>(int keyType)</pre>
-                                        <div class="block"><p>Clear all cache by keyClass</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>keyType</code> - the cache type CacheType</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

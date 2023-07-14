@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingFittings.html>IThingFittings</a>&lt;T&gt;</span>
 
                     </pre>
-                    <div class="block"><p>配件注册监听器 这里说明下： </p><p>注册配件监听器，SDK设备端上报到鉴权/检查的动作，然后解析成对应的T, </p><p>T代表配件的具体信息 需要带有设备标志devId， 具体的操作步骤cmd，包含auth，check、delete等 需要认证的设备mac 认证信息s1 群组group 群组操作结果，true 成功；false 失败。比如 删除成功；订阅失败；查询失败等 result </p>业务层根据<a href=IThingFittings.html>T</a>去判断要调用鉴权接口还是检查接口， 返回结果通过<a href=IThingFittings.html#sendFittingsData(T,IResultCallback)>sendFittingsData</a>发送给sdk <p>删除配件，业务层直接调用云端接口，然后将结果通过 <a href=IThingFittings.html#sendFittingsData(T,IResultCallback)>sendFittingsData</a>发送给sdk </p><p>不同的能力，均需要实现该接口</p></div>
+                    <div class="block"></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingFittings.html>IThingF
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingFittings.html#registerFittingsListener(IThingResultCallback<T>)>registerFittingsListener</a>(IThingResultCallback&lt;T&gt; listener) </code>
                                             </th>
-                                            <td class="colLast">注册配件监听器配件的相关动作，均会在这里返回具体的动作需要查看<a href=IThingFittings.html>T</a></td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,23 +159,23 @@ public interface <span class="typeNameLabel"><a href=IThingFittings.html>IThingF
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingFittings.html#unregisterFittingsListener(IThingResultCallback<T>)>unregisterFittingsListener</a>(IThingResultCallback&lt;T&gt; listener) </code>
                                             </th>
-                                            <td class="colLast">注销当前配件的监听器</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingFittings.html#sendFittingsData(T,IResultCallback)>sendFittingsData</a>(<a href=../../sdk/api/IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a> fittingBean, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingFittings.html#sendFittingsData(T,IResultCallback)>sendFittingsData</a>(<a href=../../sdk/api/IThingGetBeanCallback.html>T</a> fittingBean, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">业务层需要向设备发送配件的相关信息，例如删除<a href=IThingFittings.html>T</a>的动作，就需要使用该方法</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingFittings.html#handleFittingsData(T)>handleFittingsData</a>(<a href=../../sdk/api/IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a> fittingBean) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingFittings.html#handleFittingsData(T)>handleFittingsData</a>(<a href=../../sdk/api/IThingGetBeanCallback.html>T</a> fittingBean) </code>
                                             </th>
-                                            <td class="colLast">收到设备上报的数据，进行处理</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -220,16 +220,7 @@ public interface <span class="typeNameLabel"><a href=IThingFittings.html>IThingF
                                     <li class="blockList">
                                         <h4>registerFittingsListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingFittings.html#registerFittingsListener(IThingResultCallback<T>)>registerFittingsListener</a>(IThingResultCallback&lt;T&gt; listener)</pre>
-                                        <div class="block"><p>注册配件监听器配件的相关动作，均会在这里返回具体的动作需要查看<a href=IThingFittings.html>T</a></p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>listener</code> - 配件的监听，每次配件相应的动作会从这里通知onSuccess 例如：需要鉴权、需要检查</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -244,16 +235,7 @@ public interface <span class="typeNameLabel"><a href=IThingFittings.html>IThingF
                                     <li class="blockList">
                                         <h4>unregisterFittingsListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingFittings.html#unregisterFittingsListener(IThingResultCallback<T>)>unregisterFittingsListener</a>(IThingResultCallback&lt;T&gt; listener)</pre>
-                                        <div class="block"><p>注销当前配件的监听器</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>listener</code> - 待注销的配件监听器</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -267,21 +249,8 @@ public interface <span class="typeNameLabel"><a href=IThingFittings.html>IThingF
                                           >
                                     <li class="blockList">
                                         <h4>sendFittingsData</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingFittings.html#sendFittingsData(T,IResultCallback)>sendFittingsData</a>(<a href=../../sdk/api/IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a> fittingBean, IResultCallback callback)</pre>
-                                        <div class="block"><p>业务层需要向设备发送配件的相关信息，例如删除<a href=IThingFittings.html>T</a>的动作，就需要使用该方法</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>fittingBean</code> - 需要删除的配件信息</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>callback</code> - 删除的回调</dd>
-                                            
-                                            
-                                        </dl>
+                                        <pre class="methodSignature"> abstract void <a href=IThingFittings.html#sendFittingsData(T,IResultCallback)>sendFittingsData</a>(<a href=../../sdk/api/IThingGetBeanCallback.html>T</a> fittingBean, IResultCallback callback)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -295,17 +264,8 @@ public interface <span class="typeNameLabel"><a href=IThingFittings.html>IThingF
                                           >
                                     <li class="blockList">
                                         <h4>handleFittingsData</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingFittings.html#handleFittingsData(T)>handleFittingsData</a>(<a href=../../sdk/api/IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a> fittingBean)</pre>
-                                        <div class="block"><p>收到设备上报的数据，进行处理</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>fittingBean</code> - 解析之后的配件信息</dd>
-                                            
-                                            
-                                        </dl>
+                                        <pre class="methodSignature"> abstract void <a href=IThingFittings.html#handleFittingsData(T)>handleFittingsData</a>(<a href=../../sdk/api/IThingGetBeanCallback.html>T</a> fittingBean)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

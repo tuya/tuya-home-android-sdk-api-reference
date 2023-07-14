@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IThingSigMeshClient</a></span>
 
                     </pre>
-                    <div class="block"><p>The interface of sigmesh connection management.</p></div>
+                    <div class="block"></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#startClient(SigMeshBean)>startClient</a>(SigMeshBean sigMeshBean) </code>
                                             </th>
-                                            <td class="colLast">Start connect to specified device.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#startClient(SigMeshBean,long)>startClient</a>(SigMeshBean sigMeshBean, long searchTime) </code>
                                             </th>
-                                            <td class="colLast">Start connect to specified device and set limited scan time.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#startConnect(SigMeshBean,SearchDeviceBean)>startConnect</a>(SigMeshBean sigMeshBean, SearchDeviceBean searchDeviceBean) </code>
                                             </th>
-                                            <td class="colLast">Start connect to specified device</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#startConnect(SigMeshBean,SearchDeviceBean,IThingMeshCallback<SigMeshBean>)>startConnect</a>(SigMeshBean sigMeshBean, SearchDeviceBean searchDeviceBean, IThingMeshCallback&lt;SigMeshBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast">Start connect to specified device</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#stopClient()>stopClient</a>() </code>
                                             </th>
-                                            <td class="colLast">Stop all action, include scan, connect, status listener, etc.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#startSearch()>startSearch</a>() </code>
                                             </th>
-                                            <td class="colLast">Start scan.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#stopSearch()>stopSearch</a>() </code>
                                             </th>
-                                            <td class="colLast">Stop scan.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
@@ -207,7 +207,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#initMesh(String)>initMesh</a>(String meshId) </code>
                                             </th>
-                                            <td class="colLast">Init mesh status listeners from server and mqtt.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
@@ -223,15 +223,15 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#destroyMesh(String)>destroyMesh</a>(String meshId) </code>
                                             </th>
-                                            <td class="colLast">Unregister the mesh status listeners from server and mqtt for all.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
-                                            <td class="colFirst"><code>abstract MeshClientStatusEnum</code>
+                                            <td class="colFirst"><code>abstract <a href=../bean/MeshClientStatusEnum.html>MeshClientStatusEnum</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#getStatus()>getStatus</a>() </code>
                                             </th>
-                                            <td class="colLast">Get current connect status with mesh.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
@@ -239,7 +239,15 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#getConnectMeshNodeId()>getConnectMeshNodeId</a>() </code>
                                             </th>
-                                            <td class="colLast">Get the node ID directly connected to the current mesh network</td>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingSigMeshClient.html#tryRestartSigMeshClient()>tryRestartSigMeshClient</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -284,16 +292,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <li class="blockList">
                                         <h4>startClient</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#startClient(SigMeshBean)>startClient</a>(SigMeshBean sigMeshBean)</pre>
-                                        <div class="block"><p>Start connect to specified device.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>sigMeshBean</code> - SigMeshBean</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -308,18 +307,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <li class="blockList">
                                         <h4>startClient</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#startClient(SigMeshBean,long)>startClient</a>(SigMeshBean sigMeshBean, long searchTime)</pre>
-                                        <div class="block"><p>Start connect to specified device and set limited scan time.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>sigMeshBean</code> - SigMeshBean</dd>
-                                            
-                                            
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -334,20 +322,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <li class="blockList">
                                         <h4>startConnect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#startConnect(SigMeshBean,SearchDeviceBean)>startConnect</a>(SigMeshBean sigMeshBean, SearchDeviceBean searchDeviceBean)</pre>
-                                        <div class="block"><p>Start connect to specified device</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>sigMeshBean</code> - SigMeshBean</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>searchDeviceBean</code> - SearchDeviceBean</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -362,22 +337,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <li class="blockList">
                                         <h4>startConnect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#startConnect(SigMeshBean,SearchDeviceBean,IThingMeshCallback<SigMeshBean>)>startConnect</a>(SigMeshBean sigMeshBean, SearchDeviceBean searchDeviceBean, IThingMeshCallback&lt;SigMeshBean&gt; callback)</pre>
-                                        <div class="block"><p>Start connect to specified device</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>sigMeshBean</code> - SigMeshBean</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>searchDeviceBean</code> - SearchDeviceBean</dd>
-                                            
-                                            
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -392,7 +352,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <li class="blockList">
                                         <h4>stopClient</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#stopClient()>stopClient</a>()</pre>
-                                        <div class="block"><p>Stop all action, include scan, connect, status listener, etc.</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -407,7 +367,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <li class="blockList">
                                         <h4>startSearch</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#startSearch()>startSearch</a>()</pre>
-                                        <div class="block"><p>Start scan.This must be used after <a href=IThingSigMeshClient.html#startClient(SigMeshBean)>startClient</a> or <a href=IThingSigMeshClient.html#startClient(SigMeshBean,long)>startClient</a></p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -422,7 +382,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <li class="blockList">
                                         <h4>stopSearch</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#stopSearch()>stopSearch</a>()</pre>
-                                        <div class="block"><p>Stop scan.</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -437,16 +397,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <li class="blockList">
                                         <h4>initMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#initMesh(String)>initMesh</a>(String meshId)</pre>
-                                        <div class="block"><p>Init mesh status listeners from server and mqtt.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>meshId</code> - Thing mesh id com.thingclips.smart.sdk.bean.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -476,7 +427,7 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <li class="blockList">
                                         <h4>destroyMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#destroyMesh(String)>destroyMesh</a>(String meshId)</pre>
-                                        <div class="block"><p>Unregister the mesh status listeners from server and mqtt for all.</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -490,8 +441,8 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                           >
                                     <li class="blockList">
                                         <h4>getStatus</h4>
-                                        <pre class="methodSignature"> abstract MeshClientStatusEnum <a href=IThingSigMeshClient.html#getStatus()>getStatus</a>()</pre>
-                                        <div class="block"><p>Get current connect status with mesh.</p></div>
+                                        <pre class="methodSignature"> abstract <a href=../bean/MeshClientStatusEnum.html>MeshClientStatusEnum</a> <a href=IThingSigMeshClient.html#getStatus()>getStatus</a>()</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -501,12 +452,27 @@ public interface <span class="typeNameLabel"><a href=IThingSigMeshClient.html>IT
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>getConnectMeshNodeId</h4>
                                         <pre class="methodSignature"> abstract String <a href=IThingSigMeshClient.html#getConnectMeshNodeId()>getConnectMeshNodeId</a>()</pre>
-                                        <div class="block"><p>Get the node ID directly connected to the current mesh network</p></div>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="tryRestartSigMeshClient()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>tryRestartSigMeshClient</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingSigMeshClient.html#tryRestartSigMeshClient()>tryRestartSigMeshClient</a>()</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

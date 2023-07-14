@@ -157,12 +157,20 @@ public interface <span class="typeNameLabel"><a href=ILogService.html>ILogServic
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract Unit</code>
                                             </td>
+                                            <th class="colSecond" scope="row"><code><a href=ILogService.html#getSceneLogInfoAll(Long,Long,Long,Integer,String,Long,IResultCallback)>getSceneLogInfoAll</a>(Long relationId, Long startTime, Long endTime, Integer size, String lastId, Long lastRecordTime, <a href=../IResultCallback.html>IResultCallback</a>&lt;&lt;ERROR CLASS&gt;&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast">Get a list of execution logs(Include the logs which execute in local).</td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>abstract Unit</code>
+                                            </td>
                                             <th class="colSecond" scope="row"><code><a href=ILogService.html#getDeviceLogAll(Long,String,Long,Long,Integer,String,Long,IResultCallback)>getDeviceLogAll</a>(Long relationId, String deviceId, Long startTime, Long endTime, Integer size, String lastId, Long lastRecordTime, <a href=../IResultCallback.html>IResultCallback</a>&lt;&lt;ERROR CLASS&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Get a list of device logs</td>
                                         </tr>
                                         
-                                        <tr id="i2" class="altColor">
+                                        <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ILogService.html#getExecuteLogDetail(Long,String,Long,Long,Long,IResultCallback)>getExecuteLogDetail</a>(Long relationId, String eventId, Long startTime, Long endTime, Long returnType, <a href=../IResultCallback.html>IResultCallback</a>&lt;List&lt;&lt;ERROR CLASS&gt;&gt;&gt; callback) </code>
@@ -170,7 +178,7 @@ public interface <span class="typeNameLabel"><a href=ILogService.html>ILogServic
                                             <td class="colLast">Get execution log details</td>
                                         </tr>
                                         
-                                        <tr id="i3" class="rowColor">
+                                        <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ILogService.html#onDestroy()>onDestroy</a>() </code>
@@ -221,6 +229,54 @@ public interface <span class="typeNameLabel"><a href=ILogService.html>ILogServic
                                         <h4>getExecuteLogAll</h4>
                                         <pre class="methodSignature"> abstract Unit <a href=ILogService.html#getExecuteLogAll(Long,Long,Long,Integer,String,Long,IResultCallback)>getExecuteLogAll</a>(Long relationId, Long startTime, Long endTime, Integer size, String lastId, Long lastRecordTime, <a href=../IResultCallback.html>IResultCallback</a>&lt;&lt;ERROR CLASS&gt;&gt; callback)</pre>
                                         <div class="block"><p>Get a list of execution logs</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>relationId</code> - the relation id of the current node</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>startTime</code> - start time</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>endTime</code> - end time</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>size</code> - count</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>lastId</code> - The id of the last record in the pagination</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>lastRecordTime</code> - the execute time of the last record in the pagination</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - callback <a href=../IResultCallback.html>IResultCallback</a>, ExecuteLogList</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getSceneLogInfoAll(Long,Long,Long,Integer,String,Long,IResultCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getSceneLogInfoAll</h4>
+                                        <pre class="methodSignature"> abstract Unit <a href=ILogService.html#getSceneLogInfoAll(Long,Long,Long,Integer,String,Long,IResultCallback)>getSceneLogInfoAll</a>(Long relationId, Long startTime, Long endTime, Integer size, String lastId, Long lastRecordTime, <a href=../IResultCallback.html>IResultCallback</a>&lt;&lt;ERROR CLASS&gt;&gt; callback)</pre>
+                                        <div class="block"><p>Get a list of execution logs(Include the logs which execute in local).</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>

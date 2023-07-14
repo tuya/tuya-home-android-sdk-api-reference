@@ -288,6 +288,14 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>final &lt;ERROR CLASS&gt;&lt;Boolean, Map&lt;String, Object&gt;&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#isAllModeWR(String,Map)>isAllModeWR</a>(String devId, Map&lt;String, Object&gt; executorProperty) </code>
+                                            </th>
+                                            <td class="colLast">Judging all the actions to be executed, whether the dp is only issued but not reported&lt;p&gt;1.</td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>final Boolean</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#isDeviceDpOk(String,Map)>isDeviceDpOk</a>(String devId, Map&lt;String, Object&gt; executorProperty) </code>
@@ -295,7 +303,15 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Determine whether the real dp state of the device is the same as the state to be set</td>
                                         </tr>
                                         
-                                        <tr id="i11" class="rowColor">
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>final &lt;ERROR CLASS&gt;&lt;Boolean, Map&lt;String, Object&gt;&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#isAllDeviceDpOk(String,Map)>isAllDeviceDpOk</a>(String devId, Map&lt;String, Object&gt; executorProperty) </code>
+                                            </th>
+                                            <td class="colLast">Judging all the actions to be executed, whether the dp state is ok&lt;p&gt;1.</td>
+                                        </tr>
+                                        
+                                        <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#addGidSid(List,<ERROR CLASS>)>addGidSid</a>(List&lt;String&gt; cids, &lt;ERROR CLASS&gt; sidGid) </code>
@@ -303,7 +319,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Write the gid and sid of the scene to the gateway.</td>
                                         </tr>
                                         
-                                        <tr id="i12" class="altColor">
+                                        <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#clearGidSid(List,<ERROR CLASS>)>clearGidSid</a>(List&lt;String&gt; cids, &lt;ERROR CLASS&gt; sidGid) </code>
@@ -311,7 +327,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Remove the scene's gid and sid from the gateway.</td>
                                         </tr>
                                         
-                                        <tr id="i13" class="rowColor">
+                                        <tr id="i15" class="rowColor">
                                             <td class="colFirst"><code>final &lt;ERROR CLASS&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#publishDps(String,String,<ERROR CLASS>)>publishDps</a>(String deviceId, String dps, &lt;ERROR CLASS&gt; callback) </code>
@@ -319,7 +335,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Device control other than mesh, sigMesh devices</td>
                                         </tr>
                                         
-                                        <tr id="i14" class="altColor">
+                                        <tr id="i16" class="altColor">
                                             <td class="colFirst"><code>final &lt;ERROR CLASS&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#groupPublishDps(Long,String,<ERROR CLASS>)>groupPublishDps</a>(Long groupId, String dps, &lt;ERROR CLASS&gt; callback) </code>
@@ -327,7 +343,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Group control except mesh, sigMesh group devices</td>
                                         </tr>
                                         
-                                        <tr id="i15" class="rowColor">
+                                        <tr id="i17" class="rowColor">
                                             <td class="colFirst"><code>final &lt;ERROR CLASS&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#executeLocalSceneNew(String,String,<ERROR CLASS>)>executeLocalSceneNew</a>(String gatewayId, String sceneId, &lt;ERROR CLASS&gt; callback) </code>
@@ -335,7 +351,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Execute a new local scene</td>
                                         </tr>
                                         
-                                        <tr id="i16" class="altColor">
+                                        <tr id="i18" class="altColor">
                                             <td class="colFirst"><code>final &lt;ERROR CLASS&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#executeSceneMqtt(String,String,<ERROR CLASS>)>executeSceneMqtt</a>(String gatewayId, String sceneId, &lt;ERROR CLASS&gt; callback) </code>
@@ -343,7 +359,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Gateway scenario execution through mqtt channel</td>
                                         </tr>
                                         
-                                        <tr id="i17" class="rowColor">
+                                        <tr id="i19" class="rowColor">
                                             <td class="colFirst"><code>final &lt;ERROR CLASS&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#executeLocalScene(String,String,String,<ERROR CLASS>)>executeLocalScene</a>(String gatewayId, String gid, String sid, &lt;ERROR CLASS&gt; callback) </code>
@@ -351,7 +367,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Standard scenario execution.</td>
                                         </tr>
                                         
-                                        <tr id="i18" class="altColor">
+                                        <tr id="i20" class="altColor">
                                             <td class="colFirst"><code>final &lt;ERROR CLASS&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#meshDevicePublishDps(String,String,String,String,<ERROR CLASS>)>meshDevicePublishDps</a>(String meshId, String nodeId, String pcc, String dps, &lt;ERROR CLASS&gt; callback) </code>
@@ -359,7 +375,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Mesh device control</td>
                                         </tr>
                                         
-                                        <tr id="i19" class="rowColor">
+                                        <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>final &lt;ERROR CLASS&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#sigMeshDevicePublishDps(String,String,String,String,<ERROR CLASS>)>sigMeshDevicePublishDps</a>(String meshId, String nodeId, String pcc, String dps, &lt;ERROR CLASS&gt; callback) </code>
@@ -367,7 +383,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">sigMesh device control</td>
                                         </tr>
                                         
-                                        <tr id="i20" class="altColor">
+                                        <tr id="i22" class="altColor">
                                             <td class="colFirst"><code>final &lt;ERROR CLASS&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#meshGroupPublishDps(String,String,String,String,<ERROR CLASS>)>meshGroupPublishDps</a>(String meshId, String localId, String category, String dps, &lt;ERROR CLASS&gt; callback) </code>
@@ -375,7 +391,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">mesh device group control</td>
                                         </tr>
                                         
-                                        <tr id="i21" class="rowColor">
+                                        <tr id="i23" class="rowColor">
                                             <td class="colFirst"><code>final &lt;ERROR CLASS&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#sigMeshGroupPublishDps(String,String,String,String,<ERROR CLASS>)>sigMeshGroupPublishDps</a>(String meshId, String localId, String category, String dps, &lt;ERROR CLASS&gt; callback) </code>
@@ -383,7 +399,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">sigMesh device group control</td>
                                         </tr>
                                         
-                                        <tr id="i22" class="altColor">
+                                        <tr id="i24" class="altColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#batchExecuteDeviceDps(List,Integer)>batchExecuteDeviceDps</a>(List&lt;&lt;ERROR CLASS&gt;&gt; batchExecutionDpsList, Integer retryCount) </code>
@@ -391,7 +407,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i23" class="rowColor">
+                                        <tr id="i25" class="rowColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#registerMeshDeviceListener(String,Function2)>registerMeshDeviceListener</a>(String meshId, Function2&lt;String, String, Unit&gt; listener) </code>
@@ -399,7 +415,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Register mesh device listening</td>
                                         </tr>
                                         
-                                        <tr id="i24" class="altColor">
+                                        <tr id="i26" class="altColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#registerSigMeshDeviceListener(String,Function2)>registerSigMeshDeviceListener</a>(String meshId, Function2&lt;String, String, Unit&gt; listener) </code>
@@ -407,7 +423,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Register sigMesh device listening</td>
                                         </tr>
                                         
-                                        <tr id="i25" class="rowColor">
+                                        <tr id="i27" class="rowColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#registerDeviceListener(String,Function2)>registerDeviceListener</a>(String deviceId, Function2&lt;String, String, Unit&gt; listener) </code>
@@ -415,7 +431,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Register for general device monitoring (including Wi-Fi, single-point bluetooth, zigbee)</td>
                                         </tr>
                                         
-                                        <tr id="i26" class="altColor">
+                                        <tr id="i28" class="altColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#registerGroupDeviceListener(Long,Function2)>registerGroupDeviceListener</a>(Long groupId, Function2&lt;Long, String, Unit&gt; listener) </code>
@@ -423,7 +439,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Register group device monitoring</td>
                                         </tr>
                                         
-                                        <tr id="i27" class="rowColor">
+                                        <tr id="i29" class="rowColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#unRegisterMeshDevListener(String)>unRegisterMeshDevListener</a>(String meshId) </code>
@@ -431,7 +447,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Remove mesh device listening</td>
                                         </tr>
                                         
-                                        <tr id="i28" class="altColor">
+                                        <tr id="i30" class="altColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#unRegisterSigMeshDevListener(String)>unRegisterSigMeshDevListener</a>(String meshId) </code>
@@ -439,7 +455,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Remove sigMesh device listening</td>
                                         </tr>
                                         
-                                        <tr id="i29" class="rowColor">
+                                        <tr id="i31" class="rowColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#unRegisterDevListener(String)>unRegisterDevListener</a>(String deviceId) </code>
@@ -447,7 +463,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Remove device monitoring</td>
                                         </tr>
                                         
-                                        <tr id="i30" class="altColor">
+                                        <tr id="i32" class="altColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#unRegisterGroupListener(Long)>unRegisterGroupListener</a>(Long groupId) </code>
@@ -455,7 +471,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Remove group device monitoring</td>
                                         </tr>
                                         
-                                        <tr id="i31" class="rowColor">
+                                        <tr id="i33" class="rowColor">
                                             <td class="colFirst"><code>final &lt;T extends Any&gt; Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#registerDeviceMqttListener(Class,<ERROR CLASS>)>registerDeviceMqttListener</a>(Class&lt;<a href=DeviceUtil.html#registerDeviceMqttListener(Class,<ERROR CLASS>)>T</a>&gt; clazz, &lt;ERROR CLASS&gt;&lt;<a href=DeviceUtil.html#registerDeviceMqttListener(Class,<ERROR CLASS>)>T</a>&gt; listener) </code>
@@ -463,7 +479,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Register device mqtt listener</td>
                                         </tr>
                                         
-                                        <tr id="i32" class="altColor">
+                                        <tr id="i34" class="altColor">
                                             <td class="colFirst"><code>final &lt;T extends Any&gt; Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#unRegisterDeviceMqttListener(Class,<ERROR CLASS>)>unRegisterDeviceMqttListener</a>(Class&lt;<a href=DeviceUtil.html#unRegisterDeviceMqttListener(Class,<ERROR CLASS>)>T</a>&gt; clazz, &lt;ERROR CLASS&gt;&lt;<a href=DeviceUtil.html#unRegisterDeviceMqttListener(Class,<ERROR CLASS>)>T</a>&gt; listener) </code>
@@ -471,7 +487,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Remove device mqtt listener</td>
                                         </tr>
                                         
-                                        <tr id="i33" class="rowColor">
+                                        <tr id="i35" class="rowColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#registerGwMqttListener(Function4)>registerGwMqttListener</a>(Function4&lt;Integer, String, List&lt;String&gt;, List&lt;Integer&gt;, Unit&gt; listener) </code>
@@ -479,7 +495,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Register gateway device mqtt listener</td>
                                         </tr>
                                         
-                                        <tr id="i34" class="altColor">
+                                        <tr id="i36" class="altColor">
                                             <td class="colFirst"><code>final Unit</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#unRegisterGwMqttListener()>unRegisterGwMqttListener</a>() </code>
@@ -487,7 +503,7 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             <td class="colLast">Remove gateway device mqtt listener</td>
                                         </tr>
                                         
-                                        <tr id="i35" class="rowColor">
+                                        <tr id="i37" class="rowColor">
                                             <td class="colFirst"><code>final String</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DeviceUtil.html#getTAG()>getTAG</a>() </code>
@@ -820,6 +836,22 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                     </li>
                                 </ul>
                                 
+                                <a id="isAllModeWR(String,Map)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isAllModeWR</h4>
+                                        <pre class="methodSignature"> final &lt;ERROR CLASS&gt;&lt;Boolean, Map&lt;String, Object&gt;&gt; <a href=DeviceUtil.html#isAllModeWR(String,Map)>isAllModeWR</a>(String devId, Map&lt;String, Object&gt; executorProperty)</pre>
+                                        <div class="block"><p>Judging all the actions to be executed, whether the dp is only issued but not reported</p>&lt;p&gt;1. pair-first true, pair-second is empty map&lt;/p&gt;
+&lt;p&gt;2. pair-first false, pair-second is the map of dp that is not mode WR or can't judge&lt;/p&gt;</div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
                                 <a id="isDeviceDpOk(String,Map)">
                                     <!--   -->
                                 </a>
@@ -843,6 +875,22 @@ public class <span class="typeNameLabel"><a href=DeviceUtil.html>DeviceUtil</a><
                                             
                                             
                                         </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isAllDeviceDpOk(String,Map)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isAllDeviceDpOk</h4>
+                                        <pre class="methodSignature"> final &lt;ERROR CLASS&gt;&lt;Boolean, Map&lt;String, Object&gt;&gt; <a href=DeviceUtil.html#isAllDeviceDpOk(String,Map)>isAllDeviceDpOk</a>(String devId, Map&lt;String, Object&gt; executorProperty)</pre>
+                                        <div class="block"><p>Judging all the actions to be executed, whether the dp state is ok</p>&lt;p&gt;1. pair-first true, pair-second is empty map&lt;/p&gt;
+&lt;p&gt;2. pair-first false, pair-second is the map of dp that is not the target state&lt;/p&gt;</div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
