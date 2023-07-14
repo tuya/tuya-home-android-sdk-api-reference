@@ -261,6 +261,22 @@ public interface <span class="typeNameLabel"><a href=IBaseService.html>IBaseServ
                                         <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>abstract Unit</code>
                                             </td>
+                                            <th class="colSecond" scope="row"><code><a href=IBaseService.html#getHomeSimpleScenesByType(Long,Integer,Integer,Integer,IResultCallback)>getHomeSimpleScenesByType</a>(Long relationId, Integer sceneType, Integer page, Integer pageSize, <a href=../IResultCallback.html>IResultCallback</a>&lt;&lt;ERROR CLASS&gt;&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast">Get the linkage list of the specified type at home.</td>
+                                        </tr>
+                                        
+                                        <tr id="i15" class="rowColor">
+                                            <td class="colFirst"><code>abstract Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IBaseService.html#modifyRoomBatchSceneData(Long,String,String,IResultCallback)>modifyRoomBatchSceneData</a>(Long relationId, String ruleIds, String roomIds, <a href=../IResultCallback.html>IResultCallback</a>&lt;Boolean&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast">Modify the rooms to which scenes belong in batches.</td>
+                                        </tr>
+                                        
+                                        <tr id="i16" class="altColor">
+                                            <td class="colFirst"><code>abstract Unit</code>
+                                            </td>
                                             <th class="colSecond" scope="row"><code><a href=IBaseService.html#onDestroy()>onDestroy</a>() </code>
                                             </th>
                                             <td class="colLast">when destroy</td>
@@ -719,6 +735,82 @@ public interface <span class="typeNameLabel"><a href=IBaseService.html>IBaseServ
                                             
                                             
                                             <dd><code>callback</code> - callback <a href=../IResultCallback.html>IResultCallback</a>, CountLimit</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getHomeSimpleScenesByType(Long,Integer,Integer,Integer,IResultCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getHomeSimpleScenesByType</h4>
+                                        <pre class="methodSignature"> abstract Unit <a href=IBaseService.html#getHomeSimpleScenesByType(Long,Integer,Integer,Integer,IResultCallback)>getHomeSimpleScenesByType</a>(Long relationId, Integer sceneType, Integer page, Integer pageSize, <a href=../IResultCallback.html>IResultCallback</a>&lt;&lt;ERROR CLASS&gt;&gt; callback)</pre>
+                                        <div class="block"><p>Get the linkage list of the specified type at home.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>relationId</code> - relation id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>sceneType</code> - scene type</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>page</code> - page No.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>pageSize</code> - page size</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - callback <a href=../IResultCallback.html>IResultCallback</a>, FusionPageNormalScenes</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="modifyRoomBatchSceneData(Long,String,String,IResultCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>modifyRoomBatchSceneData</h4>
+                                        <pre class="methodSignature"> abstract Unit <a href=IBaseService.html#modifyRoomBatchSceneData(Long,String,String,IResultCallback)>modifyRoomBatchSceneData</a>(Long relationId, String ruleIds, String roomIds, <a href=../IResultCallback.html>IResultCallback</a>&lt;Boolean&gt; callback)</pre>
+                                        <div class="block"><p>Modify the rooms to which scenes belong in batches.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>relationId</code> - relation id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>ruleIds</code> - rule id(Use commas to join)</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>roomIds</code> - room id(Use commas to join)</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - callback <a href=../IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>

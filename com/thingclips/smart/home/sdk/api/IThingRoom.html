@@ -165,12 +165,20 @@ public interface <span class="typeNameLabel"><a href=IThingRoom.html>IThingRoom<
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingRoom.html#addDeviceGroup(List,IResultCallback)>addDeviceGroup</a>(List&lt;DeviceAndGroupInRoomBean&gt; list, IResultCallback callback) </code>
+                                            </th>
+                                            <td class="colLast">Add device and group in this Room (Add to the end for incremental update, not a full update)</td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingRoom.html#addGroup(long,IResultCallback)>addGroup</a>(long groupId, IResultCallback callback) </code>
                                             </th>
                                             <td class="colLast">Add group in this room.</td>
                                         </tr>
                                         
-                                        <tr id="i3" class="rowColor">
+                                        <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingRoom.html#removeDevice(String,IResultCallback)>removeDevice</a>(String devId, IResultCallback callback) </code>
@@ -178,7 +186,7 @@ public interface <span class="typeNameLabel"><a href=IThingRoom.html>IThingRoom<
                                             <td class="colLast">Remove device from this room.</td>
                                         </tr>
                                         
-                                        <tr id="i4" class="altColor">
+                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingRoom.html#removeGroup(Long,IResultCallback)>removeGroup</a>(Long groupId, IResultCallback resultCallback) </code>
@@ -186,15 +194,15 @@ public interface <span class="typeNameLabel"><a href=IThingRoom.html>IThingRoom<
                                             <td class="colLast">Remove group from this room.</td>
                                         </tr>
                                         
-                                        <tr id="i5" class="rowColor">
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingRoom.html#moveDevGroupListFromRoom(List,IResultCallback)>moveDevGroupListFromRoom</a>(List&lt;DeviceAndGroupInRoomBean&gt; list, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">Batch modification of rooms with groups and devices.This method can be used to move devices and groups into and out of a room in bulk.</td>
+                                            <td class="colLast">Batch modification of rooms with groups and devices.This method can be used to move devices and groups into and out of a room in bulk（full update）.</td>
                                         </tr>
                                         
-                                        <tr id="i6" class="altColor">
+                                        <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingRoom.html#sortDevInRoom(List,IResultCallback)>sortDevInRoom</a>(List&lt;DeviceAndGroupInRoomBean&gt; list, IResultCallback callback) </code>
@@ -202,7 +210,7 @@ public interface <span class="typeNameLabel"><a href=IThingRoom.html>IThingRoom<
                                             <td class="colLast">Sorting groups or devices in a room.</td>
                                         </tr>
                                         
-                                        <tr id="i7" class="rowColor">
+                                        <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingRoom.html#updateIcon(File,IResultCallback)>updateIcon</a>(File file, IResultCallback callback) </code>
@@ -287,6 +295,34 @@ public interface <span class="typeNameLabel"><a href=IThingRoom.html>IThingRoom<
                                             
                                             
                                             <dd><code>devId</code> - Device identification</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Result callback</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="addDeviceGroup(List,IResultCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>addDeviceGroup</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingRoom.html#addDeviceGroup(List,IResultCallback)>addDeviceGroup</a>(List&lt;DeviceAndGroupInRoomBean&gt; list, IResultCallback callback)</pre>
+                                        <div class="block"><p>Add device and group in this Room (Add to the end for incremental update, not a full update)</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>list</code> - Devices or groups list</dd>
                                             
                                             
                                             
@@ -392,7 +428,7 @@ public interface <span class="typeNameLabel"><a href=IThingRoom.html>IThingRoom<
                                     <li class="blockList">
                                         <h4>moveDevGroupListFromRoom</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingRoom.html#moveDevGroupListFromRoom(List,IResultCallback)>moveDevGroupListFromRoom</a>(List&lt;DeviceAndGroupInRoomBean&gt; list, IResultCallback callback)</pre>
-                                        <div class="block"><p>Batch modification of rooms with groups and devices.This method can be used to move devices and groups into and out of a room in bulk.</p></div>
+                                        <div class="block"><p>Batch modification of rooms with groups and devices.This method can be used to move devices and groups into and out of a room in bulk（full update）.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>

@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#startConfig(Context,String,String,String,Map,IApActivatorConfigListener)>startConfig</a>(Context context, String ssid, String password, String token, Map&lt;String, Object&gt; config, IApActivatorConfigListener apListener) </code>
                                             </th>
-                                            <td class="colLast">start config</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#queryWifiList(ApHandlerBean,IThingResultCallback<List<WiFiInfoBean>>)>queryWifiList</a>(ApHandlerBean bean, IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt; callback) </code>
                                             </th>
-                                            <td class="colLast">query wifi list</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#resumeAPConfigWifi(ApHandlerBean)>resumeAPConfigWifi</a>(ApHandlerBean bean) </code>
                                             </th>
-                                            <td class="colLast">resume device config</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#queryDeviceState(ApHandlerBean,IThingResultCallback<String>)>queryDeviceState</a>(ApHandlerBean bean, IThingResultCallback&lt;String&gt; callback) </code>
                                             </th>
-                                            <td class="colLast">query device's config state</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#findDevice(Context,IThingApFindListener)>findDevice</a>(Context context, IThingApFindListener listener) </code>
                                             </th>
-                                            <td class="colLast">find device</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,47 +191,63 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#connectDevice(IResultCallback)>connectDevice</a>(IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">connect the find device</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#fetchDeviceLog(ApHandlerBean,IThingResultCallback<DeviceLogBean>)>fetchDeviceLog</a>(ApHandlerBean bean, IThingResultCallback&lt;DeviceLogBean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#connectDeviceWithIP(ExtendedConfig,IResultCallback)>connectDeviceWithIP</a>(<a href=../../home/sdk/bean/ExtendedConfig.html>ExtendedConfig</a> params, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">after connect device , you can fetch device in connected tcp channel</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#stopConfig()>stopConfig</a>() </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#fetchDeviceLog(ApHandlerBean,IThingResultCallback<DeviceLogBean>)>fetchDeviceLog</a>(ApHandlerBean bean, IThingResultCallback&lt;DeviceLogBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast">stop config</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#onDestroy()>onDestroy</a>() </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#stopConfig()>stopConfig</a>() </code>
                                             </th>
-                                            <td class="colLast">release sources and stop config</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#reconnectTcp(IResultCallback)>reconnectTcp</a>(IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#onDestroy()>onDestroy</a>() </code>
                                             </th>
-                                            <td class="colLast">reconnect the device you find, and query state for get log</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#reconnectTcp(IResultCallback)>reconnectTcp</a>(IResultCallback callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#resetDevice(IResultCallback)>resetDevice</a>(IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">reset device in tls channel</td>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedApConfig.html#fetchDeviceInfo(ApHandlerBean,IThingDataCallback<String>)>fetchDeviceInfo</a>(ApHandlerBean bean, IThingDataCallback&lt;String&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -276,26 +292,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>startConfig</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#startConfig(Context,String,String,String,Map,IApActivatorConfigListener)>startConfig</a>(Context context, String ssid, String password, String token, Map&lt;String, Object&gt; config, IApActivatorConfigListener apListener)</pre>
-                                        <div class="block"><p>start config</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <dd><code>config</code> - security level</dd>
-                                            
-                                            
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -310,7 +307,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>queryWifiList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#queryWifiList(ApHandlerBean,IThingResultCallback<List<WiFiInfoBean>>)>queryWifiList</a>(ApHandlerBean bean, IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt; callback)</pre>
-                                        <div class="block"><p>query wifi list</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -325,7 +322,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>resumeAPConfigWifi</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingOptimizedApConfig.html#resumeAPConfigWifi(ApHandlerBean)>resumeAPConfigWifi</a>(ApHandlerBean bean)</pre>
-                                        <div class="block"><p>resume device config</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -340,7 +337,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>queryDeviceState</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#queryDeviceState(ApHandlerBean,IThingResultCallback<String>)>queryDeviceState</a>(ApHandlerBean bean, IThingResultCallback&lt;String&gt; callback)</pre>
-                                        <div class="block"><p>query device's config state</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -355,7 +352,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>findDevice</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#findDevice(Context,IThingApFindListener)>findDevice</a>(Context context, IThingApFindListener listener)</pre>
-                                        <div class="block"><p>find device</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -370,7 +367,22 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>connectDevice</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#connectDevice(IResultCallback)>connectDevice</a>(IResultCallback callback)</pre>
-                                        <div class="block"><p>connect the find device</p></div>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="connectDeviceWithIP(ExtendedConfig,IResultCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>connectDeviceWithIP</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#connectDeviceWithIP(ExtendedConfig,IResultCallback)>connectDeviceWithIP</a>(<a href=../../home/sdk/bean/ExtendedConfig.html>ExtendedConfig</a> params, IResultCallback callback)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -385,7 +397,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>fetchDeviceLog</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#fetchDeviceLog(ApHandlerBean,IThingResultCallback<DeviceLogBean>)>fetchDeviceLog</a>(ApHandlerBean bean, IThingResultCallback&lt;DeviceLogBean&gt; callback)</pre>
-                                        <div class="block"><p>after connect device , you can fetch device in connected tcp channel</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -400,7 +412,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>stopConfig</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#stopConfig()>stopConfig</a>()</pre>
-                                        <div class="block"><p>stop config</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -415,7 +427,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>onDestroy</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#onDestroy()>onDestroy</a>()</pre>
-                                        <div class="block"><p>release sources and stop config</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -430,7 +442,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <li class="blockList">
                                         <h4>reconnectTcp</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#reconnectTcp(IResultCallback)>reconnectTcp</a>(IResultCallback callback)</pre>
-                                        <div class="block"><p>reconnect the device you find, and query state for get log</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -440,12 +452,27 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedApConfig.htm
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>resetDevice</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#resetDevice(IResultCallback)>resetDevice</a>(IResultCallback callback)</pre>
-                                        <div class="block"><p>reset device in tls channel</p></div>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="fetchDeviceInfo(ApHandlerBean,IThingDataCallback&lt;String&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>fetchDeviceInfo</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedApConfig.html#fetchDeviceInfo(ApHandlerBean,IThingDataCallback<String>)>fetchDeviceInfo</a>(ApHandlerBean bean, IThingDataCallback&lt;String&gt; callback)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
