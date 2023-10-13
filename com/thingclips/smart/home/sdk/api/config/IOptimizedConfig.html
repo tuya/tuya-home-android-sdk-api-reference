@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IOptimizedConfig.html>IOpti
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IOptimizedConfig.html#queryDeviceConfigState(ApQueryBuilder,IThingResultCallback<List<WiFiInfoBean>>)>queryDeviceConfigState</a>(ApQueryBuilder queryBuilder, IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">start new ap query and check it is can be activator</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IOptimizedConfig.html>IOpti
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IOptimizedConfig.html#startActivator(ApActivatorBuilder)>startActivator</a>(ApActivatorBuilder activatorBuilder) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">start new ap activator</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IOptimizedConfig.html>IOpti
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IOptimizedConfig.html#stopActivator()>stopActivator</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">stop activator</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IOptimizedConfig.html>IOpti
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IOptimizedConfig.html#resetDevice(IThingResultCallback<Boolean>)>resetDevice</a>(IThingResultCallback&lt;Boolean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">reset device</td>
                                         </tr>
                                         
                                         </tbody>
@@ -266,7 +266,7 @@ public interface <span class="typeNameLabel"><a href=IOptimizedConfig.html>IOpti
                                     <li class="blockList">
                                         <h4>queryDeviceConfigState</h4>
                                         <pre class="methodSignature"> abstract void <a href=IOptimizedConfig.html#queryDeviceConfigState(ApQueryBuilder,IThingResultCallback<List<WiFiInfoBean>>)>queryDeviceConfigState</a>(ApQueryBuilder queryBuilder, IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>start new ap query and check it is can be activator</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -281,7 +281,7 @@ public interface <span class="typeNameLabel"><a href=IOptimizedConfig.html>IOpti
                                     <li class="blockList">
                                         <h4>startActivator</h4>
                                         <pre class="methodSignature"> abstract void <a href=IOptimizedConfig.html#startActivator(ApActivatorBuilder)>startActivator</a>(ApActivatorBuilder activatorBuilder)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>start new ap activator</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -296,7 +296,7 @@ public interface <span class="typeNameLabel"><a href=IOptimizedConfig.html>IOpti
                                     <li class="blockList">
                                         <h4>stopActivator</h4>
                                         <pre class="methodSignature"> abstract void <a href=IOptimizedConfig.html#stopActivator()>stopActivator</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>stop activator</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -311,7 +311,16 @@ public interface <span class="typeNameLabel"><a href=IOptimizedConfig.html>IOpti
                                     <li class="blockList">
                                         <h4>resetDevice</h4>
                                         <pre class="methodSignature"> abstract void <a href=IOptimizedConfig.html#resetDevice(IThingResultCallback<Boolean>)>resetDevice</a>(IThingResultCallback&lt;Boolean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>reset device</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callback</code> - it can be null</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

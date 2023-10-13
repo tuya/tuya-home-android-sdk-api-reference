@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingBlueMeshBusiness.html>IThingBlueMeshBusiness</a>&lt;R&gt;</span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Get information about devices in the home.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshBusiness.html
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMeshBusiness.html#getMeshList(long,BusinessResultListener<ArrayList<BlueMeshBean>, R>)>getMeshList</a>(long homeId, BusinessResultListener&lt;ArrayList&lt;BlueMeshBean&gt;, R&gt; resultListener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get Thing mesh device list.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshBusiness.html
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMeshBusiness.html#getSigMeshList(long,BusinessResultListener<ArrayList<SigMeshBean>, R>)>getSigMeshList</a>(long homeId, BusinessResultListener&lt;ArrayList&lt;SigMeshBean&gt;, R&gt; resultListener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get sigMesh device list.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshBusiness.html
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMeshBusiness.html#meshFirmwareUpgradeCheck(String,BusinessResultListener<ArrayList<BLEUpgradeBean>, R>)>meshFirmwareUpgradeCheck</a>(String devId, BusinessResultListener&lt;ArrayList&lt;BLEUpgradeBean&gt;, R&gt; resultListener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get firmware version from cloud.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -212,7 +212,20 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshBusiness.html
                                     <li class="blockList">
                                         <h4>getMeshList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMeshBusiness.html#getMeshList(long,BusinessResultListener<ArrayList<BlueMeshBean>, R>)>getMeshList</a>(long homeId, BusinessResultListener&lt;ArrayList&lt;BlueMeshBean&gt;, R&gt; resultListener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get Thing mesh device list.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>homeId</code> - Home id getHomeId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>resultListener</code> - List of BlueMeshBean BlueMeshBean</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -227,7 +240,20 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshBusiness.html
                                     <li class="blockList">
                                         <h4>getSigMeshList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMeshBusiness.html#getSigMeshList(long,BusinessResultListener<ArrayList<SigMeshBean>, R>)>getSigMeshList</a>(long homeId, BusinessResultListener&lt;ArrayList&lt;SigMeshBean&gt;, R&gt; resultListener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get sigMesh device list.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>homeId</code> - Home id getHomeId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>resultListener</code> - List of BlueMeshBean SigMeshBean</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -242,7 +268,20 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshBusiness.html
                                     <li class="blockList">
                                         <h4>meshFirmwareUpgradeCheck</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMeshBusiness.html#meshFirmwareUpgradeCheck(String,BusinessResultListener<ArrayList<BLEUpgradeBean>, R>)>meshFirmwareUpgradeCheck</a>(String devId, BusinessResultListener&lt;ArrayList&lt;BLEUpgradeBean&gt;, R&gt; resultListener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get firmware version from cloud.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id getDevId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>resultListener</code> - Result of firmware version BLEUpgradeBean</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

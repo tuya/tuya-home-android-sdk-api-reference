@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingBlueMesh</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>ThingMesh device operation interface.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#isCloudOnline()>isCloudOnline</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get cloud online status.If both bluetooth and wifi modules are included and device is cloud onlie ,then return true.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#removeMesh(IResultCallback)>removeMesh</a>(IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Delete mesh group from server.If the group contains sub-devices,sub-devices will be deleted either.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#renameMesh(String,IResultCallback)>renameMesh</a>(String meshName, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Rename mesh group device.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#addSubDev(String,String,String,String,String,IAddSubDevCallback)>addSubDev</a>(String uuid, String nodeId, String encryptedAuthKey, String productKey, String version, IAddSubDevCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add device to cloud with auth key.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#addSubDev(String,String,String,String,String,String,String,IAddSubDevCallback)>addSubDev</a>(String uuid, String nodeId, String productKey, String version, String deviceKey, String mac, String option, IAddSubDevCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add device to cloud without auth key.</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#renameMeshSubDev(String,String,IResultCallback)>renameMeshSubDev</a>(String devId, String name, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Rename mesh device.</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#publishDps(String,String,String,IResultCallback)>publishDps</a>(String nodeId, String pcc, String dps, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Send mesh message to a device.</td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
@@ -207,7 +207,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#broadcastDps(String,String,IResultCallback)>broadcastDps</a>(String pcc, String dps, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Only for ThingMesh, send message by cloud.</td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
@@ -215,7 +215,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#multicastDps(String,String,String,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Send mesh message to a group address.</td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
@@ -223,7 +223,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#multicastDps(String,String,String,Map,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, Map&lt;String, SchemaBean&gt; schemaMap, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Send mesh message to a group address, only for sensors and remote control devices.</td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
@@ -231,7 +231,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#publishRawData(Array,IResultCallback)>publishRawData</a>(Array&lt;byte&gt; data, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Only for ThingMesh, send parameters of byte array type。</td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
@@ -239,7 +239,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#getMeshSubDevBean(String)>getMeshSubDevBean</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get device info.</td>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
@@ -247,7 +247,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#getMeshSubDevBeanByNodeId(String)>getMeshSubDevBeanByNodeId</a>(String nodeId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get device info.</td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
@@ -255,7 +255,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#getMeshSubDevBeanByMac(String)>getMeshSubDevBeanByMac</a>(String mac) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get device info.</td>
                                         </tr>
                                         
                                         <tr id="i14" class="altColor">
@@ -263,7 +263,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#getMeshSubDevList()>getMeshSubDevList</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get sub-device info from local.</td>
                                         </tr>
                                         
                                         <tr id="i15" class="rowColor">
@@ -271,7 +271,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#removeMeshSubDev(String,IResultCallback)>removeMeshSubDev</a>(String devId, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Delete device from server.</td>
                                         </tr>
                                         
                                         <tr id="i16" class="altColor">
@@ -279,7 +279,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#getDataByDpIds(String,List,IResultCallback)>getDataByDpIds</a>(String nodeId, List&lt;Integer&gt; dpIds, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get dp value by dp id by local, only for ThingMesh.</td>
                                         </tr>
                                         
                                         <tr id="i17" class="rowColor">
@@ -287,7 +287,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#addGroup(String,String,String,IAddGroupCallback)>addGroup</a>(String name, String pcc, String localId, IAddGroupCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Create mesh group of the same category .</td>
                                         </tr>
                                         
                                         <tr id="i18" class="altColor">
@@ -295,7 +295,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#groupDpReport(long,String,IResultCallback)>groupDpReport</a>(long groupId, String dps, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Upload group dp to cloud.</td>
                                         </tr>
                                         
                                         <tr id="i19" class="rowColor">
@@ -303,7 +303,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#onDestroy()>onDestroy</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Recycling resources.</td>
                                         </tr>
                                         
                                         <tr id="i20" class="altColor">
@@ -311,7 +311,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMesh.html#ivIndexReport(String,int,IResultCallback)>ivIndexReport</a>(String meshId, int ivIndex, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">upload iv index</td>
                                         </tr>
                                         
                                         </tbody>
@@ -356,7 +356,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>isCloudOnline</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=IThingBlueMesh.html#isCloudOnline()>isCloudOnline</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get cloud online status.If both bluetooth and wifi modules are included and device is cloud onlie ,then return true.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -371,7 +371,16 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>removeMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#removeMesh(IResultCallback)>removeMesh</a>(IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Delete mesh group from server.If the group contains sub-devices,sub-devices will be deleted either.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callback</code> - IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -386,7 +395,20 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>renameMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#renameMesh(String,IResultCallback)>renameMesh</a>(String meshName, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Rename mesh group device.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshName</code> - New name</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -401,7 +423,36 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>addSubDev</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#addSubDev(String,String,String,String,String,IAddSubDevCallback)>addSubDev</a>(String uuid, String nodeId, String encryptedAuthKey, String productKey, String version, IAddSubDevCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Add device to cloud with auth key.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>uuid</code> - Obtain from broadcast package of the device</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>nodeId</code> - Thing node id getNodeId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>encryptedAuthKey</code> - Obtain from broadcast package of the device</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>productKey</code> - Obtain from broadcast package of the device</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>version</code> - Obtain from broadcast package of the device</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for result IAddSubDevCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -416,7 +467,44 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>addSubDev</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#addSubDev(String,String,String,String,String,String,String,IAddSubDevCallback)>addSubDev</a>(String uuid, String nodeId, String productKey, String version, String deviceKey, String mac, String option, IAddSubDevCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Add device to cloud without auth key.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>uuid</code> - Mac address of device</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>nodeId</code> - Thing node id getNodeId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>productKey</code> - Obtain from broadcast package of the device</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>version</code> - Obtain from broadcast package of the device</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>deviceKey</code> - Can be empty</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>mac</code> - Mac address of device</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>option</code> - Additional configuration options</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -431,7 +519,24 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>renameMeshSubDev</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#renameMeshSubDev(String,String,IResultCallback)>renameMeshSubDev</a>(String devId, String name, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Rename mesh device.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Thing device id getDevId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>name</code> - New name</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -446,7 +551,28 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>publishDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#publishDps(String,String,String,IResultCallback)>publishDps</a>(String nodeId, String pcc, String dps, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Send mesh message to a device.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>nodeId</code> - Thing node id getNodeId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>pcc</code> - Category of device getCategory</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - Thing dps</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -461,7 +587,24 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>broadcastDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#broadcastDps(String,String,IResultCallback)>broadcastDps</a>(String pcc, String dps, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Only for ThingMesh, send message by cloud.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>pcc</code> - Category of device getCategory</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - Thing dps</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -476,7 +619,28 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>multicastDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#multicastDps(String,String,String,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Send mesh message to a group address.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>localId</code> - Mesh group address</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>pcc</code> - Category of device getCategory</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - Thing dps</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -491,7 +655,32 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>multicastDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#multicastDps(String,String,String,Map,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, Map&lt;String, SchemaBean&gt; schemaMap, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Send mesh message to a group address, only for sensors and remote control devices.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>localId</code> - Mesh group address</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>pcc</code> - Category of device getCategory</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - Thing dps</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>schemaMap</code> - Thing schemaMap getSchemaMap</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -506,7 +695,20 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>publishRawData</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#publishRawData(Array,IResultCallback)>publishRawData</a>(Array&lt;byte&gt; data, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Only for ThingMesh, send parameters of byte array type。</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>data</code> - Parameter for send</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -521,7 +723,16 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>getMeshSubDevBean</h4>
                                         <pre class="methodSignature"> abstract DeviceBean <a href=IThingBlueMesh.html#getMeshSubDevBean(String)>getMeshSubDevBean</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get device info.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - getDevId</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -536,7 +747,16 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>getMeshSubDevBeanByNodeId</h4>
                                         <pre class="methodSignature"> abstract DeviceBean <a href=IThingBlueMesh.html#getMeshSubDevBeanByNodeId(String)>getMeshSubDevBeanByNodeId</a>(String nodeId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get device info.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>nodeId</code> - getNodeId</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -551,7 +771,16 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>getMeshSubDevBeanByMac</h4>
                                         <pre class="methodSignature"> abstract DeviceBean <a href=IThingBlueMesh.html#getMeshSubDevBeanByMac(String)>getMeshSubDevBeanByMac</a>(String mac)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get device info.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>mac</code> - Mac address of device</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -566,7 +795,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>getMeshSubDevList</h4>
                                         <pre class="methodSignature"> abstract List&lt;DeviceBean&gt; <a href=IThingBlueMesh.html#getMeshSubDevList()>getMeshSubDevList</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get sub-device info from local.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -581,7 +810,20 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>removeMeshSubDev</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#removeMeshSubDev(String,IResultCallback)>removeMeshSubDev</a>(String devId, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Delete device from server.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - getDevId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -596,7 +838,24 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>getDataByDpIds</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#getDataByDpIds(String,List,IResultCallback)>getDataByDpIds</a>(String nodeId, List&lt;Integer&gt; dpIds, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get dp value by dp id by local, only for ThingMesh.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>nodeId</code> - getNodeId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dpIds</code> - Dp ids</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -611,7 +870,28 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>addGroup</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#addGroup(String,String,String,IAddGroupCallback)>addGroup</a>(String name, String pcc, String localId, IAddGroupCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Create mesh group of the same category .</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>name</code> - Group name</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>pcc</code> - Category of device getCategory</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>localId</code> - Group address</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -626,7 +906,22 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>groupDpReport</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#groupDpReport(long,String,IResultCallback)>groupDpReport</a>(long groupId, String dps, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Upload group dp to cloud.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>groupId</code> - Group id getId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - Data points</dd>
+                                            
+                                            
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -641,7 +936,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>onDestroy</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#onDestroy()>onDestroy</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Recycling resources.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -656,7 +951,24 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMesh.html>IThingB
                                     <li class="blockList">
                                         <h4>ivIndexReport</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMesh.html#ivIndexReport(String,int,IResultCallback)>ivIndexReport</a>(String meshId, int ivIndex, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>upload iv index</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - meshId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>ivIndex</code> - ivIndex</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Reporting cloud callback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

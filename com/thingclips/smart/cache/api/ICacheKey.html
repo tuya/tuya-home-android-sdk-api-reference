@@ -120,7 +120,8 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=ICacheKey.html>ICacheKey</a></span>
  implements Serializable
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>The cache key for key</p><p>Must override equals and hashCode method, and the no params constructor. For example: </p><pre><code><code>{@code * public static class SampleKey implements CacheKey { * public String key; * public String subKey; * public String tag; * * // default no params constructor method required * public SampleKey() { * } * * // override equals method required * @Override * public boolean equals(Object object) { * if (this == object) return true; * if (object == null || getClass() != object.getClass()) return false; * SampleKey sampleKey = (SampleKey) object; * return Objects.equals(key, sampleKey.key) &amp;&amp; * Objects.equals(subKey, sampleKey.subKey) &amp;&amp; * Objects.equals(tag, sampleKey.tag); * } * * // override hashCode method required * @Override * public int hashCode() { * return Objects.hash(key, subKey, tag); * } * } * }</code>
+ </code></pre></div>
                 </li>
             </ul>
         </div>

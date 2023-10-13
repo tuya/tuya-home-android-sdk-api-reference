@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThingCommonTimer</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Timing encapsulation class. Create by blitzfeng on 2020/5/18 不对外提供</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCommonTimer.html#addTimer(ThingTimerBuilder,IResultCallback)>addTimer</a>(ThingTimerBuilder builder, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add the timing.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCommonTimer.html#addTimer2(ThingTimerBuilder,IThingDataCallback<String>)>addTimer2</a>(ThingTimerBuilder builder, IThingDataCallback&lt;String&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">add time with callback timeId</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCommonTimer.html#updateTimer(ThingTimerBuilder,IResultCallback)>updateTimer</a>(ThingTimerBuilder builder, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Modify the timing.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCommonTimer.html#getTimerList(String,String,TimerDeviceTypeEnum,IThingDataCallback<TimerTask>)>getTimerList</a>(String taskName, String devId, TimerDeviceTypeEnum deviceTimerTypeEnum, IThingDataCallback&lt;TimerTask&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Gets the timer list.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCommonTimer.html#getAllTimerList(String,TimerDeviceTypeEnum,IThingDataCallback<List<TimerTask>>)>getAllTimerList</a>(String devId, TimerDeviceTypeEnum deviceTimerTypeEnum, IThingDataCallback&lt;List&lt;TimerTask&gt;&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">get all timerlist without category</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCommonTimer.html#updateTimerStatus(String,TimerDeviceTypeEnum,List,TimerUpdateEnum,IResultCallback)>updateTimerStatus</a>(String devId, TimerDeviceTypeEnum deviceTimerTypeEnum, List&lt;String&gt; ids, TimerUpdateEnum timerUpdateEnum, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Batch modify the normal timing state or delete the timer.</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCommonTimer.html#updateCategoryTimerStatus(String,String,TimerDeviceTypeEnum,TimerUpdateEnum,IResultCallback)>updateCategoryTimerStatus</a>(String taskName, String devId, TimerDeviceTypeEnum deviceTimerTypeEnum, TimerUpdateEnum timerUpdateEnum, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Modify the state of all timer tasks under the category or delete the timer</td>
                                         </tr>
                                         
                                         </tbody>
@@ -244,7 +244,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                     <li class="blockList">
                                         <h4>addTimer</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCommonTimer.html#addTimer(ThingTimerBuilder,IResultCallback)>addTimer</a>(ThingTimerBuilder builder, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Add the timing.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -259,7 +259,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                     <li class="blockList">
                                         <h4>addTimer2</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCommonTimer.html#addTimer2(ThingTimerBuilder,IThingDataCallback<String>)>addTimer2</a>(ThingTimerBuilder builder, IThingDataCallback&lt;String&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>add time with callback timeId</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -274,7 +274,18 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                     <li class="blockList">
                                         <h4>updateTimer</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCommonTimer.html#updateTimer(ThingTimerBuilder,IResultCallback)>updateTimer</a>(ThingTimerBuilder builder, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Modify the timing.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -289,7 +300,26 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                     <li class="blockList">
                                         <h4>getTimerList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCommonTimer.html#getTimerList(String,String,TimerDeviceTypeEnum,IThingDataCallback<TimerTask>)>getTimerList</a>(String taskName, String devId, TimerDeviceTypeEnum deviceTimerTypeEnum, IThingDataCallback&lt;TimerTask&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Gets the timer list.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>taskName</code> - Timing group name, null means to get a list of normal timers.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devId</code> - Device ID or group ID.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>deviceTimerTypeEnum</code> - Devices or groups.</dd>
+                                            
+                                            
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -304,7 +334,7 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                     <li class="blockList">
                                         <h4>getAllTimerList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCommonTimer.html#getAllTimerList(String,TimerDeviceTypeEnum,IThingDataCallback<List<TimerTask>>)>getAllTimerList</a>(String devId, TimerDeviceTypeEnum deviceTimerTypeEnum, IThingDataCallback&lt;List&lt;TimerTask&gt;&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>get all timerlist without category</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -319,7 +349,24 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                     <li class="blockList">
                                         <h4>updateTimerStatus</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCommonTimer.html#updateTimerStatus(String,TimerDeviceTypeEnum,List,TimerUpdateEnum,IResultCallback)>updateTimerStatus</a>(String devId, TimerDeviceTypeEnum deviceTimerTypeEnum, List&lt;String&gt; ids, TimerUpdateEnum timerUpdateEnum, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Batch modify the normal timing state or delete the timer.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -334,7 +381,26 @@ public interface <span class="typeNameLabel"><a href=IThingCommonTimer.html>IThi
                                     <li class="blockList">
                                         <h4>updateCategoryTimerStatus</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCommonTimer.html#updateCategoryTimerStatus(String,String,TimerDeviceTypeEnum,TimerUpdateEnum,IResultCallback)>updateCategoryTimerStatus</a>(String taskName, String devId, TimerDeviceTypeEnum deviceTimerTypeEnum, TimerUpdateEnum timerUpdateEnum, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Modify the state of all timer tasks under the category or delete the timer</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>timerUpdateEnum</code> - 0: Close 1: Open 2: Delete</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>IThingSmartRequest</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>The server api calls the common function interface.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,23 +151,23 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,IRequestCallback)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, IRequestCallback request) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Deprecated.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract &lt;T&gt; void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=IThingGetBeanCallback.html>T</a>&gt; object, IThingDataCallback&lt;T&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;T&gt; object, IThingDataCallback&lt;T&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Applicable to api interface request with session.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract &lt;T&gt; void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=IThingGetBeanCallback.html>T</a>&gt; object, IThingDataCallback&lt;T&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;T&gt; object, IThingDataCallback&lt;T&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Applies to api interface requests without session.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,IRequestCallback)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, IRequestCallback request) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Deprecated.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#onDestroy()>onDestroy</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Cancel all request.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -227,8 +227,8 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                           >
                                     <li class="blockList">
                                         <h4>requestWithApiName</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,IRequestCallback)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, IRequestCallback request)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,IRequestCallback)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, IRequestCallback request)</pre>
+                                        <div class="block"><p>Deprecated.</p><p>Replace by <a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiName</a></p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -242,8 +242,33 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                           >
                                     <li class="blockList">
                                         <h4>requestWithApiName</h4>
-                                        <pre class="methodSignature"> abstract &lt;T&gt; void <a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=IThingGetBeanCallback.html>T</a>&gt; object, IThingDataCallback&lt;T&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract &lt;T&gt; void <a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;T&gt; object, IThingDataCallback&lt;T&gt; callback)</pre>
+                                        <div class="block"><p>Applicable to api interface request with session.</p><p>To call this method, the user needs to log in first.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>apiName</code> - api name</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>version</code> - api version</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>postData</code> - Post sent data</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>object</code> - The Class for json serialization.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback request result.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -257,8 +282,33 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                           >
                                     <li class="blockList">
                                         <h4>requestWithApiNameWithoutSession</h4>
-                                        <pre class="methodSignature"> abstract &lt;T&gt; void <a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=IThingGetBeanCallback.html>T</a>&gt; object, IThingDataCallback&lt;T&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract &lt;T&gt; void <a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;T&gt; object, IThingDataCallback&lt;T&gt; callback)</pre>
+                                        <div class="block"><p>Applies to api interface requests without session.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>apiName</code> - api name</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>version</code> - api version</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>postData</code> - Post sent data</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>object</code> - The Class for json serialization.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback request result.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -272,8 +322,8 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                           >
                                     <li class="blockList">
                                         <h4>requestWithApiNameWithoutSession</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,IRequestCallback)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, IRequestCallback request)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,IRequestCallback)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, IRequestCallback request)</pre>
+                                        <div class="block"><p>Deprecated.</p><p>Replace by <a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback<T>)>requestWithApiNameWithoutSession</a></p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -288,7 +338,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                     <li class="blockList">
                                         <h4>onDestroy</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSmartRequest.html#onDestroy()>onDestroy</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Cancel all request.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

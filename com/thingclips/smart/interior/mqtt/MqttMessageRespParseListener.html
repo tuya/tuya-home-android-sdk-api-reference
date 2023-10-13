@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MqttMessageRespParseListener.html#getLocalKey(String)>getLocalKey</a>(String topicId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get localKey by topic id.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MqttMessageRespParseListener.html#getTopicSuffix()>getTopicSuffix</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get topic suffix</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MqttMessageRespParseListener.html#isDataUpdated(String,int,int)>isDataUpdated</a>(String devId, int s, int o) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Whether the message updated</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MqttMessageRespParseListener.html#onMqttDpReceivedError(String,String,String)>onMqttDpReceivedError</a>(String topic, String errorCode, String errorMsg) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Message parse occur some error.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MqttMessageRespParseListener.html#onMqttDpReceivedSuccess(String,int,JSONObject)>onMqttDpReceivedSuccess</a>(String topicId, int protocol, JSONObject receiveData) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Message parse occur some error.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -228,7 +228,16 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                     <li class="blockList">
                                         <h4>getLocalKey</h4>
                                         <pre class="methodSignature"> abstract String <a href=MqttMessageRespParseListener.html#getLocalKey(String)>getLocalKey</a>(String topicId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get localKey by topic id.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topicId</code> - topic id what you subscribe, usually device id.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -243,7 +252,7 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                     <li class="blockList">
                                         <h4>getTopicSuffix</h4>
                                         <pre class="methodSignature"> abstract Array&lt;String&gt; <a href=MqttMessageRespParseListener.html#getTopicSuffix()>getTopicSuffix</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get topic suffix</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -258,7 +267,24 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                     <li class="blockList">
                                         <h4>isDataUpdated</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=MqttMessageRespParseListener.html#isDataUpdated(String,int,int)>isDataUpdated</a>(String devId, int s, int o)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Whether the message updated</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>s</code> - message sequence number.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>o</code> - connection sequence number.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -273,7 +299,24 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                     <li class="blockList">
                                         <h4>onMqttDpReceivedError</h4>
                                         <pre class="methodSignature"> abstract void <a href=MqttMessageRespParseListener.html#onMqttDpReceivedError(String,String,String)>onMqttDpReceivedError</a>(String topic, String errorCode, String errorMsg)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Message parse occur some error.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topic</code> - topic id, usually device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>errorCode</code> - error code</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>errorMsg</code> - error message</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -288,7 +331,24 @@ public interface <span class="typeNameLabel"><a href=MqttMessageRespParseListene
                                     <li class="blockList">
                                         <h4>onMqttDpReceivedSuccess</h4>
                                         <pre class="methodSignature"> abstract void <a href=MqttMessageRespParseListener.html#onMqttDpReceivedSuccess(String,int,JSONObject)>onMqttDpReceivedSuccess</a>(String topicId, int protocol, JSONObject receiveData)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Message parse occur some error.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topicId</code> - topic id, usually device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>protocol</code> - Thing defined MQTT communication protocol number.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>receiveData</code> - received json data.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
