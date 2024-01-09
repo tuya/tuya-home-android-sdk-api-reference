@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMeshControl</a></span>
 
                     </pre>
-                    <div class="block"><p>author : yuzhouxu date : 2021/4/9 16:40 description :Independent functions of blue mesh device</p></div>
+                    <div class="block"></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshControl.html#publishCommands(String,Map,IResultCallback)>publishCommands</a>(String devId, Map&lt;String, Object&gt; commands, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">Send mesh message by standard dpCode.Only for SIGMesh, ThingMesh doesn't support this method.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshControl.html#multicastDps(String,String,String,Map,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, Map&lt;String, SchemaBean&gt; schemaMap, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">Send mesh message to a group address, only for sensors and remote control devices.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshControl.html#startSceneDataTransfer(DevSceneDataBean,IResultCallback)>startSceneDataTransfer</a>(DevSceneDataBean sceneData, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">Send vendor message with scene data to device</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshControl.html#startBatchExecution(List,int)>startBatchExecution</a>(List&lt;BatchExecutionDps&gt; batchExecutionDpsList, int retryCount) </code>
                                             </th>
-                                            <td class="colLast">Batch Control Execution</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshControl.html#batchQueryDps(List,boolean)>batchQueryDps</a>(List&lt;BatchQuery&gt; batchQueryList, boolean forceQuery) </code>
                                             </th>
-                                            <td class="colLast">Batch Control Execution</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshControl.html#queryMeshDeviceOnlineStatusByLocal(int,IResultCallback)>queryMeshDeviceOnlineStatusByLocal</a>(int queryStrategy, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">Query the online status of mesh sub-device</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -244,7 +244,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                     <li class="blockList">
                                         <h4>publishCommands</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshControl.html#publishCommands(String,Map,IResultCallback)>publishCommands</a>(String devId, Map&lt;String, Object&gt; commands, IResultCallback callback)</pre>
-                                        <div class="block"><p>Send mesh message by standard dpCode.Only for SIGMesh, ThingMesh doesn't support this method.</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -259,32 +259,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                     <li class="blockList">
                                         <h4>multicastDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshControl.html#multicastDps(String,String,String,Map,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, Map&lt;String, SchemaBean&gt; schemaMap, IResultCallback callback)</pre>
-                                        <div class="block"><p>Send mesh message to a group address, only for sensors and remote control devices.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>localId</code> - Mesh group address</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>pcc</code> - Category of device getCategory</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>dps</code> - Thing dps</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>schemaMap</code> - Thing schemaMap getSchemaMap</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -299,20 +274,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                     <li class="blockList">
                                         <h4>startSceneDataTransfer</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshControl.html#startSceneDataTransfer(DevSceneDataBean,IResultCallback)>startSceneDataTransfer</a>(DevSceneDataBean sceneData, IResultCallback callback)</pre>
-                                        <div class="block"><p>Send vendor message with scene data to device</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>sceneData</code> - device sceneDataDevSceneDataBean</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -327,20 +289,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                     <li class="blockList">
                                         <h4>startBatchExecution</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshControl.html#startBatchExecution(List,int)>startBatchExecution</a>(List&lt;BatchExecutionDps&gt; batchExecutionDpsList, int retryCount)</pre>
-                                        <div class="block"><p>Batch Control Execution</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>batchExecutionDpsList</code> - latest pending control queue</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>retryCount</code> - retry count</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -355,20 +304,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                     <li class="blockList">
                                         <h4>batchQueryDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshControl.html#batchQueryDps(List,boolean)>batchQueryDps</a>(List&lt;BatchQuery&gt; batchQueryList, boolean forceQuery)</pre>
-                                        <div class="block"><p>Batch Control Execution</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>batchQueryList</code> - latest pending query queue</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>forceQuery</code> - force query</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -398,20 +334,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshControl.html>ISigMe
                                     <li class="blockList">
                                         <h4>queryMeshDeviceOnlineStatusByLocal</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshControl.html#queryMeshDeviceOnlineStatusByLocal(int,IResultCallback)>queryMeshDeviceOnlineStatusByLocal</a>(int queryStrategy, IResultCallback callback)</pre>
-                                        <div class="block"><p>Query the online status of mesh sub-device</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>queryStrategy</code> - query strategy0 : Query the online status of all devices1 : Query the online status of all offline devices</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

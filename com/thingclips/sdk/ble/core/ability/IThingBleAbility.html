@@ -149,9 +149,9 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#connect(String,BleConnectParams,BleConnectAbilityResponse)>connect</a>(String mac, BleConnectParams bleConnectParams, BleConnectAbilityResponse response) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#connect(String,BleConnectParams,BleConnectAbilityResponse)>connect</a>(String mac, <a href=options/BleConnectParams.html>BleConnectParams</a> bleConnectParams, BleConnectAbilityResponse response) </code>
                                             </th>
-                                            <td class="colLast">connect ble device</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#discoveryServices(String,BleConnectAbilityResponse)>discoveryServices</a>(String mac, BleConnectAbilityResponse response) </code>
                                             </th>
-                                            <td class="colLast">discovery ble services</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#requestConnectionPriority(int,String)>requestConnectionPriority</a>(int priority, String mac) </code>
                                             </th>
-                                            <td class="colLast">Set the connection priority of a device with a mac address</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#disconnect(String)>disconnect</a>(String mac) </code>
                                             </th>
-                                            <td class="colLast">disconnect a device with mac address</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#registerConnectStatusListener(String,BleConnectStatusResponse)>registerConnectStatusListener</a>(String mac, BleConnectStatusResponse listener) </code>
                                             </th>
-                                            <td class="colLast">Monitor Bluetooth connection status</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#unregisterConnectStatusListener(String,BleConnectStatusResponse)>unregisterConnectStatusListener</a>(String mac, BleConnectStatusResponse listener) </code>
                                             </th>
-                                            <td class="colLast">Cancel monitoring Bluetooth connection status</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
@@ -207,7 +207,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#read(String,UUID,UUID,BleReadAbilityBaseResponse)>read</a>(String mac, UUID service, UUID character, BleReadAbilityBaseResponse response) </code>
                                             </th>
-                                            <td class="colLast">Read the characteristic value under a service of Bluetooth</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
@@ -215,7 +215,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#write(String,UUID,UUID,Array,BleBaseResponse)>write</a>(String mac, UUID service, UUID character, Array&lt;byte&gt; value, BleBaseResponse response) </code>
                                             </th>
-                                            <td class="colLast">Write a characteristic value under a service of Bluetooth</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
@@ -223,7 +223,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#write(String,UUID,UUID,Array,long)>write</a>(String mac, UUID service, UUID character, Array&lt;Array&lt;byte&gt;&gt; value, long packTimeout) </code>
                                             </th>
-                                            <td class="colLast">Write a characteristic value under a service of Bluetooth with a timeout</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
@@ -231,7 +231,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#writeNoRsp(String,UUID,UUID,Array,int)>writeNoRsp</a>(String mac, UUID service, UUID character, Array&lt;Array&lt;byte&gt;&gt; value, int packTimeout) </code>
                                             </th>
-                                            <td class="colLast">Write a characteristic value under a service of Bluetooth with a timeout,and no response</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
@@ -239,7 +239,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#readDescriptor(String,UUID,UUID,UUID,BleReadAbilityBaseResponse)>readDescriptor</a>(String mac, UUID service, UUID character, UUID descriptor, BleReadAbilityBaseResponse response) </code>
                                             </th>
-                                            <td class="colLast">Read a characteristic value</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
@@ -247,7 +247,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#writeDescriptor(String,UUID,UUID,UUID,Array,BleBaseResponse)>writeDescriptor</a>(String mac, UUID service, UUID character, UUID descriptor, Array&lt;byte&gt; value, BleBaseResponse response) </code>
                                             </th>
-                                            <td class="colLast">Write a descriptor value under a service of Bluetooth with a timeout</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
@@ -255,7 +255,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#writeNoRsp(String,UUID,UUID,Array,BleBaseResponse)>writeNoRsp</a>(String mac, UUID service, UUID character, Array&lt;byte&gt; value, BleBaseResponse response) </code>
                                             </th>
-                                            <td class="colLast">Write a character value under a service of Bluetooth</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i14" class="altColor">
@@ -263,7 +263,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#notify(String,UUID,UUID,BleNotifyAbilityResponse)>notify</a>(String mac, UUID service, UUID character, BleNotifyAbilityResponse response) </code>
                                             </th>
-                                            <td class="colLast">notify a character value under a service of Bluetooth</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i15" class="rowColor">
@@ -279,7 +279,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleAbility.html#readRssi(String,BleGetRssiBaseResponse)>readRssi</a>(String mac, BleGetRssiBaseResponse response) </code>
                                             </th>
-                                            <td class="colLast">read a rssi by mac</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i17" class="rowColor">
@@ -355,25 +355,8 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>connect</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#connect(String,BleConnectParams,BleConnectAbilityResponse)>connect</a>(String mac, BleConnectParams bleConnectParams, BleConnectAbilityResponse response)</pre>
-                                        <div class="block"><p>connect ble device</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>bleConnectParams</code> - connection strategyBleConnectParams</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>response</code> - connection callbackBleConnectAbilityResponse</dd>
-                                            
-                                            
-                                        </dl>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#connect(String,BleConnectParams,BleConnectAbilityResponse)>connect</a>(String mac, <a href=options/BleConnectParams.html>BleConnectParams</a> bleConnectParams, BleConnectAbilityResponse response)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -388,20 +371,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>discoveryServices</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#discoveryServices(String,BleConnectAbilityResponse)>discoveryServices</a>(String mac, BleConnectAbilityResponse response)</pre>
-                                        <div class="block"><p>discovery ble services</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>response</code> - callback BleConnectAbilityResponse</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -416,20 +386,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>requestConnectionPriority</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#requestConnectionPriority(int,String)>requestConnectionPriority</a>(int priority, String mac)</pre>
-                                        <div class="block"><p>Set the connection priority of a device with a mac address</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>priority</code> - priority</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -444,16 +401,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>disconnect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#disconnect(String)>disconnect</a>(String mac)</pre>
-                                        <div class="block"><p>disconnect a device with mac address</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -483,20 +431,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>registerConnectStatusListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#registerConnectStatusListener(String,BleConnectStatusResponse)>registerConnectStatusListener</a>(String mac, BleConnectStatusResponse listener)</pre>
-                                        <div class="block"><p>Monitor Bluetooth connection status</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>listener</code> - Bluetooth connection status callbackBleConnectStatusResponse</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -511,20 +446,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>unregisterConnectStatusListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#unregisterConnectStatusListener(String,BleConnectStatusResponse)>unregisterConnectStatusListener</a>(String mac, BleConnectStatusResponse listener)</pre>
-                                        <div class="block"><p>Cancel monitoring Bluetooth connection status</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>listener</code> - The previously registered Bluetooth listener callback<a href=IThingBleAbility.html#registerConnectStatusListener(String,BleConnectStatusResponse)>registerConnectStatusListener</a></dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -539,28 +461,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>read</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#read(String,UUID,UUID,BleReadAbilityBaseResponse)>read</a>(String mac, UUID service, UUID character, BleReadAbilityBaseResponse response)</pre>
-                                        <div class="block"><p>Read the characteristic value under a service of Bluetooth</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>service</code> - Unique sign of bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>character</code> - A characteristic value under the Bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>response</code> - The callback result of reading a characteristic value under the Bluetooth serviceBleReadAbilityBaseResponse</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -575,32 +476,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>write</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#write(String,UUID,UUID,Array,BleBaseResponse)>write</a>(String mac, UUID service, UUID character, Array&lt;byte&gt; value, BleBaseResponse response)</pre>
-                                        <div class="block"><p>Write a characteristic value under a service of Bluetooth</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>service</code> - Unique sign of bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>character</code> - A characteristic value under the Bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>value</code> - The value of the bluetooth characteristic written</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>response</code> - The callback result of writing a characteristic value under the Bluetooth serviceBleBaseResponse</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -615,32 +491,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>write</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingBleAbility.html#write(String,UUID,UUID,Array,long)>write</a>(String mac, UUID service, UUID character, Array&lt;Array&lt;byte&gt;&gt; value, long packTimeout)</pre>
-                                        <div class="block"><p>Write a characteristic value under a service of Bluetooth with a timeout</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>service</code> - Unique sign of bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>character</code> - A characteristic value under the Bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>value</code> - The value of the bluetooth characteristic written</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>packTimeout</code> - timeout of write</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -655,32 +506,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>writeNoRsp</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingBleAbility.html#writeNoRsp(String,UUID,UUID,Array,int)>writeNoRsp</a>(String mac, UUID service, UUID character, Array&lt;Array&lt;byte&gt;&gt; value, int packTimeout)</pre>
-                                        <div class="block"><p>Write a characteristic value under a service of Bluetooth with a timeout,and no response</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>service</code> - Unique sign of bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>character</code> - A characteristic value under the Bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>value</code> - The value of the bluetooth characteristic written</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>packTimeout</code> - timeout of write</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -695,32 +521,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>readDescriptor</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#readDescriptor(String,UUID,UUID,UUID,BleReadAbilityBaseResponse)>readDescriptor</a>(String mac, UUID service, UUID character, UUID descriptor, BleReadAbilityBaseResponse response)</pre>
-                                        <div class="block"><p>Read a characteristic value</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>service</code> - Unique sign of bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>character</code> - A characteristic value under the Bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>descriptor</code> - The value of the bluetooth characteristic</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>response</code> - The callback result of read a characteristic value under the Bluetooth service,BleReadAbilityBaseResponse</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -735,36 +536,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>writeDescriptor</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#writeDescriptor(String,UUID,UUID,UUID,Array,BleBaseResponse)>writeDescriptor</a>(String mac, UUID service, UUID character, UUID descriptor, Array&lt;byte&gt; value, BleBaseResponse response)</pre>
-                                        <div class="block"><p>Write a descriptor value under a service of Bluetooth with a timeout</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>service</code> - Unique sign of bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>character</code> - A characteristic value under the Bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>descriptor</code> - A descriptor value under the Bluetooth character</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>value</code> - The value of the bluetooth characteristic written</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>response</code> - The callback result of writing a characteristic value under the Bluetooth serviceBleBaseResponse</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -779,32 +551,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>writeNoRsp</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#writeNoRsp(String,UUID,UUID,Array,BleBaseResponse)>writeNoRsp</a>(String mac, UUID service, UUID character, Array&lt;byte&gt; value, BleBaseResponse response)</pre>
-                                        <div class="block"><p>Write a character value under a service of Bluetooth</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>service</code> - Unique sign of bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>character</code> - A characteristic value under the Bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>value</code> - The value of the bluetooth characteristic written</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>response</code> - The callback result of writing a characteristic value under the Bluetooth serviceBleBaseResponse</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -819,28 +566,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>notify</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#notify(String,UUID,UUID,BleNotifyAbilityResponse)>notify</a>(String mac, UUID service, UUID character, BleNotifyAbilityResponse response)</pre>
-                                        <div class="block"><p>notify a character value under a service of Bluetooth</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>service</code> - Unique sign of bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>character</code> - A characteristic value under the Bluetooth service</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>response</code> - The callback result of writing a characteristic value under the Bluetooth serviceBleBaseResponse</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -870,20 +596,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleAbility.html>IThin
                                     <li class="blockList">
                                         <h4>readRssi</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleAbility.html#readRssi(String,BleGetRssiBaseResponse)>readRssi</a>(String mac, BleGetRssiBaseResponse response)</pre>
-                                        <div class="block"><p>read a rssi by mac</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>mac</code> - ble device's macAddress</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>response</code> - callback</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

@@ -115,6 +115,26 @@ var pathtoroot = "../../../../../";
 </tr>
 <tbody>
 
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=IThingBeaconManager.html>IThingBeaconManager</a></th><td class="colLast"></td></tr>
+
+    <tr class="rowColor"><th class="colFirst" scope="row"><a href=IThingBleController.html>IThingBleController</a></th><td class="colLast"></td></tr>
+
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=IThingThirdProtocolSupport.html>IThingThirdProtocolSupport</a></th><td class="colLast"></td></tr>
+
+    <tr class="rowColor"><th class="colFirst" scope="row"><a href=IThingBleManager.html>IThingBleManager</a></th><td class="colLast"></td></tr>
+
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=IThingFittings.html>IThingFittings</a></th><td class="colLast"></td></tr>
+
+    <tr class="rowColor"><th class="colFirst" scope="row"><a href=IThingBleCommRodCtrl.html>IThingBleCommRodCtrl</a></th><td class="colLast"></td></tr>
+
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=IThingThirdProtocolDelegate.html>IThingThirdProtocolDelegate</a></th><td class="colLast"></td></tr>
+
+    <tr class="rowColor"><th class="colFirst" scope="row"><a href=IThingLEAudioManager.html>IThingLEAudioManager</a></th><td class="colLast"></td></tr>
+
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=IThingBleOperator.html>IThingBleOperator</a></th><td class="colLast"></td></tr>
+
+    <tr class="rowColor"><th class="colFirst" scope="row"><a href=IThingDeviceConnectManager.html>IThingDeviceConnectManager</a></th><td class="colLast"></td></tr>
+
     <tr class="altColor"><th class="colFirst" scope="row"><a href=IThingThirdProtocolDelegate.html>IThingThirdProtocolDelegate</a></th><td class="colLast"></td></tr>
 
     <tr class="rowColor"><th class="colFirst" scope="row"><a href=IThingBleOperator.html>IThingBleOperator</a></th><td class="colLast">BLE operate manager.</td></tr>
@@ -131,7 +151,7 @@ var pathtoroot = "../../../../../";
 
     <tr class="rowColor"><th class="colFirst" scope="row"><a href=IThingDeviceConnectManager.html>IThingDeviceConnectManager</a></th><td class="colLast"></td></tr>
 
-    <tr class="altColor"><th class="colFirst" scope="row"><a href=IThingFittings.html>IThingFittings</a></th><td class="colLast">配件注册监听器 这里说明下： 注册配件监听器，SDK设备端上报到鉴权/检查的动作，然后解析成对应的T, T代表配件的具体信息 需要带有设备标志devId， 具体的操作步骤cmd，包含auth，check、delete等 需要认证的设备mac 认证信息s1 群组group 群组操作结果，true 成功；false 失败。比如 删除成功；订阅失败；查询失败等 result 业务层根据<a href=IThingFittings.html>T</a>去判断要调用鉴权接口还是检查接口， 返回结果通过<a href=IThingFittings.html#sendFittingsData(T,IResultCallback)>sendFittingsData</a>发送给sdk 删除配件，业务层直接调用云端接口，然后将结果通过 <a href=IThingFittings.html#sendFittingsData(T,IResultCallback)>sendFittingsData</a>发送给sdk 不同的能力，均需要实现该接口</td></tr>
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=IThingFittings.html>IThingFittings</a></th><td class="colLast">配件注册监听器 这里说明下： 注册配件监听器，SDK设备端上报到鉴权/检查的动作，然后解析成对应的T, T代表配件的具体信息 需要带有设备标志devId， 具体的操作步骤cmd，包含auth，check、delete等 需要认证的设备mac 认证信息s1 群组group 群组操作结果，true 成功；false 失败。比如 删除成功；订阅失败；查询失败等 result 业务层根据<a href=IThingFittings.html>T</a>去判断要调用鉴权接口还是检查接口， 返回结果通过sendFittingsData发送给sdk 删除配件，业务层直接调用云端接口，然后将结果通过 sendFittingsData发送给sdk 不同的能力，均需要实现该接口</td></tr>
 </tbody>
 </table>
 

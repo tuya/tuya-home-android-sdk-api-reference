@@ -24,6 +24,7 @@ $dokka.location:com.thingclips.smart.android.ble.bean/BatchBeaconActivatorBean.B
 $dokka.location:com.thingclips.smart.android.ble.bean/CheckDeviceSetting.Builder///PointingToDeclaration/com/thingclips/smart/android/ble/bean/CheckDeviceSetting.Builder.html
 $dokka.location:com.thingclips.smart.android.ble.bean/QueryWifiSetting.Builder///PointingToDeclaration/com/thingclips/smart/android/ble/bean/QueryWifiSetting.Builder.html
 $dokka.location:com.thingclips.smart.android.ble.bean/ResetBleSetting.Builder///PointingToDeclaration/com/thingclips/smart/android/ble/bean/ResetBleSetting.Builder.html
+$dokka.location:com.thingclips.smart.android.ble.bean/ScanReq.Builder///PointingToDeclaration/com/thingclips/smart/android/ble/bean/ScanReq.Builder.html
 $dokka.location:com.thingclips.smart.android.ble.bean/ThirdConnectInfoBean.ExInfo///PointingToDeclaration/com/thingclips/smart/android/ble/bean/ThirdConnectInfoBean.ExInfo.html
 $dokka.location:com.thingclips.smart.android.ble.builder/BleConnectBuilder.ExtInfo///PointingToDeclaration/com/thingclips/smart/android/ble/builder/BleConnectBuilder.ExtInfo.html
 $dokka.location:com.thingclips.smart.android.ble.builder/BleConnectBuilder.Level///PointingToDeclaration/com/thingclips/smart/android/ble/builder/BleConnectBuilder.Level.html
@@ -59,10 +60,12 @@ $dokka.location:com.thingclips.smart.home.sdk.bean.scene/FunctionDataPoint.StepD
 $dokka.location:com.thingclips.smart.home.sdk.bean.scene/SceneLogDetailBean.Detail///PointingToDeclaration/com/thingclips/smart/home/sdk/bean/scene/SceneLogDetailBean.Detail.html
 $dokka.location:com.thingclips.smart.home.sdk.bean.scene/SceneLogResBean.SceneLog///PointingToDeclaration/com/thingclips/smart/home/sdk/bean/scene/SceneLogResBean.SceneLog.html
 $dokka.location:com.thingclips.smart.home.sdk.bean/ApHandlerBean.Builder///PointingToDeclaration/com/thingclips/smart/home/sdk/bean/ApHandlerBean.Builder.html
+$dokka.location:com.thingclips.smart.home.sdk.bean/CustomRoleBean.RoleResourceBean///PointingToDeclaration/com/thingclips/smart/home/sdk/bean/CustomRoleBean.RoleResourceBean.html
 $dokka.location:com.thingclips.smart.home.sdk.bean/ExtendedConfig.Builder///PointingToDeclaration/com/thingclips/smart/home/sdk/bean/ExtendedConfig.Builder.html
 $dokka.location:com.thingclips.smart.home.sdk.bean/MemberWrapperBean.Builder///PointingToDeclaration/com/thingclips/smart/home/sdk/bean/MemberWrapperBean.Builder.html
 $dokka.location:com.thingclips.smart.home.sdk.bean/ParamsHandlerBean.Builder///PointingToDeclaration/com/thingclips/smart/home/sdk/bean/ParamsHandlerBean.Builder.html
 $dokka.location:com.thingclips.smart.home.sdk.callback/IThingDeviceUpgradeStatusCallback.UpgradeStatusEnum///PointingToDeclaration/com/thingclips/smart/home/sdk/callback/IThingDeviceUpgradeStatusCallback.UpgradeStatusEnum.html
+$dokka.location:com.thingclips.smart.interior.device.bean/DeviceRespBean.BusinessResponse///PointingToDeclaration/com/thingclips/smart/interior/device/bean/DeviceRespBean.BusinessResponse.html
 $dokka.location:com.thingclips.smart.interior.device.bean/DeviceRespBean.CommunicationModule///PointingToDeclaration/com/thingclips/smart/interior/device/bean/DeviceRespBean.CommunicationModule.html
 $dokka.location:com.thingclips.smart.interior.device.bean/DeviceRespBean.CommunicationModuleT///PointingToDeclaration/com/thingclips/smart/interior/device/bean/DeviceRespBean.CommunicationModuleT.html
 $dokka.location:com.thingclips.smart.interior.device.bean/DeviceRespBean.DataPointModule///PointingToDeclaration/com/thingclips/smart/interior/device/bean/DeviceRespBean.DataPointModule.html
@@ -110,6 +113,16 @@ $dokka.location:com.thingclips.smart.sdk.bean/StandSchema.StatusSchemaListBean//
 $dokka.location:com.thingclips.smart.sdk.bean/TimerControlBean.TimerControlBuilder///PointingToDeclaration/com/thingclips/smart/sdk/bean/TimerControlBean.TimerControlBuilder.html
 $dokka.location:com.thingclips.smart.sdk.bean/UiInfo.UiComponent///PointingToDeclaration/com/thingclips/smart/sdk/bean/UiInfo.UiComponent.html
 $dokka.location:com.thingclips.smart.sdk.builder/MeshConnectBuilder.Builder///PointingToDeclaration/com/thingclips/smart/sdk/builder/MeshConnectBuilder.Builder.html
+$dokka.location:com.tuya.smart.android.device.bean/DeviceMultiControlRelationBean.DatapointsBean///PointingToDeclaration/com/tuya/smart/android/device/bean/DeviceMultiControlRelationBean.DatapointsBean.html
+$dokka.location:com.tuya.smart.android.device.bean/DeviceMultiControlRelationBean.McGroupsBean.GroupDetailBean///PointingToDeclaration/com/tuya/smart/android/device/bean/DeviceMultiControlRelationBean.McGroupsBean.GroupDetailBean.html
+$dokka.location:com.tuya.smart.android.device.bean/DeviceMultiControlRelationBean.McGroupsBean///PointingToDeclaration/com/tuya/smart/android/device/bean/DeviceMultiControlRelationBean.McGroupsBean.html
+$dokka.location:com.tuya.smart.android.device.bean/DeviceMultiControlRelationBean.ParentRulesBean.DpListBean///PointingToDeclaration/com/tuya/smart/android/device/bean/DeviceMultiControlRelationBean.ParentRulesBean.DpListBean.html
+$dokka.location:com.tuya.smart.android.device.bean/DeviceMultiControlRelationBean.ParentRulesBean///PointingToDeclaration/com/tuya/smart/android/device/bean/DeviceMultiControlRelationBean.ParentRulesBean.html
+$dokka.location:com.tuya.smart.android.device.bean/MultiControlBean.GroupDetailBean///PointingToDeclaration/com/tuya/smart/android/device/bean/MultiControlBean.GroupDetailBean.html
+$dokka.location:com.tuya.smart.android.device.bean/MultiControlLinkBean.MultiGroupBean.GroupDetailBean///PointingToDeclaration/com/tuya/smart/android/device/bean/MultiControlLinkBean.MultiGroupBean.GroupDetailBean.html
+$dokka.location:com.tuya.smart.android.device.bean/MultiControlLinkBean.MultiGroupBean///PointingToDeclaration/com/tuya/smart/android/device/bean/MultiControlLinkBean.MultiGroupBean.html
+$dokka.location:com.tuya.smart.android.device.bean/MultiControlLinkBean.ParentRulesBean///PointingToDeclaration/com/tuya/smart/android/device/bean/MultiControlLinkBean.ParentRulesBean.html
+$dokka.location:com.tuya.smart.home.sdk.bean/MemberWrapperBean.Builder///PointingToDeclaration/com/tuya/smart/home/sdk/bean/MemberWrapperBean.Builder.html
 com.thingclips.sdk.ble.core
 com.thingclips.sdk.ble.core.ability
 com.thingclips.sdk.ble.core.ability.model
@@ -137,6 +150,7 @@ com.thingclips.smart.android.ble.api.audio
 com.thingclips.smart.android.ble.bean
 com.thingclips.smart.android.ble.builder
 com.thingclips.smart.android.ble.enums
+com.thingclips.smart.android.ble.scanner
 com.thingclips.smart.android.blemesh
 com.thingclips.smart.android.blemesh.api
 com.thingclips.smart.android.blemesh.bean
@@ -194,9 +208,10 @@ com.thingclips.smart.interior.hardware.builder
 com.thingclips.smart.interior.home
 com.thingclips.smart.interior.mqtt
 com.thingclips.smart.mqttclient.mqttv3
+com.thingclips.smart.ota.service.api
+com.thingclips.smart.otalib.api
 com.thingclips.smart.scene.api
 com.thingclips.smart.scene.api.service
-com.thingclips.smart.scene.api.util
 com.thingclips.smart.scene.lib.util
 com.thingclips.smart.sdk
 com.thingclips.smart.sdk.api
@@ -207,13 +222,37 @@ com.thingclips.smart.sdk.api.bluemesh.precontrol
 com.thingclips.smart.sdk.api.cache
 com.thingclips.smart.sdk.api.wifibackup.api
 com.thingclips.smart.sdk.api.wifibackup.api.bean
+com.thingclips.smart.sdk.apimodule
+com.thingclips.smart.sdk.base.apimodule
 com.thingclips.smart.sdk.bean
 com.thingclips.smart.sdk.bean.cache
 com.thingclips.smart.sdk.bean.feedback
 com.thingclips.smart.sdk.bean.message
 com.thingclips.smart.sdk.bean.privacy
 com.thingclips.smart.sdk.bean.push
+com.thingclips.smart.sdk.bluetooth.api
+com.thingclips.smart.sdk.bluetooth.business.api
 com.thingclips.smart.sdk.builder
+com.thingclips.smart.sdk.depercated.api
+com.thingclips.smart.sdk.device.api
 com.thingclips.smart.sdk.device.share.api
 com.thingclips.smart.sdk.enums
+com.thingclips.smart.sdk.hardware.api
+com.thingclips.smart.sdk.hardware.base.api
+com.thingclips.smart.sdk.hardware.business.api
+com.thingclips.smart.sdk.homelib.api
+com.thingclips.smart.sdk.mqtt.api
+com.thingclips.smart.sdk.network_api
+com.thingclips.smart.timer.api
+com.tuya.smart.android.device.api
+com.tuya.smart.android.device.bean
+com.tuya.smart.home.sdk.anntation
+com.tuya.smart.home.sdk.api
+com.tuya.smart.home.sdk.bean
+com.tuya.smart.home.sdk.bean.scene
+com.tuya.smart.home.sdk.callback
+com.tuya.smart.interior.api
+com.tuya.smart.interior.event
+com.tuya.smart.interior.home
+com.tuya.smart.sdk.homelib.api
 
