@@ -205,12 +205,20 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getMessageListByMsgSrcId(int,int,int,String,boolean,boolean,IThingDataCallback<MessageListBean>)>getMessageListByMsgSrcId</a>(int offset, int limit, int msgType, String msgSrcId, boolean encryptImage, boolean splitImageKey, IThingDataCallback&lt;MessageListBean&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast">Get message list by message id</td>
+                                        </tr>
+                                        
+                                        <tr id="i8" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getMessageEncryptImageKeyList(List,IThingDataCallback<List<MessageEncryptImageKeyBean>>)>getMessageEncryptImageKeyList</a>(List&lt;MessageEncryptImageKeyRequest&gt; requestList, IThingDataCallback&lt;List&lt;MessageEncryptImageKeyBean&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Get message encrypted image key list</td>
                                         </tr>
                                         
-                                        <tr id="i8" class="altColor">
+                                        <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#deleteMessages(List,IBooleanCallback)>deleteMessages</a>(List&lt;String&gt; mIds, IBooleanCallback callback) </code>
@@ -218,7 +226,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Delete message list</td>
                                         </tr>
                                         
-                                        <tr id="i9" class="rowColor">
+                                        <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#deleteMessageWithType(int,List,List,IBooleanCallback)>deleteMessageWithType</a>(int msgType, List&lt;String&gt; ids, List&lt;String&gt; msgSrcId, IBooleanCallback callback) </code>
@@ -226,7 +234,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">delete message with type</td>
                                         </tr>
                                         
-                                        <tr id="i10" class="altColor">
+                                        <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#requestMessageNew(IThingDataCallback<MessageHasNew>)>requestMessageNew</a>(IThingDataCallback&lt;MessageHasNew&gt; callback) </code>
@@ -234,7 +242,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">request new message</td>
                                         </tr>
                                         
-                                        <tr id="i11" class="rowColor">
+                                        <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getMessageMaxTime(IThingDataCallback<Integer>)>getMessageMaxTime</a>(IThingDataCallback&lt;Integer&gt; callback) </code>
@@ -242,7 +250,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Get the last message</td>
                                         </tr>
                                         
-                                        <tr id="i12" class="altColor">
+                                        <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#cancelAll()>cancelAll</a>() </code>
@@ -250,7 +258,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Cancel request When the page is closed, you can call to cancel the unfinished network request</td>
                                         </tr>
                                         
-                                        <tr id="i13" class="rowColor">
+                                        <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#setDeviceDNDSetting(boolean,IThingDataCallback<Boolean>)>setDeviceDNDSetting</a>(boolean open, IThingDataCallback&lt;Boolean&gt; listener) </code>
@@ -258,7 +266,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Turn on/off message avoidance</td>
                                         </tr>
                                         
-                                        <tr id="i14" class="altColor">
+                                        <tr id="i15" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getDeviceDNDSetting(IThingDataCallback<Boolean>)>getDeviceDNDSetting</a>(IThingDataCallback&lt;Boolean&gt; listener) </code>
@@ -266,7 +274,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Get the status of the Do Not Disturb switch</td>
                                         </tr>
                                         
-                                        <tr id="i15" class="rowColor">
+                                        <tr id="i16" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getDNDList(IThingDataCallback<ArrayList<DeviceAlarmNotDisturbVO>>)>getDNDList</a>(IThingDataCallback&lt;ArrayList&lt;DeviceAlarmNotDisturbVO&gt;&gt; listener) </code>
@@ -274,7 +282,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Get the time period list of Do not disturb that has been set</td>
                                         </tr>
                                         
-                                        <tr id="i16" class="altColor">
+                                        <tr id="i17" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getDNDDeviceList(IThingDataCallback<ArrayList<NodisturbDevicesBean>>)>getDNDDeviceList</a>(IThingDataCallback&lt;ArrayList&lt;NodisturbDevicesBean&gt;&gt; listener) </code>
@@ -282,7 +290,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Get a list of devices that support DND</td>
                                         </tr>
                                         
-                                        <tr id="i17" class="rowColor">
+                                        <tr id="i18" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#addDNDWithStartTime(String,String,String,String,IThingDataCallback<Long>)>addDNDWithStartTime</a>(String startTime, String endTime, String devIds, String loops, IThingDataCallback&lt;Long&gt; listener) </code>
@@ -290,7 +298,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Add do not disturb time period</td>
                                         </tr>
                                         
-                                        <tr id="i18" class="altColor">
+                                        <tr id="i19" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#modifyDNDWithTimerId(long,String,String,String,String,IThingDataCallback<Boolean>)>modifyDNDWithTimerId</a>(long nodisturbAlarmId, String mStartTime, String mEndTime, String devIds, String loops, IThingDataCallback&lt;Boolean&gt; listener) </code>
@@ -298,7 +306,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Modify the do not disturb time period</td>
                                         </tr>
                                         
-                                        <tr id="i19" class="rowColor">
+                                        <tr id="i20" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#removeDNDWithTimerId(long,IThingDataCallback<Boolean>)>removeDNDWithTimerId</a>(long id, IThingDataCallback&lt;Boolean&gt; listener) </code>
@@ -306,7 +314,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Delete Do Not Disturb Time Period</td>
                                         </tr>
                                         
-                                        <tr id="i20" class="altColor">
+                                        <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getPrivacyAuthorizationStatus(AuthorizationType,IThingDataCallback<PrivacyAuthorizationBean>)>getPrivacyAuthorizationStatus</a>(AuthorizationType type, IThingDataCallback&lt;PrivacyAuthorizationBean&gt; callback) </code>
@@ -314,7 +322,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Get privacy authorization statuses.</td>
                                         </tr>
                                         
-                                        <tr id="i21" class="rowColor">
+                                        <tr id="i22" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#updatePrivacyAuthorizationStatus(Map,IResultCallback)>updatePrivacyAuthorizationStatus</a>(Map&lt;AuthorizationType, Boolean&gt; values, IResultCallback callback) </code>
@@ -595,6 +603,54 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             
                                             
                                             <dd><code>msgType</code> - Message type (MessageType.MSG_REPORT) (MessageType.MSG_FAMILY) (MessageType.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>msgSrcId</code> - Message group id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>encryptImage</code> - Encrypted picture</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>splitImageKey</code> - Split image encrypted key, should call <a href=IThingMessage.html#getMessageEncryptImageKeyList(List,IThingDataCallback<List<MessageEncryptImageKeyBean>>)>getMessageEncryptImageKeyList</a> to get encrypted image key</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IThingDataCallback</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getMessageListByMsgSrcId(int,int,int,String,boolean,boolean,IThingDataCallback&lt;MessageListBean&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getMessageListByMsgSrcId</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMessage.html#getMessageListByMsgSrcId(int,int,int,String,boolean,boolean,IThingDataCallback<MessageListBean>)>getMessageListByMsgSrcId</a>(int offset, int limit, int msgType, String msgSrcId, boolean encryptImage, boolean splitImageKey, IThingDataCallback&lt;MessageListBean&gt; callback)</pre>
+                                        <div class="block"><p>Get message list by message id</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>offset</code> - The offset is obtained from the nth data</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>limit</code> - Number of messages per page</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>msgType</code> - Message type</dd>
                                             
                                             
                                             

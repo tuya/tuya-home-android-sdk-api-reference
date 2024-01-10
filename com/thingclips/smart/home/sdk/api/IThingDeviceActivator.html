@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>IThingDeviceActivator</a></span>
 
                     </pre>
-                    <div class="block"><p>Interface class for device activation functions.</p></div>
+                    <div class="block"></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newActivator(ActivatorBuilder)>newActivator</a>(ActivatorBuilder activatorBuilder) </code>
                                             </th>
-                                            <td class="colLast">Create an instance of activator for hotspot mode.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newMultiActivator(ActivatorBuilder)>newMultiActivator</a>(ActivatorBuilder activatorBuilder) </code>
                                             </th>
-                                            <td class="colLast">Create an instance of activator for quick connection mode.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#getMeshToken(long,String,IThingActivatorGetToken)>getMeshToken</a>(long homeId, String meshId, IThingActivatorGetToken activatorGetToken) </code>
                                             </th>
-                                            <td class="colLast">Get token to provide mesh activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#getActivatorDeviceInfo(String,String,String,IThingDataCallback<ConfigProductInfoBean>)>getActivatorDeviceInfo</a>(String productId, String uuid, String mac, IThingDataCallback&lt;ConfigProductInfoBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast">Get information about inactive device.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#getActivatorToken(long,IThingActivatorGetToken)>getActivatorToken</a>(long homeId, IThingActivatorGetToken activatorGetToken) </code>
                                             </th>
-                                            <td class="colLast">Get activation token.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#getActivatorToken(long,String,IThingActivatorGetToken)>getActivatorToken</a>(long homeId, String pid, IThingActivatorGetToken activatorGetToken) </code>
                                             </th>
-                                            <td class="colLast">Get activation token.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
@@ -207,106 +207,114 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#deviceQrCodeParse(String,IThingDataCallback<QrScanBean>)>deviceQrCodeParse</a>(String qrcode, IThingDataCallback&lt;QrScanBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast">parse qrcode by cloud</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#refreshActivatorToken(String,IThingDataCallback<Boolean>)>refreshActivatorToken</a>(String token, IThingDataCallback&lt;Boolean&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>abstract IThingGwActivator</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newThingGwActivator()>newThingGwActivator</a>() </code>
                                             </th>
-                                            <td class="colLast">Create an instance of activator for Gateway devices.</td>
-                                        </tr>
-                                        
-                                        <tr id="i9" class="rowColor">
-                                            <td class="colFirst"><code>abstract IThingActivator</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newGwActivator(ThingGwActivatorBuilder)>newGwActivator</a>(ThingGwActivatorBuilder builder) </code>
-                                            </th>
-                                            <td class="colLast">Create instance for gateway device activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>abstract IThingActivator</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newGwSubDevActivator(ThingGwSubDevActivatorBuilder)>newGwSubDevActivator</a>(ThingGwSubDevActivatorBuilder builder) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newGwActivator(ThingGwActivatorBuilder)>newGwActivator</a>(ThingGwActivatorBuilder builder) </code>
                                             </th>
-                                            <td class="colLast">Create instance for gateway sub-device activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>abstract IThingActivator</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newGwThreadSubDevActivator(ThingGwSubDevActivatorBuilder)>newGwThreadSubDevActivator</a>(ThingGwSubDevActivatorBuilder builder) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newGwSubDevActivator(ThingGwSubDevActivatorBuilder)>newGwSubDevActivator</a>(ThingGwSubDevActivatorBuilder builder) </code>
                                             </th>
-                                            <td class="colLast">Create instance for gateway thread_sub-device activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>abstract IThingActivator</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newQRCodeDevActivator(ThingQRCodeActivatorBuilder)>newQRCodeDevActivator</a>(ThingQRCodeActivatorBuilder builder) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newGwThreadSubDevActivator(ThingGwSubDevActivatorBuilder)>newGwThreadSubDevActivator</a>(ThingGwSubDevActivatorBuilder builder) </code>
                                             </th>
-                                            <td class="colLast">Create instance for scan the QR Code activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
+                                            <td class="colFirst"><code>abstract IThingActivator</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newQRCodeDevActivator(ThingQRCodeActivatorBuilder)>newQRCodeDevActivator</a>(ThingQRCodeActivatorBuilder builder) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>abstract IThingCameraDevActivator</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newCameraDevActivator(ThingCameraActivatorBuilder)>newCameraDevActivator</a>(ThingCameraActivatorBuilder builder) </code>
                                             </th>
-                                            <td class="colLast">Create instance for camera device activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i14" class="altColor">
+                                        <tr id="i15" class="rowColor">
                                             <td class="colFirst"><code>abstract IThingActivator</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newAutoConfigDevActivator(ThingAutoConfigActivatorBuilder)>newAutoConfigDevActivator</a>(ThingAutoConfigActivatorBuilder builder) </code>
                                             </th>
-                                            <td class="colLast">Create instance for password-free activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i15" class="rowColor">
+                                        <tr id="i16" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#getActivatorToken(IThingActivatorCreateToken)>getActivatorToken</a>(IThingActivatorCreateToken activatorCreateToken) </code>
                                             </th>
-                                            <td class="colLast">Get activation token.</td>
-                                        </tr>
-                                        
-                                        <tr id="i16" class="altColor">
-                                            <td class="colFirst"><code>abstract IThingActivator</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newGatewayRouterDevActivator(ThingAutoConfigActivatorBuilder)>newGatewayRouterDevActivator</a>(ThingAutoConfigActivatorBuilder builder) </code>
-                                            </th>
-                                            <td class="colLast">Create instance for gateway router device activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i17" class="rowColor">
                                             <td class="colFirst"><code>abstract IThingActivator</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newEZWifiConfigDevActivator(ActivatorBuilder)>newEZWifiConfigDevActivator</a>(ActivatorBuilder activatorBuilder) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newGatewayRouterDevActivator(ThingAutoConfigActivatorBuilder)>newGatewayRouterDevActivator</a>(ThingAutoConfigActivatorBuilder builder) </code>
                                             </th>
-                                            <td class="colLast">Create instance for wifi-device activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i18" class="altColor">
+                                            <td class="colFirst"><code>abstract IThingActivator</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newEZWifiConfigDevActivator(ActivatorBuilder)>newEZWifiConfigDevActivator</a>(ActivatorBuilder activatorBuilder) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i19" class="rowColor">
                                             <td class="colFirst"><code>abstract IThingLightningActivator</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newLightningActivator()>newLightningActivator</a>() </code>
                                             </th>
-                                            <td class="colLast">Create instance for lightning activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i19" class="rowColor">
+                                        <tr id="i20" class="altColor">
                                             <td class="colFirst"><code>abstract List&lt;String&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#getSupportLightningActiveDevices(long)>getSupportLightningActiveDevices</a>(long homeId) </code>
                                             </th>
-                                            <td class="colLast">Get activated devices with lightning activation support.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i20" class="altColor">
+                                        <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>abstract IThingActivator</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newDirectlyConnectedDeviceActivator(ThingDirectlyConnectedActivatorBuilder)>newDirectlyConnectedDeviceActivator</a>(ThingDirectlyConnectedActivatorBuilder builder) </code>
@@ -314,23 +322,23 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i21" class="rowColor">
+                                        <tr id="i22" class="altColor">
                                             <td class="colFirst"><code>abstract IThingDirectActivator</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newDirectlyDeviceActivator(ThingDirectlyDeviceActivatorBuilder)>newDirectlyDeviceActivator</a>(ThingDirectlyDeviceActivatorBuilder builder) </code>
                                             </th>
-                                            <td class="colLast">for directly device rest_optimizationCreate instance for ipc auto config device activation.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i22" class="altColor">
+                                        <tr id="i23" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#deviceCloudActivate(String,String,long,String,IThingResultCallback<DeviceBean>)>deviceCloudActivate</a>(String uuid, String groupType, long groupId, String timeZone, IThingResultCallback&lt;DeviceBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast">Local device cloud activation interface</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i23" class="rowColor">
+                                        <tr id="i24" class="altColor">
                                             <td class="colFirst"><code>abstract IThingActivator</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newApContinueConfig(APSLActivatorBuilder)>newApContinueConfig</a>(APSLActivatorBuilder activatorBuilder) </code>
@@ -338,36 +346,44 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i24" class="altColor">
+                                        <tr id="i25" class="rowColor">
                                             <td class="colFirst"><code>abstract IThingSmartBroadbandActivator</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newBroadbandActivator()>newBroadbandActivator</a>() </code>
                                             </th>
-                                            <td class="colLast">router broadband activator</td>
-                                        </tr>
-                                        
-                                        <tr id="i25" class="rowColor">
-                                            <td class="colFirst"><code>abstract void</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#bindThingLinkDeviceWithQRCode(long,String,IThingDevActivatorListener)>bindThingLinkDeviceWithQRCode</a>(long homeId, String uuid, IThingDevActivatorListener listener) </code>
-                                            </th>
-                                            <td class="colLast">bind thinglink device with scan qrcode</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i26" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#getDeviceSecurityConfigs(IThingDataCallback<String>)>getDeviceSecurityConfigs</a>(IThingDataCallback&lt;String&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#bindThingLinkDeviceWithQRCode(long,String,IThingDevActivatorListener)>bindThingLinkDeviceWithQRCode</a>(long homeId, String uuid, IThingDevActivatorListener listener) </code>
                                             </th>
-                                            <td class="colLast">获取所有SL对应安全配置</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i27" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#bindNbDeviceWithQRCode(long,String,String,IThingDevActivatorListener)>bindNbDeviceWithQRCode</a>(long homeId, String uuid, String timeZone, IThingDevActivatorListener listener) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i28" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#getDeviceSecurityConfigs(IThingDataCallback<String>)>getDeviceSecurityConfigs</a>(IThingDataCallback&lt;String&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i29" class="rowColor">
                                             <td class="colFirst"><code>abstract IThingOptimizedActivator</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingDeviceActivator.html#newOptimizedActivator(ThingApActivatorBuilder)>newOptimizedActivator</a>(ThingApActivatorBuilder activatorBuilder) </code>
                                             </th>
-                                            <td class="colLast">Create an instance of activator for hotspot mode for new optimized process activator</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -412,16 +428,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newActivator</h4>
                                         <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newActivator(ActivatorBuilder)>newActivator</a>(ActivatorBuilder activatorBuilder)</pre>
-                                        <div class="block"><p>Create an instance of activator for hotspot mode.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>activatorBuilder</code> - Activator information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -436,16 +443,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newMultiActivator</h4>
                                         <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newMultiActivator(ActivatorBuilder)>newMultiActivator</a>(ActivatorBuilder activatorBuilder)</pre>
-                                        <div class="block"><p>Create an instance of activator for quick connection mode.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>activatorBuilder</code> - Activator information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -460,24 +458,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>getMeshToken</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#getMeshToken(long,String,IThingActivatorGetToken)>getMeshToken</a>(long homeId, String meshId, IThingActivatorGetToken activatorGetToken)</pre>
-                                        <div class="block"><p>Get token to provide mesh activation.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>homeId</code> - Home id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>meshId</code> - Mesh id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>activatorGetToken</code> - Callback.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -492,28 +473,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>getActivatorDeviceInfo</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#getActivatorDeviceInfo(String,String,String,IThingDataCallback<ConfigProductInfoBean>)>getActivatorDeviceInfo</a>(String productId, String uuid, String mac, IThingDataCallback&lt;ConfigProductInfoBean&gt; callback)</pre>
-                                        <div class="block"><p>Get information about inactive device.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>productId</code> - Product Id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>uuid</code> - Unique device identification.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>mac</code> - Device mac address.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>callback</code> - Callback.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -528,20 +488,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>getActivatorToken</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#getActivatorToken(long,IThingActivatorGetToken)>getActivatorToken</a>(long homeId, IThingActivatorGetToken activatorGetToken)</pre>
-                                        <div class="block"><p>Get activation token.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>homeId</code> - Home id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>activatorGetToken</code> - Callback.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -571,24 +518,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>getActivatorToken</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#getActivatorToken(long,String,IThingActivatorGetToken)>getActivatorToken</a>(long homeId, String pid, IThingActivatorGetToken activatorGetToken)</pre>
-                                        <div class="block"><p>Get activation token.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>homeId</code> - Home id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>pid</code> - Product id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>activatorGetToken</code> - Callback.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -603,7 +533,22 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>deviceQrCodeParse</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#deviceQrCodeParse(String,IThingDataCallback<QrScanBean>)>deviceQrCodeParse</a>(String qrcode, IThingDataCallback&lt;QrScanBean&gt; callback)</pre>
-                                        <div class="block"><p>parse qrcode by cloud</p></div>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="refreshActivatorToken(String,IThingDataCallback&lt;Boolean&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>refreshActivatorToken</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#refreshActivatorToken(String,IThingDataCallback<Boolean>)>refreshActivatorToken</a>(String token, IThingDataCallback&lt;Boolean&gt; callback)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -618,7 +563,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newThingGwActivator</h4>
                                         <pre class="methodSignature"> abstract IThingGwActivator <a href=IThingDeviceActivator.html#newThingGwActivator()>newThingGwActivator</a>()</pre>
-                                        <div class="block"><p>Create an instance of activator for Gateway devices.</p><p>For gateway device search, gateway device activation, gateway sub-device activation.</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -633,16 +578,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newGwActivator</h4>
                                         <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newGwActivator(ThingGwActivatorBuilder)>newGwActivator</a>(ThingGwActivatorBuilder builder)</pre>
-                                        <div class="block"><p>Create instance for gateway device activation.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>builder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -657,16 +593,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newGwSubDevActivator</h4>
                                         <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newGwSubDevActivator(ThingGwSubDevActivatorBuilder)>newGwSubDevActivator</a>(ThingGwSubDevActivatorBuilder builder)</pre>
-                                        <div class="block"><p>Create instance for gateway sub-device activation.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>builder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -681,16 +608,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newGwThreadSubDevActivator</h4>
                                         <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newGwThreadSubDevActivator(ThingGwSubDevActivatorBuilder)>newGwThreadSubDevActivator</a>(ThingGwSubDevActivatorBuilder builder)</pre>
-                                        <div class="block"><p>Create instance for gateway thread_sub-device activation.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>builder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -705,16 +623,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newQRCodeDevActivator</h4>
                                         <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newQRCodeDevActivator(ThingQRCodeActivatorBuilder)>newQRCodeDevActivator</a>(ThingQRCodeActivatorBuilder builder)</pre>
-                                        <div class="block"><p>Create instance for scan the QR Code activation.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>builder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -729,16 +638,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newCameraDevActivator</h4>
                                         <pre class="methodSignature"> abstract IThingCameraDevActivator <a href=IThingDeviceActivator.html#newCameraDevActivator(ThingCameraActivatorBuilder)>newCameraDevActivator</a>(ThingCameraActivatorBuilder builder)</pre>
-                                        <div class="block"><p>Create instance for camera device activation.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>builder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -753,16 +653,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newAutoConfigDevActivator</h4>
                                         <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newAutoConfigDevActivator(ThingAutoConfigActivatorBuilder)>newAutoConfigDevActivator</a>(ThingAutoConfigActivatorBuilder builder)</pre>
-                                        <div class="block"><p>Create instance for password-free activation.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>builder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -777,16 +668,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>getActivatorToken</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#getActivatorToken(IThingActivatorCreateToken)>getActivatorToken</a>(IThingActivatorCreateToken activatorCreateToken)</pre>
-                                        <div class="block"><p>Get activation token.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>activatorCreateToken</code> - Callback.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -801,16 +683,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newGatewayRouterDevActivator</h4>
                                         <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newGatewayRouterDevActivator(ThingAutoConfigActivatorBuilder)>newGatewayRouterDevActivator</a>(ThingAutoConfigActivatorBuilder builder)</pre>
-                                        <div class="block"><p>Create instance for gateway router device activation.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>builder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -825,16 +698,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newEZWifiConfigDevActivator</h4>
                                         <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newEZWifiConfigDevActivator(ActivatorBuilder)>newEZWifiConfigDevActivator</a>(ActivatorBuilder activatorBuilder)</pre>
-                                        <div class="block"><p>Create instance for wifi-device activation.</p><p>No homeId is required, but you need to bind your own family or other organization after success.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>activatorBuilder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -849,7 +713,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newLightningActivator</h4>
                                         <pre class="methodSignature"> abstract IThingLightningActivator <a href=IThingDeviceActivator.html#newLightningActivator()>newLightningActivator</a>()</pre>
-                                        <div class="block"><p>Create instance for lightning activation.com.thingclips.smart.home.sdk.api.IThingLightningActivator</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -864,16 +728,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>getSupportLightningActiveDevices</h4>
                                         <pre class="methodSignature"> abstract List&lt;String&gt; <a href=IThingDeviceActivator.html#getSupportLightningActiveDevices(long)>getSupportLightningActiveDevices</a>(long homeId)</pre>
-                                        <div class="block"><p>Get activated devices with lightning activation support.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>homeId</code> - Home id.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -887,17 +742,8 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                           >
                                     <li class="blockList">
                                         <h4>newDirectlyConnectedDeviceActivator</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract IThingActivator <a href=IThingDeviceActivator.html#newDirectlyConnectedDeviceActivator(ThingDirectlyConnectedActivatorBuilder)>newDirectlyConnectedDeviceActivator</a>(ThingDirectlyConnectedActivatorBuilder builder)</pre>
+                                        <pre class="methodSignature"> abstract IThingActivator <a href=IThingDeviceActivator.html#newDirectlyConnectedDeviceActivator(ThingDirectlyConnectedActivatorBuilder)>newDirectlyConnectedDeviceActivator</a>(ThingDirectlyConnectedActivatorBuilder builder)</pre>
                                         <div class="block"></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>builder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -912,16 +758,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newDirectlyDeviceActivator</h4>
                                         <pre class="methodSignature"> abstract IThingDirectActivator <a href=IThingDeviceActivator.html#newDirectlyDeviceActivator(ThingDirectlyDeviceActivatorBuilder)>newDirectlyDeviceActivator</a>(ThingDirectlyDeviceActivatorBuilder builder)</pre>
-                                        <div class="block"><p>for directly device rest_optimizationCreate instance for ipc auto config device activation.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>builder</code> - Activation information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -936,32 +773,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>deviceCloudActivate</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#deviceCloudActivate(String,String,long,String,IThingResultCallback<DeviceBean>)>deviceCloudActivate</a>(String uuid, String groupType, long groupId, String timeZone, IThingResultCallback&lt;DeviceBean&gt; callback)</pre>
-                                        <div class="block"><p>Local device cloud activation interface</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>uuid</code> - device uuid</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>groupType</code> - Permission group type, support home group or device group,value range ["homeGroup","deviceGroup"]</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>groupId</code> - homeId or device group id</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>timeZone</code> - time zone information</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>callback</code> - Callback.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -991,7 +803,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newBroadbandActivator</h4>
                                         <pre class="methodSignature"> abstract IThingSmartBroadbandActivator <a href=IThingDeviceActivator.html#newBroadbandActivator()>newBroadbandActivator</a>()</pre>
-                                        <div class="block"><p>router broadband activator</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -1006,7 +818,22 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>bindThingLinkDeviceWithQRCode</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#bindThingLinkDeviceWithQRCode(long,String,IThingDevActivatorListener)>bindThingLinkDeviceWithQRCode</a>(long homeId, String uuid, IThingDevActivatorListener listener)</pre>
-                                        <div class="block"><p>bind thinglink device with scan qrcode</p></div>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="bindNbDeviceWithQRCode(long,String,String,IThingDevActivatorListener)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>bindNbDeviceWithQRCode</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#bindNbDeviceWithQRCode(long,String,String,IThingDevActivatorListener)>bindNbDeviceWithQRCode</a>(long homeId, String uuid, String timeZone, IThingDevActivatorListener listener)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -1021,7 +848,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>getDeviceSecurityConfigs</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingDeviceActivator.html#getDeviceSecurityConfigs(IThingDataCallback<String>)>getDeviceSecurityConfigs</a>(IThingDataCallback&lt;String&gt; callback)</pre>
-                                        <div class="block"><p>获取所有SL对应安全配置</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -1036,16 +863,7 @@ public interface <span class="typeNameLabel"><a href=IThingDeviceActivator.html>
                                     <li class="blockList">
                                         <h4>newOptimizedActivator</h4>
                                         <pre class="methodSignature"> abstract IThingOptimizedActivator <a href=IThingDeviceActivator.html#newOptimizedActivator(ThingApActivatorBuilder)>newOptimizedActivator</a>(ThingApActivatorBuilder activatorBuilder)</pre>
-                                        <div class="block"><p>Create an instance of activator for hotspot mode for new optimized process activator</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>activatorBuilder</code> - Activator information.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

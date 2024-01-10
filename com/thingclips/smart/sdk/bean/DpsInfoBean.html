@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public class <span class="typeNameLabel"><a href=DpsInfoBean.html>DpsInfoBean</a></span>
 
                     </pre>
-                    <div class="block"><p>author : yuzhouxu date : 2021/8/13 14:50 description :</p></div>
+                    <div class="block"></div>
                 </li>
             </ul>
         </div>
@@ -138,17 +138,23 @@ public class <span class="typeNameLabel"><a href=DpsInfoBean.html>DpsInfoBean</a
                                         
                                         <tr class="altColor">
                                             <td class="colFirst"><code>private  String</code></td>
-                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#dps>dps</a></code></th>
+                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#devId>devId</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr class="rowColor">
+                                            <td class="colFirst"><code>private  String</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#dps>dps</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
                                             <td class="colFirst"><code>private  Map&lt;String, Long&gt;</code></td>
                                             <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#dpsTime>dpsTime</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr class="altColor">
+                                        <tr class="rowColor">
                                             <td class="colFirst"><code>private  int</code></td>
                                             <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#dpsSource>dpsSource</a></code></th>
                                             <td class="colLast"></td>
@@ -218,7 +224,7 @@ public class <span class="typeNameLabel"><a href=DpsInfoBean.html>DpsInfoBean</a
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>String</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#getDps()>getDps</a>() </code>
+                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#getDevId()>getDevId</a>() </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -226,15 +232,15 @@ public class <span class="typeNameLabel"><a href=DpsInfoBean.html>DpsInfoBean</a
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#setDps(String)>setDps</a>(String dps) </code>
+                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#setDevId(String)>setDevId</a>(String devId) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
-                                            <td class="colFirst"><code>Map&lt;String, Long&gt;</code>
+                                            <td class="colFirst"><code>String</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#getDpsTime()>getDpsTime</a>() </code>
+                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#getDps()>getDps</a>() </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -242,12 +248,28 @@ public class <span class="typeNameLabel"><a href=DpsInfoBean.html>DpsInfoBean</a
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#setDpsTime(Map)>setDpsTime</a>(Map&lt;String, Long&gt; dpsTime) </code>
+                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#setDps(String)>setDps</a>(String dps) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
+                                            <td class="colFirst"><code>Map&lt;String, Long&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#getDpsTime()>getDpsTime</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#setDpsTime(Map)>setDpsTime</a>(Map&lt;String, Long&gt; dpsTime) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>int</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#getDpsSource()>getDpsSource</a>() </code>
@@ -255,7 +277,7 @@ public class <span class="typeNameLabel"><a href=DpsInfoBean.html>DpsInfoBean</a
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i5" class="rowColor">
+                                        <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=DpsInfoBean.html#setDpsSource(int)>setDpsSource</a>(int dpsSource) </code>
@@ -316,6 +338,36 @@ public class <span class="typeNameLabel"><a href=DpsInfoBean.html>DpsInfoBean</a
                                 <!--   -->
                             </a>
                                 <h3>Method Detail</h3>
+                                
+                                <a id="getDevId()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getDevId</h4>
+                                        <pre class="methodSignature"> String <a href=DpsInfoBean.html#getDevId()>getDevId</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setDevId(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setDevId</h4>
+                                        <pre class="methodSignature"> void <a href=DpsInfoBean.html#setDevId(String)>setDevId</a>(String devId)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
                                 
                                 <a id="getDps()">
                                     <!--   -->

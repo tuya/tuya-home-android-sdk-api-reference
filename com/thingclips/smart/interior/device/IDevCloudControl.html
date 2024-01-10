@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IDevCloudControl.html>IDevCloudControl</a></span>
 
                     </pre>
-                    <div class="block"><p>Publish command by internet, combine HTTP and MQTT.</p></div>
+                    <div class="block"></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IDevCloudControl.html>IDevC
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IDevCloudControl.html#sendCommand(String,LinkedHashMap,String,int,String,SandO,IResultCallback)>sendCommand</a>(String devId, LinkedHashMap&lt;String, Object&gt; dpMap, String localId, int ctype, String mbid, SandO sandO, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">Send command by internet.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IDevCloudControl.html>IDevC
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IDevCloudControl.html#queryCameraData(String,LinkedHashMap,SandO,IResultCallback)>queryCameraData</a>(String devId, LinkedHashMap&lt;String, Object&gt; dpMap, SandO sandO, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">Query data form device.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IDevCloudControl.html>IDevC
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IDevCloudControl.html#sendByHttp(String,String,String,String,IResultCallback)>sendByHttp</a>(String gwId, String devId, String command, String pcc, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast">Send command by HTTP.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IDevCloudControl.html>IDevC
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IDevCloudControl.html#onDestroy()>onDestroy</a>() </code>
                                             </th>
-                                            <td class="colLast">Recycle resource.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -220,7 +220,7 @@ public interface <span class="typeNameLabel"><a href=IDevCloudControl.html>IDevC
                                     <li class="blockList">
                                         <h4>sendCommand</h4>
                                         <pre class="methodSignature"> abstract void <a href=IDevCloudControl.html#sendCommand(String,LinkedHashMap,String,int,String,SandO,IResultCallback)>sendCommand</a>(String devId, LinkedHashMap&lt;String, Object&gt; dpMap, String localId, int ctype, String mbid, SandO sandO, IResultCallback callback)</pre>
-                                        <div class="block"><p>Send command by internet.</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -235,28 +235,7 @@ public interface <span class="typeNameLabel"><a href=IDevCloudControl.html>IDevC
                                     <li class="blockList">
                                         <h4>queryCameraData</h4>
                                         <pre class="methodSignature"> abstract void <a href=IDevCloudControl.html#queryCameraData(String,LinkedHashMap,SandO,IResultCallback)>queryCameraData</a>(String devId, LinkedHashMap&lt;String, Object&gt; dpMap, SandO sandO, IResultCallback callback)</pre>
-                                        <div class="block"><p>Query data form device.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>devId</code> - Device id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>dpMap</code> - Data agreed with embedded</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>sandO</code> - SandO</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>callback</code> - Query success or failed.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -271,32 +250,7 @@ public interface <span class="typeNameLabel"><a href=IDevCloudControl.html>IDevC
                                     <li class="blockList">
                                         <h4>sendByHttp</h4>
                                         <pre class="methodSignature"> abstract void <a href=IDevCloudControl.html#sendByHttp(String,String,String,String,IResultCallback)>sendByHttp</a>(String gwId, String devId, String command, String pcc, IResultCallback callback)</pre>
-                                        <div class="block"><p>Send command by HTTP.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>gwId</code> - Gateway device id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>devId</code> - Device id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>command</code> - dps.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>pcc</code> - Device node id.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>callback</code> - Send success or failed.</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -311,7 +265,7 @@ public interface <span class="typeNameLabel"><a href=IDevCloudControl.html>IDevC
                                     <li class="blockList">
                                         <h4>onDestroy</h4>
                                         <pre class="methodSignature"> abstract void <a href=IDevCloudControl.html#onDestroy()>onDestroy</a>()</pre>
-                                        <div class="block"><p>Recycle resource.</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
