@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListener</a></span>
 
                     </pre>
-                    <div class="block"><p>OTA status listener</p></div>
+                    <div class="block"></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IOtaListener.html#onSuccess(int)>onSuccess</a>(int otaType) </code>
                                             </th>
-                                            <td class="colLast">On OTA success</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IOtaListener.html#onFailure(int,String,String)>onFailure</a>(int otaType, String code, String error) </code>
                                             </th>
-                                            <td class="colLast">On OTA failureThis method is called from the device, but the connection may have been disconnected,so it is not reliable.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IOtaListener.html#onTimeout(int)>onTimeout</a>(int otaType) </code>
                                             </th>
-                                            <td class="colLast">On OTA timeoutThis method is called from the device, but the connection may have been disconnected,so it is not reliable.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IOtaListener.html#onStatusChanged(int,int)>onStatusChanged</a>(int otaStatus, int otaType) </code>
                                             </th>
-                                            <td class="colLast">Mqtt Directly issued firmware upgrade status (according to agreement 9&amp;16)</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -236,16 +236,7 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                     <li class="blockList">
                                         <h4>onSuccess</h4>
                                         <pre class="methodSignature"> abstract void <a href=IOtaListener.html#onSuccess(int)>onSuccess</a>(int otaType)</pre>
-                                        <div class="block"><p>On OTA success</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>otaType</code> - getType</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -260,24 +251,7 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                     <li class="blockList">
                                         <h4>onFailure</h4>
                                         <pre class="methodSignature"> abstract void <a href=IOtaListener.html#onFailure(int,String,String)>onFailure</a>(int otaType, String code, String error)</pre>
-                                        <div class="block"><p>On OTA failure</p><p>This method is called from the device, but the connection may have been disconnected,so it is not reliable.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>otaType</code> - getType</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>code</code> - error code</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>error</code> - error message</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -294,23 +268,6 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                         <pre class="methodSignature"> abstract void <a href=IOtaListener.html#onFailureWithText(int,String,OTAErrorMessageBean)>onFailureWithText</a>(int otaType, String code, OTAErrorMessageBean messageBean)</pre>
                                         <div class="block"></div>
                                         
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>otaType</code> - getType</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>code</code> - error code</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>messageBean</code> - error message</dd>
-                                            
-                                            
-                                        </dl>
-                                        
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
@@ -326,19 +283,6 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                         <pre class="methodSignature"> abstract void <a href=IOtaListener.html#onProgress(int,int)>onProgress</a>(int otaType, int progress)</pre>
                                         <div class="block"></div>
                                         
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>otaType</code> - getType</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>progress</code> - the progress</dd>
-                                            
-                                            
-                                        </dl>
-                                        
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
@@ -352,16 +296,7 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                     <li class="blockList">
                                         <h4>onTimeout</h4>
                                         <pre class="methodSignature"> abstract void <a href=IOtaListener.html#onTimeout(int)>onTimeout</a>(int otaType)</pre>
-                                        <div class="block"><p>On OTA timeout</p><p>This method is called from the device, but the connection may have been disconnected,so it is not reliable.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>otaType</code> - getType</dd>
-                                            
-                                            
-                                        </dl>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -376,7 +311,7 @@ public interface <span class="typeNameLabel"><a href=IOtaListener.html>IOtaListe
                                     <li class="blockList">
                                         <h4>onStatusChanged</h4>
                                         <pre class="methodSignature"> abstract void <a href=IOtaListener.html#onStatusChanged(int,int)>onStatusChanged</a>(int otaStatus, int otaType)</pre>
-                                        <div class="block"><p>Mqtt Directly issued firmware upgrade status (according to agreement 9&amp;16)</p></div>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
