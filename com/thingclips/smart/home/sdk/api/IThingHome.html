@@ -163,9 +163,9 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
-                                            <td class="colFirst"><code>abstract void</code>
+                                            <td class="colFirst"><code>abstract HomeBean</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#updateHome(String,double,double,String,IResultCallback)>updateHome</a>(String name, double lon, double lat, String geoName, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#getHomeLocalCacheSync()>getHomeLocalCacheSync</a>() </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -173,7 +173,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#updateHome(String,double,double,String,List,boolean,IResultCallback)>updateHome</a>(String name, double lon, double lat, String geoName, List&lt;String&gt; rooms, boolean overWriteRoom, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#updateHome(String,double,double,String,IResultCallback)>updateHome</a>(String name, double lon, double lat, String geoName, IResultCallback callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -181,7 +181,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#dismissHome(IResultCallback)>dismissHome</a>(IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#updateHome(String,double,double,String,List,boolean,IResultCallback)>updateHome</a>(String name, double lon, double lat, String geoName, List&lt;String&gt; rooms, boolean overWriteRoom, IResultCallback callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -189,7 +189,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#sortHome(List,IResultCallback)>sortHome</a>(List&lt;Long&gt; idList, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#dismissHome(IResultCallback)>dismissHome</a>(IResultCallback callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -197,7 +197,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#addRoom(String,IThingRoomResultCallback)>addRoom</a>(String name, IThingRoomResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#sortHome(List,IResultCallback)>sortHome</a>(List&lt;Long&gt; idList, IResultCallback callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -205,7 +205,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#removeRoom(long,IResultCallback)>removeRoom</a>(long roomId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#addRoom(String,IThingRoomResultCallback)>addRoom</a>(String name, IThingRoomResultCallback callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -213,7 +213,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#sortRoom(List,IResultCallback)>sortRoom</a>(List&lt;Long&gt; idList, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#removeRoom(long,IResultCallback)>removeRoom</a>(long roomId, IResultCallback callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -221,12 +221,20 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                         <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#queryRoomList(IThingGetRoomListCallback)>queryRoomList</a>(IThingGetRoomListCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#sortRoom(List,IResultCallback)>sortRoom</a>(List&lt;Long&gt; idList, IResultCallback callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#queryRoomList(IThingGetRoomListCallback)>queryRoomList</a>(IThingGetRoomListCallback callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>abstract HomeBean</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#getHomeBean()>getHomeBean</a>() </code>
@@ -234,7 +242,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i11" class="rowColor">
+                                        <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#createGroup(String,String,List,IThingResultCallback<Long>)>createGroup</a>(String productId, String name, List&lt;String&gt; devIdList, IThingResultCallback&lt;Long&gt; callback) </code>
@@ -242,7 +250,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i12" class="altColor">
+                                        <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#createCommonGroup(GroupCreateBuilder,IThingResultCallback<Long>)>createCommonGroup</a>(GroupCreateBuilder builder, IThingResultCallback&lt;Long&gt; callback) </code>
@@ -250,7 +258,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i13" class="rowColor">
+                                        <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>abstract List&lt;RoomBean&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#queryRoomInfoByDevice(List)>queryRoomInfoByDevice</a>(List&lt;DeviceBean&gt; deviceList) </code>
@@ -258,7 +266,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i14" class="altColor">
+                                        <tr id="i15" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#registerHomeStatusListener(IThingHomeStatusListener)>registerHomeStatusListener</a>(IThingHomeStatusListener listener) </code>
@@ -266,7 +274,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i15" class="rowColor">
+                                        <tr id="i16" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#unRegisterHomeStatusListener(IThingHomeStatusListener)>unRegisterHomeStatusListener</a>(IThingHomeStatusListener listener) </code>
@@ -274,7 +282,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i16" class="altColor">
+                                        <tr id="i17" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#registerHomeDeviceStatusListener(IThingHomeDeviceStatusListener)>registerHomeDeviceStatusListener</a>(IThingHomeDeviceStatusListener listener) </code>
@@ -282,7 +290,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i17" class="rowColor">
+                                        <tr id="i18" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#unRegisterHomeDeviceStatusListener(IThingHomeDeviceStatusListener)>unRegisterHomeDeviceStatusListener</a>(IThingHomeDeviceStatusListener listener) </code>
@@ -290,7 +298,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i18" class="altColor">
+                                        <tr id="i19" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#registerHomeDeviceRoomInfoListener(IThingHomeRoomInfoChangeListener)>registerHomeDeviceRoomInfoListener</a>(IThingHomeRoomInfoChangeListener listener) </code>
@@ -298,7 +306,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i19" class="rowColor">
+                                        <tr id="i20" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#unRegisterHomeDeviceRoomInfoListener(IThingHomeRoomInfoChangeListener)>unRegisterHomeDeviceRoomInfoListener</a>(IThingHomeRoomInfoChangeListener listener) </code>
@@ -306,7 +314,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i20" class="altColor">
+                                        <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#createBlueMesh(String,IThingResultCallback<BlueMeshBean>)>createBlueMesh</a>(String meshName, IThingResultCallback&lt;BlueMeshBean&gt; callback) </code>
@@ -314,7 +322,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i21" class="rowColor">
+                                        <tr id="i22" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#createSigMesh(IThingResultCallback<SigMeshBean>)>createSigMesh</a>(IThingResultCallback&lt;SigMeshBean&gt; callback) </code>
@@ -322,7 +330,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i22" class="altColor">
+                                        <tr id="i23" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#queryDeviceListToAddGroup(long,String,IThingResultCallback<List<GroupDeviceBean>>)>queryDeviceListToAddGroup</a>(long groupId, String productId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback) </code>
@@ -330,7 +338,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i23" class="rowColor">
+                                        <tr id="i24" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#queryZigbeeDeviceListToAddGroup(long,String,String,IThingResultCallback<List<GroupDeviceBean>>)>queryZigbeeDeviceListToAddGroup</a>(long groupId, String productId, String parentId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback) </code>
@@ -338,7 +346,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i24" class="altColor">
+                                        <tr id="i25" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#onDestroy()>onDestroy</a>() </code>
@@ -346,7 +354,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i25" class="rowColor">
+                                        <tr id="i26" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#createZigbeeGroup(String,String,int,String,IThingResultCallback<CloudZigbeeGroupCreateBean>)>createZigbeeGroup</a>(String productId, String parentId, int parentType, String name, IThingResultCallback&lt;CloudZigbeeGroupCreateBean&gt; callback) </code>
@@ -354,7 +362,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i26" class="altColor">
+                                        <tr id="i27" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#createZigbeeGroup(String,String,String,IThingResultCallback<CloudZigbeeGroupCreateBean>)>createZigbeeGroup</a>(String productId, String parentId, String name, IThingResultCallback&lt;CloudZigbeeGroupCreateBean&gt; callback) </code>
@@ -362,7 +370,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i27" class="rowColor">
+                                        <tr id="i28" class="altColor">
                                             <td class="colFirst"><code>abstract List&lt;RoomBean&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#queryRoomInfoByGroup(List)>queryRoomInfoByGroup</a>(List&lt;GroupBean&gt; groupList) </code>
@@ -370,7 +378,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i28" class="altColor">
+                                        <tr id="i29" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#bindNewConfigDevs(List,IResultCallback)>bindNewConfigDevs</a>(List&lt;String&gt; devIds, IResultCallback callback) </code>
@@ -378,7 +386,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i29" class="rowColor">
+                                        <tr id="i30" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#registerProductWarnListener(IWarningMsgListener)>registerProductWarnListener</a>(IWarningMsgListener listener) </code>
@@ -386,7 +394,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i30" class="altColor">
+                                        <tr id="i31" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#unRegisterProductWarnListener(IWarningMsgListener)>unRegisterProductWarnListener</a>(IWarningMsgListener listener) </code>
@@ -394,7 +402,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i31" class="rowColor">
+                                        <tr id="i32" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#sortDevInHome(String,List,IResultCallback)>sortDevInHome</a>(String homeId, List&lt;DeviceAndGroupInHomeBean&gt; list, IResultCallback callback) </code>
@@ -402,7 +410,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i32" class="altColor">
+                                        <tr id="i33" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#unSubscribeTopics(List)>unSubscribeTopics</a>(List&lt;String&gt; devIdList) </code>
@@ -410,7 +418,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i33" class="rowColor">
+                                        <tr id="i34" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#registerUpgradeStatusListener(IThingDeviceUpgradeStatusCallback)>registerUpgradeStatusListener</a>(IThingDeviceUpgradeStatusCallback callback) </code>
@@ -418,7 +426,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i34" class="altColor">
+                                        <tr id="i35" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#getHomeWeatherDetail(int,Map,IGetHomeWetherCallBack)>getHomeWeatherDetail</a>(int limit, Map&lt;String, Object&gt; unit, IGetHomeWetherCallBack callback) </code>
@@ -426,7 +434,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i35" class="rowColor">
+                                        <tr id="i36" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#getHomeWeatherSketch(double,double,IIGetHomeWetherSketchCallBack)>getHomeWeatherSketch</a>(double lon, double lat, IIGetHomeWetherSketchCallBack callback) </code>
@@ -434,7 +442,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i36" class="altColor">
+                                        <tr id="i37" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#registerHomeRelationUpdateListener(IThingHomeRelationUpdateListener)>registerHomeRelationUpdateListener</a>(IThingHomeRelationUpdateListener listener) </code>
@@ -442,7 +450,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i37" class="rowColor">
+                                        <tr id="i38" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#unRegisterHomeRelationUpdateListener(IThingHomeRelationUpdateListener)>unRegisterHomeRelationUpdateListener</a>(IThingHomeRelationUpdateListener listener) </code>
@@ -450,7 +458,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i38" class="altColor">
+                                        <tr id="i39" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#organizeRelation(IThingHomeRelationUpdateListener)>organizeRelation</a>(IThingHomeRelationUpdateListener listener) </code>
@@ -458,7 +466,7 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i39" class="rowColor">
+                                        <tr id="i40" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#createThreadGroup(String,String,List,String,IThingResultCallback<GroupRespBean>)>createThreadGroup</a>(String productId, String name, List&lt;String&gt; devIdList, String parentId, IThingResultCallback&lt;GroupRespBean&gt; callback) </code>
@@ -466,10 +474,42 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i40" class="altColor">
+                                        <tr id="i41" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHome.html#queryThreadGroupDeviceList(long,String,String,IThingResultCallback<List<GroupDeviceBean>>)>queryThreadGroupDeviceList</a>(long groupId, String productId, String parentId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i42" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#queryHidedDeviceGroupList(IThingResultCallback<ArrayList<DeviceAndGroupInHomeBean>>)>queryHidedDeviceGroupList</a>(IThingResultCallback&lt;ArrayList&lt;DeviceAndGroupInHomeBean&gt;&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i43" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#hideDeviceGroup(List,IThingResultCallback<Boolean>)>hideDeviceGroup</a>(List&lt;DeviceAndGroupInHomeBean&gt; devIds, IThingResultCallback&lt;Boolean&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i44" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#showDeviceGroup(List,IThingResultCallback<Boolean>)>showDeviceGroup</a>(List&lt;DeviceAndGroupInHomeBean&gt; devIds, IThingResultCallback&lt;Boolean&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i45" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHome.html#queryRoomDevSceneList(long,IThingResultCallback<RoomInfoBean>)>queryRoomDevSceneList</a>(long roomId, IThingResultCallback&lt;RoomInfoBean&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -531,6 +571,21 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                     <li class="blockList">
                                         <h4>getHomeLocalCache</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHome.html#getHomeLocalCache(IThingHomeResultCallback)>getHomeLocalCache</a>(IThingHomeResultCallback callback)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getHomeLocalCacheSync()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getHomeLocalCacheSync</h4>
+                                        <pre class="methodSignature"> abstract HomeBean <a href=IThingHome.html#getHomeLocalCacheSync()>getHomeLocalCacheSync</a>()</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1111,11 +1166,71 @@ public interface <span class="typeNameLabel"><a href=IThingHome.html>IThingHome<
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>queryThreadGroupDeviceList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHome.html#queryThreadGroupDeviceList(long,String,String,IThingResultCallback<List<GroupDeviceBean>>)>queryThreadGroupDeviceList</a>(long groupId, String productId, String parentId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="queryHidedDeviceGroupList(IThingResultCallback&lt;ArrayList&lt;DeviceAndGroupInHomeBean&gt;&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>queryHidedDeviceGroupList</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHome.html#queryHidedDeviceGroupList(IThingResultCallback<ArrayList<DeviceAndGroupInHomeBean>>)>queryHidedDeviceGroupList</a>(IThingResultCallback&lt;ArrayList&lt;DeviceAndGroupInHomeBean&gt;&gt; callback)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="hideDeviceGroup(List,IThingResultCallback&lt;Boolean&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>hideDeviceGroup</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHome.html#hideDeviceGroup(List,IThingResultCallback<Boolean>)>hideDeviceGroup</a>(List&lt;DeviceAndGroupInHomeBean&gt; devIds, IThingResultCallback&lt;Boolean&gt; callback)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="showDeviceGroup(List,IThingResultCallback&lt;Boolean&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>showDeviceGroup</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHome.html#showDeviceGroup(List,IThingResultCallback<Boolean>)>showDeviceGroup</a>(List&lt;DeviceAndGroupInHomeBean&gt; devIds, IThingResultCallback&lt;Boolean&gt; callback)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="queryRoomDevSceneList(long,IThingResultCallback&lt;RoomInfoBean&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>queryRoomDevSceneList</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHome.html#queryRoomDevSceneList(long,IThingResultCallback<RoomInfoBean>)>queryRoomDevSceneList</a>(long roomId, IThingResultCallback&lt;RoomInfoBean&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->

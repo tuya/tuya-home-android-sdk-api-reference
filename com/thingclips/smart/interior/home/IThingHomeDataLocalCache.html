@@ -147,6 +147,30 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDataLocalCache.ht
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
+                                            <td class="colFirst"><code>abstract List&lt;HomeBean&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDataLocalCache.html#getHomeListLocalCache()>getHomeListLocalCache</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i1" class="rowColor">
+                                            <td class="colFirst"><code>abstract ArrayList&lt;DeviceAndGroupInHomeBean&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDataLocalCache.html#getHidedDeviceGroupListCache(Long)>getHidedDeviceGroupListCache</a>(Long homeId) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>abstract Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDataLocalCache.html#isHidedDeviceGroupByCache(Long,String)>isHidedDeviceGroupByCache</a>(Long homeId, String bizId) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeDataLocalCache.html#saveHomeDevToLocalCache(long,DeviceRespBean,ProductBean)>saveHomeDevToLocalCache</a>(long homeId, DeviceRespBean devId, ProductBean bean) </code>
@@ -154,7 +178,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDataLocalCache.ht
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i1" class="rowColor">
+                                        <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeDataLocalCache.html#getStandardProductConfigList(long,IThingDataCallback<ArrayList<ProductStandardConfig>>)>getStandardProductConfigList</a>(long homeId, IThingDataCallback&lt;ArrayList&lt;ProductStandardConfig&gt;&gt; callback) </code>
@@ -162,10 +186,18 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDataLocalCache.ht
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i2" class="altColor">
+                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeDataLocalCache.html#getProductRefList(ArrayList,long,IThingDataCallback<ArrayList<ProductRefBean>>)>getProductRefList</a>(ArrayList&lt;String&gt; pids, long homeId, IThingDataCallback&lt;ArrayList&lt;ProductRefBean&gt;&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDataLocalCache.html#clearHomeCache()>clearHomeCache</a>() </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -203,6 +235,51 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDataLocalCache.ht
                             </a>
                                 <h3>Method Detail</h3>
                                 
+                                <a id="getHomeListLocalCache()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getHomeListLocalCache</h4>
+                                        <pre class="methodSignature"> abstract List&lt;HomeBean&gt; <a href=IThingHomeDataLocalCache.html#getHomeListLocalCache()>getHomeListLocalCache</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getHidedDeviceGroupListCache(Long)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getHidedDeviceGroupListCache</h4>
+                                        <pre class="methodSignature"> abstract ArrayList&lt;DeviceAndGroupInHomeBean&gt; <a href=IThingHomeDataLocalCache.html#getHidedDeviceGroupListCache(Long)>getHidedDeviceGroupListCache</a>(Long homeId)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isHidedDeviceGroupByCache(Long,String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isHidedDeviceGroupByCache</h4>
+                                        <pre class="methodSignature"> abstract Boolean <a href=IThingHomeDataLocalCache.html#isHidedDeviceGroupByCache(Long,String)>isHidedDeviceGroupByCache</a>(Long homeId, String bizId)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
                                 <a id="saveHomeDevToLocalCache(long,DeviceRespBean,ProductBean)">
                                     <!--   -->
                                 </a>
@@ -237,11 +314,26 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDataLocalCache.ht
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>getProductRefList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeDataLocalCache.html#getProductRefList(ArrayList,long,IThingDataCallback<ArrayList<ProductRefBean>>)>getProductRefList</a>(ArrayList&lt;String&gt; pids, long homeId, IThingDataCallback&lt;ArrayList&lt;ProductRefBean&gt;&gt; callback)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="clearHomeCache()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>clearHomeCache</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDataLocalCache.html#clearHomeCache()>clearHomeCache</a>()</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->

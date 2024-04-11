@@ -92,60 +92,41 @@ var pathtoroot = "";
         <h2 title="Contents">Contents</h2>
         <ul>
         
-            <li><a href="#interface">Interfaces</a></li>
+            <li><a href="#enum">Enums</a></li>
         
             <li><a href="#method">Methods</a></li>
         
             <li><a href="#class">Classes</a></li>
         
+            <li><a href="#constructor">Constructors</a></li>
+        
         </ul>
     </div>
     <div class="contentContainer">
         
-            <a id="interface"></a>
+            <a id="enum"></a>
             <ul class="blockList">
                 <li class="blockList">
                     <div class="deprecatedSummary">
                         <table>
-                            <caption><span>Interfaces</span><span class="tabEnd">&nbsp;</span></caption>
+                            <caption><span>Enums</span><span class="tabEnd">&nbsp;</span></caption>
                             <tr>
-                                <th class="colFirst" scope="col">Interface</th>
+                                <th class="colFirst" scope="col">Enum</th>
                                 <th class="colLast" scope="col">Description</th>
                             </tr>
                             
                                 <tr class="altColor">
                                     <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/home/sdk/api/IThingLightningSearcher.html">com.thingclips.smart.home.sdk.api.IThingLightningSearcher</a>
+                                        <a href="com/thingclips/smart/scene/model/constant/SceneValidateResultType.html">com.thingclips.smart.scene.model.constant.SceneValidateResultType</a>
                                     </th>
-                                    <td class="colLast"></td>
+                                    <td class="colLast">0：创建成功 1：超过场景数上限 2：子设备超时 3：设置值超出范围 4 ：写文件错误 5：其他错误 6：网关超时</td>
                                 </tr>
                             
                                 <tr class="rowColor">
                                     <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html">com.thingclips.smart.sdk.api.IThingTimer</a>
-                                    </th>
-                                    <td class="colLast">Timing encapsulation class.</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingQRCodeDevActivator.html">com.thingclips.smart.sdk.api.IThingQRCodeDevActivator</a>
+                                        <a href="com/thingclips/smart/scene/model/constant/SceneValidateType.html">com.thingclips.smart.scene.model.constant.SceneValidateType</a>
                                     </th>
                                     <td class="colLast"></td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IOperationalDeviceDiscoveryListener.html">com.thingclips.smart.sdk.api.IOperationalDeviceDiscoveryListener</a>
-                                    </th>
-                                    <td class="colLast"></td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/MatterDiscoveryCallback.html">com.thingclips.smart.sdk.api.MatterDiscoveryCallback</a>
-                                    </th>
-                                    <td class="colLast">Created by huguang on 06-23-2022</td>
                                 </tr>
                             
                         </table>
@@ -712,174 +693,6 @@ var pathtoroot = "";
                             
                                 <tr class="altColor">
                                     <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#addTimerWithTask(String,String,String,String,String,IResultStatusCallback)">com.thingclips.smart.sdk.api.addTimerWithTask(String,String,String,String,String,IResultStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast">Add timer single DP point set to true by default to support the new interface for child devices.</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#addTimerWithTask(String,String,String,Map,String,IResultStatusCallback)">com.thingclips.smart.sdk.api.addTimerWithTask(String,String,String,Map,String,IResultStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast">Increment timer(Support for new interfaces to child devices)</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#addTimerWithTask(String,String,String,Map,String,boolean,String,IResultStatusCallback)">com.thingclips.smart.sdk.api.addTimerWithTask(String,String,String,Map,String,boolean,String,IResultStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast">Increment timer.</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#getTimerTaskStatusWithDeviceId(String,IGetDeviceTimerStatusCallback)">com.thingclips.smart.sdk.api.getTimerTaskStatusWithDeviceId(String,IGetDeviceTimerStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast">Gets the status of all timed tasks on a device.</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#updateTimerTaskStatusWithTask(String,String,int,IResultStatusCallback)">com.thingclips.smart.sdk.api.updateTimerTaskStatusWithTask(String,String,int,IResultStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast">Update the category,update scheduled task status.</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#updateTimerStatusWithTask(String,String,String,boolean,IResultStatusCallback)">com.thingclips.smart.sdk.api.updateTimerStatusWithTask(String,String,String,boolean,IResultStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast">Control the on-off state of a timer.</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#removeTimerWithTask(String,String,String,IResultStatusCallback)">com.thingclips.smart.sdk.api.removeTimerWithTask(String,String,String,IResultStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast">Delete timer.</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#updateTimerWithTask(String,String,String,String,String,String,boolean,IResultStatusCallback)">com.thingclips.smart.sdk.api.updateTimerWithTask(String,String,String,String,String,String,boolean,IResultStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast">Update the status of the timer.</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#updateTimerWithTask(String,String,String,String,String,IResultStatusCallback)">com.thingclips.smart.sdk.api.updateTimerWithTask(String,String,String,String,String,IResultStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast">Update the status of the timer.</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#updateTimerWithTask(String,String,String,String,String,boolean,String,IResultStatusCallback)">com.thingclips.smart.sdk.api.updateTimerWithTask(String,String,String,String,String,boolean,String,IResultStatusCallback)</a>
-                                    </th>
-                                    <td class="colLast"></td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#getTimerWithTask(String,String,IGetTimerWithTaskCallback)">com.thingclips.smart.sdk.api.getTimerWithTask(String,String,IGetTimerWithTaskCallback)</a>
-                                    </th>
-                                    <td class="colLast">Obtain all timers under the timer task, support sub-devices.</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingTimer.html#getAllTimerWithDeviceId(String,IGetAllTimerWithDevIdCallback)">com.thingclips.smart.sdk.api.getAllTimerWithDeviceId(String,IGetAllTimerWithDevIdCallback)</a>
-                                    </th>
-                                    <td class="colLast">Gets all timers under all timer tasks of the device.</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IExtOtaListener.html#onProgress(int,int)">com.thingclips.smart.sdk.api.onProgress(int,int)</a>
-                                    </th>
-                                    <td class="colLast"></td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterDevicePlugin.html#newMatterModel()">com.thingclips.smart.sdk.api.newMatterModel()</a>
-                                    </th>
-                                    <td class="colLast"></td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterMultipleFabricDevice.html#readSupportedFabrics(IThingDataCallback&lt;Integer&gt;)">com.thingclips.smart.sdk.api.readSupportedFabrics(IThingDataCallback&lt;Integer&gt;)</a>
-                                    </th>
-                                    <td class="colLast"></td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterMultipleFabricDevice.html#readCommissionedFabrics(IThingDataCallback&lt;Integer&gt;)">com.thingclips.smart.sdk.api.readCommissionedFabrics(IThingDataCallback&lt;Integer&gt;)</a>
-                                    </th>
-                                    <td class="colLast"></td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterMultipleFabricDevice.html#generateQrCodeStr(IThingMatterMultipleFabricDevice.MultipleFabricPasscode)">com.thingclips.smart.sdk.api.generateQrCodeStr(IThingMatterMultipleFabricDevice.MultipleFabricPasscode)</a>
-                                    </th>
-                                    <td class="colLast">生成二维码内容</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterMultipleFabricDevice.html#sendEnhancedCommissioningCommand(IThingMatterMultipleFabricDevice.MultipleFabricPasscode,IThingDataCallback&lt;SetupCodePayload&gt;)">com.thingclips.smart.sdk.api.sendEnhancedCommissioningCommand(IThingMatterMultipleFabricDevice.MultipleFabricPasscode,IThingDataCallback&lt;SetupCodePayload&gt;)</a>
-                                    </th>
-                                    <td class="colLast">发送ECM指令，打开设备调试窗口</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterMultipleFabricDevice.html#revokeCommissioningCommand(IThingDataCallback&lt;Void&gt;)">com.thingclips.smart.sdk.api.revokeCommissioningCommand(IThingDataCallback&lt;Void&gt;)</a>
-                                    </th>
-                                    <td class="colLast">关闭设备调试窗口</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscode(IThingDataCallback&lt;MultipleFabricPasscode&gt;)">com.thingclips.smart.sdk.api.getMultipleFabricPasscode(IThingDataCallback&lt;MultipleFabricPasscode&gt;)</a>
-                                    </th>
-                                    <td class="colLast">从云端获取passcode</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscodeForceRefresh(IThingDataCallback&lt;MultipleFabricPasscode&gt;)">com.thingclips.smart.sdk.api.getMultipleFabricPasscodeForceRefresh(IThingDataCallback&lt;MultipleFabricPasscode&gt;)</a>
-                                    </th>
-                                    <td class="colLast">从云端获取passcode，无视过期时间，每次都获取新的</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterMultipleFabricDevice.html#getWifiDeviceSsid(IThingDataCallback&lt;String&gt;)">com.thingclips.smart.sdk.api.getWifiDeviceSsid(IThingDataCallback&lt;String&gt;)</a>
-                                    </th>
-                                    <td class="colLast">获取当前设备 Wifi 名称</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterDeviceConnectManager.html#isDiscovered(String)">com.thingclips.smart.sdk.api.isDiscovered(String)</a>
-                                    </th>
-                                    <td class="colLast">Whether the specified device is discovered by dns-sdDeprecated, use <a href=com/thingclips/smart/sdk/api/IThingMatterDeviceConnectManager.html#isOnline(String)>isOnline</a> instead</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/sdk/api/IThingMatterDeviceConnectManager.html#addOperationalDeviceDiscoveryListener(IOperationalDeviceDiscoveryListener)">com.thingclips.smart.sdk.api.addOperationalDeviceDiscoveryListener(IOperationalDeviceDiscoveryListener)</a>
-                                    </th>
-                                    <td class="colLast">Add a listener to monitor the device discovery statusDeprecated, use <a href=com/thingclips/smart/sdk/api/IThingMatterDeviceConnectManager.html#registerMatterOnlineListener(MatterOnlineListener)>registerMatterOnlineListener</a> instead</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
                                         <a href="com/thingclips/smart/sdk/bean/cache/IDeviceProperty.html#isWifiDevice()">com.thingclips.smart.sdk.bean.cache.isWifiDevice()</a>
                                     </th>
                                     <td class="colLast"></td>
@@ -887,33 +700,82 @@ var pathtoroot = "";
                             
                                 <tr class="rowColor">
                                     <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/sdk/matter/activator/IMatterActivator.html#startDiscover(SetupPayload,long,long,MatterDiscoveryCallback)">com.thingclips.sdk.matter.activator.startDiscover(SetupPayload,long,long,MatterDiscoveryCallback)</a>
+                                        <a href="com/thingclips/smart/scene/model/NormalSceneExtBean.html#getBackground()">com.thingclips.smart.scene.model.getBackground()</a>
                                     </th>
-                                    <td class="colLast">start discover Matter device.</td>
+                                    <td class="colLast"></td>
                                 </tr>
                             
                                 <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/model/NormalSceneExtBean.html#setBackground(String)">com.thingclips.smart.scene.model.setBackground(String)</a>
+                                    </th>
+                                    <td class="colLast"></td>
+                                </tr>
+                            
+                                <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/model/NormalScene.html#getBackground()">com.thingclips.smart.scene.model.getBackground()</a>
+                                    </th>
+                                    <td class="colLast">对应json字段：background</td>
+                                </tr>
+                            
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/model/NormalScene.html#setBackground(String)">com.thingclips.smart.scene.model.setBackground(String)</a>
+                                    </th>
+                                    <td class="colLast"></td>
+                                </tr>
+                            
+                                <tr class="rowColor">
                                     <th class="colDeprecatedItemName" scope="row">
                                         <a href="com/thingclips/smart/scene/api/service/IBaseService.html#deleteScene(String,IResultCallback)">com.thingclips.smart.scene.api.service.deleteScene(String,IResultCallback)</a>
                                     </th>
                                     <td class="colLast">Delete scene</td>
                                 </tr>
                             
-                                <tr class="rowColor">
+                                <tr class="altColor">
                                     <th class="colDeprecatedItemName" scope="row">
                                         <a href="com/thingclips/smart/scene/api/service/IBaseService.html#getSceneALlMemberCache(Long,IResultCallback)">com.thingclips.smart.scene.api.service.getSceneALlMemberCache(Long,IResultCallback)</a>
                                     </th>
                                     <td class="colLast">Get a list of filtered scenes for common members</td>
                                 </tr>
                             
-                                <tr class="altColor">
+                                <tr class="rowColor">
                                     <th class="colDeprecatedItemName" scope="row">
                                         <a href="com/thingclips/smart/scene/api/service/IRecommendService.html#getRecommendAll(Long,IResultCallback)">com.thingclips.smart.scene.api.service.getRecommendAll(Long,IResultCallback)</a>
                                     </th>
                                     <td class="colLast">Get a list of recommended scenes</td>
                                 </tr>
                             
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/api/service/IRecommendService.html#getUnifiedRecommendAll(Long,String,Integer,Boolean,String,IResultCallback)">com.thingclips.smart.scene.api.service.getUnifiedRecommendAll(Long,String,Integer,Boolean,String,IResultCallback)</a>
+                                    </th>
+                                    <td class="colLast">Get a list of recommended scenes</td>
+                                </tr>
+                            
                                 <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/api/service/IRecommendService.html#requireRecommendMatch(Long,IResultCallback)">com.thingclips.smart.scene.api.service.requireRecommendMatch(Long,IResultCallback)</a>
+                                    </th>
+                                    <td class="colLast">Request the cloud to match the recommended scenario</td>
+                                </tr>
+                            
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/api/service/IRecommendService.html#requireRecommendMatchTwo(Long,IResultCallback)">com.thingclips.smart.scene.api.service.requireRecommendMatchTwo(Long,IResultCallback)</a>
+                                    </th>
+                                    <td class="colLast">Request the cloud to match the recommended scenario</td>
+                                </tr>
+                            
+                                <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/api/service/IRecommendService.html#getCollectAll(Long,IResultCallback)">com.thingclips.smart.scene.api.service.getCollectAll(Long,IResultCallback)</a>
+                                    </th>
+                                    <td class="colLast">Get a list of favorite recommended scenes</td>
+                                </tr>
+                            
+                                <tr class="altColor">
                                     <th class="colDeprecatedItemName" scope="row">
                                         <a href="com/thingclips/smart/scene/lib/util/DeviceUtil.html#operateSceneUnderSigmesh(Integer,String,DeviceUtil.OperateDevActionType,String,String,List,IResultCallback)">com.thingclips.smart.scene.lib.util.operateSceneUnderSigmesh(Integer,String,DeviceUtil.OperateDevActionType,String,String,List,IResultCallback)</a>
                                     </th>
@@ -938,9 +800,53 @@ var pathtoroot = "";
                             
                                 <tr class="altColor">
                                     <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/thingclips/smart/interior/device/bean/GwDevResp.html">com.thingclips.smart.interior.device.bean.GwDevResp</a>
+                                        <a href="com/thingclips/smart/scene/model/device/SceneValidateResultBean.html">com.thingclips.smart.scene.model.device.SceneValidateResultBean</a>
                                     </th>
                                     <td class="colLast"></td>
+                                </tr>
+                            
+                                <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/model/device/SceneZigbeeValidateDialogBean.html">com.thingclips.smart.scene.model.device.SceneZigbeeValidateDialogBean</a>
+                                    </th>
+                                    <td class="colLast"></td>
+                                </tr>
+                            
+                        </table>
+                    </div>
+                </li>
+            </ul>
+        
+            <a id="constructor"></a>
+            <ul class="blockList">
+                <li class="blockList">
+                    <div class="deprecatedSummary">
+                        <table>
+                            <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+                            <tr>
+                                <th class="colFirst" scope="col">Constructor</th>
+                                <th class="colLast" scope="col">Description</th>
+                            </tr>
+                            
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/model/NormalScene.html#NormalScene(int,String,String,String,String,List,String,List,boolean,boolean,boolean,boolean,boolean,boolean,String,List,int,long,boolean,int)">com.thingclips.smart.scene.model.NormalScene(int,String,String,String,String,List,String,List,boolean,boolean,boolean,boolean,boolean,boolean,String,List,int,long,boolean,int)</a>
+                                    </th>
+                                    <td class="colLast">旧版场景实体构建，使用需要注意，该构建方法已经缺失如下几个字段的初始化：linkageType，默认0roomIds，默认nullneedCleanGidSid，默认falsescenarioRule，默认nullruleGenre，默认0</td>
+                                </tr>
+                            
+                                <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/model/NormalScene.html#NormalScene(int,String,String,String,String,List,String,List,boolean,boolean,boolean,boolean,boolean,boolean,String,List,int,long,boolean,int,String)">com.thingclips.smart.scene.model.NormalScene(int,String,String,String,String,List,String,List,boolean,boolean,boolean,boolean,boolean,boolean,String,List,int,long,boolean,int,String)</a>
+                                    </th>
+                                    <td class="colLast">旧版场景实体构建，使用需要注意，该构建方法已经缺失如下几个字段的初始化：linkageType，默认0roomIds，默认nullneedCleanGidSid，默认falsescenarioRule，默认nullruleGenre，默认0</td>
+                                </tr>
+                            
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/thingclips/smart/scene/model/action/SceneAction.html#SceneAction(Map,Map,String,String,boolean,String,Map,String,String,boolean,String,String,String,String,String,UiInfo,UiInfo,long,String)">com.thingclips.smart.scene.model.action.SceneAction(Map,Map,String,String,boolean,String,Map,String,String,boolean,String,String,String,String,String,UiInfo,UiInfo,long,String)</a>
+                                    </th>
+                                    <td class="colLast">旧版场景动作实体构建，使用需要注意，该构建方法已经缺失如下几个字段的初始化：actionDisplay，默认nullrelationGroup，默认null</td>
                                 </tr>
                             
                         </table>
