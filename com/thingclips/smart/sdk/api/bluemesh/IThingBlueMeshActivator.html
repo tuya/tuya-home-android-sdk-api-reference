@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingBlueMeshActivator.html>IThingBlueMeshActivator</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Provision and bind device interface.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,13 +151,21 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshActivator.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMeshActivator.html#startActivator()>startActivator</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Strat provisioning</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBlueMeshActivator.html#stopActivator()>stopActivator</a>() </code>
+                                            </th>
+                                            <td class="colLast">Stop provisioning</td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshActivator.html#append(List)>append</a>(List&lt;SearchDeviceBean&gt; searchDeviceBeanList) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -204,7 +212,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshActivator.htm
                                     <li class="blockList">
                                         <h4>startActivator</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMeshActivator.html#startActivator()>startActivator</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Strat provisioning</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -214,11 +222,26 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshActivator.htm
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>stopActivator</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBlueMeshActivator.html#stopActivator()>stopActivator</a>()</pre>
+                                        <div class="block"><p>Stop provisioning</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="append(List)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>append</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshActivator.html#append(List)>append</a>(List&lt;SearchDeviceBean&gt; searchDeviceBeanList)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->

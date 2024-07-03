@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.html>IThingIPCDoorBellManager</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Created by HuangXin on 1/27/21. </p><p>Doorbell call management interface, used to monitor doorbell call events and operate doorbell calls.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#setIgnoreWhenCalling(boolean)>setIgnoreWhenCalling</a>(boolean ignoreWhenCalling) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">When receiving a doorbell call from a device, set whether to automatically ignore subsequent calls from this device.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#setDoorbellRingTimeOut(int)>setDoorbellRingTimeOut</a>(int doorbellRingTimeOut) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Set the doorbell call timeout time.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#setConfigDataSource(IDoorBellConfigDataSource)>setConfigDataSource</a>(IDoorBellConfigDataSource dataSource) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">设置配置项数据源。配置项数据源可以针对特定设备修改属性。</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#getCallModelByMessageId(String)>getCallModelByMessageId</a>(String messageId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The doorbell call status is maintained by the `ThingDoorBellCallModel` model class.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#getAllObservers()>getAllObservers</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get all registered doorbell call monitor.</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#addObserver(ThingSmartDoorBellObserver)>addObserver</a>(ThingSmartDoorBellObserver observer) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register doorbell call monitor.</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#removeObserver(ThingSmartDoorBellObserver)>removeObserver</a>(ThingSmartDoorBellObserver observer) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Remove doorbell call monitor.</td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
@@ -207,7 +207,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#removeAllObservers()>removeAllObservers</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Remove all monitors</td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
@@ -215,7 +215,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#answerDoorBellCall(String)>answerDoorBellCall</a>(String messageId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">After receiving the doorbell call, you can answer the doorbell, but the call may not be answered successfullybecause it has been answered, cancelled, or other reasons.</td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
@@ -223,7 +223,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#refuseDoorBellCall(String)>refuseDoorBellCall</a>(String messageId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">After receiving the doorbell call, you can directly refuse to answer the doorbell.</td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
@@ -231,7 +231,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#hangupDoorBellCall(String)>hangupDoorBellCall</a>(String messageId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">After the doorbell call is answered, you can hang up the doorbell.</td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
@@ -239,7 +239,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#generateCallModel(String,String,String,long)>generateCallModel</a>(String deviceId, String messageType, String msgId, long startTime) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">see generateCallModel(String deviceId, String messageType, String msgId, long startTime, String cid)</td>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
@@ -247,7 +247,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCDoorBellManager.html#generateCallModel(String,String,String,long,String)>generateCallModel</a>(String deviceId, String messageType, String msgId, long startTime, String cid) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">In addition to notifying the client through MQTT protocol messages, doorbell calls may also be pushed,so this interface is provided.</td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
@@ -300,7 +300,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>setIgnoreWhenCalling</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingIPCDoorBellManager.html#setIgnoreWhenCalling(boolean)>setIgnoreWhenCalling</a>(boolean ignoreWhenCalling)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>When receiving a doorbell call from a device, set whether to automatically ignore subsequent calls from this device. Take effect for all equipment.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>ignoreWhenCalling</code> - True: If a device is receiving a doorbell call, it will automatically ignore subsequent callsfrom this device; false: Do not ignore subsequent calls from the same device.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -315,7 +324,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>setDoorbellRingTimeOut</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingIPCDoorBellManager.html#setDoorbellRingTimeOut(int)>setDoorbellRingTimeOut</a>(int doorbellRingTimeOut)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Set the doorbell call timeout time. If the doorbell call is not processed within the specified time, it will call back doorBellCallDidCanceled to notify and end the doorbell call.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>doorbellRingTimeOut</code> - Doorbell call timeout time, in seconds, the default value is 25s.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -330,7 +348,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>setConfigDataSource</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingIPCDoorBellManager.html#setConfigDataSource(IDoorBellConfigDataSource)>setConfigDataSource</a>(IDoorBellConfigDataSource dataSource)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>设置配置项数据源。配置项数据源可以针对特定设备修改属性。</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>dataSource</code> - 配置项数据源</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -345,7 +372,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>getCallModelByMessageId</h4>
                                         <pre class="methodSignature"> abstract ThingDoorBellCallModel <a href=IThingIPCDoorBellManager.html#getCallModelByMessageId(String)>getCallModelByMessageId</a>(String messageId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The doorbell call status is maintained by the `ThingDoorBellCallModel` model class. If the caller wants to know the status of a doorbell call,it can return the corresponding ThingDoorBellCallModel` instance to obtain it through this interface.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>messageId</code> - The unique identifier of the doorbell call message.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -360,7 +396,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>getAllObservers</h4>
                                         <pre class="methodSignature"> abstract List&lt;ThingSmartDoorBellObserver&gt; <a href=IThingIPCDoorBellManager.html#getAllObservers()>getAllObservers</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get all registered doorbell call monitor.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -375,7 +411,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>addObserver</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingIPCDoorBellManager.html#addObserver(ThingSmartDoorBellObserver)>addObserver</a>(ThingSmartDoorBellObserver observer)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register doorbell call monitor.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>observer</code> - Doorbell call monitor.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -390,7 +435,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>removeObserver</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingIPCDoorBellManager.html#removeObserver(ThingSmartDoorBellObserver)>removeObserver</a>(ThingSmartDoorBellObserver observer)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Remove doorbell call monitor.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>observer</code> - Doorbell call monitor.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -405,7 +459,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>removeAllObservers</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingIPCDoorBellManager.html#removeAllObservers()>removeAllObservers</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Remove all monitors</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -420,7 +474,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>answerDoorBellCall</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingIPCDoorBellManager.html#answerDoorBellCall(String)>answerDoorBellCall</a>(String messageId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>After receiving the doorbell call, you can answer the doorbell, but the call may not be answered successfullybecause it has been answered, cancelled, or other reasons. If the answering fails, the failure reason will benotified in the form of the return value error code.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>messageId</code> - The unique identifier of the doorbell call message.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -435,7 +498,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>refuseDoorBellCall</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingIPCDoorBellManager.html#refuseDoorBellCall(String)>refuseDoorBellCall</a>(String messageId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>After receiving the doorbell call, you can directly refuse to answer the doorbell.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>messageId</code> - The unique identifier of the doorbell call message</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -450,7 +522,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>hangupDoorBellCall</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingIPCDoorBellManager.html#hangupDoorBellCall(String)>hangupDoorBellCall</a>(String messageId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>After the doorbell call is answered, you can hang up the doorbell. If the hangup fails, the reason forthe failure will be returned as the return value.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>messageId</code> - The unique identifier of the doorbell call message</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -465,7 +546,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>generateCallModel</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingIPCDoorBellManager.html#generateCallModel(String,String,String,long)>generateCallModel</a>(String deviceId, String messageType, String msgId, long startTime)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>see generateCallModel(String deviceId, String messageType, String msgId, long startTime, String cid)</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -480,7 +561,32 @@ public interface <span class="typeNameLabel"><a href=IThingIPCDoorBellManager.ht
                                     <li class="blockList">
                                         <h4>generateCallModel</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingIPCDoorBellManager.html#generateCallModel(String,String,String,long,String)>generateCallModel</a>(String deviceId, String messageType, String msgId, long startTime, String cid)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>In addition to notifying the client through MQTT protocol messages, doorbell calls may also be pushed,so this interface is provided. The interface can generate a doorbell call model based on external inputparameters to manage subsequent doorbell answering, hanging up, and rejection operations.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>deviceId</code> - Doorbell device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>messageType</code> - Doorbell call Message type</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>msgId</code> - The unique identifier of the doorbell call message</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>startTime</code> - Doorbell call start time</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>cid</code> - NodeId of the sub device (for example: gateway sub device), nullable</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

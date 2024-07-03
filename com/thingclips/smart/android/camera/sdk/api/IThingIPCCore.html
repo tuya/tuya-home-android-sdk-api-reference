@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIPCCore</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>IPC core function entrance.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCCore.html#isIPCDevice(String)>isIPCDevice</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Determine if it is a smart camera.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCCore.html#getP2PType(String)>getP2PType</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get p2p type of device.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCCore.html#isLowPowerDevice(String)>isLowPowerDevice</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Determine if it is a low-power device.If the device is both a camera device and a low-power device, the device can be considered a low-power doorbell.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCCore.html#getCameraConfig(String)>getCameraConfig</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get ICameraConfigInfo object, which is used to obtain some basic capabilities of the device.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingIPCCore.html#createCameraP2P(String)>createCameraP2P</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Create IThingSmartCameraP2P object, which is used to communicate with smart camera.</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -268,7 +268,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                     <li class="blockList">
                                         <h4>isIPCDevice</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=IThingIPCCore.html#isIPCDevice(String)>isIPCDevice</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Determine if it is a smart camera.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -283,7 +292,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                     <li class="blockList">
                                         <h4>getP2PType</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingIPCCore.html#getP2PType(String)>getP2PType</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get p2p type of device.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -298,7 +316,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                     <li class="blockList">
                                         <h4>isLowPowerDevice</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=IThingIPCCore.html#isLowPowerDevice(String)>isLowPowerDevice</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Determine if it is a low-power device.If the device is both a camera device and a low-power device, the device can be considered a low-power doorbell.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -313,7 +340,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                     <li class="blockList">
                                         <h4>getCameraConfig</h4>
                                         <pre class="methodSignature"> abstract ICameraConfigInfo <a href=IThingIPCCore.html#getCameraConfig(String)>getCameraConfig</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get ICameraConfigInfo object, which is used to obtain some basic capabilities of the device.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -328,7 +364,16 @@ public interface <span class="typeNameLabel"><a href=IThingIPCCore.html>IThingIP
                                     <li class="blockList">
                                         <h4>createCameraP2P</h4>
                                         <pre class="methodSignature"> abstract IThingSmartCameraP2P <a href=IThingIPCCore.html#createCameraP2P(String)>createCameraP2P</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Create IThingSmartCameraP2P object, which is used to communicate with smart camera.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IHomePatchCacheManager.html>IHomePatchCacheManager</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>ProjectName: ThingHomeKitSdk Description: home patch data manager CreateDate: 2020/11/23 5:58 PM</p></div>
                 </li>
             </ul>
         </div>
@@ -149,7 +149,7 @@ public interface <span class="typeNameLabel"><a href=IHomePatchCacheManager.html
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IHomePatchCacheManager.html#putDeviceBizPropList(Long,List)>putDeviceBizPropList</a>(Long homeId, List&lt;DeviceBizPropBean&gt; deviceBizPropBeanList) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IHomePatchCacheManager.html#putDeviceBizPropList(Long,List)>putDeviceBizPropList</a>(@Deprecated() Long homeId, List&lt;DeviceBizPropBean&gt; deviceBizPropBeanList) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -157,15 +157,15 @@ public interface <span class="typeNameLabel"><a href=IHomePatchCacheManager.html
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract List&lt;DeviceBizPropBean&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IHomePatchCacheManager.html#getDeviceBizPropBeanListFromLocal(Long)>getDeviceBizPropBeanListFromLocal</a>(Long homeId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IHomePatchCacheManager.html#getDeviceBizPropBeanListFromLocal(Long)>getDeviceBizPropBeanListFromLocal</a>(@Deprecated() Long homeId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">load persistent data(actually, now is preferences) into memory cache.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract DeviceBizPropBean</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IHomePatchCacheManager.html#getDeviceBizPropBean(Long,String)>getDeviceBizPropBean</a>(Long homeId, String devId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IHomePatchCacheManager.html#getDeviceBizPropBean(Long,String)>getDeviceBizPropBean</a>(@Deprecated() Long homeId, String devId) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -213,7 +213,7 @@ public interface <span class="typeNameLabel"><a href=IHomePatchCacheManager.html
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IHomePatchCacheManager.html#remove(Long,String)>remove</a>(Long homeId, String devId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IHomePatchCacheManager.html#remove(Long,String)>remove</a>(@Deprecated() Long homeId, String devId) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -267,7 +267,7 @@ public interface <span class="typeNameLabel"><a href=IHomePatchCacheManager.html
                                           >
                                     <li class="blockList">
                                         <h4>putDeviceBizPropList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IHomePatchCacheManager.html#putDeviceBizPropList(Long,List)>putDeviceBizPropList</a>(Long homeId, List&lt;DeviceBizPropBean&gt; deviceBizPropBeanList)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IHomePatchCacheManager.html#putDeviceBizPropList(Long,List)>putDeviceBizPropList</a>(@Deprecated() Long homeId, List&lt;DeviceBizPropBean&gt; deviceBizPropBeanList)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -282,8 +282,8 @@ public interface <span class="typeNameLabel"><a href=IHomePatchCacheManager.html
                                           >
                                     <li class="blockList">
                                         <h4>getDeviceBizPropBeanListFromLocal</h4>
-                                        <pre class="methodSignature"> abstract List&lt;DeviceBizPropBean&gt; <a href=IHomePatchCacheManager.html#getDeviceBizPropBeanListFromLocal(Long)>getDeviceBizPropBeanListFromLocal</a>(Long homeId)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract List&lt;DeviceBizPropBean&gt; <a href=IHomePatchCacheManager.html#getDeviceBizPropBeanListFromLocal(Long)>getDeviceBizPropBeanListFromLocal</a>(@Deprecated() Long homeId)</pre>
+                                        <div class="block"><p>load persistent data(actually, now is preferences) into memory cache.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -297,7 +297,7 @@ public interface <span class="typeNameLabel"><a href=IHomePatchCacheManager.html
                                           >
                                     <li class="blockList">
                                         <h4>getDeviceBizPropBean</h4>
-                                        <pre class="methodSignature"> abstract DeviceBizPropBean <a href=IHomePatchCacheManager.html#getDeviceBizPropBean(Long,String)>getDeviceBizPropBean</a>(Long homeId, String devId)</pre>
+                                        <pre class="methodSignature"> abstract DeviceBizPropBean <a href=IHomePatchCacheManager.html#getDeviceBizPropBean(Long,String)>getDeviceBizPropBean</a>(@Deprecated() Long homeId, String devId)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -387,7 +387,7 @@ public interface <span class="typeNameLabel"><a href=IHomePatchCacheManager.html
                                           >
                                     <li class="blockList">
                                         <h4>remove</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IHomePatchCacheManager.html#remove(Long,String)>remove</a>(Long homeId, String devId)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IHomePatchCacheManager.html#remove(Long,String)>remove</a>(@Deprecated() Long homeId, String devId)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->

@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServer</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Enables an android application to communicate with an MQTT server.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#subscribe(String,IResultCallback)>subscribe</a>(String topic, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Subscribe to a topic.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#subscribe(String,int,IResultCallback)>subscribe</a>(String topic, int qos, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Subscribe to a topic with qos.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#subscribe(Array,IResultCallback)>subscribe</a>(Array&lt;String&gt; topicIds, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Subscribe topics to MQTT server.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#subscribe(Array,Array,IResultCallback)>subscribe</a>(Array&lt;String&gt; topic, Array&lt;int&gt; qos, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Subscribes to multiple topics, each topic may include wildcards.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#unSubscribe(String,IResultCallback)>unSubscribe</a>(String topic, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Requests the server unsubscribe the client from a topic.</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#publish(String,Array,IResultCallback)>publish</a>(String topic, Array&lt;byte&gt; data, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Publishes a message to a topic on the server.</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -199,23 +199,23 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#publish(String,Array,int,boolean,IResultCallback)>publish</a>(String topicId, Array&lt;byte&gt; data, int qos, boolean retained, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Publishes a message to a topic on the server.</td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMqttServer.html#publishDevice(MqttControlBuilder,IResultCallback)>publishDevice</a>(<a href=MqttControlBuilder.html>MqttControlBuilder</a> builder, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMqttServer.html#publishDevice(MqttControlBuilder,IResultCallback)>publishDevice</a>(MqttControlBuilder builder, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Publish message to specified device to control it on mqtt server.</td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMqttServer.html#publishDevice(MqttControlBuilder,PublishAndDeliveryCallback,IResultCallback)>publishDevice</a>(<a href=MqttControlBuilder.html>MqttControlBuilder</a> builder, PublishAndDeliveryCallback callback, IResultCallback resultCallback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMqttServer.html#publishDevice(MqttControlBuilder,PublishAndDeliveryCallback,IResultCallback)>publishDevice</a>(MqttControlBuilder builder, PublishAndDeliveryCallback callback, IResultCallback resultCallback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Publish message to specified device to control it on mqtt server.</td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
@@ -223,7 +223,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#registerMqttCallback(IMqttServerStatusCallback)>registerMqttCallback</a>(IMqttServerStatusCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register mqtt connect callback.</td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
@@ -231,7 +231,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#unRegisterMqttCallback(IMqttServerStatusCallback)>unRegisterMqttCallback</a>(IMqttServerStatusCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Unregister mqtt connect callback.</td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
@@ -239,7 +239,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#connect()>connect</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Connects to an MQTT server and init MQTT config.</td>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
@@ -247,7 +247,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#close()>close</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Close the client.</td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
@@ -255,7 +255,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#justConnect()>justConnect</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Just connects to an MQTT server.</td>
                                         </tr>
                                         
                                         <tr id="i14" class="altColor">
@@ -263,7 +263,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#justClose()>justClose</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Just close connection, not releases all resource.</td>
                                         </tr>
                                         
                                         <tr id="i15" class="rowColor">
@@ -271,7 +271,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#isRealConnect()>isRealConnect</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Determines if this client is currently connected to the server.</td>
                                         </tr>
                                         
                                         <tr id="i16" class="altColor">
@@ -279,7 +279,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#registerMqttMessageParserListener(MqttMessageRespParseListener)>registerMqttMessageParserListener</a>(MqttMessageRespParseListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register mqtt message listener, callback message of specify topic.</td>
                                         </tr>
                                         
                                         <tr id="i17" class="rowColor">
@@ -287,7 +287,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#unRegisterMqttMessageParserListener(MqttMessageRespParseListener)>unRegisterMqttMessageParserListener</a>(MqttMessageRespParseListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Unregister mqtt message listener, callback message of specify topic.</td>
                                         </tr>
                                         
                                         <tr id="i18" class="altColor">
@@ -295,7 +295,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#registerMqttFlowRespParseListener(MqttFlowRespParseListener)>registerMqttFlowRespParseListener</a>(MqttFlowRespParseListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register flow response listener, just for sweeper device.</td>
                                         </tr>
                                         
                                         <tr id="i19" class="rowColor">
@@ -303,7 +303,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#unRegisterMqttFlowRespParseListener(MqttFlowRespParseListener)>unRegisterMqttFlowRespParseListener</a>(MqttFlowRespParseListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Unregister flow response listener, just for sweeper device.</td>
                                         </tr>
                                         
                                         <tr id="i20" class="altColor">
@@ -311,7 +311,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#rawConnect()>rawConnect</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Connects to an MQTT server , direct connect.</td>
                                         </tr>
                                         
                                         <tr id="i21" class="rowColor">
@@ -319,15 +319,15 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#setMqttConfigTransfer(IThingGetBaseConfig)>setMqttConfigTransfer</a>(IThingGetBaseConfig iThingMQTTConfig) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">MQTT connect config</td>
                                         </tr>
                                         
                                         <tr id="i22" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMqttServer.html#publishLinkWithTopic(MqttControlBuilder,IResultCallback)>publishLinkWithTopic</a>(<a href=MqttControlBuilder.html>MqttControlBuilder</a> builder, IResultCallback resultCallback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMqttServer.html#publishLinkWithTopic(MqttControlBuilder,IResultCallback)>publishLinkWithTopic</a>(MqttControlBuilder builder, IResultCallback resultCallback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Publish message to specified device to control it on mqtt server.</td>
                                         </tr>
                                         
                                         <tr id="i23" class="rowColor">
@@ -335,7 +335,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMqttServer.html#isSubscribe(String)>isSubscribe</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">是否已经订阅</td>
                                         </tr>
                                         
                                         </tbody>
@@ -380,7 +380,20 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>subscribe</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#subscribe(String,IResultCallback)>subscribe</a>(String topic, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Subscribe to a topic.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topic</code> - the topic to subscribe to, which can include wildcards.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - optional listener that will be notified when subscribe hascompleted</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -395,7 +408,24 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>subscribe</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#subscribe(String,int,IResultCallback)>subscribe</a>(String topic, int qos, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Subscribe to a topic with qos.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topic</code> - the topic to subscribe to, which can include wildcards.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>qos</code> - the maximum quality of service at which to subscribe.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - optional listener that will be notified when subscribe hascompleted</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -410,7 +440,20 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>subscribe</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#subscribe(Array,IResultCallback)>subscribe</a>(Array&lt;String&gt; topicIds, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Subscribe topics to MQTT server.</p><p>If you need to register a listener, please see <a href=IMqttServer.html#registerMqttMessageParserListener(MqttMessageRespParseListener)>registerMqttMessageParserListener</a></p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topicIds</code> - Topic ids which you want to subscribe.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback whether the subscription is successful</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -425,7 +468,24 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>subscribe</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#subscribe(Array,Array,IResultCallback)>subscribe</a>(Array&lt;String&gt; topic, Array&lt;int&gt; qos, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Subscribes to multiple topics, each topic may include wildcards.</p><p>Provides an optimized way to subscribe to multiple topics compared tosubscribing to each one individually.</p><p>The <a href=IMqttServer.html#registerMqttMessageParserListener(MqttMessageRespParseListener)>registerMqttMessageParserListener</a> method should be called beforethis method, otherwise any received messages will be discarded.</p><p>If (@link MqttConnectOptions#setCleanSession(boolean)} was set to true,when connecting to the server, the subscription remains in place untileither:</p><ul><li>The client disconnects</li><li>An unsubscribe method is called to unsubscribe the topic</li></ul><p>If (@link MqttConnectOptions#setCleanSession(boolean)} was set to false,when connecting to the server, the subscription remains in placeuntil either:</p><ul><li>An unsubscribe method is called to unsubscribe the topic</li><li>The next time the client connects with cleanSession set to true</li></ul><p>With cleanSession set to false the MQTT server will store messageson behalf of the client when the client is not connected. The next timethe client connects with the same client ID the server willdeliver the stored messages to the client.</p><p>The "topic filter" string is used when subscription may contain specialcharacters, which allows you to subscribe to multiple topics at once.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topic</code> - one or more topics to subscribe to, which can includewildcards</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>qos</code> - the maximum quality of service to subscribe each topicat.Messages published at a lower quality of service will bereceived at the published QoS.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - optional listener that will be notified when subscribe hascompleted</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -440,7 +500,20 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>unSubscribe</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#unSubscribe(String,IResultCallback)>unSubscribe</a>(String topic, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Requests the server unsubscribe the client from a topic.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topic</code> - the topic to unsubscribe from.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - optional listener that will be notified when unsubscribe hascompleted</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -455,7 +528,24 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>publish</h4>
                                         <pre class="methodSignature"> abstract IMqttDeliveryToken <a href=IMqttServer.html#publish(String,Array,IResultCallback)>publish</a>(String topic, Array&lt;byte&gt; data, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Publishes a message to a topic on the server.</p><p>Once this method has returned cleanly, the message has been accepted forpublication by the client and will be delivered on a background thread.In the event the connection fails or the client stops, Messages will bedelivered to the requested quality of service once the connection isre-established to the server on condition that:</p><ul><li>The connection is re-established with the same clientID</li><li>The original connection was made with (@linkMqttConnectOptions#setCleanSession(boolean)} set to false</li><li>The connection is re-established with (@linkMqttConnectOptions#setCleanSession(boolean)} set to false</li><li>Depending when the failure occurs QoS 0 messages may not bedelivered.</li></ul><p>When building an application, the design of the topic tree should takeinto account the following principles of topic name syntax and semantics:</p><ul><li>A topic must be at least one character long.</li><li>Topic names are case sensitive. For example, ACCOUNTS andAccounts are two different topics.</li><li>Topic names can include the space character. For example,Accountspayable is a valid topic.</li><li>A leading "/" creates a distinct topic. For example,/finance is different from finance. /financematches "+/+" and "/+", but not "+".</li><li>Do not include the null character (Unicode \x0000) in any topic.</li></ul><p>The following principles apply to the construction and content of a topictree:</p><ul><li>The length is limited to 64k but within that there are no limits tothe number of levels in a topic tree.</li><li>There can be any number of root nodes; that is, there can be anynumber of topic trees.</li></ul></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topic</code> - to deliver the message to, for example "finance/stock/ibm".</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>data</code> - to deliver to the server</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - optional listener that will be notified when message deliveryhas completed to the requested quality of service</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -470,7 +560,32 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>publish</h4>
                                         <pre class="methodSignature"> abstract IMqttDeliveryToken <a href=IMqttServer.html#publish(String,Array,int,boolean,IResultCallback)>publish</a>(String topicId, Array&lt;byte&gt; data, int qos, boolean retained, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Publishes a message to a topic on the server.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topicId</code> - to deliver the message to, for example "finance/stock/ibm".</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>data</code> - to deliver to the server</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>qos</code> - the Quality of Service to deliver the message at.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>retained</code> - whether or not this message should be retained by the server.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - optional listener that will be notified when message deliveryhas completed to the requested quality of service</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -484,8 +599,21 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                           >
                                     <li class="blockList">
                                         <h4>publishDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMqttServer.html#publishDevice(MqttControlBuilder,IResultCallback)>publishDevice</a>(<a href=MqttControlBuilder.html>MqttControlBuilder</a> builder, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract void <a href=IMqttServer.html#publishDevice(MqttControlBuilder,IResultCallback)>publishDevice</a>(MqttControlBuilder builder, IResultCallback callback)</pre>
+                                        <div class="block"><p>Publish message to specified device to control it on mqtt server.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>builder</code> - MqttControlBuilder Control device message builder</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Listener that will be notified when message deliveryhas completed to the requested quality of service</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -499,8 +627,23 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                           >
                                     <li class="blockList">
                                         <h4>publishDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMqttServer.html#publishDevice(MqttControlBuilder,PublishAndDeliveryCallback,IResultCallback)>publishDevice</a>(<a href=MqttControlBuilder.html>MqttControlBuilder</a> builder, PublishAndDeliveryCallback callback, IResultCallback resultCallback)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract void <a href=IMqttServer.html#publishDevice(MqttControlBuilder,PublishAndDeliveryCallback,IResultCallback)>publishDevice</a>(MqttControlBuilder builder, PublishAndDeliveryCallback callback, IResultCallback resultCallback)</pre>
+                                        <div class="block"><p>Publish message to specified device to control it on mqtt server.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>builder</code> - MqttControlBuilder Control device message builder</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - PublishAndDeliveryCallback Listener that will be notified when message deliveryhas completed to the requested quality of service</dd>
+                                            
+                                            
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -515,7 +658,16 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>registerMqttCallback</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#registerMqttCallback(IMqttServerStatusCallback)>registerMqttCallback</a>(IMqttServerStatusCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register mqtt connect callback.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callback</code> - mqtt connect callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -530,7 +682,16 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>unRegisterMqttCallback</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#unRegisterMqttCallback(IMqttServerStatusCallback)>unRegisterMqttCallback</a>(IMqttServerStatusCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Unregister mqtt connect callback.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callback</code> - mqtt connect callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -545,7 +706,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>connect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#connect()>connect</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Connects to an MQTT server and init MQTT config.</p><p>It is recommended to call <a href=IMqttServer.html#registerMqttCallback(IMqttServerStatusCallback)>registerMqttCallback</a> prior toconnecting in order that messages destined for the client can be acceptedas soon as the client is connected.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -560,7 +721,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>close</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#close()>close</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Close the client. Releases all resource associated with the client. Afterthe client has been closed it cannot be reused. For instance attempts toconnect will fail.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -575,7 +736,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>justConnect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#justConnect()>justConnect</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Just connects to an MQTT server. <a href=IMqttServer.html#connect()>connect</a> also initialize the configuration.</p><p>Only call the <a href=IMqttServer.html#justClose()>justClose</a> method can call this method.</p><p>It is recommended to call <a href=IMqttServer.html#registerMqttCallback(IMqttServerStatusCallback)>registerMqttCallback</a> prior toconnecting in order that messages destined for the client can be acceptedas soon as the client is connected.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -590,7 +751,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>justClose</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#justClose()>justClose</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Just close connection, not releases all resource.If you need to reconnect, just call <a href=IMqttServer.html#justConnect()>justConnect</a></p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -605,7 +766,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>isRealConnect</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=IMqttServer.html#isRealConnect()>isRealConnect</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Determines if this client is currently connected to the server.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -620,7 +781,16 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>registerMqttMessageParserListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#registerMqttMessageParserListener(MqttMessageRespParseListener)>registerMqttMessageParserListener</a>(MqttMessageRespParseListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register mqtt message listener, callback message of specify topic.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - MqttMessageRespParseListener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -635,7 +805,16 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>unRegisterMqttMessageParserListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#unRegisterMqttMessageParserListener(MqttMessageRespParseListener)>unRegisterMqttMessageParserListener</a>(MqttMessageRespParseListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Unregister mqtt message listener, callback message of specify topic.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - MqttMessageRespParseListener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -650,7 +829,16 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>registerMqttFlowRespParseListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#registerMqttFlowRespParseListener(MqttFlowRespParseListener)>registerMqttFlowRespParseListener</a>(MqttFlowRespParseListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register flow response listener, just for sweeper device.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - MqttFlowRespParseListener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -665,7 +853,16 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>unRegisterMqttFlowRespParseListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#unRegisterMqttFlowRespParseListener(MqttFlowRespParseListener)>unRegisterMqttFlowRespParseListener</a>(MqttFlowRespParseListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Unregister flow response listener, just for sweeper device.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - MqttFlowRespParseListener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -680,7 +877,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>rawConnect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#rawConnect()>rawConnect</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Connects to an MQTT server , direct connect.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -695,7 +892,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>setMqttConfigTransfer</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMqttServer.html#setMqttConfigTransfer(IThingGetBaseConfig)>setMqttConfigTransfer</a>(IThingGetBaseConfig iThingMQTTConfig)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>MQTT connect config</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -709,8 +906,21 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                           >
                                     <li class="blockList">
                                         <h4>publishLinkWithTopic</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMqttServer.html#publishLinkWithTopic(MqttControlBuilder,IResultCallback)>publishLinkWithTopic</a>(<a href=MqttControlBuilder.html>MqttControlBuilder</a> builder, IResultCallback resultCallback)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract void <a href=IMqttServer.html#publishLinkWithTopic(MqttControlBuilder,IResultCallback)>publishLinkWithTopic</a>(MqttControlBuilder builder, IResultCallback resultCallback)</pre>
+                                        <div class="block"><p>Publish message to specified device to control it on mqtt server.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>builder</code> - MqttControlBuilder Control device message builder</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>resultCallback</code> - IResultCallback Listener that has completed to the requested quality of service</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -725,7 +935,7 @@ public interface <span class="typeNameLabel"><a href=IMqttServer.html>IMqttServe
                                     <li class="blockList">
                                         <h4>isSubscribe</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=IMqttServer.html#isSubscribe(String)>isSubscribe</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>是否已经订阅</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

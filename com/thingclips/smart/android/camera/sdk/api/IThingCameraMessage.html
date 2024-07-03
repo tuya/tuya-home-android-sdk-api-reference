@@ -149,7 +149,7 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getAlarmDetectionMessageList(String,int,int,Array,int,int,IThingResultCallback<List<CameraMessageBean>>)>getAlarmDetectionMessageList</a>(String devId, int startTime, int endTime, Array&lt;String&gt; msgCodes, int offset, int limit, IThingResultCallback&lt;List&lt;CameraMessageBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getLatestMessageImage(String,IThingResultCallback<String>)>getLatestMessageImage</a>(String devIds, IThingResultCallback&lt;String&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -157,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getAlarmDetectionMessageList(String,int,int,Array,Array,int,int,IThingResultCallback<List<CameraMessageBean>>)>getAlarmDetectionMessageList</a>(String devId, int startTime, int endTime, Array&lt;String&gt; msgCodes, Array&lt;String&gt; sourceIds, int offset, int limit, IThingResultCallback&lt;List&lt;CameraMessageBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getAlarmDetectionMessageList(String,int,int,Array,int,int,IThingResultCallback<List<CameraMessageBean>>)>getAlarmDetectionMessageList</a>(String devId, int startTime, int endTime, Array&lt;String&gt; msgCodes, int offset, int limit, IThingResultCallback&lt;List&lt;CameraMessageBean&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -165,7 +165,7 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getAlarmDetectionMessageList(String,int,int,Array,int,int,int,boolean,IThingResultCallback<List<CameraMessageBean>>)>getAlarmDetectionMessageList</a>(String devId, int startTime, int endTime, Array&lt;String&gt; msgCodes, int offset, int limit, int msgType, boolean keepOrig, IThingResultCallback&lt;List&lt;CameraMessageBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getAlarmDetectionMessageList(String,int,int,Array,Array,int,int,IThingResultCallback<List<CameraMessageBean>>)>getAlarmDetectionMessageList</a>(String devId, int startTime, int endTime, Array&lt;String&gt; msgCodes, Array&lt;String&gt; sourceIds, int offset, int limit, IThingResultCallback&lt;List&lt;CameraMessageBean&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -173,7 +173,7 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#queryMotionDaysByMonth(String,int,int,IThingResultCallback<List<String>>)>queryMotionDaysByMonth</a>(String devId, int year, int month, IThingResultCallback&lt;List&lt;String&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getAlarmDetectionMessageList(String,int,int,Array,int,int,int,boolean,IThingResultCallback<List<CameraMessageBean>>)>getAlarmDetectionMessageList</a>(String devId, int startTime, int endTime, Array&lt;String&gt; msgCodes, int offset, int limit, int msgType, boolean keepOrig, IThingResultCallback&lt;List&lt;CameraMessageBean&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -181,7 +181,7 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#queryMotionDaysByMonth(String,int,int,String,IThingResultCallback<List<String>>)>queryMotionDaysByMonth</a>(String devId, int year, int month, String timeZoneId, IThingResultCallback&lt;List&lt;String&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#queryMotionDaysByMonth(String,int,int,IThingResultCallback<List<String>>)>queryMotionDaysByMonth</a>(String devId, int year, int month, IThingResultCallback&lt;List&lt;String&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -189,7 +189,7 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#queryAlarmDetectionClassify(String,IThingResultCallback<List<CameraMessageClassifyBean>>)>queryAlarmDetectionClassify</a>(String devId, IThingResultCallback&lt;List&lt;CameraMessageClassifyBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#queryMotionDaysByMonth(String,int,int,String,String,IThingResultCallback<List<String>>)>queryMotionDaysByMonth</a>(String devId, int year, int month, String timeZoneId, String msgType, IThingResultCallback&lt;List&lt;String&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -197,7 +197,7 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#deleteMotionMessageList(List,IThingResultCallback<Boolean>)>deleteMotionMessageList</a>(List&lt;String&gt; ids, IThingResultCallback&lt;Boolean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#queryMotionDaysByMonth(String,int,int,String,IThingResultCallback<List<String>>)>queryMotionDaysByMonth</a>(String devId, int year, int month, String timeZoneId, IThingResultCallback&lt;List&lt;String&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -205,7 +205,7 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getMessageAITags(String,IThingResultCallback<List<AITagBean>>)>getMessageAITags</a>(String devId, IThingResultCallback&lt;List&lt;AITagBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#queryAlarmDetectionClassify(String,IThingResultCallback<List<CameraMessageClassifyBean>>)>queryAlarmDetectionClassify</a>(String devId, IThingResultCallback&lt;List&lt;CameraMessageClassifyBean&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -213,12 +213,28 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getVideoCheckServiceUrl(ResultListener<JSONObject>)>getVideoCheckServiceUrl</a>(ResultListener&lt;JSONObject&gt; listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#deleteMotionMessageList(List,IThingResultCallback<Boolean>)>deleteMotionMessageList</a>(List&lt;String&gt; ids, IThingResultCallback&lt;Boolean&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getMessageAITags(String,IThingResultCallback<List<AITagBean>>)>getMessageAITags</a>(String devId, IThingResultCallback&lt;List&lt;AITagBean&gt;&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#getVideoCheckServiceUrl(ResultListener<JSONObject>)>getVideoCheckServiceUrl</a>(ResultListener&lt;JSONObject&gt; listener) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCameraMessage.html#destroy()>destroy</a>() </code>
@@ -258,6 +274,21 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                 <!--   -->
                             </a>
                                 <h3>Method Detail</h3>
+                                
+                                <a id="getLatestMessageImage(String,IThingResultCallback&lt;String&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getLatestMessageImage</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingCameraMessage.html#getLatestMessageImage(String,IThingResultCallback<String>)>getLatestMessageImage</a>(String devIds, IThingResultCallback&lt;String&gt; callback)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
                                 
                                 <a id="getAlarmDetectionMessageList(String,int,int,Array,int,int,IThingResultCallback&lt;List&lt;CameraMessageBean&gt;&gt;)">
                                     <!--   -->
@@ -313,6 +344,21 @@ public interface <span class="typeNameLabel"><a href=IThingCameraMessage.html>IT
                                     <li class="blockList">
                                         <h4>queryMotionDaysByMonth</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCameraMessage.html#queryMotionDaysByMonth(String,int,int,IThingResultCallback<List<String>>)>queryMotionDaysByMonth</a>(String devId, int year, int month, IThingResultCallback&lt;List&lt;String&gt;&gt; callback)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="queryMotionDaysByMonth(String,int,int,String,String,IThingResultCallback&lt;List&lt;String&gt;&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>queryMotionDaysByMonth</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingCameraMessage.html#queryMotionDaysByMonth(String,int,int,String,String,IThingResultCallback<List<String>>)>queryMotionDaysByMonth</a>(String devId, int year, int month, String timeZoneId, String msgType, IThingResultCallback&lt;List&lt;String&gt;&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->

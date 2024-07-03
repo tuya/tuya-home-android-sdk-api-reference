@@ -147,11 +147,11 @@ public interface <span class="typeNameLabel"><a href=IThingThirdProtocolDelegate
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code>abstract <a href=api/ThirdBleScanDeviceBuilder.html>ThirdBleScanDeviceBuilder</a></code>
+                                            <td class="colFirst"><code>abstract ThirdBleScanDeviceBuilder</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingThirdProtocolDelegate.html#beaconParse(boolean,BluetoothDevice,String,String,int,Array)>beaconParse</a>(boolean isActivatorScan, BluetoothDevice device, String name, String address, int rssi, Array&lt;byte&gt; scanRecord) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">三方广播解析类，若广播规则符合自己的定义数据 则返回ThirdBleScanDeviceBuilder ，否则返回空特别说明：isActivatorScan： true 表示是配网任务的扫描, false表示是内部重连任务的扫描</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingThirdProtocolDelegate
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingThirdProtocolDelegate.html#newThingBluetoothFlow(int)>newThingBluetoothFlow</a>(int protocolId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">若发现 protocolId 为三方协议区间的 protocolId，则内部会调用 代理层代理层根据 是否是自己的protocolId 来做处理</td>
                                         </tr>
                                         
                                         </tbody>
@@ -203,8 +203,8 @@ public interface <span class="typeNameLabel"><a href=IThingThirdProtocolDelegate
                                           >
                                     <li class="blockList">
                                         <h4>beaconParse</h4>
-                                        <pre class="methodSignature"> abstract <a href=api/ThirdBleScanDeviceBuilder.html>ThirdBleScanDeviceBuilder</a> <a href=IThingThirdProtocolDelegate.html#beaconParse(boolean,BluetoothDevice,String,String,int,Array)>beaconParse</a>(boolean isActivatorScan, BluetoothDevice device, String name, String address, int rssi, Array&lt;byte&gt; scanRecord)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract ThirdBleScanDeviceBuilder <a href=IThingThirdProtocolDelegate.html#beaconParse(boolean,BluetoothDevice,String,String,int,Array)>beaconParse</a>(boolean isActivatorScan, BluetoothDevice device, String name, String address, int rssi, Array&lt;byte&gt; scanRecord)</pre>
+                                        <div class="block"><p>三方广播解析类，若广播规则符合自己的定义数据 则返回ThirdBleScanDeviceBuilder ，否则返回空特别说明：isActivatorScan： true 表示是配网任务的扫描, false表示是内部重连任务的扫描</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -219,7 +219,7 @@ public interface <span class="typeNameLabel"><a href=IThingThirdProtocolDelegate
                                     <li class="blockList">
                                         <h4>newThingBluetoothFlow</h4>
                                         <pre class="methodSignature"> abstract IThingBluetoothFlow <a href=IThingThirdProtocolDelegate.html#newThingBluetoothFlow(int)>newThingBluetoothFlow</a>(int protocolId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>若发现 protocolId 为三方协议区间的 protocolId，则内部会调用 代理层代理层根据 是否是自己的protocolId 来做处理</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

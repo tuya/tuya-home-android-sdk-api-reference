@@ -194,6 +194,14 @@ public interface <span class="typeNameLabel"><a href=OnP2PCameraListener.html>On
                                             <td class="colLast"></td>
                                         </tr>
                                         
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=OnP2PCameraListener.html#onEventInfoReceived(int,int,long,String)>onEventInfoReceived</a>(int event, int error_code, long reserved, String strinfo) </code>
+                                            </th>
+                                            <td class="colLast">receive camera sdk event</td>
+                                        </tr>
+                                        
                                         </tbody>
                                     </table>
                                 </div>
@@ -306,12 +314,27 @@ public interface <span class="typeNameLabel"><a href=OnP2PCameraListener.html>On
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>onReceiveSpeakerEchoData</h4>
                                         <pre class="methodSignature"> abstract void <a href=OnP2PCameraListener.html#onReceiveSpeakerEchoData(ByteBuffer,int)>onReceiveSpeakerEchoData</a>(ByteBuffer pcm, int sampleRate)</pre>
                                         <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="onEventInfoReceived(int,int,long,String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>onEventInfoReceived</h4>
+                                        <pre class="methodSignature"> void <a href=OnP2PCameraListener.html#onEventInfoReceived(int,int,long,String)>onEventInfoReceived</a>(int event, int error_code, long reserved, String strinfo)</pre>
+                                        <div class="block"><p>receive camera sdk event</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

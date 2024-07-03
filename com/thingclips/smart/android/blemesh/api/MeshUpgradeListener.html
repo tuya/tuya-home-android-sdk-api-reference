@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=MeshUpgradeListener.html>MeshUpgradeListener</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Created by zsg on 17/10/20.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=MeshUpgradeListener.html>Me
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MeshUpgradeListener.html#onUpgrade(int)>onUpgrade</a>(int percent) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Ota progress.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=MeshUpgradeListener.html>Me
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MeshUpgradeListener.html#onSendSuccess()>onSendSuccess</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">File send success.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=MeshUpgradeListener.html>Me
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MeshUpgradeListener.html#onUpgradeSuccess()>onUpgradeSuccess</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Ota success.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=MeshUpgradeListener.html>Me
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MeshUpgradeListener.html#onFail(String,String)>onFail</a>(String errorCode, String errorMsg) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Ota failed.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -220,7 +220,16 @@ public interface <span class="typeNameLabel"><a href=MeshUpgradeListener.html>Me
                                     <li class="blockList">
                                         <h4>onUpgrade</h4>
                                         <pre class="methodSignature"> abstract void <a href=MeshUpgradeListener.html#onUpgrade(int)>onUpgrade</a>(int percent)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Ota progress.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>percent</code> - progress</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -235,7 +244,7 @@ public interface <span class="typeNameLabel"><a href=MeshUpgradeListener.html>Me
                                     <li class="blockList">
                                         <h4>onSendSuccess</h4>
                                         <pre class="methodSignature"> abstract void <a href=MeshUpgradeListener.html#onSendSuccess()>onSendSuccess</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>File send success.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -250,7 +259,7 @@ public interface <span class="typeNameLabel"><a href=MeshUpgradeListener.html>Me
                                     <li class="blockList">
                                         <h4>onUpgradeSuccess</h4>
                                         <pre class="methodSignature"> abstract void <a href=MeshUpgradeListener.html#onUpgradeSuccess()>onUpgradeSuccess</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Ota success.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -265,7 +274,20 @@ public interface <span class="typeNameLabel"><a href=MeshUpgradeListener.html>Me
                                     <li class="blockList">
                                         <h4>onFail</h4>
                                         <pre class="methodSignature"> abstract void <a href=MeshUpgradeListener.html#onFail(String,String)>onFail</a>(String errorCode, String errorMsg)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Ota failed.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>errorCode</code> - Error code.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>errorMsg</code> - Error message.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

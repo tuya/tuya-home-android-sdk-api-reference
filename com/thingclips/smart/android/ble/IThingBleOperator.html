@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThingBleOperator</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>BLE operate manager. Provide basic ability of Normal BLE</p></div>
                 </li>
             </ul>
         </div>
@@ -157,17 +157,17 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#startLeScan(int,ScanType,BleScanResponse)>startLeScan</a>(int timeout, <a href=api/ScanType.html>ScanType</a> type, BleScanResponse response) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#startLeScan(int,ScanType,BleScanResponse)>startLeScan</a>(int timeout, ScanType type, BleScanResponse response) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Scan surrounding Bluetooth devices</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#startLeScan(LeScanSetting,BleScanResponse)>startLeScan</a>(<a href=api/LeScanSetting.html>LeScanSetting</a> setting, BleScanResponse response) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#startLeScan(LeScanSetting,BleScanResponse)>startLeScan</a>(LeScanSetting setting, BleScanResponse response) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Scan surrounding Bluetooth devices ,support multi scan type</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#clearLeCache()>clearLeCache</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">clear scan cache</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#startScan(List,ScanSettings,PendingIntent)>startScan</a>(List&lt;ScanFilter&gt; filters, ScanSettings settings, PendingIntent callbackIntent) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">pendingIntent scan by Android system api</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#stopScan(PendingIntent)>stopScan</a>(PendingIntent callbackIntent) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">stop pendingIntent scan</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#stopLeScan()>stopLeScan</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">stop scan</td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
@@ -207,7 +207,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#connectBleDevice(String,LeConnectResponse)>connectBleDevice</a>(String address, LeConnectResponse response) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Connect normal bluetooth devices, only physical connection, you can connect all Bluetooth devices.</td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
@@ -215,7 +215,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#registerBleConnectStatus(String,LeConnectStatusResponse)>registerBleConnectStatus</a>(String address, LeConnectStatusResponse response) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register normal bluetooth connection status monitoring.</td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
@@ -223,7 +223,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#unregisterBleConnectStatus(String)>unregisterBleConnectStatus</a>(String address) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">unregister normal bluetooth connection status monitoring.</td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
@@ -231,7 +231,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#disconnectBleDevice(String)>disconnectBleDevice</a>(String address) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">disconnect normal bluetooth</td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
@@ -239,7 +239,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#readBluetoothRssi(String,BleRssiListener)>readBluetoothRssi</a>(String mac, BleRssiListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">read device rssi</td>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
@@ -247,7 +247,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#isBluetoothOpened()>isBluetoothOpened</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">is phone bluetooth open</td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
@@ -255,7 +255,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#openBluetooth()>openBluetooth</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">open the phone bluetooth</td>
                                         </tr>
                                         
                                         <tr id="i14" class="altColor">
@@ -263,7 +263,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#closeBluetooth()>closeBluetooth</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">close the phone bluetooth</td>
                                         </tr>
                                         
                                         <tr id="i15" class="rowColor">
@@ -271,7 +271,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#isBleSupported()>isBleSupported</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Does the phone support Bluetooth</td>
                                         </tr>
                                         
                                         <tr id="i16" class="altColor">
@@ -279,7 +279,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#getBondState(String)>getBondState</a>(String mac) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get Bluetooth binding statusBOND_NONE = 10BOND_BONDING = 11BOND_BONDED = 12code = -1 ，maybe no bluetooth connect permission</td>
                                         </tr>
                                         
                                         <tr id="i17" class="rowColor">
@@ -303,7 +303,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#createBond(String,IResultCallback)>createBond</a>(String deviceMac, IResultCallback response) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Start the bonding (pairing) process with the remote device.</td>
                                         </tr>
                                         
                                         <tr id="i20" class="altColor">
@@ -311,7 +311,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#removeBond(String,IResultCallback)>removeBond</a>(String deviceMac, IResultCallback removeBondResponse) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Remove bond (pairing) with the remote device.</td>
                                         </tr>
                                         
                                         <tr id="i21" class="rowColor">
@@ -333,9 +333,9 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                         <tr id="i23" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#startScanBindDevice(int,ScanType,IThingResultCallback<String>)>startScanBindDevice</a>(int timeout, <a href=api/ScanType.html>ScanType</a> type, IThingResultCallback&lt;String&gt; response) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleOperator.html#startScanBindDevice(int,ScanType,IThingResultCallback<String>)>startScanBindDevice</a>(int timeout, ScanType type, IThingResultCallback&lt;String&gt; response) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Scan surrounding Bluetooth devices</td>
                                         </tr>
                                         
                                         </tbody>
@@ -394,8 +394,25 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>startLeScan</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#startLeScan(int,ScanType,BleScanResponse)>startLeScan</a>(int timeout, <a href=api/ScanType.html>ScanType</a> type, BleScanResponse response)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#startLeScan(int,ScanType,BleScanResponse)>startLeScan</a>(int timeout, ScanType type, BleScanResponse response)</pre>
+                                        <div class="block"><p>Scan surrounding Bluetooth devices</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>timeout</code> - scan timeout</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>type</code> - scan type see ScanType</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>response</code> - response BleScanResponse</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -409,8 +426,21 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>startLeScan</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#startLeScan(LeScanSetting,BleScanResponse)>startLeScan</a>(<a href=api/LeScanSetting.html>LeScanSetting</a> setting, BleScanResponse response)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#startLeScan(LeScanSetting,BleScanResponse)>startLeScan</a>(LeScanSetting setting, BleScanResponse response)</pre>
+                                        <div class="block"><p>Scan surrounding Bluetooth devices ,support multi scan type</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>setting</code> - scan setting LeScanSetting</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>response</code> - response BleScanResponse</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -425,7 +455,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>clearLeCache</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#clearLeCache()>clearLeCache</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>clear scan cache</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -440,7 +470,24 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>startScan</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#startScan(List,ScanSettings,PendingIntent)>startScan</a>(List&lt;ScanFilter&gt; filters, ScanSettings settings, PendingIntent callbackIntent)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>pendingIntent scan by Android system api</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>filters</code> - see ScanFilter</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>settings</code> - see ScanSettings</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callbackIntent</code> - see PendingIntent</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -455,7 +502,16 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>stopScan</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#stopScan(PendingIntent)>stopScan</a>(PendingIntent callbackIntent)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>stop pendingIntent scan</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callbackIntent</code> - see PendingIntent</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -470,7 +526,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>stopLeScan</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#stopLeScan()>stopLeScan</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>stop scan</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -485,7 +541,20 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>connectBleDevice</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#connectBleDevice(String,LeConnectResponse)>connectBleDevice</a>(String address, LeConnectResponse response)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Connect normal bluetooth devices, only physical connection, you can connect all Bluetooth devices.This type of connect returns only after the connection is successful</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>address</code> - Bluetooth device address</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>response</code> - connect response LeConnectResponse</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -500,7 +569,20 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>registerBleConnectStatus</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#registerBleConnectStatus(String,LeConnectStatusResponse)>registerBleConnectStatus</a>(String address, LeConnectStatusResponse response)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register normal bluetooth connection status monitoring.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>address</code> - device's address</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>response</code> - response</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -515,7 +597,16 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>unregisterBleConnectStatus</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#unregisterBleConnectStatus(String)>unregisterBleConnectStatus</a>(String address)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>unregister normal bluetooth connection status monitoring.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>address</code> - device's address</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -530,7 +621,16 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>disconnectBleDevice</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#disconnectBleDevice(String)>disconnectBleDevice</a>(String address)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>disconnect normal bluetooth</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>address</code> - device's address</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -545,7 +645,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>readBluetoothRssi</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#readBluetoothRssi(String,BleRssiListener)>readBluetoothRssi</a>(String mac, BleRssiListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>read device rssi</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -559,8 +659,8 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>isBluetoothOpened</h4>
-                                        <pre class="methodSignature"> abstract boolean <a href=IThingBleOperator.html#isBluetoothOpened()>isBluetoothOpened</a>()</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract boolean <a href=IThingBleOperator.html#isBluetoothOpened()>isBluetoothOpened</a>()</pre>
+                                        <div class="block"><p>is phone bluetooth open</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -574,8 +674,8 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>openBluetooth</h4>
-                                        <pre class="methodSignature"> abstract boolean <a href=IThingBleOperator.html#openBluetooth()>openBluetooth</a>()</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract boolean <a href=IThingBleOperator.html#openBluetooth()>openBluetooth</a>()</pre>
+                                        <div class="block"><p>open the phone bluetooth</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -589,8 +689,8 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>closeBluetooth</h4>
-                                        <pre class="methodSignature"> abstract boolean <a href=IThingBleOperator.html#closeBluetooth()>closeBluetooth</a>()</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract boolean <a href=IThingBleOperator.html#closeBluetooth()>closeBluetooth</a>()</pre>
+                                        <div class="block"><p>close the phone bluetooth</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -605,7 +705,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>isBleSupported</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=IThingBleOperator.html#isBleSupported()>isBleSupported</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Does the phone support Bluetooth</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -620,7 +720,16 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>getBondState</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingBleOperator.html#getBondState(String)>getBondState</a>(String mac)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get Bluetooth binding statusBOND_NONE = 10BOND_BONDING = 11BOND_BONDED = 12code = -1 ，maybe no bluetooth connect permission</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>mac</code> - device's address</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -665,7 +774,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>createBond</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#createBond(String,IResultCallback)>createBond</a>(String deviceMac, IResultCallback response)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Start the bonding (pairing) process with the remote device.</p><p>This is an asynchronous call, it will return immediately. Registerfor ACTION_BOND_STATE_CHANGED intents to be notified whenthe bonding process completes, and its result.</p><p>Android system services will handle the necessary user interactionsto confirm and complete the bonding process.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -680,7 +789,18 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                     <li class="blockList">
                                         <h4>removeBond</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#removeBond(String,IResultCallback)>removeBond</a>(String deviceMac, IResultCallback removeBondResponse)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Remove bond (pairing) with the remote device.</p><p>Delete the link key associated with the remote device, andimmediately terminate connections to that device that requireauthentication and encryption.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>deviceMac</code> - device's mac</dd>
+                                            
+                                            
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -724,8 +844,25 @@ public interface <span class="typeNameLabel"><a href=IThingBleOperator.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>startScanBindDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#startScanBindDevice(int,ScanType,IThingResultCallback<String>)>startScanBindDevice</a>(int timeout, <a href=api/ScanType.html>ScanType</a> type, IThingResultCallback&lt;String&gt; response)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleOperator.html#startScanBindDevice(int,ScanType,IThingResultCallback<String>)>startScanBindDevice</a>(int timeout, ScanType type, IThingResultCallback&lt;String&gt; response)</pre>
+                                        <div class="block"><p>Scan surrounding Bluetooth devices</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>timeout</code> - scan timeout</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>type</code> - scan type see ScanType</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>response</code> - response the devId of bind device</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

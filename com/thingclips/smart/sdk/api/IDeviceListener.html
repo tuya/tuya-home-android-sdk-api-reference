@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDeviceListener</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>The agent of IDevListener</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IDeviceListener.html#onDpUpdate(String,Map)>onDpUpdate</a>(String devId, Map&lt;String, Object&gt; dpStr) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">On device data points code updated</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IDeviceListener.html#onRemoved(String)>onRemoved</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">On device removed</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IDeviceListener.html#onStatusChanged(String,boolean)>onStatusChanged</a>(String devId, boolean online) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">On device online/offline</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IDeviceListener.html#onNetworkStatusChanged(String,boolean)>onNetworkStatusChanged</a>(String devId, boolean status) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">On network status changed</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IDeviceListener.html#onDevInfoUpdate(String)>onDevInfoUpdate</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">On device info updated.(like name and so on).</td>
                                         </tr>
                                         
                                         </tbody>
@@ -228,7 +228,20 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                     <li class="blockList">
                                         <h4>onDpUpdate</h4>
                                         <pre class="methodSignature"> abstract void <a href=IDeviceListener.html#onDpUpdate(String,Map)>onDpUpdate</a>(String devId, Map&lt;String, Object&gt; dpStr)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>On device data points code updated</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dpStr</code> - Data points code map</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -243,7 +256,16 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                     <li class="blockList">
                                         <h4>onRemoved</h4>
                                         <pre class="methodSignature"> abstract void <a href=IDeviceListener.html#onRemoved(String)>onRemoved</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>On device removed</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -258,7 +280,20 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                     <li class="blockList">
                                         <h4>onStatusChanged</h4>
                                         <pre class="methodSignature"> abstract void <a href=IDeviceListener.html#onStatusChanged(String,boolean)>onStatusChanged</a>(String devId, boolean online)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>On device online/offline</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>online</code> - Is the device online</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -273,7 +308,20 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                     <li class="blockList">
                                         <h4>onNetworkStatusChanged</h4>
                                         <pre class="methodSignature"> abstract void <a href=IDeviceListener.html#onNetworkStatusChanged(String,boolean)>onNetworkStatusChanged</a>(String devId, boolean status)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>On network status changed</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>status</code> - Is the network available</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -288,7 +336,16 @@ public interface <span class="typeNameLabel"><a href=IDeviceListener.html>IDevic
                                     <li class="blockList">
                                         <h4>onDevInfoUpdate</h4>
                                         <pre class="methodSignature"> abstract void <a href=IDeviceListener.html#onDevInfoUpdate(String)>onDevInfoUpdate</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>On device info updated.(like name and so on).</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

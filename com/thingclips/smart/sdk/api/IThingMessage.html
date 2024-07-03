@@ -285,12 +285,20 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                         <tr id="i17" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getOnceDNDList(IThingDataCallback<ArrayList<DeviceAlarmNotDisturbVO>>)>getOnceDNDList</a>(IThingDataCallback&lt;ArrayList&lt;DeviceAlarmNotDisturbVO&gt;&gt; listener) </code>
+                                            </th>
+                                            <td class="colLast">Get the once time period list of Do not disturb that has been set</td>
+                                        </tr>
+                                        
+                                        <tr id="i18" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getDNDDeviceList(IThingDataCallback<ArrayList<NodisturbDevicesBean>>)>getDNDDeviceList</a>(IThingDataCallback&lt;ArrayList&lt;NodisturbDevicesBean&gt;&gt; listener) </code>
                                             </th>
                                             <td class="colLast">Get a list of devices that support DND</td>
                                         </tr>
                                         
-                                        <tr id="i18" class="altColor">
+                                        <tr id="i19" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#addDNDWithStartTime(String,String,String,String,IThingDataCallback<Long>)>addDNDWithStartTime</a>(String startTime, String endTime, String devIds, String loops, IThingDataCallback&lt;Long&gt; listener) </code>
@@ -298,7 +306,15 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Add do not disturb time period</td>
                                         </tr>
                                         
-                                        <tr id="i19" class="rowColor">
+                                        <tr id="i20" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMessage.html#addOnceDNDWithStartTime(String,String,String,IThingDataCallback<Long>)>addOnceDNDWithStartTime</a>(String startTime, String endTime, String devIds, IThingDataCallback&lt;Long&gt; listener) </code>
+                                            </th>
+                                            <td class="colLast">Add a once do not disturb time period</td>
+                                        </tr>
+                                        
+                                        <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#modifyDNDWithTimerId(long,String,String,String,String,IThingDataCallback<Boolean>)>modifyDNDWithTimerId</a>(long nodisturbAlarmId, String mStartTime, String mEndTime, String devIds, String loops, IThingDataCallback&lt;Boolean&gt; listener) </code>
@@ -306,7 +322,15 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Modify the do not disturb time period</td>
                                         </tr>
                                         
-                                        <tr id="i20" class="altColor">
+                                        <tr id="i22" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMessage.html#modifyOnceDNDWithTimerId(long,String,String,String,IThingDataCallback<Boolean>)>modifyOnceDNDWithTimerId</a>(long nodisturbAlarmId, String mStartTime, String mEndTime, String devIds, IThingDataCallback&lt;Boolean&gt; listener) </code>
+                                            </th>
+                                            <td class="colLast">Modify a single do not disturb time period</td>
+                                        </tr>
+                                        
+                                        <tr id="i23" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#removeDNDWithTimerId(long,IThingDataCallback<Boolean>)>removeDNDWithTimerId</a>(long id, IThingDataCallback&lt;Boolean&gt; listener) </code>
@@ -314,7 +338,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Delete Do Not Disturb Time Period</td>
                                         </tr>
                                         
-                                        <tr id="i21" class="rowColor">
+                                        <tr id="i24" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#getPrivacyAuthorizationStatus(AuthorizationType,IThingDataCallback<PrivacyAuthorizationBean>)>getPrivacyAuthorizationStatus</a>(AuthorizationType type, IThingDataCallback&lt;PrivacyAuthorizationBean&gt; callback) </code>
@@ -322,7 +346,7 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <td class="colLast">Get privacy authorization statuses.</td>
                                         </tr>
                                         
-                                        <tr id="i22" class="altColor">
+                                        <tr id="i25" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMessage.html#updatePrivacyAuthorizationStatus(Map,IResultCallback)>updatePrivacyAuthorizationStatus</a>(Map&lt;AuthorizationType, Boolean&gt; values, IResultCallback callback) </code>
@@ -906,6 +930,30 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                     </li>
                                 </ul>
                                 
+                                <a id="getOnceDNDList(IThingDataCallback&lt;ArrayList&lt;DeviceAlarmNotDisturbVO&gt;&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getOnceDNDList</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMessage.html#getOnceDNDList(IThingDataCallback<ArrayList<DeviceAlarmNotDisturbVO>>)>getOnceDNDList</a>(IThingDataCallback&lt;ArrayList&lt;DeviceAlarmNotDisturbVO&gt;&gt; listener)</pre>
+                                        <div class="block"><p>Get the once time period list of Do not disturb that has been set</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - IThingDataCallback</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
                                 <a id="getDNDDeviceList(IThingDataCallback&lt;ArrayList&lt;NodisturbDevicesBean&gt;&gt;)">
                                     <!--   -->
                                 </a>
@@ -945,11 +993,11 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>startTime</code> - Do not disturb start time</dd>
+                                            <dd><code>startTime</code> - Do not disturb start time,the format of this value is 00:00</dd>
                                             
                                             
                                             
-                                            <dd><code>endTime</code> - Do not disturb end time</dd>
+                                            <dd><code>endTime</code> - Do not disturb end time,the format of this value is 00:00</dd>
                                             
                                             
                                             
@@ -958,6 +1006,42 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             
                                             
                                             <dd><code>loops</code> - circulation time</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>listener</code> - IThingDataCallback</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="addOnceDNDWithStartTime(String,String,String,IThingDataCallback&lt;Long&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>addOnceDNDWithStartTime</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMessage.html#addOnceDNDWithStartTime(String,String,String,IThingDataCallback<Long>)>addOnceDNDWithStartTime</a>(String startTime, String endTime, String devIds, IThingDataCallback&lt;Long&gt; listener)</pre>
+                                        <div class="block"><p>Add a once do not disturb time period</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>startTime</code> - Do not disturb start time,the format of this value is 2024-06-20 20:00</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>endTime</code> - Do not disturb end time,the format of this value is 2024-06-20 21:00</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devIds</code> - Do not disturb device ids</dd>
                                             
                                             
                                             
@@ -985,11 +1069,11 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>nodisturbAlarmId</code> - Do not disturb list id</dd>
+                                            <dd><code>nodisturbAlarmId</code> - Do not disturb list id,the format of this value is 20:00</dd>
                                             
                                             
                                             
-                                            <dd><code>mStartTime</code> - Do not disturb start time</dd>
+                                            <dd><code>mStartTime</code> - Do not disturb start time,the format of this value is 20:00</dd>
                                             
                                             
                                             
@@ -1002,6 +1086,46 @@ public interface <span class="typeNameLabel"><a href=IThingMessage.html>IThingMe
                                             
                                             
                                             <dd><code>loops</code> - circulation time</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>listener</code> - IThingDataCallback</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="modifyOnceDNDWithTimerId(long,String,String,String,IThingDataCallback&lt;Boolean&gt;)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>modifyOnceDNDWithTimerId</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMessage.html#modifyOnceDNDWithTimerId(long,String,String,String,IThingDataCallback<Boolean>)>modifyOnceDNDWithTimerId</a>(long nodisturbAlarmId, String mStartTime, String mEndTime, String devIds, IThingDataCallback&lt;Boolean&gt; listener)</pre>
+                                        <div class="block"><p>Modify a single do not disturb time period</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>nodisturbAlarmId</code> - Do not disturb list id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>mStartTime</code> - Do not disturb start time ,the format of this value is 2024-06-20 20:00</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>mEndTime</code> - Do not disturb end time ,the format of this value is 2024-06-20 20:00</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devIds</code> - Do not disturb device ids</dd>
                                             
                                             
                                             

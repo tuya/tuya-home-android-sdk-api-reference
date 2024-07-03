@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendAPMLog(String,String)>sendAPMLog</a>(String eventId, String value) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">埋点日志</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendAPMLog(String,Map)>sendAPMLog</a>(String eventId, Map maps) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">埋点日志</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendIPCExtraDataLog(Map)>sendIPCExtraDataLog</a>(Map&lt;String, Object&gt; maps) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">埋点日志</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendCameraLog(String,Map)>sendCameraLog</a>(String eventId, Map&lt;String, Object&gt; maps) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">埋点日志</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendLog(String)>sendLog</a>(String eventId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">埋点日志</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendNativeLog(String)>sendNativeLog</a>(String content) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">cpp 日志调用上层接口，输出到离线日志</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -207,7 +207,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendFullLinkStartLog(String,Object)>sendFullLinkStartLog</a>(String devId, Object clientTraceId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">全链路埋点日志</td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
@@ -215,7 +215,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendFullLinkLog(String,String,Object,String,String,long)>sendFullLinkLog</a>(String eventName, String trackType, Object traceId, String jsonPublic, String jsonPrivate, long timeout) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">全链路埋点日志</td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
@@ -223,7 +223,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#uploadCameraLog(int,String)>uploadCameraLog</a>(int errCode, String fun) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">控制台日志</td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
@@ -247,7 +247,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendConnectFullLinkLog(String,String,Object,String,String)>sendConnectFullLinkLog</a>(String devId, String trackType, Object traceId, String step, String sessionTraceId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">全链路埋点日志</td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
@@ -256,6 +256,14 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                             <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#setEnabled(boolean)>setEnabled</a>(boolean enabled) </code>
                                             </th>
                                             <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i14" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=ICameraStatEvent.html#sendCameraLinkLog(CameraLinkLogBean)>sendCameraLinkLog</a>(CameraLinkLogBean cameraLinkLogBean) </code>
+                                            </th>
+                                            <td class="colLast">关键链路日志上报，走 p2p atop 方案</td>
                                         </tr>
                                         
                                         </tbody>
@@ -300,7 +308,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                     <li class="blockList">
                                         <h4>sendAPMLog</h4>
                                         <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendAPMLog(String,String)>sendAPMLog</a>(String eventId, String value)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>埋点日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -315,7 +323,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                     <li class="blockList">
                                         <h4>sendAPMLog</h4>
                                         <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendAPMLog(String,Map)>sendAPMLog</a>(String eventId, Map maps)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>埋点日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -330,7 +338,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                     <li class="blockList">
                                         <h4>sendIPCExtraDataLog</h4>
                                         <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendIPCExtraDataLog(Map)>sendIPCExtraDataLog</a>(Map&lt;String, Object&gt; maps)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>埋点日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -345,7 +353,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                     <li class="blockList">
                                         <h4>sendCameraLog</h4>
                                         <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendCameraLog(String,Map)>sendCameraLog</a>(String eventId, Map&lt;String, Object&gt; maps)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>埋点日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -360,7 +368,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                     <li class="blockList">
                                         <h4>sendLog</h4>
                                         <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendLog(String)>sendLog</a>(String eventId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>埋点日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -375,7 +383,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                     <li class="blockList">
                                         <h4>sendNativeLog</h4>
                                         <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendNativeLog(String)>sendNativeLog</a>(String content)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>cpp 日志调用上层接口，输出到离线日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -404,8 +412,8 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                           >
                                     <li class="blockList">
                                         <h4>sendFullLinkStartLog</h4>
-                                        <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendFullLinkStartLog(String,Object)>sendFullLinkStartLog</a>(String devId, Object clientTraceId)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=ICameraStatEvent.html#sendFullLinkStartLog(String,Object)>sendFullLinkStartLog</a>(String devId, Object clientTraceId)</pre>
+                                        <div class="block"><p>全链路埋点日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -419,8 +427,8 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                           >
                                     <li class="blockList">
                                         <h4>sendFullLinkLog</h4>
-                                        <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendFullLinkLog(String,String,Object,String,String,long)>sendFullLinkLog</a>(String eventName, String trackType, Object traceId, String jsonPublic, String jsonPrivate, long timeout)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=ICameraStatEvent.html#sendFullLinkLog(String,String,Object,String,String,long)>sendFullLinkLog</a>(String eventName, String trackType, Object traceId, String jsonPublic, String jsonPrivate, long timeout)</pre>
+                                        <div class="block"><p>全链路埋点日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -435,7 +443,7 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                     <li class="blockList">
                                         <h4>uploadCameraLog</h4>
                                         <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#uploadCameraLog(int,String)>uploadCameraLog</a>(int errCode, String fun)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>控制台日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -479,8 +487,8 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                           >
                                     <li class="blockList">
                                         <h4>sendConnectFullLinkLog</h4>
-                                        <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendConnectFullLinkLog(String,String,Object,String,String)>sendConnectFullLinkLog</a>(String devId, String trackType, Object traceId, String step, String sessionTraceId)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=ICameraStatEvent.html#sendConnectFullLinkLog(String,String,Object,String,String)>sendConnectFullLinkLog</a>(String devId, String trackType, Object traceId, String step, String sessionTraceId)</pre>
+                                        <div class="block"><p>全链路埋点日志</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -490,12 +498,27 @@ public interface <span class="typeNameLabel"><a href=ICameraStatEvent.html>ICame
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>setEnabled</h4>
                                         <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#setEnabled(boolean)>setEnabled</a>(boolean enabled)</pre>
                                         <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="sendCameraLinkLog(CameraLinkLogBean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>sendCameraLinkLog</h4>
+                                        <pre class="methodSignature"> abstract void <a href=ICameraStatEvent.html#sendCameraLinkLog(CameraLinkLogBean)>sendCameraLinkLog</a>(CameraLinkLogBean cameraLinkLogBean)</pre>
+                                        <div class="block"><p>关键链路日志上报，走 p2p atop 方案</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>IThingBleCommRodCtrl</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Due to certain scene conditions, mobile phones and devices cannot connect to the Internet, but some parameters need to be set for the device, so the device needs to be operated offline. Here is a safety guarantee. The backdoor is given to the business layer. The business layer establishes a temporary connection with the device by calling the <a href=IThingBleCommRodCtrl.html#connect(IResultCallback)>connect</a> method, which allows simple communication with the device. Communication mainly relies on the Schema information of the device, which is issued through <a href=IThingBleCommRodCtrl.html#publishDps(String,IResultCallback)>publishDps</a>. The capabilities provided by this interface are mainly divided into the following</p><a href=IThingBleCommRodCtrl.html#connect(IResultCallback)>connect</a> Connect device<a href=IThingBleCommRodCtrl.html#publishDps(String,IResultCallback)>publishDps</a> publish dp<a href=IThingBleCommRodCtrl.html#disconnect()>disconnect</a> Disconnect the device<a href=IThingBleCommRodCtrl.html#registerDevListener(IDevListener)>registerDevListener</a> Register device listener<a href=IThingBleCommRodCtrl.html#registerSchemaListener(ICommRodSchemaListener)>registerSchemaListener</a> register schema listener<a href=IThingBleCommRodCtrl.html#isConnected()>isConnected</a> Determine whether the device is connected successfully<a href=IThingBleCommRodCtrl.html#destroy()>destroy</a>} Destroy device<p>由于某些场景条件下，手机和设备都是无法连网，但是又需要给设备设置一些参数，因此需要离线操作设备，这里提供一个安全保障 的后门给到业务层，业务层通过调用<a href=IThingBleCommRodCtrl.html#connect(IResultCallback)>connect</a> 方法跟设备建立临时连接，即可以和设备进行简单的通信。 通信主要依赖设备的Schema信息,通过<a href=IThingBleCommRodCtrl.html#publishDps(String,IResultCallback)>publishDps</a>下发。该接口提供能力主要分为以下几个</p><a href=IThingBleCommRodCtrl.html#connect(IResultCallback)>connect</a> 连接设备<a href=IThingBleCommRodCtrl.html#publishDps(String,IResultCallback)>publishDps</a> 下发dp<a href=IThingBleCommRodCtrl.html#disconnect()>disconnect</a> 断开设备<a href=IThingBleCommRodCtrl.html#registerDevListener(IDevListener)>registerDevListener</a> 注册设备监听器<a href=IThingBleCommRodCtrl.html#registerSchemaListener(ICommRodSchemaListener)>registerSchemaListener</a> 注册schema监听器<a href=IThingBleCommRodCtrl.html#isConnected()>isConnected</a> 判断设备是否连接成功<a href=IThingBleCommRodCtrl.html#destroy()>destroy</a>} 销毁设备</div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleCommRodCtrl.html#connect(IResultCallback)>connect</a>(IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">connect device连接设备</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleCommRodCtrl.html#reConnect(IResultCallback)>reConnect</a>(IResultCallback connectCallback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">reConnect devices重连设备</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleCommRodCtrl.html#disconnect()>disconnect</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">disconnect device断开设备</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleCommRodCtrl.html#registerDevListener(IDevListener)>registerDevListener</a>(IDevListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register device listener注册设备监听器</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleCommRodCtrl.html#registerSchemaListener(ICommRodSchemaListener)>registerSchemaListener</a>(ICommRodSchemaListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register schema listener注册schema监听器</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleCommRodCtrl.html#publishDps(String,IResultCallback)>publishDps</a>(String dps, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">publish dps下发dp</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleCommRodCtrl.html#isConnected()>isConnected</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get the connection status of the current device当前状态是否连接</td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
@@ -207,7 +207,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleCommRodCtrl.html#destroy()>destroy</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">destroy controller销毁控制器</td>
                                         </tr>
                                         
                                         </tbody>
@@ -252,7 +252,16 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                     <li class="blockList">
                                         <h4>connect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleCommRodCtrl.html#connect(IResultCallback)>connect</a>(IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>connect device连接设备</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callback</code> - 连接是否成功回调</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -267,7 +276,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                     <li class="blockList">
                                         <h4>reConnect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleCommRodCtrl.html#reConnect(IResultCallback)>reConnect</a>(IResultCallback connectCallback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>reConnect devices重连设备</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -282,7 +291,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                     <li class="blockList">
                                         <h4>disconnect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleCommRodCtrl.html#disconnect()>disconnect</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>disconnect device断开设备</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -297,7 +306,16 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                     <li class="blockList">
                                         <h4>registerDevListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleCommRodCtrl.html#registerDevListener(IDevListener)>registerDevListener</a>(IDevListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register device listener注册设备监听器</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - listener/监听器</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -312,7 +330,16 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                     <li class="blockList">
                                         <h4>registerSchemaListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleCommRodCtrl.html#registerSchemaListener(ICommRodSchemaListener)>registerSchemaListener</a>(ICommRodSchemaListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register schema listener注册schema监听器</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - listener/监听器</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -327,7 +354,20 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                     <li class="blockList">
                                         <h4>publishDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleCommRodCtrl.html#publishDps(String,IResultCallback)>publishDps</a>(String dps, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>publish dps下发dp</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>dps</code> - dps</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - 下发回调/publish dps callback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -342,7 +382,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                     <li class="blockList">
                                         <h4>isConnected</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=IThingBleCommRodCtrl.html#isConnected()>isConnected</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get the connection status of the current device当前状态是否连接</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -357,7 +397,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleCommRodCtrl.html>I
                                     <li class="blockList">
                                         <h4>destroy</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleCommRodCtrl.html#destroy()>destroy</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>destroy controller销毁控制器</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

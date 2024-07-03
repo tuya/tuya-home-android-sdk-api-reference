@@ -168,7 +168,6 @@ com.thingclips.sdk.device.presenter
 com.thingclips.sdk.matter.activator
 com.thingclips.sdk.matter.api
 com.thingclips.sdk.matter.bean
-com.thingclips.sdk.matterlib.api
 com.thingclips.sdk.scene.utils
 com.thingclips.sdk.user.api
 com.thingclips.sdk.user.bean
@@ -257,10 +256,7 @@ com.thingclips.smart.interior.hardware.builder
 com.thingclips.smart.interior.home
 com.thingclips.smart.interior.mqtt
 com.thingclips.smart.ipc.messagecenter.bean
-com.thingclips.smart.ipc.sdk.api
 com.thingclips.smart.mqttclient.mqttv3
-com.thingclips.smart.ota.service.api
-com.thingclips.smart.otalib.api
 com.thingclips.smart.scene.api
 com.thingclips.smart.scene.api.service
 com.thingclips.smart.scene.lib.util
@@ -287,26 +283,13 @@ com.thingclips.smart.sdk.api.bluemesh.precontrol
 com.thingclips.smart.sdk.api.cache
 com.thingclips.smart.sdk.api.wifibackup.api
 com.thingclips.smart.sdk.api.wifibackup.api.bean
-com.thingclips.smart.sdk.apimodule
-com.thingclips.smart.sdk.base.apimodule
 com.thingclips.smart.sdk.bean
 com.thingclips.smart.sdk.bean.cache
 com.thingclips.smart.sdk.bean.feedback
 com.thingclips.smart.sdk.bean.message
 com.thingclips.smart.sdk.bean.privacy
 com.thingclips.smart.sdk.bean.push
-com.thingclips.smart.sdk.bluetooth.api
-com.thingclips.smart.sdk.bluetooth.business.api
 com.thingclips.smart.sdk.builder
-com.thingclips.smart.sdk.depercated.api
-com.thingclips.smart.sdk.device.api
 com.thingclips.smart.sdk.device.share.api
 com.thingclips.smart.sdk.enums
-com.thingclips.smart.sdk.hardware.api
-com.thingclips.smart.sdk.hardware.base.api
-com.thingclips.smart.sdk.hardware.business.api
-com.thingclips.smart.sdk.homelib.api
-com.thingclips.smart.sdk.mqtt.api
-com.thingclips.smart.sdk.network_api
-com.thingclips.smart.timer.api
 

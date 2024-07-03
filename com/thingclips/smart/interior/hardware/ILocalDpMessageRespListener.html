@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener.html>ILocalDpMessageRespListener</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>LAN data points message response listener.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ILocalDpMessageRespListener.html#getLocalKey(String)>getLocalKey</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get local area network key.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ILocalDpMessageRespListener.html#isDataUpdated(String,int,int)>isDataUpdated</a>(String devId, int s, int o) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Determine whether the message is repeated based on the serial number.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ILocalDpMessageRespListener.html#isDataUpdated(String,int)>isDataUpdated</a>(String devId, int s) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Determine whether the message is repeated based on the serial number.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -207,7 +207,7 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ILocalDpMessageRespListener.html#onLocalDpZigbeeGroupReceivedSuccess(String,String,String)>onLocalDpZigbeeGroupReceivedSuccess</a>(String devId, String mbid, String dps) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Callback on Zigbee group data points received.</td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
@@ -215,7 +215,7 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ILocalDpMessageRespListener.html#getLpv(String)>getLpv</a>(String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get local area network communication protocol version.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -260,7 +260,16 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                     <li class="blockList">
                                         <h4>getLocalKey</h4>
                                         <pre class="methodSignature"> abstract String <a href=ILocalDpMessageRespListener.html#getLocalKey(String)>getLocalKey</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get local area network key.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -275,7 +284,24 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                     <li class="blockList">
                                         <h4>isDataUpdated</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=ILocalDpMessageRespListener.html#isDataUpdated(String,int,int)>isDataUpdated</a>(String devId, int s, int o)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Determine whether the message is repeated based on the serial number.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>s</code> - Serial number of connection with the device</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>o</code> - Message sequence number.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -290,7 +316,20 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                     <li class="blockList">
                                         <h4>isDataUpdated</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=ILocalDpMessageRespListener.html#isDataUpdated(String,int)>isDataUpdated</a>(String devId, int s)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Determine whether the message is repeated based on the serial number.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>s</code> - Serial number of connection with the device</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -307,6 +346,23 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                         <pre class="methodSignature"> abstract void <a href=ILocalDpMessageRespListener.html#onLocalDataReceived(String,int,JSONObject)>onLocalDataReceived</a>(String devId, int protocol, JSONObject data)</pre>
                                         <div class="block"></div>
                                         
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>protocol</code> - Protocol number.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>data</code> - Response data.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
@@ -321,6 +377,23 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                         <h4>onLocalDpReceivedError</h4>
                                         <pre class="methodSignature"> abstract void <a href=ILocalDpMessageRespListener.html#onLocalDpReceivedError(String,String,String)>onLocalDpReceivedError</a>(String devId, String errorCode, String errorMsg)</pre>
                                         <div class="block"></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>errorCode</code> - Error code.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>errorMsg</code> - Error message.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -337,6 +410,23 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                         <pre class="methodSignature"> abstract void <a href=ILocalDpMessageRespListener.html#onLocalDpReceivedSuccess(String,String,long)>onLocalDpReceivedSuccess</a>(String devId, String dps, long t)</pre>
                                         <div class="block"></div>
                                         
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - Data points.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>t</code> - Timestamp.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
@@ -352,6 +442,31 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                         <pre class="methodSignature"> abstract void <a href=ILocalDpMessageRespListener.html#onLocalDpSubDeviceReceivedSuccess(String,String,int,String,long)>onLocalDpSubDeviceReceivedSuccess</a>(String devId, String cid, int ctype, String dps, long t)</pre>
                                         <div class="block"></div>
                                         
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id of gateway.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>cid</code> - Node id of sub-device.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>ctype</code> - Control type.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - Data points.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>t</code> - Timestamp.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
@@ -365,7 +480,24 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                     <li class="blockList">
                                         <h4>onLocalDpZigbeeGroupReceivedSuccess</h4>
                                         <pre class="methodSignature"> abstract void <a href=ILocalDpMessageRespListener.html#onLocalDpZigbeeGroupReceivedSuccess(String,String,String)>onLocalDpZigbeeGroupReceivedSuccess</a>(String devId, String mbid, String dps)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Callback on Zigbee group data points received.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>mbid</code> - {GroupBean#getLocalId()}</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - Data points.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -380,7 +512,16 @@ public interface <span class="typeNameLabel"><a href=ILocalDpMessageRespListener
                                     <li class="blockList">
                                         <h4>getLpv</h4>
                                         <pre class="methodSignature"> abstract String <a href=ILocalDpMessageRespListener.html#getLpv(String)>getLpv</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get local area network communication protocol version.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
