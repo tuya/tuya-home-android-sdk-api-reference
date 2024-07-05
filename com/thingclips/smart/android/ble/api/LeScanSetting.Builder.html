@@ -162,36 +162,6 @@ public class <span class="typeNameLabel"><a href=LeScanSetting.Builder.html>LeSc
                     
                     <!-- ======== CONSTRUCTOR SUMMARY ======== -->
                     
-                    <section role="region">
-                        <ul class="blockList">
-                            <li class="blockList"><a id="constructor.summary">
-                                <!--   -->
-                            </a>
-                                <h3>Constructor Summary</h3>
-                                <div class="memberSummary">
-                                    <table>
-                                        <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-                                        <tbody>
-                                        <tr>
-                                            <th class="colFirst" scope="col">Constructor</th>
-                                            <th class="colLast" scope="col">Description</th>
-                                        </tr>
-
-                                        
-                                            <tr class="altColor">
-                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#LeScanSetting.Builder()">LeScanSetting.Builder</a></span>()</code></th>
-                                                <td class="colLast"></td>
-                                            </tr>
-                                        
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-                    
                     <!-- =========== ENUM CONSTANT SUMMARY =========== -->
                     
                     <!-- ========== METHOD SUMMARY =========== -->
@@ -220,7 +190,7 @@ public class <span class="typeNameLabel"><a href=LeScanSetting.Builder.html>LeSc
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=LeScanSetting.Builder.html#setTimeout(long)>setTimeout</a>(long timeout) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">set scan timeout.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -228,7 +198,7 @@ public class <span class="typeNameLabel"><a href=LeScanSetting.Builder.html>LeSc
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=LeScanSetting.Builder.html#setRepeatFilter(boolean)>setRepeatFilter</a>(boolean filter) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Will affect the way of scanning device callbacks.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -250,9 +220,9 @@ public class <span class="typeNameLabel"><a href=LeScanSetting.Builder.html>LeSc
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code><a href=LeScanSetting.Builder.html>LeScanSetting.Builder</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=LeScanSetting.Builder.html#addScanType(ScanType)>addScanType</a>(<a href=ScanType.html>ScanType</a> type) </code>
+                                            <th class="colSecond" scope="row"><code><a href=LeScanSetting.Builder.html#addScanType(ScanType)>addScanType</a>(ScanType type) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">can add multiple scan type</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -287,27 +257,6 @@ public class <span class="typeNameLabel"><a href=LeScanSetting.Builder.html>LeSc
                 <li class="blockList">
                     <!-- ========= CONSTRUCTOR DETAIL ======== -->
                     
-                    <section role="region">
-                        <ul class="blockList">
-                            <li class="blockList"><a id="constructor.detail">
-                                <!--   -->
-                            </a>
-                                <h3>Constructor Detail</h3>
-                                
-                                <a name="LeScanSetting.Builder()"></a>
-                                <ul class="blockList">
-                                    <li class="blockList">
-                                        <h4>LeScanSetting.Builder</h4>
-                                        <pre>LeScanSetting.Builder()</pre>
-                                        <div class="block"></div>
-                                        
-                                    </li>
-                                </ul>
-                                
-                            </li>
-                        </ul>
-                    </section>
-                    
                     <!-- ============ METHOD DETAIL ========== -->
                     
                     <section role="region">
@@ -326,7 +275,16 @@ public class <span class="typeNameLabel"><a href=LeScanSetting.Builder.html>LeSc
                                     <li class="blockList">
                                         <h4>setTimeout</h4>
                                         <pre class="methodSignature"> <a href=LeScanSetting.Builder.html>LeScanSetting.Builder</a> <a href=LeScanSetting.Builder.html#setTimeout(long)>setTimeout</a>(long timeout)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>set scan timeout. If not set, the default value is 4000ms</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>timeout</code> - Unit ms.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -341,7 +299,16 @@ public class <span class="typeNameLabel"><a href=LeScanSetting.Builder.html>LeSc
                                     <li class="blockList">
                                         <h4>setRepeatFilter</h4>
                                         <pre class="methodSignature"> <a href=LeScanSetting.Builder.html>LeScanSetting.Builder</a> <a href=LeScanSetting.Builder.html#setRepeatFilter(boolean)>setRepeatFilter</a>(boolean filter)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Will affect the way of scanning device callbacks. Default true</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>filter</code> - true:The same device will be filtered and only returned once,false: Will continue to return without filtering</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -385,8 +352,17 @@ public class <span class="typeNameLabel"><a href=LeScanSetting.Builder.html>LeSc
                                           >
                                     <li class="blockList">
                                         <h4>addScanType</h4>
-                                        <pre class="methodSignature"> <a href=LeScanSetting.Builder.html>LeScanSetting.Builder</a> <a href=LeScanSetting.Builder.html#addScanType(ScanType)>addScanType</a>(<a href=ScanType.html>ScanType</a> type)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> <a href=LeScanSetting.Builder.html>LeScanSetting.Builder</a> <a href=LeScanSetting.Builder.html#addScanType(ScanType)>addScanType</a>(ScanType type)</pre>
+                                        <div class="block"><p>can add multiple scan type</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>type</code> - ScanType</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=MqttFlowRespParseListener.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MqttFlowRespParseListener.html#getLocalKey(String)>getLocalKey</a>(String topicId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get device localKey.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=MqttFlowRespParseListener.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MqttFlowRespParseListener.html#onError(String,String)>onError</a>(String errorCode, String errorMsg) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Parse message occur some error.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=MqttFlowRespParseListener.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=MqttFlowRespParseListener.html#onSuccess(String,Array)>onSuccess</a>(String topicId, Array&lt;byte&gt; data) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Parse message success.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -212,7 +212,16 @@ public interface <span class="typeNameLabel"><a href=MqttFlowRespParseListener.h
                                     <li class="blockList">
                                         <h4>getLocalKey</h4>
                                         <pre class="methodSignature"> abstract String <a href=MqttFlowRespParseListener.html#getLocalKey(String)>getLocalKey</a>(String topicId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get device localKey.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topicId</code> - device id</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -227,7 +236,20 @@ public interface <span class="typeNameLabel"><a href=MqttFlowRespParseListener.h
                                     <li class="blockList">
                                         <h4>onError</h4>
                                         <pre class="methodSignature"> abstract void <a href=MqttFlowRespParseListener.html#onError(String,String)>onError</a>(String errorCode, String errorMsg)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Parse message occur some error.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>errorCode</code> - errorCode</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>errorMsg</code> - errorMessage</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -242,7 +264,20 @@ public interface <span class="typeNameLabel"><a href=MqttFlowRespParseListener.h
                                     <li class="blockList">
                                         <h4>onSuccess</h4>
                                         <pre class="methodSignature"> abstract void <a href=MqttFlowRespParseListener.html#onSuccess(String,Array)>onSuccess</a>(String topicId, Array&lt;byte&gt; data)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Parse message success.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>topicId</code> - device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>data</code> - data bytes</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThingWifiGroup</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>The interface provides wifi group-related operations, including group creation, device query, and addition.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingWifiGroup.html#createWifiGroup(long,String,List,IThingResultCallback<Long>)>createWifiGroup</a>(long homeId, String name, List&lt;String&gt; devIds, IThingResultCallback&lt;Long&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Create wifi group.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingWifiGroup.html#createWifiGroup(long,String,String,List,IThingResultCallback<Long>)>createWifiGroup</a>(long homeId, String name, String productId, List&lt;String&gt; devIds, IThingResultCallback&lt;Long&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Create wifi group.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingWifiGroup.html#queryWifiGroupDeviceList(long,String,long,IThingResultCallback<List<GroupDeviceBean>>)>queryWifiGroupDeviceList</a>(long homeId, String productId, long groupId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Query the devices in the wifi group.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingWifiGroup.html#saveDevicesToWifiGroup(long,List,long,IThingResultCallback<Boolean>)>saveDevicesToWifiGroup</a>(long homeId, List&lt;String&gt; devIds, long groupId, IThingResultCallback&lt;Boolean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add devices to wifi group.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingWifiGroup.html#queryDeviceListToAddGroup(long,long,String,IThingResultCallback<List<GroupDeviceBean>>)>queryDeviceListToAddGroup</a>(long gid, long groupId, String productId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">query all devices that can make up a group</td>
                                         </tr>
                                         
                                         </tbody>
@@ -227,8 +227,29 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                           >
                                     <li class="blockList">
                                         <h4>createWifiGroup</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingWifiGroup.html#createWifiGroup(long,String,List,IThingResultCallback<Long>)>createWifiGroup</a>(long homeId, String name, List&lt;String&gt; devIds, IThingResultCallback&lt;Long&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingWifiGroup.html#createWifiGroup(long,String,List,IThingResultCallback<Long>)>createWifiGroup</a>(long homeId, String name, List&lt;String&gt; devIds, IThingResultCallback&lt;Long&gt; callback)</pre>
+                                        <div class="block"><p>Create wifi group.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>homeId</code> - the home id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>name</code> - the name</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devIds</code> - the list of device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - the callback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -243,7 +264,32 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                     <li class="blockList">
                                         <h4>createWifiGroup</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingWifiGroup.html#createWifiGroup(long,String,String,List,IThingResultCallback<Long>)>createWifiGroup</a>(long homeId, String name, String productId, List&lt;String&gt; devIds, IThingResultCallback&lt;Long&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Create wifi group.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>homeId</code> - the home id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>name</code> - the name</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>productId</code> - the product id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devIds</code> - the list of device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - the callback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -258,7 +304,28 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                     <li class="blockList">
                                         <h4>queryWifiGroupDeviceList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingWifiGroup.html#queryWifiGroupDeviceList(long,String,long,IThingResultCallback<List<GroupDeviceBean>>)>queryWifiGroupDeviceList</a>(long homeId, String productId, long groupId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Query the devices in the wifi group.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>homeId</code> - the home id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>productId</code> - the product id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>groupId</code> - the group id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - the callback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -273,7 +340,28 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                     <li class="blockList">
                                         <h4>saveDevicesToWifiGroup</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingWifiGroup.html#saveDevicesToWifiGroup(long,List,long,IThingResultCallback<Boolean>)>saveDevicesToWifiGroup</a>(long homeId, List&lt;String&gt; devIds, long groupId, IThingResultCallback&lt;Boolean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Add devices to wifi group.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>homeId</code> - the home id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devIds</code> - the list of device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>groupId</code> - the group id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - the callback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -288,7 +376,28 @@ public interface <span class="typeNameLabel"><a href=IThingWifiGroup.html>IThing
                                     <li class="blockList">
                                         <h4>queryDeviceListToAddGroup</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingWifiGroup.html#queryDeviceListToAddGroup(long,long,String,IThingResultCallback<List<GroupDeviceBean>>)>queryDeviceListToAddGroup</a>(long gid, long groupId, String productId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>query all devices that can make up a group</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>gid</code> - home id or group id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>groupId</code> - group id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>productId</code> - product id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - the callback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

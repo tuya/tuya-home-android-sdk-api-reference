@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IBleActivator.html>IBleActivator</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Interface activator of single ble.</p></div>
                 </li>
             </ul>
         </div>
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IBleActivator.html>IBleActi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IBleActivator.html#startActivator(BleActivatorBean,IBleActivatorListener)>startActivator</a>(BleActivatorBean bleActivatorBean, IBleActivatorListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Start Activator.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IBleActivator.html>IBleActi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IBleActivator.html#stopActivator(String)>stopActivator</a>(String uuid) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Stop Activator.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -227,7 +227,20 @@ public interface <span class="typeNameLabel"><a href=IBleActivator.html>IBleActi
                                     <li class="blockList">
                                         <h4>startActivator</h4>
                                         <pre class="methodSignature"> abstract void <a href=IBleActivator.html#startActivator(BleActivatorBean,IBleActivatorListener)>startActivator</a>(BleActivatorBean bleActivatorBean, IBleActivatorListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Start Activator.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>bleActivatorBean</code> - info required for activator</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>listener</code> - listener for activator</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -242,7 +255,16 @@ public interface <span class="typeNameLabel"><a href=IBleActivator.html>IBleActi
                                     <li class="blockList">
                                         <h4>stopActivator</h4>
                                         <pre class="methodSignature"> abstract void <a href=IBleActivator.html#stopActivator(String)>stopActivator</a>(String uuid)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Stop Activator.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>uuid</code> - uuid of ble device</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

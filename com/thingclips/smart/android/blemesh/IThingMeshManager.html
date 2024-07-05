@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThingMeshManager</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>author : yuzhouxu date : 2021/6/9 17:20 description :</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#createSigMesh(long,IThingResultCallback<SigMeshBean>)>createSigMesh</a>(long gId, IThingResultCallback&lt;SigMeshBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Generate a virtual sigmesh gateway device in the current home.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#createThingMesh(long,String,IThingResultCallback<BlueMeshBean>)>createThingMesh</a>(long gId, String meshName, IThingResultCallback&lt;BlueMeshBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Generate a virtual mesh gateway device in the current home.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#removeMesh(String,IResultCallback)>removeMesh</a>(String meshId, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Delete a mesh network</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#initSigMesh(String)>initSigMesh</a>(String meshId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Init mesh status listeners from server and mqtt.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -189,15 +189,15 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#disconnectMesh(String)>disconnectMesh</a>(String meshId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#searchOnly(List,SearchOnlyCallback)>searchOnly</a>(List&lt;MeshConnectBuilder&gt; builderList, SearchOnlyCallback searchOnlyCallback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Search for devices in the mesh network</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#disConnectWireNodeId(String,String)>disConnectWireNodeId</a>(String meshId, String nodeId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#stopAllSearchAndConnect()>stopAllSearchAndConnect</a>() </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -205,7 +205,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#initMesh(String,boolean)>initMesh</a>(String meshId, boolean isSigMesh) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#disconnectMesh(String)>disconnectMesh</a>(String meshId) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -213,100 +213,116 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#destroyMesh(String)>destroyMesh</a>(String meshId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#disConnectWireNodeId(String,String)>disConnectWireNodeId</a>(String meshId, String nodeId) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
-                                            <td class="colFirst"><code>abstract List&lt;DeviceBean&gt;</code>
+                                            <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#getMeshSubDevList(String)>getMeshSubDevList</a>(String meshId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#initMesh(String,boolean)>initMesh</a>(String meshId, boolean isSigMesh) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Init mesh status listeners from server and mqtt.</td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#publishDps(String,String,IResultCallback)>publishDps</a>(String deviceId, String dps, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#destroyMesh(String)>destroyMesh</a>(String meshId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Unregister the mesh status listeners from server and mqtt for all.</td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
-                                            <td class="colFirst"><code>abstract void</code>
+                                            <td class="colFirst"><code>abstract List&lt;DeviceBean&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#querySubDevStatusByLocal(String,String,String,IResultCallback)>querySubDevStatusByLocal</a>(String meshId, String pcc, String nodeId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#getMeshSubDevList(String)>getMeshSubDevList</a>(String meshId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get the device list under the current mesh network</td>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
-                                            <td class="colFirst"><code>abstract boolean</code>
+                                            <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#isMeshLocalOnLine(String)>isMeshLocalOnLine</a>(String meshId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#publishDps(String,String,IResultCallback)>publishDps</a>(String deviceId, String dps, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">send message to device</td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#queryAllOnLineStatusByLocal(String,IResultCallback)>queryAllOnLineStatusByLocal</a>(String meshId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#querySubDevStatusByLocal(String,String,String,IResultCallback)>querySubDevStatusByLocal</a>(String meshId, String pcc, String nodeId, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Query the status of sub device in mesh network</td>
                                         </tr>
                                         
                                         <tr id="i14" class="altColor">
+                                            <td class="colFirst"><code>abstract boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#isMeshLocalOnLine(String)>isMeshLocalOnLine</a>(String meshId) </code>
+                                            </th>
+                                            <td class="colLast">Determine whether the mesh network is online</td>
+                                        </tr>
+                                        
+                                        <tr id="i15" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#queryAllOnLineStatusByLocal(String,IResultCallback)>queryAllOnLineStatusByLocal</a>(String meshId, IResultCallback callback) </code>
+                                            </th>
+                                            <td class="colLast">Query local online status of all sub-devices.</td>
+                                        </tr>
+                                        
+                                        <tr id="i16" class="altColor">
                                             <td class="colFirst"><code>abstract List&lt;SigMeshBean&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#getSigMeshList()>getSigMeshList</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get the list of SigMeshBean</td>
                                         </tr>
                                         
-                                        <tr id="i15" class="rowColor">
+                                        <tr id="i17" class="rowColor">
                                             <td class="colFirst"><code>abstract List&lt;BlueMeshBean&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#getThingMeshList()>getThingMeshList</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get the list of BlueMeshBean</td>
                                         </tr>
                                         
-                                        <tr id="i16" class="altColor">
+                                        <tr id="i18" class="altColor">
                                             <td class="colFirst"><code>abstract ISigMeshControl</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#getSigMeshController(String)>getSigMeshController</a>(String meshId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get mesh network manager</td>
                                         </tr>
                                         
-                                        <tr id="i17" class="rowColor">
-                                            <td class="colFirst"><code>abstract &lt;T extends IMeshCommonControl&gt; <a href=../../cache/bean/CacheObj.html>T</a></code>
+                                        <tr id="i19" class="rowColor">
+                                            <td class="colFirst"><code>abstract &lt;T extends IMeshCommonControl&gt; <a href=../../sdk/api/IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#getMeshController(String,boolean)>getMeshController</a>(String meshId, boolean isSigMesh) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get mesh network manager</td>
                                         </tr>
                                         
-                                        <tr id="i18" class="altColor">
+                                        <tr id="i20" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#createMeshGroup(String,String,String,String,IAddGroupCallback)>createMeshGroup</a>(String meshId, String name, String category, String localId, IAddGroupCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Create mesh group of the same category .</td>
                                         </tr>
                                         
-                                        <tr id="i19" class="rowColor">
+                                        <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#createMeshGroupLocalId(String,IThingResultCallback<String>)>createMeshGroupLocalId</a>(String meshId, IThingResultCallback&lt;String&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">create the local ID of the mesh group</td>
                                         </tr>
                                         
-                                        <tr id="i20" class="altColor">
+                                        <tr id="i22" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#clearGattService(String)>clearGattService</a>(String mac) </code>
@@ -314,7 +330,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i21" class="rowColor">
+                                        <tr id="i23" class="rowColor">
                                             <td class="colFirst"><code>abstract List&lt;String&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#getConnectedMeshIds()>getConnectedMeshIds</a>() </code>
@@ -322,7 +338,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i22" class="altColor">
+                                        <tr id="i24" class="altColor">
                                             <td class="colFirst"><code>abstract Map&lt;String, IMeshCommonControl&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#getAllMeshController()>getAllMeshController</a>() </code>
@@ -330,7 +346,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i23" class="rowColor">
+                                        <tr id="i25" class="rowColor">
                                             <td class="colFirst"><code>abstract SigMeshGlobalConfiguration</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshManager.html#obtainSigMeshGlobalConfiguration()>obtainSigMeshGlobalConfiguration</a>() </code>
@@ -380,7 +396,18 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>createSigMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#createSigMesh(long,IThingResultCallback<SigMeshBean>)>createSigMesh</a>(long gId, IThingResultCallback&lt;SigMeshBean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Generate a virtual sigmesh gateway device in the current home.</p><p>Called once during network formation.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IThingResultCallback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -395,7 +422,22 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>createThingMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#createThingMesh(long,String,IThingResultCallback<BlueMeshBean>)>createThingMesh</a>(long gId, String meshName, IThingResultCallback&lt;BlueMeshBean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Generate a virtual mesh gateway device in the current home.</p><p>Called once during network formation.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>meshName</code> - The name of mesh.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IThingResultCallback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -410,7 +452,20 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>removeMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#removeMesh(String,IResultCallback)>removeMesh</a>(String meshId, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Delete a mesh network</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - meshId getMeshId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IResultCallback IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -425,7 +480,16 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>initSigMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#initSigMesh(String)>initSigMesh</a>(String meshId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Init mesh status listeners from server and mqtt.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - sigmesh id com.thingclips.smart.sdk.bean.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -440,6 +504,36 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>connectMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#connectMesh(List)>connectMesh</a>(List&lt;MeshConnectBuilder&gt; builderList)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="searchOnly(List,SearchOnlyCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>searchOnly</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#searchOnly(List,SearchOnlyCallback)>searchOnly</a>(List&lt;MeshConnectBuilder&gt; builderList, SearchOnlyCallback searchOnlyCallback)</pre>
+                                        <div class="block"><p>Search for devices in the mesh network</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="stopAllSearchAndConnect()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>stopAllSearchAndConnect</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#stopAllSearchAndConnect()>stopAllSearchAndConnect</a>()</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -472,6 +566,19 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#disConnectWireNodeId(String,String)>disConnectWireNodeId</a>(String meshId, String nodeId)</pre>
                                         <div class="block"></div>
                                         
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - getMeshId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>nodeId</code> - getNodeId</dd>
+                                            
+                                            
+                                        </dl>
+                                        
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
@@ -485,7 +592,20 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>initMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#initMesh(String,boolean)>initMesh</a>(String meshId, boolean isSigMesh)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Init mesh status listeners from server and mqtt.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - sigmesh or thingmesh id com.thingclips.smart.sdk.bean.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>isSigMesh</code> - true if sigmesh</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -500,7 +620,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>destroyMesh</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#destroyMesh(String)>destroyMesh</a>(String meshId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Unregister the mesh status listeners from server and mqtt for all.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -515,7 +635,16 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>getMeshSubDevList</h4>
                                         <pre class="methodSignature"> abstract List&lt;DeviceBean&gt; <a href=IThingMeshManager.html#getMeshSubDevList(String)>getMeshSubDevList</a>(String meshId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get the device list under the current mesh network</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - getMeshId</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -530,7 +659,24 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>publishDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#publishDps(String,String,IResultCallback)>publishDps</a>(String deviceId, String dps, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>send message to device</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>deviceId</code> - getDevId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - DP point sent</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - callback IResultCallback IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -545,7 +691,28 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>querySubDevStatusByLocal</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#querySubDevStatusByLocal(String,String,String,IResultCallback)>querySubDevStatusByLocal</a>(String meshId, String pcc, String nodeId, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Query the status of sub device in mesh network</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - getMeshId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>pcc</code> - getCategory</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>nodeId</code> - getNodeId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IThingResultCallback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -560,7 +727,16 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>isMeshLocalOnLine</h4>
                                         <pre class="methodSignature"> abstract boolean <a href=IThingMeshManager.html#isMeshLocalOnLine(String)>isMeshLocalOnLine</a>(String meshId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Determine whether the mesh network is online</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - getMeshId</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -575,7 +751,18 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>queryAllOnLineStatusByLocal</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#queryAllOnLineStatusByLocal(String,IResultCallback)>queryAllOnLineStatusByLocal</a>(String meshId, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Query local online status of all sub-devices.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -590,7 +777,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>getSigMeshList</h4>
                                         <pre class="methodSignature"> abstract List&lt;SigMeshBean&gt; <a href=IThingMeshManager.html#getSigMeshList()>getSigMeshList</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get the list of SigMeshBean</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -605,7 +792,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>getThingMeshList</h4>
                                         <pre class="methodSignature"> abstract List&lt;BlueMeshBean&gt; <a href=IThingMeshManager.html#getThingMeshList()>getThingMeshList</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get the list of BlueMeshBean</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -620,7 +807,16 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>getSigMeshController</h4>
                                         <pre class="methodSignature"> abstract ISigMeshControl <a href=IThingMeshManager.html#getSigMeshController(String)>getSigMeshController</a>(String meshId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get mesh network manager</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - getMeshId</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -634,8 +830,21 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>getMeshController</h4>
-                                        <pre class="methodSignature"> abstract &lt;T extends IMeshCommonControl&gt; <a href=../../cache/bean/CacheObj.html>T</a> <a href=IThingMeshManager.html#getMeshController(String,boolean)>getMeshController</a>(String meshId, boolean isSigMesh)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> abstract &lt;T extends IMeshCommonControl&gt; <a href=../../sdk/api/IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a> <a href=IThingMeshManager.html#getMeshController(String,boolean)>getMeshController</a>(String meshId, boolean isSigMesh)</pre>
+                                        <div class="block"><p>Get mesh network manager</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - getMeshId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>isSigMesh</code> - True if sigmesh, false if thing mesh</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -650,7 +859,30 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>createMeshGroup</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#createMeshGroup(String,String,String,String,IAddGroupCallback)>createMeshGroup</a>(String meshId, String name, String category, String localId, IAddGroupCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Create mesh group of the same category .</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>name</code> - Group name</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>category</code> - Category of device getCategory</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>localId</code> - Group address</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -665,7 +897,20 @@ public interface <span class="typeNameLabel"><a href=IThingMeshManager.html>IThi
                                     <li class="blockList">
                                         <h4>createMeshGroupLocalId</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshManager.html#createMeshGroupLocalId(String,IThingResultCallback<String>)>createMeshGroupLocalId</a>(String meshId, IThingResultCallback&lt;String&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>create the local ID of the mesh group</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>meshId</code> - getMeshId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for result IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

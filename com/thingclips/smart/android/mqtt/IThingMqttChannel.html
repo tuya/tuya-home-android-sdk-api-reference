@@ -110,7 +110,8 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingMqttChannel.html>IThingMqttChannel</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Mqtt send and receive channels. </p><p>Send messages to or receive messages from the device via MQTT. </p><p>This feature is only needed if you need to customize the embedded firmware, which will handle the corresponding mqtt messages. </p><pre><code>IThingMqttChannel mqttChannelInstance = ThingHomeSdk.getMqttChannelInstance();
+mqttChannelInstance.registerMqttRetainChannelListener(new IThingMqttRetainChannelListener() {</code></pre></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +152,7 @@ public interface <span class="typeNameLabel"><a href=IThingMqttChannel.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMqttChannel.html#registerMqttRetainChannelListener(IThingMqttRetainChannelListener)>registerMqttRetainChannelListener</a>(IThingMqttRetainChannelListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register MQTT listener, listen to mqtt messages received by all devices.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +160,7 @@ public interface <span class="typeNameLabel"><a href=IThingMqttChannel.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMqttChannel.html#unRegisterMqttRetainChannelListener(IThingMqttRetainChannelListener)>unRegisterMqttRetainChannelListener</a>(IThingMqttRetainChannelListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Unregister MQTT listener</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +168,7 @@ public interface <span class="typeNameLabel"><a href=IThingMqttChannel.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMqttChannel.html#sendDeviceMqttMessage(String,HashMap,int,IResultCallback)>sendDeviceMqttMessage</a>(String devId, HashMap&lt;String, Object&gt; data, int protocol, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Send custom MQTT message to device.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -212,7 +213,16 @@ public interface <span class="typeNameLabel"><a href=IThingMqttChannel.html>IThi
                                     <li class="blockList">
                                         <h4>registerMqttRetainChannelListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMqttChannel.html#registerMqttRetainChannelListener(IThingMqttRetainChannelListener)>registerMqttRetainChannelListener</a>(IThingMqttRetainChannelListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register MQTT listener, listen to mqtt messages received by all devices.</p><p>This feature is only needed if you need to customize the embedded firmware,which will handle the corresponding mqtt messages.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - IThingMqttRetainChannelListener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -227,7 +237,16 @@ public interface <span class="typeNameLabel"><a href=IThingMqttChannel.html>IThi
                                     <li class="blockList">
                                         <h4>unRegisterMqttRetainChannelListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMqttChannel.html#unRegisterMqttRetainChannelListener(IThingMqttRetainChannelListener)>unRegisterMqttRetainChannelListener</a>(IThingMqttRetainChannelListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Unregister MQTT listener</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - IThingMqttRetainChannelListener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -242,7 +261,28 @@ public interface <span class="typeNameLabel"><a href=IThingMqttChannel.html>IThi
                                     <li class="blockList">
                                         <h4>sendDeviceMqttMessage</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMqttChannel.html#sendDeviceMqttMessage(String,HashMap,int,IResultCallback)>sendDeviceMqttMessage</a>(String devId, HashMap&lt;String, Object&gt; data, int protocol, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Send custom MQTT message to device.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>data</code> - The key-value pairs you need to send to the device.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>protocol</code> - Custom MQTT protocol number.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback that will be notified when message deliveryhas completed.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

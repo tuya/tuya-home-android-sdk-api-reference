@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingMatterFabricManager.html>IThingMatterFabricManager</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Created by huguang on 06-07-2022</p></div>
                 </li>
             </ul>
         </div>
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterFabricManager.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMatterFabricManager.html#getDevicesFabricNodes(Set,IThingDataCallback<ArrayList<DeviceNodeBean>>)>getDevicesFabricNodes</a>(Set&lt;String&gt; devIds, IThingDataCallback&lt;ArrayList&lt;DeviceNodeBean&gt;&gt; listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">获取设备在 Fabric 下的节点信息</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterFabricManager.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMatterFabricManager.html#loadDeviceFabricNodesFormStorage(Set,IThingDataCallback<ArrayList<DeviceNodeBean>>)>loadDeviceFabricNodesFormStorage</a>(Set&lt;String&gt; devIds, IThingDataCallback&lt;ArrayList&lt;DeviceNodeBean&gt;&gt; listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">从磁盘加载设备 Fabric 节点信息</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterFabricManager.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMatterFabricManager.html#writeAccessControlList(String,IThingResultCallback<Boolean>)>writeAccessControlList</a>(String devId, IThingResultCallback&lt;Boolean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">向设备写入ACL</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterFabricManager.h
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMatterFabricManager.html#notifyAccessControlList(String,IThingResultCallback<Boolean>)>notifyAccessControlList</a>(String devId, IThingResultCallback&lt;Boolean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">通知设备从云端获取nodeId</td>
                                         </tr>
                                         
                                         </tbody>
@@ -266,7 +266,20 @@ public interface <span class="typeNameLabel"><a href=IThingMatterFabricManager.h
                                     <li class="blockList">
                                         <h4>getDevicesFabricNodes</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMatterFabricManager.html#getDevicesFabricNodes(Set,IThingDataCallback<ArrayList<DeviceNodeBean>>)>getDevicesFabricNodes</a>(Set&lt;String&gt; devIds, IThingDataCallback&lt;ArrayList&lt;DeviceNodeBean&gt;&gt; listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>获取设备在 Fabric 下的节点信息</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devIds</code> - device ids 所有设备的设备id列表</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>listener</code> - listener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -281,7 +294,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterFabricManager.h
                                     <li class="blockList">
                                         <h4>loadDeviceFabricNodesFormStorage</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMatterFabricManager.html#loadDeviceFabricNodesFormStorage(Set,IThingDataCallback<ArrayList<DeviceNodeBean>>)>loadDeviceFabricNodesFormStorage</a>(Set&lt;String&gt; devIds, IThingDataCallback&lt;ArrayList&lt;DeviceNodeBean&gt;&gt; listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>从磁盘加载设备 Fabric 节点信息</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -296,7 +309,20 @@ public interface <span class="typeNameLabel"><a href=IThingMatterFabricManager.h
                                     <li class="blockList">
                                         <h4>writeAccessControlList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMatterFabricManager.html#writeAccessControlList(String,IThingResultCallback<Boolean>)>writeAccessControlList</a>(String devId, IThingResultCallback&lt;Boolean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>向设备写入ACL</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - 设备id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - callback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -311,7 +337,20 @@ public interface <span class="typeNameLabel"><a href=IThingMatterFabricManager.h
                                     <li class="blockList">
                                         <h4>notifyAccessControlList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMatterFabricManager.html#notifyAccessControlList(String,IThingResultCallback<Boolean>)>notifyAccessControlList</a>(String devId, IThingResultCallback&lt;Boolean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>通知设备从云端获取nodeId</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - 设备id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - callback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

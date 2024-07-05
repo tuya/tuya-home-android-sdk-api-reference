@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThingZigbeeGroup</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>The interface provides zigbee group related operations, including device update, add, and remove.</p></div>
                 </li>
             </ul>
         </div>
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingZigbeeGroup.html#updateGroupDeviceList(long,List,IResultCallback)>updateGroupDeviceList</a>(long homeId, List&lt;String&gt; devIds, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Update group device list.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingZigbeeGroup.html#addDeviceToGroup(String,List,String,IThingResultCallback<ZigbeeGroupCreateResultBean>)>addDeviceToGroup</a>(String devId, List&lt;String&gt; devIds, String gid, IThingResultCallback&lt;ZigbeeGroupCreateResultBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add device to group.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingZigbeeGroup.html#delDeviceToGroup(String,List,String,IThingResultCallback<ZigbeeGroupCreateResultBean>)>delDeviceToGroup</a>(String devId, List&lt;String&gt; devIds, String gid, IThingResultCallback&lt;ZigbeeGroupCreateResultBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Del device to group.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingZigbeeGroup.html#queryZigbeeDeviceListToAddGroup(long,long,String,String,IThingResultCallback<List<GroupDeviceBean>>)>queryZigbeeDeviceListToAddGroup</a>(long gid, long groupId, String productId, String parentId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Obtain the device list of product.</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingZigbeeGroup.html#createZigbeeGroup(String,long,String,String,IThingResultCallback<CloudZigbeeGroupCreateBean>)>createZigbeeGroup</a>(String productId, long gid, String parentId, String name, IThingResultCallback&lt;CloudZigbeeGroupCreateBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Creating a Zigbee device Group.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -235,8 +235,33 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>sendCommand</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingZigbeeGroup.html#sendCommand(String,List,String,int,IThingResultCallback<ZigbeeGroupCreateResultBean>)>sendCommand</a>(String devId, List&lt;String&gt; devIds, String gid, int actionId, IThingResultCallback&lt;ZigbeeGroupCreateResultBean&gt; callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingZigbeeGroup.html#sendCommand(String,List,String,int,IThingResultCallback<ZigbeeGroupCreateResultBean>)>sendCommand</a>(String devId, List&lt;String&gt; devIds, String gid, int actionId, IThingResultCallback&lt;ZigbeeGroupCreateResultBean&gt; callback)</pre>
                                         <div class="block"></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - the device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devIds</code> - the sub device ids</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>gid</code> - the group id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>actionId</code> - the action id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - the callback com.thingclips.smart.home.sdk.callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -251,7 +276,24 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                     <li class="blockList">
                                         <h4>updateGroupDeviceList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingZigbeeGroup.html#updateGroupDeviceList(long,List,IResultCallback)>updateGroupDeviceList</a>(long homeId, List&lt;String&gt; devIds, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Update group device list.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>homeId</code> - the home id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devIds</code> - the sub device ids</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - the callback com.thingclips.smart.sdk.api.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -266,7 +308,28 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                     <li class="blockList">
                                         <h4>addDeviceToGroup</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingZigbeeGroup.html#addDeviceToGroup(String,List,String,IThingResultCallback<ZigbeeGroupCreateResultBean>)>addDeviceToGroup</a>(String devId, List&lt;String&gt; devIds, String gid, IThingResultCallback&lt;ZigbeeGroupCreateResultBean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Add device to group.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - the device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devIds</code> - the sub device ids</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>gid</code> - the group id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - the callback com.thingclips.smart.home.sdk.callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -281,7 +344,28 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                     <li class="blockList">
                                         <h4>delDeviceToGroup</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingZigbeeGroup.html#delDeviceToGroup(String,List,String,IThingResultCallback<ZigbeeGroupCreateResultBean>)>delDeviceToGroup</a>(String devId, List&lt;String&gt; devIds, String gid, IThingResultCallback&lt;ZigbeeGroupCreateResultBean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Del device to group.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - the device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devIds</code> - the sub device ids</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>gid</code> - the group id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - the callback com.thingclips.smart.home.sdk.callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -296,7 +380,30 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                     <li class="blockList">
                                         <h4>queryZigbeeDeviceListToAddGroup</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingZigbeeGroup.html#queryZigbeeDeviceListToAddGroup(long,long,String,String,IThingResultCallback<List<GroupDeviceBean>>)>queryZigbeeDeviceListToAddGroup</a>(long gid, long groupId, String productId, String parentId, IThingResultCallback&lt;List&lt;GroupDeviceBean&gt;&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Obtain the device list of product.</p><p>Group List Acquisition.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>groupId</code> - The group is not created, parameter groupId must be an integer -1</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>productId</code> - Select the pid of the device that created the grou</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parentId</code> - Select the meshId of the device that created the group, deviceBean.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IThingResultCallback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -311,7 +418,32 @@ public interface <span class="typeNameLabel"><a href=IThingZigbeeGroup.html>IThi
                                     <li class="blockList">
                                         <h4>createZigbeeGroup</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingZigbeeGroup.html#createZigbeeGroup(String,long,String,String,IThingResultCallback<CloudZigbeeGroupCreateBean>)>createZigbeeGroup</a>(String productId, long gid, String parentId, String name, IThingResultCallback&lt;CloudZigbeeGroupCreateBean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Creating a Zigbee device Group.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>productId</code> - The pid of the device what is using to create group</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>gid</code> - home id or groupId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parentId</code> - Select the meshId of the device that created the group, deviceBean.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>name</code> - A name of the group to be created</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IThingResultCallback IThingResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

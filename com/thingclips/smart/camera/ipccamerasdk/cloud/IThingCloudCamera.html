@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThingCloudCamera</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>huangdaju 2019/5/15</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#registorOnP2PCameraListener(OnP2PCameraListener)>registorOnP2PCameraListener</a>(OnP2PCameraListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">use <a href=IThingCloudCamera.html#registerP2PCameraListener(AbsP2pCameraListener)>registerP2PCameraListener</a></td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#registerP2PCameraListener(AbsP2pCameraListener)>registerP2PCameraListener</a>(AbsP2pCameraListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register the P2P listener, otherwise the video data cannot be obtained</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#removeOnP2PCameraListener()>removeOnP2PCameraListener</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Unregister the P2P listener</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#generateCloudCameraView(IRegistorIOTCListener)>generateCloudCameraView</a>(IRegistorIOTCListener view) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Bind the render view</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#createCloudDevice(String,String)>createCloudDevice</a>(String cachePath, String devId) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Initialize and create a device</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#configCloudDataTagsV1(String,OperationDelegateCallBack)>configCloudDataTagsV1</a>(String jsonStr, OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Configure cloud storage data tags (requires configuration before starting to play cloud storage).</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -207,7 +207,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#playCloudDataWithStartTime(long,long,boolean,String,String,OperationCallBack,OperationCallBack)>playCloudDataWithStartTime</a>(long mStartTime, long mEndTime, boolean isEvent, String jsonAuthParams, String encryptKey, OperationCallBack callback, OperationCallBack playFinishedCallBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Cloud storage playing.</td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
@@ -223,7 +223,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#pausePlayCloudVideo(OperationDelegateCallBack)>pausePlayCloudVideo</a>(OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Pause playing</td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
@@ -231,7 +231,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#resumePlayCloudVideo(OperationDelegateCallBack)>resumePlayCloudVideo</a>(OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Resume playing</td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
@@ -239,7 +239,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#stopPlayCloudVideo(OperationDelegateCallBack)>stopPlayCloudVideo</a>(OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Stop playing.</td>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
@@ -247,7 +247,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#getCloudMute()>getCloudMute</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get video sound status.</td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
@@ -255,7 +255,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#setCloudMute(int,OperationDelegateCallBack)>setCloudMute</a>(int mute, OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Turn on/off video sound.</td>
                                         </tr>
                                         
                                         <tr id="i14" class="altColor">
@@ -263,7 +263,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#snapshot(String,OperationDelegateCallBack)>snapshot</a>(String absoluteFilePath, OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Snapshot</td>
                                         </tr>
                                         
                                         <tr id="i15" class="rowColor">
@@ -279,7 +279,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#startRecordLocalMp4(String,String,OperationDelegateCallBack)>startRecordLocalMp4</a>(String folderPath, String fileName, OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Start recording</td>
                                         </tr>
                                         
                                         <tr id="i17" class="rowColor">
@@ -287,7 +287,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#stopRecordLocalMp4(OperationDelegateCallBack)>stopRecordLocalMp4</a>(OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Stop recording.</td>
                                         </tr>
                                         
                                         <tr id="i18" class="altColor">
@@ -295,7 +295,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#deinitCloudCamera()>deinitCloudCamera</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Destroy cloud camera.</td>
                                         </tr>
                                         
                                         <tr id="i19" class="rowColor">
@@ -311,7 +311,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#startCloudDataDownload(long,long,String,String,String,String,OperationCallBack,ProgressCallBack,OperationCallBack)>startCloudDataDownload</a>(long startTime, long stopTime, String jsonAuthParams, String encryptKey, String folderPath, String mp4FileName, OperationCallBack callback, ProgressCallBack progressCallBack, OperationCallBack playFinishedCallBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Download cloud videos.</td>
                                         </tr>
                                         
                                         <tr id="i21" class="rowColor">
@@ -327,7 +327,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#stopCloudDataDownload(OperationCallBack)>stopCloudDataDownload</a>(OperationCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">stop download cloud video.</td>
                                         </tr>
                                         
                                         <tr id="i23" class="rowColor">
@@ -335,7 +335,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#deleteCloudVideo(long,long,String,IThingResultCallback<String>)>deleteCloudVideo</a>(long timeGT, long timeLT, String timeZone, IThingResultCallback&lt;String&gt; listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Delete cloud video</td>
                                         </tr>
                                         
                                         <tr id="i24" class="altColor">
@@ -343,7 +343,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#deleteCloudVideo(String,long,long,boolean,String,IThingResultCallback<String>)>deleteCloudVideo</a>(String devId, long timeGT, long timeLT, boolean isAllDay, String timeZone, IThingResultCallback&lt;String&gt; listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Destroy cloud camera.</td>
                                         </tr>
                                         
                                         <tr id="i25" class="rowColor">
@@ -367,7 +367,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#getCloudSecret(String,IThingResultCallback<String>)>getCloudSecret</a>(String devId, IThingResultCallback&lt;String&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get cloud storage key</td>
                                         </tr>
                                         
                                         <tr id="i28" class="altColor">
@@ -383,7 +383,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#getCloudDays(String,String,IThingResultCallback<List<CloudDayBean>>)>getCloudDays</a>(String devId, String timezoneId, IThingResultCallback&lt;List&lt;CloudDayBean&gt;&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get the effective date of cloud storage</td>
                                         </tr>
                                         
                                         <tr id="i30" class="altColor">
@@ -455,7 +455,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#queryAIDetectConfig(String,IThingResultCallback<AIDetectConfigBean>)>queryAIDetectConfig</a>(String devId, IThingResultCallback&lt;AIDetectConfigBean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">查询设备ai配置信息该方法可以判断设备是否支持ai能力</td>
                                         </tr>
                                         
                                         <tr id="i39" class="rowColor">
@@ -463,7 +463,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#enableAIDetect(String,boolean,IThingResultCallback<Boolean>)>enableAIDetect</a>(String devId, boolean enable, IThingResultCallback&lt;Boolean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">是否开启ai分析能力</td>
                                         </tr>
                                         
                                         <tr id="i40" class="altColor">
@@ -471,7 +471,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#enableAIDetectEventType(String,String,int,IThingResultCallback<Boolean>)>enableAIDetectEventType</a>(String devId, String aiCode, int enableState, IThingResultCallback&lt;Boolean&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">更新ai分析事件类型</td>
                                         </tr>
                                         
                                         <tr id="i41" class="rowColor">
@@ -479,7 +479,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingCloudCamera.html#getCloudStorageUrl(long,String,IThingResultCallback<String>)>getCloudStorageUrl</a>(long homeId, String devId, IThingResultCallback&lt;String&gt; callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">获取云存储购买 h5 链接</td>
                                         </tr>
                                         
                                         </tbody>
@@ -523,8 +523,8 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>registorOnP2PCameraListener</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#registorOnP2PCameraListener(OnP2PCameraListener)>registorOnP2PCameraListener</a>(OnP2PCameraListener listener)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingCloudCamera.html#registorOnP2PCameraListener(OnP2PCameraListener)>registorOnP2PCameraListener</a>(OnP2PCameraListener listener)</pre>
+                                        <div class="block"><p>use <a href=IThingCloudCamera.html#registerP2PCameraListener(AbsP2pCameraListener)>registerP2PCameraListener</a></p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -539,7 +539,16 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>registerP2PCameraListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#registerP2PCameraListener(AbsP2pCameraListener)>registerP2PCameraListener</a>(AbsP2pCameraListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register the P2P listener, otherwise the video data cannot be obtained</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - Listener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -554,7 +563,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>removeOnP2PCameraListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#removeOnP2PCameraListener()>removeOnP2PCameraListener</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Unregister the P2P listener</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -569,7 +578,16 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>generateCloudCameraView</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#generateCloudCameraView(IRegistorIOTCListener)>generateCloudCameraView</a>(IRegistorIOTCListener view)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Bind the render view</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>view</code> - Render view</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -584,7 +602,20 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>createCloudDevice</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#createCloudDevice(String,String)>createCloudDevice</a>(String cachePath, String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Initialize and create a device</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>cachePath</code> - Cache path.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devId</code> - Device id.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -598,8 +629,21 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>configCloudDataTagsV1</h4>
-                                        <pre class="methodSignature"> abstract int <a href=IThingCloudCamera.html#configCloudDataTagsV1(String,OperationDelegateCallBack)>configCloudDataTagsV1</a>(String jsonStr, OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract int <a href=IThingCloudCamera.html#configCloudDataTagsV1(String,OperationDelegateCallBack)>configCloudDataTagsV1</a>(String jsonStr, OperationDelegateCallBack callBack)</pre>
+                                        <div class="block"><p>Configure cloud storage data tags (requires configuration before starting to play cloud storage).</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>jsonStr</code> - Configure cloud storage data tags.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callBack</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -628,8 +672,41 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>playCloudDataWithStartTime</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#playCloudDataWithStartTime(long,long,boolean,String,String,OperationCallBack,OperationCallBack)>playCloudDataWithStartTime</a>(long mStartTime, long mEndTime, boolean isEvent, String jsonAuthParams, String encryptKey, OperationCallBack callback, OperationCallBack playFinishedCallBack)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingCloudCamera.html#playCloudDataWithStartTime(long,long,boolean,String,String,OperationCallBack,OperationCallBack)>playCloudDataWithStartTime</a>(long mStartTime, long mEndTime, boolean isEvent, String jsonAuthParams, String encryptKey, OperationCallBack callback, OperationCallBack playFinishedCallBack)</pre>
+                                        <div class="block"><p>Cloud storage playing.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>mStartTime</code> - Starting time (10-bit timestamp).</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>mEndTime</code> - End time, usually the end time of the day.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>isEvent</code> - Whether to detect events, default false.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>jsonAuthParams</code> - Check data.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>encryptKey</code> - Secret key.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Play callback.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>playFinishedCallBack</code> - Play finish callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -659,7 +736,16 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>pausePlayCloudVideo</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingCloudCamera.html#pausePlayCloudVideo(OperationDelegateCallBack)>pausePlayCloudVideo</a>(OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Pause playing</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callBack</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -674,7 +760,16 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>resumePlayCloudVideo</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingCloudCamera.html#resumePlayCloudVideo(OperationDelegateCallBack)>resumePlayCloudVideo</a>(OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Resume playing</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callBack</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -689,7 +784,16 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>stopPlayCloudVideo</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingCloudCamera.html#stopPlayCloudVideo(OperationDelegateCallBack)>stopPlayCloudVideo</a>(OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Stop playing.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callBack</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -704,7 +808,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>getCloudMute</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingCloudCamera.html#getCloudMute()>getCloudMute</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get video sound status.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -719,7 +823,20 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>setCloudMute</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#setCloudMute(int,OperationDelegateCallBack)>setCloudMute</a>(int mute, OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Turn on/off video sound.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>mute</code> - Operation code.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callBack</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -734,7 +851,20 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>snapshot</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingCloudCamera.html#snapshot(String,OperationDelegateCallBack)>snapshot</a>(String absoluteFilePath, OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Snapshot</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>absoluteFilePath</code> - File path</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callBack</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -764,7 +894,24 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>startRecordLocalMp4</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingCloudCamera.html#startRecordLocalMp4(String,String,OperationDelegateCallBack)>startRecordLocalMp4</a>(String folderPath, String fileName, OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Start recording</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>folderPath</code> - Folder path.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>fileName</code> - File name.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callBack</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -779,7 +926,16 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>stopRecordLocalMp4</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingCloudCamera.html#stopRecordLocalMp4(OperationDelegateCallBack)>stopRecordLocalMp4</a>(OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Stop recording.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callBack</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -794,7 +950,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>deinitCloudCamera</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#deinitCloudCamera()>deinitCloudCamera</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Destroy cloud camera.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -823,8 +979,49 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>startCloudDataDownload</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#startCloudDataDownload(long,long,String,String,String,String,OperationCallBack,ProgressCallBack,OperationCallBack)>startCloudDataDownload</a>(long startTime, long stopTime, String jsonAuthParams, String encryptKey, String folderPath, String mp4FileName, OperationCallBack callback, ProgressCallBack progressCallBack, OperationCallBack playFinishedCallBack)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingCloudCamera.html#startCloudDataDownload(long,long,String,String,String,String,OperationCallBack,ProgressCallBack,OperationCallBack)>startCloudDataDownload</a>(long startTime, long stopTime, String jsonAuthParams, String encryptKey, String folderPath, String mp4FileName, OperationCallBack callback, ProgressCallBack progressCallBack, OperationCallBack playFinishedCallBack)</pre>
+                                        <div class="block"><p>Download cloud videos.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>startTime</code> - Start time, 10-bit timestamp.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>stopTime</code> - end time, 10-bit timestamp.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>jsonAuthParams</code> - heck data.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>encryptKey</code> - Secret key.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>folderPath</code> - File path to save video.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>mp4FileName</code> - File name.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Operation callback.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>progressCallBack</code> - Download progress callback.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>playFinishedCallBack</code> - Download finish callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -854,7 +1051,16 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>stopCloudDataDownload</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#stopCloudDataDownload(OperationCallBack)>stopCloudDataDownload</a>(OperationCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>stop download cloud video.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callBack</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -868,8 +1074,29 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>deleteCloudVideo</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#deleteCloudVideo(long,long,String,IThingResultCallback<String>)>deleteCloudVideo</a>(long timeGT, long timeLT, String timeZone, IThingResultCallback&lt;String&gt; listener)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingCloudCamera.html#deleteCloudVideo(long,long,String,IThingResultCallback<String>)>deleteCloudVideo</a>(long timeGT, long timeLT, String timeZone, IThingResultCallback&lt;String&gt; listener)</pre>
+                                        <div class="block"><p>Delete cloud video</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>timeGT</code> - start time (10-bit timestamp)</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>timeLT</code> - end time</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>timeZone</code> - Time zone.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>listener</code> - Callback.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -884,7 +1111,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>deleteCloudVideo</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#deleteCloudVideo(String,long,long,boolean,String,IThingResultCallback<String>)>deleteCloudVideo</a>(String devId, long timeGT, long timeLT, boolean isAllDay, String timeZone, IThingResultCallback&lt;String&gt; listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Destroy cloud camera.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -929,7 +1156,20 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>getCloudSecret</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#getCloudSecret(String,IThingResultCallback<String>)>getCloudSecret</a>(String devId, IThingResultCallback&lt;String&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get cloud storage key</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - the device ID</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - return key</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -959,7 +1199,24 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>getCloudDays</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#getCloudDays(String,String,IThingResultCallback<List<CloudDayBean>>)>getCloudDays</a>(String devId, String timezoneId, IThingResultCallback&lt;List&lt;CloudDayBean&gt;&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get the effective date of cloud storage</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - the device ID</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>timezoneId</code> - default TimeZone.getDefault().</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - return list of CloudDayBean</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -973,7 +1230,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                           >
                                     <li class="blockList">
                                         <h4>getCloudDays</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#getCloudDays(String,IThingResultCallback<List<CloudDayBean>>)>getCloudDays</a>(String devId, IThingResultCallback&lt;List&lt;CloudDayBean&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingCloudCamera.html#getCloudDays(String,IThingResultCallback<List<CloudDayBean>>)>getCloudDays</a>(String devId, IThingResultCallback&lt;List&lt;CloudDayBean&gt;&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1094,7 +1351,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>queryAIDetectConfig</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#queryAIDetectConfig(String,IThingResultCallback<AIDetectConfigBean>)>queryAIDetectConfig</a>(String devId, IThingResultCallback&lt;AIDetectConfigBean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>查询设备ai配置信息该方法可以判断设备是否支持ai能力</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -1109,7 +1366,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>enableAIDetect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#enableAIDetect(String,boolean,IThingResultCallback<Boolean>)>enableAIDetect</a>(String devId, boolean enable, IThingResultCallback&lt;Boolean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>是否开启ai分析能力</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -1124,7 +1381,24 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>enableAIDetectEventType</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#enableAIDetectEventType(String,String,int,IThingResultCallback<Boolean>)>enableAIDetectEventType</a>(String devId, String aiCode, int enableState, IThingResultCallback&lt;Boolean&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>更新ai分析事件类型</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>aiCode</code> - 要更新的 ai 侦测类型code</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>enableState</code> - 是否可用0-不可用，1-可用</dd>
+                                            
+                                            
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -1139,7 +1413,7 @@ public interface <span class="typeNameLabel"><a href=IThingCloudCamera.html>IThi
                                     <li class="blockList">
                                         <h4>getCloudStorageUrl</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingCloudCamera.html#getCloudStorageUrl(long,String,IThingResultCallback<String>)>getCloudStorageUrl</a>(long homeId, String devId, IThingResultCallback&lt;String&gt; callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>获取云存储购买 h5 链接</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

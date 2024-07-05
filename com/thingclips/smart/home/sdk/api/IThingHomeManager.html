@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThingHomeManager</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Home Manager.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeManager.html#queryHomeList(IThingGetHomeListCallback)>queryHomeList</a>(IThingGetHomeListCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get Family List.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeManager.html#queryHomeInfo(long,IThingHomeResultCallback)>queryHomeInfo</a>(long id, IThingHomeResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get Family Details.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeManager.html#createHome(String,double,double,String,List,IThingHomeResultCallback)>createHome</a>(String name, double lon, double lat, String geoName, List&lt;String&gt; rooms, IThingHomeResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Creating a Family.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeManager.html#registerThingHomeChangeListener(IThingHomeChangeListener)>registerThingHomeChangeListener</a>(IThingHomeChangeListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register a listener for family information changes.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeManager.html#unRegisterThingHomeChangeListener(IThingHomeChangeListener)>unRegisterThingHomeChangeListener</a>(IThingHomeChangeListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Unregister the listener for family information changes.</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeManager.html#onDestroy()>onDestroy</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">On destroy.</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -199,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeManager.html#joinHomeByInviteCode(String,IResultCallback)>joinHomeByInviteCode</a>(String code, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Join the family by invitation code.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -244,7 +244,16 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                     <li class="blockList">
                                         <h4>queryHomeList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeManager.html#queryHomeList(IThingGetHomeListCallback)>queryHomeList</a>(IThingGetHomeListCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get Family List.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callback</code> - IThingGetHomeListCallback IThingGetHomeListCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -259,7 +268,20 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                     <li class="blockList">
                                         <h4>queryHomeInfo</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeManager.html#queryHomeInfo(long,IThingHomeResultCallback)>queryHomeInfo</a>(long id, IThingHomeResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get Family Details.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>id</code> - The id of the home which you want to query.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IThingHomeResultCallback IThingHomeResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -274,7 +296,36 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                     <li class="blockList">
                                         <h4>createHome</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeManager.html#createHome(String,double,double,String,List,IThingHomeResultCallback)>createHome</a>(String name, double lon, double lat, String geoName, List&lt;String&gt; rooms, IThingHomeResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Creating a Family.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>name</code> - The name of family(Support up to 25 characters).</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>lon</code> - longitude (Pass 0 if you don't set family location information).</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>lat</code> - latitude (Pass 0 if you don't set family location information).</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>geoName</code> - The name of home geographic location.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>rooms</code> - Room list.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IThingGetHomeListCallback IThingGetHomeListCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -289,7 +340,16 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                     <li class="blockList">
                                         <h4>registerThingHomeChangeListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeManager.html#registerThingHomeChangeListener(IThingHomeChangeListener)>registerThingHomeChangeListener</a>(IThingHomeChangeListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register a listener for family information changes.</p><p>Such as addition, deletion of families, change of information, change of sharing list and listening forsuccessful server connection.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - IThingHomeChangeListener IThingHomeChangeListener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -304,7 +364,16 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                     <li class="blockList">
                                         <h4>unRegisterThingHomeChangeListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeManager.html#unRegisterThingHomeChangeListener(IThingHomeChangeListener)>unRegisterThingHomeChangeListener</a>(IThingHomeChangeListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Unregister the listener for family information changes.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - IThingHomeChangeListener IThingHomeChangeListener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -319,7 +388,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                     <li class="blockList">
                                         <h4>onDestroy</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeManager.html#onDestroy()>onDestroy</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>On destroy.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -334,7 +403,20 @@ public interface <span class="typeNameLabel"><a href=IThingHomeManager.html>IThi
                                     <li class="blockList">
                                         <h4>joinHomeByInviteCode</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeManager.html#joinHomeByInviteCode(String,IResultCallback)>joinHomeByInviteCode</a>(String code, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Join the family by invitation code.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>code</code> - invitation code.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - IResultCallback IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

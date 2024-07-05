@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeRoomInfoChangeExL
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeRoomInfoChangeExListener.html#onDeviceRoomInfoChanged(long,String,boolean)>onDeviceRoomInfoChanged</a>(long roomId, String devId, boolean add) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">device been added or removed from room</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeRoomInfoChangeExL
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeRoomInfoChangeExListener.html#onGroupRoomInfoChanged(long,long,boolean)>onGroupRoomInfoChanged</a>(long roomId, long id, boolean add) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">group been added or removed from room</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeRoomInfoChangeExL
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeRoomInfoChangeExListener.html#onRoomNameChanged(long,String)>onRoomNameChanged</a>(long roomId, String name) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">room name changed</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeRoomInfoChangeExL
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingHomeRoomInfoChangeExListener.html#onRoomOrderChanged()>onRoomOrderChanged</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">room order changed</td>
                                         </tr>
                                         
                                         </tbody>
@@ -220,7 +220,24 @@ public interface <span class="typeNameLabel"><a href=IThingHomeRoomInfoChangeExL
                                     <li class="blockList">
                                         <h4>onDeviceRoomInfoChanged</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeRoomInfoChangeExListener.html#onDeviceRoomInfoChanged(long,String,boolean)>onDeviceRoomInfoChanged</a>(long roomId, String devId, boolean add)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>device been added or removed from room</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>roomId</code> - room id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>devId</code> - device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>add</code> - add or not</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -235,7 +252,24 @@ public interface <span class="typeNameLabel"><a href=IThingHomeRoomInfoChangeExL
                                     <li class="blockList">
                                         <h4>onGroupRoomInfoChanged</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeRoomInfoChangeExListener.html#onGroupRoomInfoChanged(long,long,boolean)>onGroupRoomInfoChanged</a>(long roomId, long id, boolean add)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>group been added or removed from room</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>roomId</code> - room id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>id</code> - group id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>add</code> - add or not</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -250,7 +284,20 @@ public interface <span class="typeNameLabel"><a href=IThingHomeRoomInfoChangeExL
                                     <li class="blockList">
                                         <h4>onRoomNameChanged</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeRoomInfoChangeExListener.html#onRoomNameChanged(long,String)>onRoomNameChanged</a>(long roomId, String name)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>room name changed</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>roomId</code> - room id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>name</code> - new room name</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -265,7 +312,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeRoomInfoChangeExL
                                     <li class="blockList">
                                         <h4>onRoomOrderChanged</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingHomeRoomInfoChangeExListener.html#onRoomOrderChanged()>onRoomOrderChanged</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>room order changed</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

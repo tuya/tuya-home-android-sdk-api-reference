@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingMemberResultCallback.html>IThingMemberResultCallback</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Result callback for adding member.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingMemberResultCallback.
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMemberResultCallback.html#onSuccess(MemberBean)>onSuccess</a>(MemberBean bean) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Execute after adding members successfully.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingMemberResultCallback.
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMemberResultCallback.html#onError(String,String)>onError</a>(String errorCode, String errorMsg) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Execute after adding members failed.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -204,7 +204,16 @@ public interface <span class="typeNameLabel"><a href=IThingMemberResultCallback.
                                     <li class="blockList">
                                         <h4>onSuccess</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMemberResultCallback.html#onSuccess(MemberBean)>onSuccess</a>(MemberBean bean)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Execute after adding members successfully.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>bean</code> - The information of this member MemberBean</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -219,7 +228,20 @@ public interface <span class="typeNameLabel"><a href=IThingMemberResultCallback.
                                     <li class="blockList">
                                         <h4>onError</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMemberResultCallback.html#onError(String,String)>onError</a>(String errorCode, String errorMsg)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Execute after adding members failed.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>errorCode</code> - error code</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>errorMsg</code> - error message</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

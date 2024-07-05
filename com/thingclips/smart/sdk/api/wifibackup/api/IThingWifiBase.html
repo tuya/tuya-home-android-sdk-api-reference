@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingWifiBase.html>IThingWifiBase</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Wi-Fi backup common method.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingWifiBase.html>IThingW
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingWifiBase.html#getCurrentWifiInfo(IThingDataCallback<CurrentWifiInfoBean>)>getCurrentWifiInfo</a>(IThingDataCallback&lt;CurrentWifiInfoBean&gt; dataCallback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get the WIFI information of the current device connection</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingWifiBase.html>IThingW
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingWifiBase.html#getBackupWifiList(IThingDataCallback<BackupWifiListInfo>)>getBackupWifiList</a>(IThingDataCallback&lt;BackupWifiListInfo&gt; dataCallback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get the list of backup wifi already in the current device.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingWifiBase.html>IThingW
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingWifiBase.html#onDestroy()>onDestroy</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Unregister all listener.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -212,7 +212,16 @@ public interface <span class="typeNameLabel"><a href=IThingWifiBase.html>IThingW
                                     <li class="blockList">
                                         <h4>getCurrentWifiInfo</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingWifiBase.html#getCurrentWifiInfo(IThingDataCallback<CurrentWifiInfoBean>)>getCurrentWifiInfo</a>(IThingDataCallback&lt;CurrentWifiInfoBean&gt; dataCallback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get the WIFI information of the current device connection</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>dataCallback</code> - Callback CurrentWifiInfoBean</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -227,7 +236,16 @@ public interface <span class="typeNameLabel"><a href=IThingWifiBase.html>IThingW
                                     <li class="blockList">
                                         <h4>getBackupWifiList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingWifiBase.html#getBackupWifiList(IThingDataCallback<BackupWifiListInfo>)>getBackupWifiList</a>(IThingDataCallback&lt;BackupWifiListInfo&gt; dataCallback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get the list of backup wifi already in the current device.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>dataCallback</code> - Callback BackupWifiListInfo</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -242,7 +260,7 @@ public interface <span class="typeNameLabel"><a href=IThingWifiBase.html>IThingW
                                     <li class="blockList">
                                         <h4>onDestroy</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingWifiBase.html#onDestroy()>onDestroy</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Unregister all listener.</p><p>When you close current activity, your should call this method.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IMultiModeActivatorListener.html>IMultiModeActivatorListener</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Listener for activator of multi-mode device.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IMultiModeActivatorListener
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMultiModeActivatorListener.html#onSuccess(DeviceBean)>onSuccess</a>(DeviceBean deviceBean) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Activator is successful.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IMultiModeActivatorListener
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMultiModeActivatorListener.html#onFailure(int,String,Object)>onFailure</a>(int code, String msg, Object handle) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Activator is failure.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -204,7 +204,16 @@ public interface <span class="typeNameLabel"><a href=IMultiModeActivatorListener
                                     <li class="blockList">
                                         <h4>onSuccess</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMultiModeActivatorListener.html#onSuccess(DeviceBean)>onSuccess</a>(DeviceBean deviceBean)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Activator is successful.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>deviceBean</code> - bean of device</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -219,7 +228,24 @@ public interface <span class="typeNameLabel"><a href=IMultiModeActivatorListener
                                     <li class="blockList">
                                         <h4>onFailure</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMultiModeActivatorListener.html#onFailure(int,String,Object)>onFailure</a>(int code, String msg, Object handle)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Activator is failure.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>code</code> - error code</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>msg</code> - error message</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>handle</code> - some detailed error messages, may be null</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

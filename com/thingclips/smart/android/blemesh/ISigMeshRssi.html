@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshRssi</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>The principle of obtaining the rssi of the configured network sigMesh is to scan the NetworkIdentity or NodeIdentity of the configured network broadcast packet.</p><p>The former only needs to compare whether it is under the mesh network. </p><p>while the latter needs to compare the nodeId under the mesh. However, in some scenarios, the cache of nodeIds inside the sdk is sometimes only partial, so the business layer needs to bring in all nodeIds in order to perform accurate matching.</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshRssi.html#startSearchMeshDeviceRssi(long)>startSearchMeshDeviceRssi</a>(long searchTime) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Search the rssi of the sub-device that has been configured on the current Sig Mesh network</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshRssi.html#startSearchMeshDeviceRssi(List,long)>startSearchMeshDeviceRssi</a>(List&lt;String&gt; nodeIds, long searchTime) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Search the rssi of the sub-device that has been configured on the current Sig Mesh network</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshRssi.html#registerMeshDeviceRssiListener(IMeshDeviceRssiCallback)>registerMeshDeviceRssiListener</a>(IMeshDeviceRssiCallback iMeshDeviceRssiCallback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register mesh rssi listener</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshRssi.html#stopSearchMeshDeviceRssi()>stopSearchMeshDeviceRssi</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Stop searching the rssi of the sub-device that has been configured on the current Sig Mesh network</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshRssi.html#unRegisterMeshDeviceRssiListener()>unRegisterMeshDeviceRssiListener</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">unRegister mesh rssi listener</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=ISigMeshRssi.html#destroy()>destroy</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">destroy</td>
                                         </tr>
                                         
                                         </tbody>
@@ -236,7 +236,16 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                     <li class="blockList">
                                         <h4>startSearchMeshDeviceRssi</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshRssi.html#startSearchMeshDeviceRssi(long)>startSearchMeshDeviceRssi</a>(long searchTime)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Search the rssi of the sub-device that has been configured on the current Sig Mesh network</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>searchTime</code> - searchTime</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -251,7 +260,20 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                     <li class="blockList">
                                         <h4>startSearchMeshDeviceRssi</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshRssi.html#startSearchMeshDeviceRssi(List,long)>startSearchMeshDeviceRssi</a>(List&lt;String&gt; nodeIds, long searchTime)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Search the rssi of the sub-device that has been configured on the current Sig Mesh network</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>nodeIds</code> - extra nodeIdBecause in some business scenarios, the nodeIds in the sdk cache are only partial, so the business layer needs to provide all nodeIds</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>searchTime</code> - searchTime</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -266,7 +288,16 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                     <li class="blockList">
                                         <h4>registerMeshDeviceRssiListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshRssi.html#registerMeshDeviceRssiListener(IMeshDeviceRssiCallback)>registerMeshDeviceRssiListener</a>(IMeshDeviceRssiCallback iMeshDeviceRssiCallback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register mesh rssi listener</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>iMeshDeviceRssiCallback</code> - callback for MeshDeviceRssi</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -281,7 +312,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                     <li class="blockList">
                                         <h4>stopSearchMeshDeviceRssi</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshRssi.html#stopSearchMeshDeviceRssi()>stopSearchMeshDeviceRssi</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Stop searching the rssi of the sub-device that has been configured on the current Sig Mesh network</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -296,7 +327,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                     <li class="blockList">
                                         <h4>unRegisterMeshDeviceRssiListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshRssi.html#unRegisterMeshDeviceRssiListener()>unRegisterMeshDeviceRssiListener</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>unRegister mesh rssi listener</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -311,7 +342,7 @@ public interface <span class="typeNameLabel"><a href=ISigMeshRssi.html>ISigMeshR
                                     <li class="blockList">
                                         <h4>destroy</h4>
                                         <pre class="methodSignature"> abstract void <a href=ISigMeshRssi.html#destroy()>destroy</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>destroy</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

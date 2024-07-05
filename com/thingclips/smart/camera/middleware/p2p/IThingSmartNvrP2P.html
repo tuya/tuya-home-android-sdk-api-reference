@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingSmartNvrP2P.html>IThingSmartNvrP2P</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>NVR 一路P2P 连接</p></div>
                 </li>
             </ul>
         </div>
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartNvrP2P.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSmartNvrP2P.html#connect(String,OperationDelegateCallBack)>connect</a>(String devId, OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">create &amp;&amp; connect to nvr</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartNvrP2P.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSmartNvrP2P.html#bindSubDevicesInfo(List,OperationDelegateCallBack)>bindSubDevicesInfo</a>(List&lt;String&gt; list, OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">bind SubDevices</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -191,7 +191,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartNvrP2P.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSmartNvrP2P.html#disConnect(OperationDelegateCallBack)>disConnect</a>(OperationDelegateCallBack callBack) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">disConnect nvr</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -215,7 +215,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartNvrP2P.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSmartNvrP2P.html#registerP2PStatusListener(AbsP2pCameraListener)>registerP2PStatusListener</a>(AbsP2pCameraListener listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Register the P2P listener, otherwise the video data cannot be obtained</td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
@@ -283,7 +283,20 @@ public interface <span class="typeNameLabel"><a href=IThingSmartNvrP2P.html>IThi
                                     <li class="blockList">
                                         <h4>connect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSmartNvrP2P.html#connect(String,OperationDelegateCallBack)>connect</a>(String devId, OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>create &amp;&amp; connect to nvr</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - nvr device Id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callBack</code> - return connect result</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -298,7 +311,20 @@ public interface <span class="typeNameLabel"><a href=IThingSmartNvrP2P.html>IThi
                                     <li class="blockList">
                                         <h4>bindSubDevicesInfo</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSmartNvrP2P.html#bindSubDevicesInfo(List,OperationDelegateCallBack)>bindSubDevicesInfo</a>(List&lt;String&gt; list, OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>bind SubDevices</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>list</code> - sub deviceIds list</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callBack</code> - return bind result</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -343,7 +369,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartNvrP2P.html>IThi
                                     <li class="blockList">
                                         <h4>disConnect</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSmartNvrP2P.html#disConnect(OperationDelegateCallBack)>disConnect</a>(OperationDelegateCallBack callBack)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>disConnect nvr</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -388,7 +414,16 @@ public interface <span class="typeNameLabel"><a href=IThingSmartNvrP2P.html>IThi
                                     <li class="blockList">
                                         <h4>registerP2PStatusListener</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingSmartNvrP2P.html#registerP2PStatusListener(AbsP2pCameraListener)>registerP2PStatusListener</a>(AbsP2pCameraListener listener)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Register the P2P listener, otherwise the video data cannot be obtained</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>listener</code> - listener</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

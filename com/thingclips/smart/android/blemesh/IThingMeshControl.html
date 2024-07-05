@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThingMeshControl</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>author : yuzhouxu date : 2021/4/9 16:40 description :Independent functions of blue mesh device</p></div>
                 </li>
             </ul>
         </div>
@@ -151,7 +151,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshControl.html#broadcastDps(String,String,IResultCallback)>broadcastDps</a>(String pcc, String dps, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Only for ThingMesh, send message by cloud.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -159,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshControl.html#publishRawData(Array,IResultCallback)>publishRawData</a>(Array&lt;byte&gt; data, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Only for ThingMesh, send parameters of byte array type。</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -167,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshControl.html#getDataByDpIds(String,List,IResultCallback)>getDataByDpIds</a>(String nodeId, List&lt;Integer&gt; dpIds, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Get dp value by dp id by local, only for ThingMesh.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -175,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshControl.html#publishDps(String,String,DpsParseBean,IResultCallback)>publishDps</a>(String vendorId, String nodeId, DpsParseBean dpsParseBean, IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Send mesh message by dpId.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -183,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingMeshControl.html#queryAllStatusByLocal(IResultCallback)>queryAllStatusByLocal</a>(IResultCallback callback) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Query status of the dps' values of all sub-devices.Only for ThingMesh, SIGMesh doesn't support this method.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -228,7 +228,24 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                     <li class="blockList">
                                         <h4>broadcastDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshControl.html#broadcastDps(String,String,IResultCallback)>broadcastDps</a>(String pcc, String dps, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Only for ThingMesh, send message by cloud.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>pcc</code> - Category of device getCategory</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dps</code> - Thing dps</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -243,7 +260,20 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                     <li class="blockList">
                                         <h4>publishRawData</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshControl.html#publishRawData(Array,IResultCallback)>publishRawData</a>(Array&lt;byte&gt; data, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Only for ThingMesh, send parameters of byte array type。</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>data</code> - Parameter for send</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -258,7 +288,24 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                     <li class="blockList">
                                         <h4>getDataByDpIds</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshControl.html#getDataByDpIds(String,List,IResultCallback)>getDataByDpIds</a>(String nodeId, List&lt;Integer&gt; dpIds, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Get dp value by dp id by local, only for ThingMesh.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>nodeId</code> - getNodeId</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dpIds</code> - Dp ids</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -273,7 +320,28 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                     <li class="blockList">
                                         <h4>publishDps</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshControl.html#publishDps(String,String,DpsParseBean,IResultCallback)>publishDps</a>(String vendorId, String nodeId, DpsParseBean dpsParseBean, IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Send mesh message by dpId. Only for ThingMesh, SIGMesh doesn't support this method.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>vendorId</code> - Thing category com.thingclips.smart.sdk.bean.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>nodeId</code> - Thing nodeId com.thingclips.smart.sdk.bean.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dpsParseBean</code> - Contains opCode and parameters DpsParseBean</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -288,7 +356,16 @@ public interface <span class="typeNameLabel"><a href=IThingMeshControl.html>IThi
                                     <li class="blockList">
                                         <h4>queryAllStatusByLocal</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingMeshControl.html#queryAllStatusByLocal(IResultCallback)>queryAllStatusByLocal</a>(IResultCallback callback)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Query status of the dps' values of all sub-devices.Only for ThingMesh, SIGMesh doesn't support this method.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
