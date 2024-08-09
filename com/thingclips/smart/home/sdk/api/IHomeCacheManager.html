@@ -157,13 +157,13 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#putHomeBean(HomeBean)>putHomeBean</a>(HomeBean bean) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#putHomeBean(HomeBean)>putHomeBean</a>(<a href=../bean/HomeBean.html>HomeBean</a> bean) </code>
                                             </th>
                                             <td class="colLast">Add Family Relationships.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
-                                            <td class="colFirst"><code>abstract HomeBean</code>
+                                            <td class="colFirst"><code>abstract <a href=../bean/HomeBean.html>HomeBean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getHomeBean(long)>getHomeBean</a>(long homeId) </code>
                                             </th>
@@ -293,7 +293,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         <tr id="i18" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#addRoomToHome(long,RoomBean)>addRoomToHome</a>(long homeId, RoomBean bean) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#addRoomToHome(long,RoomBean)>addRoomToHome</a>(long homeId, <a href=../bean/RoomBean.html>RoomBean</a> bean) </code>
                                             </th>
                                             <td class="colLast">Add a room to the home.</td>
                                         </tr>
@@ -331,7 +331,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         </tr>
                                         
                                         <tr id="i23" class="rowColor">
-                                            <td class="colFirst"><code>abstract RoomBean</code>
+                                            <td class="colFirst"><code>abstract <a href=../bean/RoomBean.html>RoomBean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getRoomBeanBydevice(long,String)>getRoomBeanBydevice</a>(long homeId, String devId) </code>
                                             </th>
@@ -411,7 +411,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         </tr>
                                         
                                         <tr id="i33" class="rowColor">
-                                            <td class="colFirst"><code>abstract List&lt;RoomBean&gt;</code>
+                                            <td class="colFirst"><code>abstract List&lt;<a href=../bean/RoomBean.html>RoomBean</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getHomeRoomList(long)>getHomeRoomList</a>(long homeId) </code>
                                             </th>
@@ -427,7 +427,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         </tr>
                                         
                                         <tr id="i35" class="rowColor">
-                                            <td class="colFirst"><code>abstract RoomBean</code>
+                                            <td class="colFirst"><code>abstract <a href=../bean/RoomBean.html>RoomBean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getRoomBeanBydevice(String)>getRoomBeanBydevice</a>(String devId) </code>
                                             </th>
@@ -435,7 +435,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         </tr>
                                         
                                         <tr id="i36" class="altColor">
-                                            <td class="colFirst"><code>abstract RoomBean</code>
+                                            <td class="colFirst"><code>abstract <a href=../bean/RoomBean.html>RoomBean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getRoomBeanByHomeInDevice(long,String)>getRoomBeanByHomeInDevice</a>(long homeId, String devId) </code>
                                             </th>
@@ -451,7 +451,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         </tr>
                                         
                                         <tr id="i38" class="altColor">
-                                            <td class="colFirst"><code>abstract RoomBean</code>
+                                            <td class="colFirst"><code>abstract <a href=../bean/RoomBean.html>RoomBean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getRoomBeanByGroup(long)>getRoomBeanByGroup</a>(long groupId) </code>
                                             </th>
@@ -461,7 +461,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         <tr id="i39" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#replaceDevGroupToRoom(List,long)>replaceDevGroupToRoom</a>(List&lt;DeviceAndGroupInRoomBean&gt; bizs, long mRoomId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#replaceDevGroupToRoom(List,long)>replaceDevGroupToRoom</a>(List&lt;<a href=../bean/DeviceAndGroupInRoomBean.html>DeviceAndGroupInRoomBean</a>&gt; bizs, long mRoomId) </code>
                                             </th>
                                             <td class="colLast">Move devices or groups to room.</td>
                                         </tr>
@@ -469,7 +469,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         <tr id="i40" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#addDevGroupToRoom(List,long)>addDevGroupToRoom</a>(List&lt;DeviceAndGroupInRoomBean&gt; bizs, long mRoomId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#addDevGroupToRoom(List,long)>addDevGroupToRoom</a>(List&lt;<a href=../bean/DeviceAndGroupInRoomBean.html>DeviceAndGroupInRoomBean</a>&gt; bizs, long mRoomId) </code>
                                             </th>
                                             <td class="colLast">Move devices or groups to room.</td>
                                         </tr>
@@ -507,7 +507,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         </tr>
                                         
                                         <tr id="i45" class="rowColor">
-                                            <td class="colFirst"><code>abstract RoomBean</code>
+                                            <td class="colFirst"><code>abstract <a href=../bean/RoomBean.html>RoomBean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getRoomBeanByRoomId(long)>getRoomBeanByRoomId</a>(long roomId) </code>
                                             </th>
@@ -579,7 +579,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         </tr>
                                         
                                         <tr id="i54" class="altColor">
-                                            <td class="colFirst"><code>abstract RoomBean</code>
+                                            <td class="colFirst"><code>abstract <a href=../bean/RoomBean.html>RoomBean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getRoomBeanByGroup(long,long)>getRoomBeanByGroup</a>(long homeId, long groupId) </code>
                                             </th>
@@ -587,7 +587,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         </tr>
                                         
                                         <tr id="i55" class="rowColor">
-                                            <td class="colFirst"><code>abstract List&lt;BlueMeshBean&gt;</code>
+                                            <td class="colFirst"><code>abstract List&lt;<a href=../../../sdk/bean/BlueMeshBean.html>BlueMeshBean</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getHomeMeshList(long)>getHomeMeshList</a>(long homeId) </code>
                                             </th>
@@ -595,7 +595,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                         </tr>
                                         
                                         <tr id="i56" class="altColor">
-                                            <td class="colFirst"><code>abstract List&lt;SigMeshBean&gt;</code>
+                                            <td class="colFirst"><code>abstract List&lt;<a href=../../../sdk/bean/SigMeshBean.html>SigMeshBean</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IHomeCacheManager.html#getHomeSigMeshList(long)>getHomeSigMeshList</a>(long homeId) </code>
                                             </th>
@@ -787,7 +787,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>putHomeBean</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IHomeCacheManager.html#putHomeBean(HomeBean)>putHomeBean</a>(HomeBean bean)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IHomeCacheManager.html#putHomeBean(HomeBean)>putHomeBean</a>(<a href=../bean/HomeBean.html>HomeBean</a> bean)</pre>
                                         <div class="block"><p>Add Family Relationships.</p></div>
                                         
                                         <dl>
@@ -811,7 +811,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getHomeBean</h4>
-                                        <pre class="methodSignature"> abstract HomeBean <a href=IHomeCacheManager.html#getHomeBean(long)>getHomeBean</a>(long homeId)</pre>
+                                        <pre class="methodSignature"> abstract <a href=../bean/HomeBean.html>HomeBean</a> <a href=IHomeCacheManager.html#getHomeBean(long)>getHomeBean</a>(long homeId)</pre>
                                         <div class="block"><p>Get home bean by id.</p></div>
                                         
                                         <dl>
@@ -1226,7 +1226,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>addRoomToHome</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IHomeCacheManager.html#addRoomToHome(long,RoomBean)>addRoomToHome</a>(long homeId, RoomBean bean)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IHomeCacheManager.html#addRoomToHome(long,RoomBean)>addRoomToHome</a>(long homeId, <a href=../bean/RoomBean.html>RoomBean</a> bean)</pre>
                                         <div class="block"><p>Add a room to the home.</p></div>
                                         
                                         <dl>
@@ -1366,7 +1366,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getRoomBeanBydevice</h4>
-                                        <pre class="methodSignature"> abstract RoomBean <a href=IHomeCacheManager.html#getRoomBeanBydevice(long,String)>getRoomBeanBydevice</a>(long homeId, String devId)</pre>
+                                        <pre class="methodSignature"> abstract <a href=../bean/RoomBean.html>RoomBean</a> <a href=IHomeCacheManager.html#getRoomBeanBydevice(long,String)>getRoomBeanBydevice</a>(long homeId, String devId)</pre>
                                         <div class="block"><p>Get room bean based on device id.</p></div>
                                         
                                         <dl>
@@ -1614,7 +1614,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getHomeRoomList</h4>
-                                        <pre class="methodSignature"> abstract List&lt;RoomBean&gt; <a href=IHomeCacheManager.html#getHomeRoomList(long)>getHomeRoomList</a>(long homeId)</pre>
+                                        <pre class="methodSignature"> abstract List&lt;<a href=../bean/RoomBean.html>RoomBean</a>&gt; <a href=IHomeCacheManager.html#getHomeRoomList(long)>getHomeRoomList</a>(long homeId)</pre>
                                         <div class="block"><p>Get a list of room in a home.</p></div>
                                         
                                         <dl>
@@ -1653,7 +1653,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getRoomBeanBydevice</h4>
-                                        <pre class="methodSignature"> abstract RoomBean <a href=IHomeCacheManager.html#getRoomBeanBydevice(String)>getRoomBeanBydevice</a>(String devId)</pre>
+                                        <pre class="methodSignature"> abstract <a href=../bean/RoomBean.html>RoomBean</a> <a href=IHomeCacheManager.html#getRoomBeanBydevice(String)>getRoomBeanBydevice</a>(String devId)</pre>
                                         <div class="block"><p>Get room bean based on device id.</p></div>
                                         
                                         <dl>
@@ -1677,7 +1677,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getRoomBeanByHomeInDevice</h4>
-                                        <pre class="methodSignature"> abstract RoomBean <a href=IHomeCacheManager.html#getRoomBeanByHomeInDevice(long,String)>getRoomBeanByHomeInDevice</a>(long homeId, String devId)</pre>
+                                        <pre class="methodSignature"> abstract <a href=../bean/RoomBean.html>RoomBean</a> <a href=IHomeCacheManager.html#getRoomBeanByHomeInDevice(long,String)>getRoomBeanByHomeInDevice</a>(long homeId, String devId)</pre>
                                         <div class="block"><p>Get room bean based on device id and home id.</p></div>
                                         
                                         <dl>
@@ -1720,7 +1720,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getRoomBeanByGroup</h4>
-                                        <pre class="methodSignature"> abstract RoomBean <a href=IHomeCacheManager.html#getRoomBeanByGroup(long)>getRoomBeanByGroup</a>(long groupId)</pre>
+                                        <pre class="methodSignature"> abstract <a href=../bean/RoomBean.html>RoomBean</a> <a href=IHomeCacheManager.html#getRoomBeanByGroup(long)>getRoomBeanByGroup</a>(long groupId)</pre>
                                         <div class="block"><p>Get room bean based on group id.</p></div>
                                         
                                         <dl>
@@ -1744,7 +1744,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>replaceDevGroupToRoom</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IHomeCacheManager.html#replaceDevGroupToRoom(List,long)>replaceDevGroupToRoom</a>(List&lt;DeviceAndGroupInRoomBean&gt; bizs, long mRoomId)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IHomeCacheManager.html#replaceDevGroupToRoom(List,long)>replaceDevGroupToRoom</a>(List&lt;<a href=../bean/DeviceAndGroupInRoomBean.html>DeviceAndGroupInRoomBean</a>&gt; bizs, long mRoomId)</pre>
                                         <div class="block"><p>Move devices or groups to room.</p></div>
                                         
                                         <dl>
@@ -1772,7 +1772,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>addDevGroupToRoom</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IHomeCacheManager.html#addDevGroupToRoom(List,long)>addDevGroupToRoom</a>(List&lt;DeviceAndGroupInRoomBean&gt; bizs, long mRoomId)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IHomeCacheManager.html#addDevGroupToRoom(List,long)>addDevGroupToRoom</a>(List&lt;<a href=../bean/DeviceAndGroupInRoomBean.html>DeviceAndGroupInRoomBean</a>&gt; bizs, long mRoomId)</pre>
                                         <div class="block"><p>Move devices or groups to room.</p></div>
                                         
                                         <dl>
@@ -1887,7 +1887,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getRoomBeanByRoomId</h4>
-                                        <pre class="methodSignature"> abstract RoomBean <a href=IHomeCacheManager.html#getRoomBeanByRoomId(long)>getRoomBeanByRoomId</a>(long roomId)</pre>
+                                        <pre class="methodSignature"> abstract <a href=../bean/RoomBean.html>RoomBean</a> <a href=IHomeCacheManager.html#getRoomBeanByRoomId(long)>getRoomBeanByRoomId</a>(long roomId)</pre>
                                         <div class="block"><p>Search room bean by the id of room.</p></div>
                                         
                                         <dl>
@@ -2076,7 +2076,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getRoomBeanByGroup</h4>
-                                        <pre class="methodSignature"> abstract RoomBean <a href=IHomeCacheManager.html#getRoomBeanByGroup(long,long)>getRoomBeanByGroup</a>(long homeId, long groupId)</pre>
+                                        <pre class="methodSignature"> abstract <a href=../bean/RoomBean.html>RoomBean</a> <a href=IHomeCacheManager.html#getRoomBeanByGroup(long,long)>getRoomBeanByGroup</a>(long homeId, long groupId)</pre>
                                         <div class="block"><p>Get room bean based on home id and group id.</p></div>
                                         
                                         <dl>
@@ -2104,7 +2104,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getHomeMeshList</h4>
-                                        <pre class="methodSignature"> abstract List&lt;BlueMeshBean&gt; <a href=IHomeCacheManager.html#getHomeMeshList(long)>getHomeMeshList</a>(long homeId)</pre>
+                                        <pre class="methodSignature"> abstract List&lt;<a href=../../../sdk/bean/BlueMeshBean.html>BlueMeshBean</a>&gt; <a href=IHomeCacheManager.html#getHomeMeshList(long)>getHomeMeshList</a>(long homeId)</pre>
                                         <div class="block"><p>Get the list of mesh devices in the home.</p></div>
                                         
                                         <dl>
@@ -2128,7 +2128,7 @@ public interface <span class="typeNameLabel"><a href=IHomeCacheManager.html>IHom
                                           >
                                     <li class="blockList">
                                         <h4>getHomeSigMeshList</h4>
-                                        <pre class="methodSignature"> abstract List&lt;SigMeshBean&gt; <a href=IHomeCacheManager.html#getHomeSigMeshList(long)>getHomeSigMeshList</a>(long homeId)</pre>
+                                        <pre class="methodSignature"> abstract List&lt;<a href=../../../sdk/bean/SigMeshBean.html>SigMeshBean</a>&gt; <a href=IHomeCacheManager.html#getHomeSigMeshList(long)>getHomeSigMeshList</a>(long homeId)</pre>
                                         <div class="block"><p>Get the list of sigmesh devices in the home.</p></div>
                                         
                                         <dl>

@@ -104,11 +104,46 @@ var pathtoroot = "../../../../../";
             <ul class="blockList">
                 <li class="blockList">
                     
+                    <dl>
+                        <dt>All Implemented Interfaces:</dt>
+                        <dd>
+                            
+                            <code>com.thingclips.sdk.user.model.IUser</code>
+                            
+                            ,
+                            
+                            
+                            <code>com.thingclips.smart.interior.api.IUserCommonPlugin</code>
+                            
+                            ,
+                            
+                            
+                            <code>com.thingclips.smart.interior.api.IUserDomainPlugin</code>
+                            
+                            ,
+                            
+                            
+                            <code>com.thingclips.smart.interior.api.IUserGeneralBusiness</code>
+                            
+                            ,
+                            
+                            
+                            <code>com.thingclips.smart.interior.api.IUserHighwayPlugin</code>
+                            
+                            ,
+                            
+                            
+                            <code>com.thingclips.smart.interior.api.IUserRegionPlugin</code>
+                            
+                            
+                        </dd>
+                    </dl>
+                    
                     <hr>
                     <pre class="wrap-overflow">
 
 public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser</a></span>
-
+ implements <a href=../../interior/api/IUserCommonPlugin.html>IUserCommonPlugin</a>, <a href=../../interior/api/IUserRegionPlugin.html>IUserRegionPlugin</a>, <a href=../../interior/api/IUserDomainPlugin.html>IUserDomainPlugin</a>, <a href=../../../sdk/user/model/IUser.html>IUser</a>, <a href=../../interior/api/IUserGeneralBusiness.html>IUserGeneralBusiness</a>, <a href=../../interior/api/IUserHighwayPlugin.html>IUserHighwayPlugin</a>
                     </pre>
                     <div class="block"><p>To manage user related operations, including but not limited to user registration, login, anonymous login, etc</p></div>
                 </li>
@@ -149,7 +184,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithPhone(String,String,String,ILoginCallback)>loginWithPhone</a>(String countryCode, String phone, String code, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithPhone(String,String,String,ILoginCallback)>loginWithPhone</a>(String countryCode, String phone, String code, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Mobile Verification Code Login.</td>
                                         </tr>
@@ -157,7 +192,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithEmail(String,String,String,ILoginCallback)>loginWithEmail</a>(String countryCode, String email, String passwd, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithEmail(String,String,String,ILoginCallback)>loginWithEmail</a>(String countryCode, String email, String passwd, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login with Email.</td>
                                         </tr>
@@ -165,7 +200,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithPhonePassword(String,String,String,ILoginCallback)>loginWithPhonePassword</a>(String countryCode, String phone, String passwd, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithPhonePassword(String,String,String,ILoginCallback)>loginWithPhonePassword</a>(String countryCode, String phone, String passwd, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Phone Password Login.</td>
                                         </tr>
@@ -173,7 +208,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getEmailValidateCode(String,String,IValidateCallback)>getEmailValidateCode</a>(String countryCode, String email, IValidateCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getEmailValidateCode(String,String,IValidateCallback)>getEmailValidateCode</a>(String countryCode, String email, <a href=../../android/user/api/IValidateCallback.html>IValidateCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Get Verification code by email.</td>
                                         </tr>
@@ -181,7 +216,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerAccountWithEmail(String,String,String,IRegisterCallback)>registerAccountWithEmail</a>(String countryCode, String email, String passwd, IRegisterCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerAccountWithEmail(String,String,String,IRegisterCallback)>registerAccountWithEmail</a>(String countryCode, String email, String passwd, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Email Registration.</td>
                                         </tr>
@@ -189,7 +224,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerAccountWithPhone(String,String,String,String,IRegisterCallback)>registerAccountWithPhone</a>(String countryCode, String phone, String passwd, String code, IRegisterCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerAccountWithPhone(String,String,String,String,IRegisterCallback)>registerAccountWithPhone</a>(String countryCode, String phone, String passwd, String code, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Phone Password Registration.</td>
                                         </tr>
@@ -197,7 +232,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#resetEmailPassword(String,String,String,String,IResetPasswordCallback)>resetEmailPassword</a>(String countryCode, String email, String emailCode, String passwd, IResetPasswordCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#resetEmailPassword(String,String,String,String,IResetPasswordCallback)>resetEmailPassword</a>(String countryCode, String email, String emailCode, String passwd, <a href=../../android/user/api/IResetPasswordCallback.html>IResetPasswordCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">User Email Reset Password.</td>
                                         </tr>
@@ -205,7 +240,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#resetPhonePassword(String,String,String,String,IResetPasswordCallback)>resetPhonePassword</a>(String countryCode, String phone, String code, String newPasswd, IResetPasswordCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#resetPhonePassword(String,String,String,String,IResetPasswordCallback)>resetPhonePassword</a>(String countryCode, String phone, String code, String newPasswd, <a href=../../android/user/api/IResetPasswordCallback.html>IResetPasswordCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Phone Reset Password.</td>
                                         </tr>
@@ -213,7 +248,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#logout(ILogoutCallback)>logout</a>(ILogoutCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#logout(ILogoutCallback)>logout</a>(<a href=../../android/user/api/ILogoutCallback.html>ILogoutCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Logout.</td>
                                         </tr>
@@ -221,7 +256,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getValidateCode(String,String,IValidateCallback)>getValidateCode</a>(String countryCode, String phoneNumber, IValidateCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getValidateCode(String,String,IValidateCallback)>getValidateCode</a>(String countryCode, String phoneNumber, <a href=../../android/user/api/IValidateCallback.html>IValidateCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Get phone verification code.</td>
                                         </tr>
@@ -229,7 +264,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getRegisterEmailValidateCode(String,String,IResultCallback)>getRegisterEmailValidateCode</a>(String countryCode, String email, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getRegisterEmailValidateCode(String,String,IResultCallback)>getRegisterEmailValidateCode</a>(String countryCode, String email, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Email registration to get verification code.</td>
                                         </tr>
@@ -237,7 +272,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerAccountWithEmail(String,String,String,String,IRegisterCallback)>registerAccountWithEmail</a>(String countryCode, String email, String passwd, String code, IRegisterCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerAccountWithEmail(String,String,String,String,IRegisterCallback)>registerAccountWithEmail</a>(String countryCode, String email, String passwd, String code, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Email Registration.</td>
                                         </tr>
@@ -245,7 +280,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#reRickName(String,IReNickNameCallback)>reRickName</a>(String name, IReNickNameCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#reRickName(String,IReNickNameCallback)>reRickName</a>(String name, <a href=../../android/user/api/IReNickNameCallback.html>IReNickNameCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Modify the nickname.</td>
                                         </tr>
@@ -253,7 +288,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#updateNickName(String,IReNickNameCallback)>updateNickName</a>(String name, IReNickNameCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#updateNickName(String,IReNickNameCallback)>updateNickName</a>(String name, <a href=../../android/user/api/IReNickNameCallback.html>IReNickNameCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Modify the nickname.</td>
                                         </tr>
@@ -261,7 +296,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginByTwitter(String,String,String,ILoginCallback)>loginByTwitter</a>(String countryCode, String key, String secret, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginByTwitter(String,String,String,ILoginCallback)>loginByTwitter</a>(String countryCode, String key, String secret, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login by Twitter.</td>
                                         </tr>
@@ -269,7 +304,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i15" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginByQQ(String,String,String,ILoginCallback)>loginByQQ</a>(String countryCode, String userId, String accessToken, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginByQQ(String,String,String,ILoginCallback)>loginByQQ</a>(String countryCode, String userId, String accessToken, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login by QQ.</td>
                                         </tr>
@@ -277,7 +312,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i16" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginByWechat(String,String,ILoginCallback)>loginByWechat</a>(String countryCode, String code, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginByWechat(String,String,ILoginCallback)>loginByWechat</a>(String countryCode, String code, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login by WeChat.</td>
                                         </tr>
@@ -285,7 +320,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i17" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginByFacebook(String,String,ILoginCallback)>loginByFacebook</a>(String countryCode, String token, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginByFacebook(String,String,ILoginCallback)>loginByFacebook</a>(String countryCode, String token, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login by Facebook.</td>
                                         </tr>
@@ -293,7 +328,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i18" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#checkPhoneCode(String,String,String,ICheckAccountCallback)>checkPhoneCode</a>(String countryCode, String phoneNumber, String code, ICheckAccountCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#checkPhoneCode(String,String,String,ICheckAccountCallback)>checkPhoneCode</a>(String countryCode, String phoneNumber, String code, <a href=../../android/user/api/ICheckAccountCallback.html>ICheckAccountCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Check the verification code.</td>
                                         </tr>
@@ -301,7 +336,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i19" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#checkEmailPassword(String,ICheckAccountCallback)>checkEmailPassword</a>(String pwd, ICheckAccountCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#checkEmailPassword(String,ICheckAccountCallback)>checkEmailPassword</a>(String pwd, <a href=../../android/user/api/ICheckAccountCallback.html>ICheckAccountCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Check the password of email.</td>
                                         </tr>
@@ -309,7 +344,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i20" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithUid(String,String,String,ILoginCallback)>loginWithUid</a>(String countryCode, String uid, String passwd, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithUid(String,String,String,ILoginCallback)>loginWithUid</a>(String countryCode, String uid, String passwd, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login by uid.</td>
                                         </tr>
@@ -317,7 +352,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginOrRegisterWithUid(String,String,String,ILoginCallback)>loginOrRegisterWithUid</a>(String countryCode, String uid, String passwd, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginOrRegisterWithUid(String,String,String,ILoginCallback)>loginOrRegisterWithUid</a>(String countryCode, String uid, String passwd, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">User Uid Registration and Login.</td>
                                         </tr>
@@ -325,7 +360,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i22" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginOrRegisterWithUid(String,String,String,boolean,IUidLoginCallback)>loginOrRegisterWithUid</a>(String countryCode, String uid, String passwd, boolean isCreateHome, IUidLoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginOrRegisterWithUid(String,String,String,boolean,IUidLoginCallback)>loginOrRegisterWithUid</a>(String countryCode, String uid, String passwd, boolean isCreateHome, <a href=../../android/user/api/IUidLoginCallback.html>IUidLoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">User Uid Registration and Login.</td>
                                         </tr>
@@ -333,7 +368,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i23" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerAccountWithUid(String,String,String,IRegisterCallback)>registerAccountWithUid</a>(String countryCode, String uid, String passwd, IRegisterCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerAccountWithUid(String,String,String,IRegisterCallback)>registerAccountWithUid</a>(String countryCode, String uid, String passwd, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">User Uid Registration.</td>
                                         </tr>
@@ -341,7 +376,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i24" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendBindVerifyCode(String,String,IResultCallback)>sendBindVerifyCode</a>(String countryCode, String phoneNumber, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendBindVerifyCode(String,String,IResultCallback)>sendBindVerifyCode</a>(String countryCode, String phoneNumber, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send Verification code to bind mobile.</td>
                                         </tr>
@@ -349,7 +384,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i25" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendBindVerifyCodeByTicket(String,String,Map,IResultCallback)>sendBindVerifyCodeByTicket</a>(String countryCode, String phoneNumber, Map&lt;String, String&gt; ticket, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendBindVerifyCodeByTicket(String,String,Map,IResultCallback)>sendBindVerifyCodeByTicket</a>(String countryCode, String phoneNumber, Map&lt;String, String&gt; ticket, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send Verification code to bind mobile.</td>
                                         </tr>
@@ -357,7 +392,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i26" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendBindVerifyCodeWithEmail(String,String,IResultCallback)>sendBindVerifyCodeWithEmail</a>(String countryCode, String email, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendBindVerifyCodeWithEmail(String,String,IResultCallback)>sendBindVerifyCodeWithEmail</a>(String countryCode, String email, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send Verification code to bind email.</td>
                                         </tr>
@@ -365,7 +400,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i27" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendBindVerifyCodeWithEmailByTicket(String,String,Map,IResultCallback)>sendBindVerifyCodeWithEmailByTicket</a>(String countryCode, String email, Map&lt;String, String&gt; ticket, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendBindVerifyCodeWithEmailByTicket(String,String,Map,IResultCallback)>sendBindVerifyCodeWithEmailByTicket</a>(String countryCode, String email, Map&lt;String, String&gt; ticket, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send Verification code to bind email.</td>
                                         </tr>
@@ -373,7 +408,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i28" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#bindEmail(String,String,String,String,IResultCallback)>bindEmail</a>(String countryCode, String email, String code, String sId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#bindEmail(String,String,String,String,IResultCallback)>bindEmail</a>(String countryCode, String email, String code, String sId, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Bind Email</td>
                                         </tr>
@@ -381,7 +416,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i29" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#setTempUnit(TempUnitEnum,IResultCallback)>setTempUnit</a>(TempUnitEnum unit, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#setTempUnit(TempUnitEnum,IResultCallback)>setTempUnit</a>(<a href=../enums/TempUnitEnum.html>TempUnitEnum</a> unit, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Set Temperature unit.</td>
                                         </tr>
@@ -389,7 +424,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i30" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#uploadUserAvatar(File,IBooleanCallback)>uploadUserAvatar</a>(File file, IBooleanCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#uploadUserAvatar(File,IBooleanCallback)>uploadUserAvatar</a>(File file, <a href=../../android/user/api/IBooleanCallback.html>IBooleanCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Update avatar of user.</td>
                                         </tr>
@@ -397,7 +432,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i31" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#updateAvatarWithImageUrl(String,IBooleanCallback)>updateAvatarWithImageUrl</a>(String url, IBooleanCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#updateAvatarWithImageUrl(String,IBooleanCallback)>updateAvatarWithImageUrl</a>(String url, <a href=../../android/user/api/IBooleanCallback.html>IBooleanCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -413,7 +448,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i33" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#upgradeVersion(IResultCallback)>upgradeVersion</a>(IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#upgradeVersion(IResultCallback)>upgradeVersion</a>(<a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Upgrade user information.</td>
                                         </tr>
@@ -421,7 +456,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i34" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#cancelAccount(IResultCallback)>cancelAccount</a>(IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#cancelAccount(IResultCallback)>cancelAccount</a>(<a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Disable Account</td>
                                         </tr>
@@ -437,7 +472,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i36" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#switchUserRegion(String,ILoginCallback)>switchUserRegion</a>(String region, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#switchUserRegion(String,ILoginCallback)>switchUserRegion</a>(String region, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Switch the region of logged in user.</td>
                                         </tr>
@@ -445,7 +480,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i37" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendVerifyCodeWithUserName(String,String,String,int,IResultCallback)>sendVerifyCodeWithUserName</a>(String userName, String region, String countryCode, int type, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendVerifyCodeWithUserName(String,String,String,int,IResultCallback)>sendVerifyCodeWithUserName</a>(String userName, String region, String countryCode, int type, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send verification code, used for register, login, reset password, etc.</td>
                                         </tr>
@@ -453,7 +488,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i38" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendVerifyCodeWithUserNameByTicket(String,String,String,int,Map,IResultCallback)>sendVerifyCodeWithUserNameByTicket</a>(String userName, String region, String countryCode, int type, Map&lt;String, String&gt; ticket, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#sendVerifyCodeWithUserNameByTicket(String,String,String,int,Map,IResultCallback)>sendVerifyCodeWithUserNameByTicket</a>(String userName, String region, String countryCode, int type, Map&lt;String, String&gt; ticket, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send verification code, used for register, login, reset password, etc.</td>
                                         </tr>
@@ -461,7 +496,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i39" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#bindMobileSendCodeForVas(String,String,IResultCallback)>bindMobileSendCodeForVas</a>(String countryCode, String mobile, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#bindMobileSendCodeForVas(String,String,IResultCallback)>bindMobileSendCodeForVas</a>(String countryCode, String mobile, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Value-added service binding mobile phone number verification code sent.</td>
                                         </tr>
@@ -469,7 +504,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i40" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#bindMobileSendCodeForVasByTicket(String,String,Map,IResultCallback)>bindMobileSendCodeForVasByTicket</a>(String countryCode, String mobile, Map&lt;String, String&gt; ticket, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#bindMobileSendCodeForVasByTicket(String,String,Map,IResultCallback)>bindMobileSendCodeForVasByTicket</a>(String countryCode, String mobile, Map&lt;String, String&gt; ticket, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Value-added service binding mobile phone number verification code sent.</td>
                                         </tr>
@@ -477,7 +512,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i41" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#checkCodeWithUserName(String,String,String,String,int,IResultCallback)>checkCodeWithUserName</a>(String userName, String region, String countryCode, String code, int type, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#checkCodeWithUserName(String,String,String,String,int,IResultCallback)>checkCodeWithUserName</a>(String userName, String region, String countryCode, String code, int type, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Check verification code, used for register/login/reset password.</td>
                                         </tr>
@@ -485,7 +520,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i42" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerWithUserName(String,String,String,String,String,IRegisterCallback)>registerWithUserName</a>(String userName, String region, String countryCode, String code, String password, IRegisterCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#registerWithUserName(String,String,String,String,String,IRegisterCallback)>registerWithUserName</a>(String userName, String region, String countryCode, String code, String password, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Mobile phone or Email register.</td>
                                         </tr>
@@ -493,7 +528,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i43" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#thirdLogin(String,String,String,ILoginCallback)>thirdLogin</a>(String countryCode, String accessToken, String type, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#thirdLogin(String,String,String,ILoginCallback)>thirdLogin</a>(String countryCode, String accessToken, String type, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login by Auth2</td>
                                         </tr>
@@ -501,7 +536,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i44" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#thirdLogin(String,String,String,String,ILoginCallback)>thirdLogin</a>(String countryCode, String accessToken, String type, String extraInfo, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#thirdLogin(String,String,String,String,ILoginCallback)>thirdLogin</a>(String countryCode, String accessToken, String type, String extraInfo, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login by Auth2</td>
                                         </tr>
@@ -509,7 +544,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i45" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#bindThirdPlatform(String,String,String,String,String,IThirdBindCallback)>bindThirdPlatform</a>(String countryCode, String type, String accessToken, String extraInfo, String options, IThirdBindCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#bindThirdPlatform(String,String,String,String,String,IThirdBindCallback)>bindThirdPlatform</a>(String countryCode, String type, String accessToken, String extraInfo, String options, <a href=../../android/user/api/IThirdBindCallback.html>IThirdBindCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">bind third platform</td>
                                         </tr>
@@ -517,7 +552,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i46" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginSuccess(User)>loginSuccess</a>(User user) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginSuccess(User)>loginSuccess</a>(<a href=../../android/user/bean/User.html>User</a> user) </code>
                                             </th>
                                             <td class="colLast">Init for login succeed.</td>
                                         </tr>
@@ -525,7 +560,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i47" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#updateUserInfo(IResultCallback)>updateUserInfo</a>(IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#updateUserInfo(IResultCallback)>updateUserInfo</a>(<a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Sync user information.</td>
                                         </tr>
@@ -533,7 +568,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i48" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getQRCodeToken(String,IGetQRCodeTokenCallback)>getQRCodeToken</a>(String countryCode, IGetQRCodeTokenCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getQRCodeToken(String,IGetQRCodeTokenCallback)>getQRCodeToken</a>(String countryCode, <a href=../../android/user/api/IGetQRCodeTokenCallback.html>IGetQRCodeTokenCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Get token for QR code login.</td>
                                         </tr>
@@ -541,7 +576,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i49" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#QRCodeLogin(String,String,ILoginCallback)>QRCodeLogin</a>(String countryCode, String token, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#QRCodeLogin(String,String,ILoginCallback)>QRCodeLogin</a>(String countryCode, String token, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">QR code login</td>
                                         </tr>
@@ -549,7 +584,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i50" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#QRcodeAuth(String,long,String,IBooleanCallback)>QRcodeAuth</a>(String countryCode, long homeId, String token, IBooleanCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#QRcodeAuth(String,long,String,IBooleanCallback)>QRcodeAuth</a>(String countryCode, long homeId, String token, <a href=../../android/user/api/IBooleanCallback.html>IBooleanCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">QR code authorization login.</td>
                                         </tr>
@@ -557,7 +592,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i51" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getQRDeviceAppInfo(String,String,IGetQRDeviceInfoCallBack)>getQRDeviceAppInfo</a>(String countryCode, String token, IGetQRDeviceInfoCallBack callBack) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getQRDeviceAppInfo(String,String,IGetQRDeviceInfoCallBack)>getQRDeviceAppInfo</a>(String countryCode, String token, <a href=../../android/user/api/IGetQRDeviceInfoCallBack.html>IGetQRDeviceInfoCallBack</a> callBack) </code>
                                             </th>
                                             <td class="colLast">Get information of device by QR code.</td>
                                         </tr>
@@ -565,7 +600,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i52" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#touristRegisterAndLogin(String,String,IRegisterCallback)>touristRegisterAndLogin</a>(String countryCode, String nickName, IRegisterCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#touristRegisterAndLogin(String,String,IRegisterCallback)>touristRegisterAndLogin</a>(String countryCode, String nickName, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Tourist login registration.</td>
                                         </tr>
@@ -573,7 +608,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i53" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#touristRegisterAndLogin(String,IRegisterCallback)>touristRegisterAndLogin</a>(String countryCode, IRegisterCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#touristRegisterAndLogin(String,IRegisterCallback)>touristRegisterAndLogin</a>(String countryCode, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Tourist login registration.</td>
                                         </tr>
@@ -581,7 +616,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i54" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#touristLogOut(ILogoutCallback)>touristLogOut</a>(ILogoutCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#touristLogOut(ILogoutCallback)>touristLogOut</a>(<a href=../../android/user/api/ILogoutCallback.html>ILogoutCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Tourist logout.</td>
                                         </tr>
@@ -589,7 +624,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i55" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#touristBindWithUserName(String,String,String,String,IBooleanCallback)>touristBindWithUserName</a>(String countryCode, String userName, String verifyCode, String password, IBooleanCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#touristBindWithUserName(String,String,String,String,IBooleanCallback)>touristBindWithUserName</a>(String countryCode, String userName, String verifyCode, String password, <a href=../../android/user/api/IBooleanCallback.html>IBooleanCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Tourist accounts are bound by username.</td>
                                         </tr>
@@ -597,7 +632,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i56" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getWhiteListWhoCanSendMobileCodeSuccess(IWhiteListCallback)>getWhiteListWhoCanSendMobileCodeSuccess</a>(IWhiteListCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#getWhiteListWhoCanSendMobileCodeSuccess(IWhiteListCallback)>getWhiteListWhoCanSendMobileCodeSuccess</a>(<a href=../../android/user/api/IWhiteListCallback.html>IWhiteListCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Gets white list who can send mobile verification code success.</td>
                                         </tr>
@@ -605,7 +640,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i57" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#ticketGetUserInfo(String,ILoginCallback)>ticketGetUserInfo</a>(String ticket, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#ticketGetUserInfo(String,ILoginCallback)>ticketGetUserInfo</a>(String ticket, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login by ticket.</td>
                                         </tr>
@@ -613,7 +648,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i58" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithTicket(String,ILoginCallback)>loginWithTicket</a>(String ticket, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithTicket(String,ILoginCallback)>loginWithTicket</a>(String ticket, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Login by ticket.</td>
                                         </tr>
@@ -621,7 +656,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i59" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#changeUserName(String,String,String,String,IResultCallback)>changeUserName</a>(String countryCode, String code, String sId, String userName, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#changeUserName(String,String,String,String,IResultCallback)>changeUserName</a>(String countryCode, String code, String sId, String userName, <a href=IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">change bind username</td>
                                         </tr>
@@ -629,7 +664,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                         <tr id="i60" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithEmailCode(String,String,String,ILoginCallback)>loginWithEmailCode</a>(String countryCode, String email, String code, ILoginCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingUser.html#loginWithEmailCode(String,String,String,ILoginCallback)>loginWithEmailCode</a>(String countryCode, String email, String code, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">email code login</td>
                                         </tr>
@@ -639,6 +674,42 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                 </div>
                                 <ul class="blockList">
                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.interior.api.IUserCommonPlugin">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.interior.api.IUserCommonPlugin</h3>
+                                            <code>getCommonServices, updateTimeZone</code></li>
+                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.interior.api.IUserRegionPlugin">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.interior.api.IUserRegionPlugin</h3>
+                                            <code>getRegionListWithCountryCode</code></li>
+                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.interior.api.IUserDomainPlugin">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.interior.api.IUserDomainPlugin</h3>
+                                            <code>queryAllBizDomains, queryAllBizDomainsFromCache, queryDomainByBizCodeAndKey, queryDomainByBizCodeAndKeyFromCache</code></li>
+                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.sdk.user.model.IUser">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.sdk.user.model.IUser</h3>
+                                            <code>getUser, isLogin, removeUser, saveUser</code></li>
+                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.interior.api.IUserGeneralBusiness">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.interior.api.IUserGeneralBusiness</h3>
+                                            <code>bindMobile, sendBindVerifyCodeByTicket</code></li>
+                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.interior.api.IUserHighwayPlugin">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.interior.api.IUserHighwayPlugin</h3>
+                                            <code>requestHighwayToken</code></li>
+                                 
                                     <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
                                         <!--   -->
                                     </a>
@@ -675,7 +746,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginWithPhone</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithPhone(String,String,String,ILoginCallback)>loginWithPhone</a>(String countryCode, String phone, String code, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithPhone(String,String,String,ILoginCallback)>loginWithPhone</a>(String countryCode, String phone, String code, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Mobile Verification Code Login.</p></div>
                                         
                                         <dl>
@@ -694,7 +765,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -711,7 +782,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginWithEmail</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithEmail(String,String,String,ILoginCallback)>loginWithEmail</a>(String countryCode, String email, String passwd, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithEmail(String,String,String,ILoginCallback)>loginWithEmail</a>(String countryCode, String email, String passwd, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login with Email.</p></div>
                                         
                                         <dl>
@@ -730,7 +801,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -747,7 +818,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginWithPhonePassword</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithPhonePassword(String,String,String,ILoginCallback)>loginWithPhonePassword</a>(String countryCode, String phone, String passwd, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithPhonePassword(String,String,String,ILoginCallback)>loginWithPhonePassword</a>(String countryCode, String phone, String passwd, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Phone Password Login.</p></div>
                                         
                                         <dl>
@@ -766,7 +837,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -783,7 +854,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>getEmailValidateCode</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#getEmailValidateCode(String,String,IValidateCallback)>getEmailValidateCode</a>(String countryCode, String email, IValidateCallback callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#getEmailValidateCode(String,String,IValidateCallback)>getEmailValidateCode</a>(String countryCode, String email, <a href=../../android/user/api/IValidateCallback.html>IValidateCallback</a> callback)</pre>
                                         <div class="block"><p>Get Verification code by email.The interface has been deprecated, please use the new interface <a href=IThingUser.html#sendVerifyCodeWithUserName(String,String,String,int,IResultCallback)>sendVerifyCodeWithUserName</a>.</p></div>
                                         
                                         <dl>
@@ -798,7 +869,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IValidateCallback.html>com.thingclips.smart.android.user.api.IValidateCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -815,7 +886,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>registerAccountWithEmail</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#registerAccountWithEmail(String,String,String,IRegisterCallback)>registerAccountWithEmail</a>(String countryCode, String email, String passwd, IRegisterCallback callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#registerAccountWithEmail(String,String,String,IRegisterCallback)>registerAccountWithEmail</a>(String countryCode, String email, String passwd, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback)</pre>
                                         <div class="block"><p>Email Registration.</p></div>
                                         
                                         <dl>
@@ -834,7 +905,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IRegisterCallback.html>com.thingclips.smart.android.user.api.IRegisterCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -851,7 +922,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>registerAccountWithPhone</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#registerAccountWithPhone(String,String,String,String,IRegisterCallback)>registerAccountWithPhone</a>(String countryCode, String phone, String passwd, String code, IRegisterCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#registerAccountWithPhone(String,String,String,String,IRegisterCallback)>registerAccountWithPhone</a>(String countryCode, String phone, String passwd, String code, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback)</pre>
                                         <div class="block"><p>Phone Password Registration.</p></div>
                                         
                                         <dl>
@@ -874,7 +945,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IRegisterCallback.html>com.thingclips.smart.android.user.api.IRegisterCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -891,7 +962,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>resetEmailPassword</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#resetEmailPassword(String,String,String,String,IResetPasswordCallback)>resetEmailPassword</a>(String countryCode, String email, String emailCode, String passwd, IResetPasswordCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#resetEmailPassword(String,String,String,String,IResetPasswordCallback)>resetEmailPassword</a>(String countryCode, String email, String emailCode, String passwd, <a href=../../android/user/api/IResetPasswordCallback.html>IResetPasswordCallback</a> callback)</pre>
                                         <div class="block"><p>User Email Reset Password.</p></div>
                                         
                                         <dl>
@@ -914,7 +985,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IResetPasswordCallback.html>com.thingclips.smart.android.user.api.IResetPasswordCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -931,7 +1002,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>resetPhonePassword</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#resetPhonePassword(String,String,String,String,IResetPasswordCallback)>resetPhonePassword</a>(String countryCode, String phone, String code, String newPasswd, IResetPasswordCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#resetPhonePassword(String,String,String,String,IResetPasswordCallback)>resetPhonePassword</a>(String countryCode, String phone, String code, String newPasswd, <a href=../../android/user/api/IResetPasswordCallback.html>IResetPasswordCallback</a> callback)</pre>
                                         <div class="block"><p>Phone Reset Password.</p></div>
                                         
                                         <dl>
@@ -954,7 +1025,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IResetPasswordCallback.html>com.thingclips.smart.android.user.api.IResetPasswordCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -971,14 +1042,14 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>logout</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#logout(ILogoutCallback)>logout</a>(ILogoutCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#logout(ILogoutCallback)>logout</a>(<a href=../../android/user/api/ILogoutCallback.html>ILogoutCallback</a> callback)</pre>
                                         <div class="block"><p>Logout.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILogoutCallback.html>com.thingclips.smart.android.user.api.ILogoutCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -995,7 +1066,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>getValidateCode</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#getValidateCode(String,String,IValidateCallback)>getValidateCode</a>(String countryCode, String phoneNumber, IValidateCallback callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#getValidateCode(String,String,IValidateCallback)>getValidateCode</a>(String countryCode, String phoneNumber, <a href=../../android/user/api/IValidateCallback.html>IValidateCallback</a> callback)</pre>
                                         <div class="block"><p>Get phone verification code.The interface has been deprecated, please use the new interface <a href=IThingUser.html#sendVerifyCodeWithUserName(String,String,String,int,IResultCallback)>sendVerifyCodeWithUserName</a>.</p></div>
                                         
                                         <dl>
@@ -1010,7 +1081,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback IValidateCallback.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IValidateCallback.html>IValidateCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1027,7 +1098,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>getRegisterEmailValidateCode</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#getRegisterEmailValidateCode(String,String,IResultCallback)>getRegisterEmailValidateCode</a>(String countryCode, String email, IResultCallback callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#getRegisterEmailValidateCode(String,String,IResultCallback)>getRegisterEmailValidateCode</a>(String countryCode, String email, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Email registration to get verification code.The interface has been deprecated, please use the new interface <a href=IThingUser.html#sendVerifyCodeWithUserName(String,String,String,int,IResultCallback)>sendVerifyCodeWithUserName</a>.</p></div>
                                         
                                         <dl>
@@ -1042,7 +1113,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1059,7 +1130,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>registerAccountWithEmail</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#registerAccountWithEmail(String,String,String,String,IRegisterCallback)>registerAccountWithEmail</a>(String countryCode, String email, String passwd, String code, IRegisterCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#registerAccountWithEmail(String,String,String,String,IRegisterCallback)>registerAccountWithEmail</a>(String countryCode, String email, String passwd, String code, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback)</pre>
                                         <div class="block"><p>Email Registration.</p></div>
                                         
                                         <dl>
@@ -1082,7 +1153,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IRegisterCallback.html>com.thingclips.smart.android.user.api.IRegisterCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1099,7 +1170,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>reRickName</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#reRickName(String,IReNickNameCallback)>reRickName</a>(String name, IReNickNameCallback callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#reRickName(String,IReNickNameCallback)>reRickName</a>(String name, <a href=../../android/user/api/IReNickNameCallback.html>IReNickNameCallback</a> callback)</pre>
                                         <div class="block"><p>Modify the nickname.</p></div>
                                         
                                         <dl>
@@ -1110,7 +1181,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IReNickNameCallback.html>com.thingclips.smart.android.user.api.IReNickNameCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1127,7 +1198,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>updateNickName</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#updateNickName(String,IReNickNameCallback)>updateNickName</a>(String name, IReNickNameCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#updateNickName(String,IReNickNameCallback)>updateNickName</a>(String name, <a href=../../android/user/api/IReNickNameCallback.html>IReNickNameCallback</a> callback)</pre>
                                         <div class="block"><p>Modify the nickname.</p></div>
                                         
                                         <dl>
@@ -1138,7 +1209,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IReNickNameCallback.html>com.thingclips.smart.android.user.api.IReNickNameCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1155,7 +1226,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginByTwitter</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginByTwitter(String,String,String,ILoginCallback)>loginByTwitter</a>(String countryCode, String key, String secret, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginByTwitter(String,String,String,ILoginCallback)>loginByTwitter</a>(String countryCode, String key, String secret, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login by Twitter.</p></div>
                                         
                                         <dl>
@@ -1174,7 +1245,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1191,7 +1262,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginByQQ</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginByQQ(String,String,String,ILoginCallback)>loginByQQ</a>(String countryCode, String userId, String accessToken, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginByQQ(String,String,String,ILoginCallback)>loginByQQ</a>(String countryCode, String userId, String accessToken, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login by QQ.</p></div>
                                         
                                         <dl>
@@ -1210,7 +1281,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1227,7 +1298,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginByWechat</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginByWechat(String,String,ILoginCallback)>loginByWechat</a>(String countryCode, String code, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginByWechat(String,String,ILoginCallback)>loginByWechat</a>(String countryCode, String code, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login by WeChat.</p></div>
                                         
                                         <dl>
@@ -1242,7 +1313,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1259,7 +1330,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginByFacebook</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginByFacebook(String,String,ILoginCallback)>loginByFacebook</a>(String countryCode, String token, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginByFacebook(String,String,ILoginCallback)>loginByFacebook</a>(String countryCode, String token, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login by Facebook.</p></div>
                                         
                                         <dl>
@@ -1274,7 +1345,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1291,7 +1362,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>checkPhoneCode</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#checkPhoneCode(String,String,String,ICheckAccountCallback)>checkPhoneCode</a>(String countryCode, String phoneNumber, String code, ICheckAccountCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#checkPhoneCode(String,String,String,ICheckAccountCallback)>checkPhoneCode</a>(String countryCode, String phoneNumber, String code, <a href=../../android/user/api/ICheckAccountCallback.html>ICheckAccountCallback</a> callback)</pre>
                                         <div class="block"><p>Check the verification code.</p></div>
                                         
                                         <dl>
@@ -1310,7 +1381,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ICheckAccountCallback.html>com.thingclips.smart.android.user.api.ICheckAccountCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1327,7 +1398,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>checkEmailPassword</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#checkEmailPassword(String,ICheckAccountCallback)>checkEmailPassword</a>(String pwd, ICheckAccountCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#checkEmailPassword(String,ICheckAccountCallback)>checkEmailPassword</a>(String pwd, <a href=../../android/user/api/ICheckAccountCallback.html>ICheckAccountCallback</a> callback)</pre>
                                         <div class="block"><p>Check the password of email.</p></div>
                                         
                                         <dl>
@@ -1338,7 +1409,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ICheckAccountCallback.html>com.thingclips.smart.android.user.api.ICheckAccountCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1355,7 +1426,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginWithUid</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithUid(String,String,String,ILoginCallback)>loginWithUid</a>(String countryCode, String uid, String passwd, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithUid(String,String,String,ILoginCallback)>loginWithUid</a>(String countryCode, String uid, String passwd, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login by uid.</p></div>
                                         
                                         <dl>
@@ -1374,7 +1445,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1391,7 +1462,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginOrRegisterWithUid</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginOrRegisterWithUid(String,String,String,ILoginCallback)>loginOrRegisterWithUid</a>(String countryCode, String uid, String passwd, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginOrRegisterWithUid(String,String,String,ILoginCallback)>loginOrRegisterWithUid</a>(String countryCode, String uid, String passwd, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>User Uid Registration and Login.</p></div>
                                         
                                         <dl>
@@ -1410,7 +1481,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1427,7 +1498,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginOrRegisterWithUid</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginOrRegisterWithUid(String,String,String,boolean,IUidLoginCallback)>loginOrRegisterWithUid</a>(String countryCode, String uid, String passwd, boolean isCreateHome, IUidLoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginOrRegisterWithUid(String,String,String,boolean,IUidLoginCallback)>loginOrRegisterWithUid</a>(String countryCode, String uid, String passwd, boolean isCreateHome, <a href=../../android/user/api/IUidLoginCallback.html>IUidLoginCallback</a> callback)</pre>
                                         <div class="block"><p>User Uid Registration and Login.</p><p>Can choose whether to create default family, user isCreateHome.</p></div>
                                         
                                         <dl>
@@ -1450,7 +1521,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IUidLoginCallback.html>com.thingclips.smart.android.user.api.IUidLoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1467,7 +1538,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>registerAccountWithUid</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#registerAccountWithUid(String,String,String,IRegisterCallback)>registerAccountWithUid</a>(String countryCode, String uid, String passwd, IRegisterCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#registerAccountWithUid(String,String,String,IRegisterCallback)>registerAccountWithUid</a>(String countryCode, String uid, String passwd, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback)</pre>
                                         <div class="block"><p>User Uid Registration.</p></div>
                                         
                                         <dl>
@@ -1486,7 +1557,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IRegisterCallback.html>com.thingclips.smart.android.user.api.IRegisterCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1503,7 +1574,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>sendBindVerifyCode</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendBindVerifyCode(String,String,IResultCallback)>sendBindVerifyCode</a>(String countryCode, String phoneNumber, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendBindVerifyCode(String,String,IResultCallback)>sendBindVerifyCode</a>(String countryCode, String phoneNumber, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send Verification code to bind mobile.</p></div>
                                         
                                         <dl>
@@ -1518,7 +1589,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1535,7 +1606,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>sendBindVerifyCodeByTicket</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendBindVerifyCodeByTicket(String,String,Map,IResultCallback)>sendBindVerifyCodeByTicket</a>(String countryCode, String phoneNumber, Map&lt;String, String&gt; ticket, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendBindVerifyCodeByTicket(String,String,Map,IResultCallback)>sendBindVerifyCodeByTicket</a>(String countryCode, String phoneNumber, Map&lt;String, String&gt; ticket, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send Verification code to bind mobile.</p></div>
                                         
                                         <dl>
@@ -1554,7 +1625,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback IResultCallback.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1571,7 +1642,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>sendBindVerifyCodeWithEmail</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendBindVerifyCodeWithEmail(String,String,IResultCallback)>sendBindVerifyCodeWithEmail</a>(String countryCode, String email, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendBindVerifyCodeWithEmail(String,String,IResultCallback)>sendBindVerifyCodeWithEmail</a>(String countryCode, String email, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send Verification code to bind email.</p></div>
                                         
                                         <dl>
@@ -1586,7 +1657,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1603,7 +1674,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>sendBindVerifyCodeWithEmailByTicket</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendBindVerifyCodeWithEmailByTicket(String,String,Map,IResultCallback)>sendBindVerifyCodeWithEmailByTicket</a>(String countryCode, String email, Map&lt;String, String&gt; ticket, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendBindVerifyCodeWithEmailByTicket(String,String,Map,IResultCallback)>sendBindVerifyCodeWithEmailByTicket</a>(String countryCode, String email, Map&lt;String, String&gt; ticket, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send Verification code to bind email.</p></div>
                                         
                                         <dl>
@@ -1622,7 +1693,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1639,7 +1710,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>bindEmail</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#bindEmail(String,String,String,String,IResultCallback)>bindEmail</a>(String countryCode, String email, String code, String sId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#bindEmail(String,String,String,String,IResultCallback)>bindEmail</a>(String countryCode, String email, String code, String sId, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Bind Email</p></div>
                                         
                                         <dl>
@@ -1662,7 +1733,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1679,18 +1750,18 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>setTempUnit</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#setTempUnit(TempUnitEnum,IResultCallback)>setTempUnit</a>(TempUnitEnum unit, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#setTempUnit(TempUnitEnum,IResultCallback)>setTempUnit</a>(<a href=../enums/TempUnitEnum.html>TempUnitEnum</a> unit, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Set Temperature unit.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>unit</code> - Set the com.thingclips.smart.sdk.enums.</dd>
+                                            <dd><code>unit</code> - Set the <a href=../enums/TempUnitEnum.html>com.thingclips.smart.sdk.enums.TempUnitEnum</a></dd>
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1707,7 +1778,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>uploadUserAvatar</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#uploadUserAvatar(File,IBooleanCallback)>uploadUserAvatar</a>(File file, IBooleanCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#uploadUserAvatar(File,IBooleanCallback)>uploadUserAvatar</a>(File file, <a href=../../android/user/api/IBooleanCallback.html>IBooleanCallback</a> callback)</pre>
                                         <div class="block"><p>Update avatar of user.</p></div>
                                         
                                         <dl>
@@ -1718,7 +1789,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IBooleanCallback.html>com.thingclips.smart.android.user.api.IBooleanCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1735,7 +1806,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>updateAvatarWithImageUrl</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#updateAvatarWithImageUrl(String,IBooleanCallback)>updateAvatarWithImageUrl</a>(String url, IBooleanCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#updateAvatarWithImageUrl(String,IBooleanCallback)>updateAvatarWithImageUrl</a>(String url, <a href=../../android/user/api/IBooleanCallback.html>IBooleanCallback</a> callback)</pre>
                                         <div class="block"></div>
                                         
                                         <dl>
@@ -1746,7 +1817,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IBooleanCallback.html>com.thingclips.smart.android.user.api.IBooleanCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1778,14 +1849,14 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>upgradeVersion</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#upgradeVersion(IResultCallback)>upgradeVersion</a>(IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#upgradeVersion(IResultCallback)>upgradeVersion</a>(<a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Upgrade user information.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1802,14 +1873,14 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>cancelAccount</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#cancelAccount(IResultCallback)>cancelAccount</a>(IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#cancelAccount(IResultCallback)>cancelAccount</a>(<a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Disable Account</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1841,7 +1912,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>switchUserRegion</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#switchUserRegion(String,ILoginCallback)>switchUserRegion</a>(String region, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#switchUserRegion(String,ILoginCallback)>switchUserRegion</a>(String region, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Switch the region of logged in user.</p></div>
                                         
                                         <dl>
@@ -1852,7 +1923,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1869,7 +1940,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>sendVerifyCodeWithUserName</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendVerifyCodeWithUserName(String,String,String,int,IResultCallback)>sendVerifyCodeWithUserName</a>(String userName, String region, String countryCode, int type, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendVerifyCodeWithUserName(String,String,String,int,IResultCallback)>sendVerifyCodeWithUserName</a>(String userName, String region, String countryCode, int type, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send verification code, used for register, login, reset password, etc.</p></div>
                                         
                                         <dl>
@@ -1892,7 +1963,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -1909,7 +1980,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>sendVerifyCodeWithUserNameByTicket</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendVerifyCodeWithUserNameByTicket(String,String,String,int,Map,IResultCallback)>sendVerifyCodeWithUserNameByTicket</a>(String userName, String region, String countryCode, int type, Map&lt;String, String&gt; ticket, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#sendVerifyCodeWithUserNameByTicket(String,String,String,int,Map,IResultCallback)>sendVerifyCodeWithUserNameByTicket</a>(String userName, String region, String countryCode, int type, Map&lt;String, String&gt; ticket, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send verification code, used for register, login, reset password, etc.</p></div>
                                         
                                         <dl>
@@ -1936,7 +2007,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -1953,7 +2024,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>bindMobileSendCodeForVas</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#bindMobileSendCodeForVas(String,String,IResultCallback)>bindMobileSendCodeForVas</a>(String countryCode, String mobile, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#bindMobileSendCodeForVas(String,String,IResultCallback)>bindMobileSendCodeForVas</a>(String countryCode, String mobile, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Value-added service binding mobile phone number verification code sent.</p></div>
                                         
                                         <dl>
@@ -1968,7 +2039,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -1985,7 +2056,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>bindMobileSendCodeForVasByTicket</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#bindMobileSendCodeForVasByTicket(String,String,Map,IResultCallback)>bindMobileSendCodeForVasByTicket</a>(String countryCode, String mobile, Map&lt;String, String&gt; ticket, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#bindMobileSendCodeForVasByTicket(String,String,Map,IResultCallback)>bindMobileSendCodeForVasByTicket</a>(String countryCode, String mobile, Map&lt;String, String&gt; ticket, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Value-added service binding mobile phone number verification code sent.</p></div>
                                         
                                         <dl>
@@ -2004,7 +2075,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2021,7 +2092,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>checkCodeWithUserName</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#checkCodeWithUserName(String,String,String,String,int,IResultCallback)>checkCodeWithUserName</a>(String userName, String region, String countryCode, String code, int type, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#checkCodeWithUserName(String,String,String,String,int,IResultCallback)>checkCodeWithUserName</a>(String userName, String region, String countryCode, String code, int type, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Check verification code, used for register/login/reset password.</p></div>
                                         
                                         <dl>
@@ -2048,7 +2119,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -2065,7 +2136,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>registerWithUserName</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#registerWithUserName(String,String,String,String,String,IRegisterCallback)>registerWithUserName</a>(String userName, String region, String countryCode, String code, String password, IRegisterCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#registerWithUserName(String,String,String,String,String,IRegisterCallback)>registerWithUserName</a>(String userName, String region, String countryCode, String code, String password, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback)</pre>
                                         <div class="block"><p>Mobile phone or Email register.</p></div>
                                         
                                         <dl>
@@ -2092,7 +2163,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IRegisterCallback.html>com.thingclips.smart.android.user.api.IRegisterCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2109,7 +2180,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>thirdLogin</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#thirdLogin(String,String,String,ILoginCallback)>thirdLogin</a>(String countryCode, String accessToken, String type, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#thirdLogin(String,String,String,ILoginCallback)>thirdLogin</a>(String countryCode, String accessToken, String type, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login by Auth2</p></div>
                                         
                                         <dl>
@@ -2128,7 +2199,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2145,7 +2216,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>thirdLogin</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#thirdLogin(String,String,String,String,ILoginCallback)>thirdLogin</a>(String countryCode, String accessToken, String type, String extraInfo, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#thirdLogin(String,String,String,String,ILoginCallback)>thirdLogin</a>(String countryCode, String accessToken, String type, String extraInfo, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login by Auth2</p></div>
                                         
                                         <dl>
@@ -2168,7 +2239,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2185,7 +2256,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>bindThirdPlatform</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#bindThirdPlatform(String,String,String,String,String,IThirdBindCallback)>bindThirdPlatform</a>(String countryCode, String type, String accessToken, String extraInfo, String options, IThirdBindCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#bindThirdPlatform(String,String,String,String,String,IThirdBindCallback)>bindThirdPlatform</a>(String countryCode, String type, String accessToken, String extraInfo, String options, <a href=../../android/user/api/IThirdBindCallback.html>IThirdBindCallback</a> callback)</pre>
                                         <div class="block"><p>bind third platform</p></div>
                                         
                                         <dl>
@@ -2212,7 +2283,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IThirdBindCallback.html>com.thingclips.smart.android.user.api.IThirdBindCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2229,7 +2300,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginSuccess</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginSuccess(User)>loginSuccess</a>(User user)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginSuccess(User)>loginSuccess</a>(<a href=../../android/user/bean/User.html>User</a> user)</pre>
                                         <div class="block"><p>Init for login succeed.</p><p>Login and get user information, then use this method.</p></div>
                                         
                                         <dl>
@@ -2253,14 +2324,14 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>updateUserInfo</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#updateUserInfo(IResultCallback)>updateUserInfo</a>(IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#updateUserInfo(IResultCallback)>updateUserInfo</a>(<a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Sync user information.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2277,7 +2348,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>getQRCodeToken</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#getQRCodeToken(String,IGetQRCodeTokenCallback)>getQRCodeToken</a>(String countryCode, IGetQRCodeTokenCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#getQRCodeToken(String,IGetQRCodeTokenCallback)>getQRCodeToken</a>(String countryCode, <a href=../../android/user/api/IGetQRCodeTokenCallback.html>IGetQRCodeTokenCallback</a> callback)</pre>
                                         <div class="block"><p>Get token for QR code login.</p></div>
                                         
                                         <dl>
@@ -2288,7 +2359,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IGetQRCodeTokenCallback.html>com.thingclips.smart.android.user.api.IGetQRCodeTokenCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2305,7 +2376,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>QRCodeLogin</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#QRCodeLogin(String,String,ILoginCallback)>QRCodeLogin</a>(String countryCode, String token, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#QRCodeLogin(String,String,ILoginCallback)>QRCodeLogin</a>(String countryCode, String token, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>QR code login</p></div>
                                         
                                         <dl>
@@ -2320,7 +2391,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2337,7 +2408,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>QRcodeAuth</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#QRcodeAuth(String,long,String,IBooleanCallback)>QRcodeAuth</a>(String countryCode, long homeId, String token, IBooleanCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#QRcodeAuth(String,long,String,IBooleanCallback)>QRcodeAuth</a>(String countryCode, long homeId, String token, <a href=../../android/user/api/IBooleanCallback.html>IBooleanCallback</a> callback)</pre>
                                         <div class="block"><p>QR code authorization login.</p></div>
                                         
                                         <dl>
@@ -2356,7 +2427,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IBooleanCallback.html>com.thingclips.smart.android.user.api.IBooleanCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2373,7 +2444,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>getQRDeviceAppInfo</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#getQRDeviceAppInfo(String,String,IGetQRDeviceInfoCallBack)>getQRDeviceAppInfo</a>(String countryCode, String token, IGetQRDeviceInfoCallBack callBack)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#getQRDeviceAppInfo(String,String,IGetQRDeviceInfoCallBack)>getQRDeviceAppInfo</a>(String countryCode, String token, <a href=../../android/user/api/IGetQRDeviceInfoCallBack.html>IGetQRDeviceInfoCallBack</a> callBack)</pre>
                                         <div class="block"><p>Get information of device by QR code.</p></div>
                                         
                                         <dl>
@@ -2388,7 +2459,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callBack</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callBack</code> - Callback <a href=../../android/user/api/IGetQRDeviceInfoCallBack.html>com.thingclips.smart.android.user.api.IGetQRDeviceInfoCallBack</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2405,7 +2476,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>touristRegisterAndLogin</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#touristRegisterAndLogin(String,String,IRegisterCallback)>touristRegisterAndLogin</a>(String countryCode, String nickName, IRegisterCallback callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingUser.html#touristRegisterAndLogin(String,String,IRegisterCallback)>touristRegisterAndLogin</a>(String countryCode, String nickName, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback)</pre>
                                         <div class="block"><p>Tourist login registration.</p></div>
                                         
                                         <dl>
@@ -2420,7 +2491,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IRegisterCallback.html>com.thingclips.smart.android.user.api.IRegisterCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2437,7 +2508,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>touristRegisterAndLogin</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#touristRegisterAndLogin(String,IRegisterCallback)>touristRegisterAndLogin</a>(String countryCode, IRegisterCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#touristRegisterAndLogin(String,IRegisterCallback)>touristRegisterAndLogin</a>(String countryCode, <a href=../../android/user/api/IRegisterCallback.html>IRegisterCallback</a> callback)</pre>
                                         <div class="block"><p>Tourist login registration.</p></div>
                                         
                                         <dl>
@@ -2448,7 +2519,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IRegisterCallback.html>com.thingclips.smart.android.user.api.IRegisterCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2465,14 +2536,14 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>touristLogOut</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#touristLogOut(ILogoutCallback)>touristLogOut</a>(ILogoutCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#touristLogOut(ILogoutCallback)>touristLogOut</a>(<a href=../../android/user/api/ILogoutCallback.html>ILogoutCallback</a> callback)</pre>
                                         <div class="block"><p>Tourist logout.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILogoutCallback.html>com.thingclips.smart.android.user.api.ILogoutCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2489,7 +2560,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>touristBindWithUserName</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#touristBindWithUserName(String,String,String,String,IBooleanCallback)>touristBindWithUserName</a>(String countryCode, String userName, String verifyCode, String password, IBooleanCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#touristBindWithUserName(String,String,String,String,IBooleanCallback)>touristBindWithUserName</a>(String countryCode, String userName, String verifyCode, String password, <a href=../../android/user/api/IBooleanCallback.html>IBooleanCallback</a> callback)</pre>
                                         <div class="block"><p>Tourist accounts are bound by username.</p></div>
                                         
                                         <dl>
@@ -2512,7 +2583,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IBooleanCallback.html>com.thingclips.smart.android.user.api.IBooleanCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2529,14 +2600,14 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>getWhiteListWhoCanSendMobileCodeSuccess</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#getWhiteListWhoCanSendMobileCodeSuccess(IWhiteListCallback)>getWhiteListWhoCanSendMobileCodeSuccess</a>(IWhiteListCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#getWhiteListWhoCanSendMobileCodeSuccess(IWhiteListCallback)>getWhiteListWhoCanSendMobileCodeSuccess</a>(<a href=../../android/user/api/IWhiteListCallback.html>IWhiteListCallback</a> callback)</pre>
                                         <div class="block"><p>Gets white list who can send mobile verification code success.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback IWhiteListCallback.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/IWhiteListCallback.html>IWhiteListCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2553,7 +2624,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>ticketGetUserInfo</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#ticketGetUserInfo(String,ILoginCallback)>ticketGetUserInfo</a>(String ticket, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#ticketGetUserInfo(String,ILoginCallback)>ticketGetUserInfo</a>(String ticket, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login by ticket.</p><p>Deprecated, recommended to use <a href=IThingUser.html#loginWithTicket(String,ILoginCallback)>loginWithTicket</a></p></div>
                                         
                                         <dl>
@@ -2564,7 +2635,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2581,7 +2652,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginWithTicket</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithTicket(String,ILoginCallback)>loginWithTicket</a>(String ticket, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithTicket(String,ILoginCallback)>loginWithTicket</a>(String ticket, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>Login by ticket.</p></div>
                                         
                                         <dl>
@@ -2592,7 +2663,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2609,7 +2680,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>changeUserName</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#changeUserName(String,String,String,String,IResultCallback)>changeUserName</a>(String countryCode, String code, String sId, String userName, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#changeUserName(String,String,String,String,IResultCallback)>changeUserName</a>(String countryCode, String code, String sId, String userName, <a href=IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>change bind username</p></div>
                                         
                                         <dl>
@@ -2632,7 +2703,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - callback com.thingclips.smart.sdk.api.</dd>
+                                            <dd><code>callback</code> - callback <a href=IResultCallback.html>com.thingclips.smart.sdk.api.IResultCallback</a>.</dd>
                                             
                                             
                                         </dl>
@@ -2649,7 +2720,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                           >
                                     <li class="blockList">
                                         <h4>loginWithEmailCode</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithEmailCode(String,String,String,ILoginCallback)>loginWithEmailCode</a>(String countryCode, String email, String code, ILoginCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingUser.html#loginWithEmailCode(String,String,String,ILoginCallback)>loginWithEmailCode</a>(String countryCode, String email, String code, <a href=../../android/user/api/ILoginCallback.html>ILoginCallback</a> callback)</pre>
                                         <div class="block"><p>email code login</p></div>
                                         
                                         <dl>
@@ -2668,7 +2739,7 @@ public interface <span class="typeNameLabel"><a href=IThingUser.html>IThingUser<
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback com.thingclips.smart.android.user.api.</dd>
+                                            <dd><code>callback</code> - Callback <a href=../../android/user/api/ILoginCallback.html>com.thingclips.smart.android.user.api.ILoginCallback</a>.</dd>
                                             
                                             
                                         </dl>

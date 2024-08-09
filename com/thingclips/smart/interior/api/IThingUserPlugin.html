@@ -104,11 +104,21 @@ var pathtoroot = "../../../../../";
             <ul class="blockList">
                 <li class="blockList">
                     
+                    <dl>
+                        <dt>All Implemented Interfaces:</dt>
+                        <dd>
+                            
+                            <code>com.thingclips.smart.interior.api.IThingUserListenerPlugin</code>
+                            
+                            
+                        </dd>
+                    </dl>
+                    
                     <hr>
                     <pre class="wrap-overflow">
 
 public interface <span class="typeNameLabel"><a href=IThingUserPlugin.html>IThingUserPlugin</a></span>
-
+ implements <a href=IThingUserListenerPlugin.html>IThingUserListenerPlugin</a>
                     </pre>
                     <div class="block"><p>User plugin</p></div>
                 </li>
@@ -147,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IThingUserPlugin.html>IThin
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code>abstract IThingUser</code>
+                                            <td class="colFirst"><code>abstract <a href=../../sdk/api/IThingUser.html>IThingUser</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingUserPlugin.html#getUserInstance()>getUserInstance</a>() </code>
                                             </th>
@@ -159,6 +169,12 @@ public interface <span class="typeNameLabel"><a href=IThingUserPlugin.html>IThin
                                 </div>
                                 <ul class="blockList">
                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.interior.api.IThingUserListenerPlugin">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.interior.api.IThingUserListenerPlugin</h3>
+                                            <code>getCancelAccountListeners, getLoginSuccessListeners, getLogoutSuccessListeners, registerCancelAccountListener, registerLoginSuccessListener, registerLogoutListener</code></li>
+                                 
                                     <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
                                         <!--   -->
                                     </a>
@@ -195,7 +211,7 @@ public interface <span class="typeNameLabel"><a href=IThingUserPlugin.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>getUserInstance</h4>
-                                        <pre class="methodSignature"> abstract IThingUser <a href=IThingUserPlugin.html#getUserInstance()>getUserInstance</a>()</pre>
+                                        <pre class="methodSignature"> abstract <a href=../../sdk/api/IThingUser.html>IThingUser</a> <a href=IThingUserPlugin.html#getUserInstance()>getUserInstance</a>()</pre>
                                         <div class="block"><p>Gets user manager instance.</p></div>
                                         
                                         <!-- TODO missing return annotation -->

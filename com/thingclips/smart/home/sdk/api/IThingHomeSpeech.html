@@ -149,7 +149,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeSpeech.html#executeCommandWithSpeechText(String,long,IThingDataCallback<VoiceCommandBean>)>executeCommandWithSpeechText</a>(String speechText, long homeId, IThingDataCallback&lt;VoiceCommandBean&gt; lisenter) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeSpeech.html#executeCommandWithSpeechText(String,long,IThingDataCallback)>executeCommandWithSpeechText</a>(String speechText, long homeId, <a href=../../../sdk/api/IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../bean/VoiceCommandBean.html>VoiceCommandBean</a>&gt; lisenter) </code>
                                             </th>
                                             <td class="colLast">execute voice command</td>
                                         </tr>
@@ -157,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeSpeech.html#getVoicePhraseTipList(IThingDataCallback<ArrayList<SpeechPhraseBean>>)>getVoicePhraseTipList</a>(IThingDataCallback&lt;ArrayList&lt;SpeechPhraseBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeSpeech.html#getVoicePhraseTipList(IThingDataCallback)>getVoicePhraseTipList</a>(<a href=../../../sdk/api/IThingDataCallback.html>IThingDataCallback</a>&lt;ArrayList&lt;<a href=../bean/SpeechPhraseBean.html>SpeechPhraseBean</a>&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast">get recoginzation can speech phrase tip listAdded form 3.10.</td>
                                         </tr>
@@ -165,7 +165,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeSpeech.html#getVoiceGuideTipList(IThingDataCallback<SpeechGuideBean>)>getVoiceGuideTipList</a>(IThingDataCallback&lt;SpeechGuideBean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeSpeech.html#getVoiceGuideTipList(IThingDataCallback)>getVoiceGuideTipList</a>(<a href=../../../sdk/api/IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../bean/SpeechGuideBean.html>SpeechGuideBean</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">get recoginzation speech guide tip listAdded form 3.10.</td>
                                         </tr>
@@ -173,7 +173,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeSpeech.html#convertToTextWithAudioData(Array,String,String,long,IThingResultCallback<String>)>convertToTextWithAudioData</a>(Array&lt;byte&gt; audioData, String audioRate, String audioType, long homeId, IThingResultCallback&lt;String&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeSpeech.html#convertToTextWithAudioData(Array,String,String,long,IThingResultCallback)>convertToTextWithAudioData</a>(Array&lt;byte&gt; audioData, String audioRate, String audioType, long homeId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;String&gt; callback) </code>
                                             </th>
                                             <td class="colLast">audio conversion text</td>
                                         </tr>
@@ -211,7 +211,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                             </a>
                                 <h3>Method Detail</h3>
                                 
-                                <a id="executeCommandWithSpeechText(String,long,IThingDataCallback&lt;VoiceCommandBean&gt;)">
+                                <a id="executeCommandWithSpeechText(String,long,IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -219,7 +219,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>executeCommandWithSpeechText</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeSpeech.html#executeCommandWithSpeechText(String,long,IThingDataCallback<VoiceCommandBean>)>executeCommandWithSpeechText</a>(String speechText, long homeId, IThingDataCallback&lt;VoiceCommandBean&gt; lisenter)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeSpeech.html#executeCommandWithSpeechText(String,long,IThingDataCallback)>executeCommandWithSpeechText</a>(String speechText, long homeId, <a href=../../../sdk/api/IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../bean/VoiceCommandBean.html>VoiceCommandBean</a>&gt; lisenter)</pre>
                                         <div class="block"><p>execute voice command</p></div>
                                         
                                         <dl>
@@ -241,7 +241,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                     </li>
                                 </ul>
                                 
-                                <a id="getVoicePhraseTipList(IThingDataCallback&lt;ArrayList&lt;SpeechPhraseBean&gt;&gt;)">
+                                <a id="getVoicePhraseTipList(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -249,14 +249,14 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>getVoicePhraseTipList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeSpeech.html#getVoicePhraseTipList(IThingDataCallback<ArrayList<SpeechPhraseBean>>)>getVoicePhraseTipList</a>(IThingDataCallback&lt;ArrayList&lt;SpeechPhraseBean&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeSpeech.html#getVoicePhraseTipList(IThingDataCallback)>getVoicePhraseTipList</a>(<a href=../../../sdk/api/IThingDataCallback.html>IThingDataCallback</a>&lt;ArrayList&lt;<a href=../bean/SpeechPhraseBean.html>SpeechPhraseBean</a>&gt;&gt; callback)</pre>
                                         <div class="block"><p>get recoginzation can speech phrase tip listAdded form 3.10.0</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback for ack message IThingDataCallback</dd>
+                                            <dd><code>callback</code> - Callback for ack message <a href=../../../sdk/api/IThingDataCallback.html>IThingDataCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -265,7 +265,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                     </li>
                                 </ul>
                                 
-                                <a id="getVoiceGuideTipList(IThingDataCallback&lt;SpeechGuideBean&gt;)">
+                                <a id="getVoiceGuideTipList(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -273,14 +273,14 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>getVoiceGuideTipList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeSpeech.html#getVoiceGuideTipList(IThingDataCallback<SpeechGuideBean>)>getVoiceGuideTipList</a>(IThingDataCallback&lt;SpeechGuideBean&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeSpeech.html#getVoiceGuideTipList(IThingDataCallback)>getVoiceGuideTipList</a>(<a href=../../../sdk/api/IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../bean/SpeechGuideBean.html>SpeechGuideBean</a>&gt; callback)</pre>
                                         <div class="block"><p>get recoginzation speech guide tip listAdded form 3.10.0</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - callback Callback for ack message IThingDataCallback</dd>
+                                            <dd><code>callback</code> - callback Callback for ack message <a href=../../../sdk/api/IThingDataCallback.html>IThingDataCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -289,7 +289,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                     </li>
                                 </ul>
                                 
-                                <a id="convertToTextWithAudioData(Array,String,String,long,IThingResultCallback&lt;String&gt;)">
+                                <a id="convertToTextWithAudioData(Array,String,String,long,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -297,7 +297,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>convertToTextWithAudioData</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeSpeech.html#convertToTextWithAudioData(Array,String,String,long,IThingResultCallback<String>)>convertToTextWithAudioData</a>(Array&lt;byte&gt; audioData, String audioRate, String audioType, long homeId, IThingResultCallback&lt;String&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeSpeech.html#convertToTextWithAudioData(Array,String,String,long,IThingResultCallback)>convertToTextWithAudioData</a>(Array&lt;byte&gt; audioData, String audioRate, String audioType, long homeId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;String&gt; callback)</pre>
                                         <div class="block"><p>audio conversion text</p></div>
                                         
                                         <dl>
@@ -320,7 +320,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeSpeech.html>IThin
                                             
                                             
                                             
-                                            <dd><code>callback</code> - callback Callback for ack message IThingResultCallback</dd>
+                                            <dd><code>callback</code> - callback Callback for ack message <a href=../callback/IThingResultCallback.html>IThingResultCallback</a></dd>
                                             
                                             
                                         </dl>

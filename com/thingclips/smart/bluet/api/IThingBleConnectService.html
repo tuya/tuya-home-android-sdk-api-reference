@@ -110,7 +110,7 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=IThingBleConnectService.html>IThingBleConnectService</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>专为全屋场景设计，可以避免业务层深入了解不同设备的连接策略，比如网关心跳、ble连接、持续连接、网关优先等各种特定逻辑 对开发者和商业场景不开放使用文档。</p></div>
                 </li>
             </ul>
         </div>
@@ -151,18 +151,26 @@ public interface <span class="typeNameLabel"><a href=IThingBleConnectService.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleConnectService.html#displayDeviceList(List)>displayDeviceList</a>(List&lt;DeviceBean&gt; devIds) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">家庭的列表展示后，调用该接口，内部会根据列表中的设备，进行处理beacon\网关\ble\双模等设备的不同连接和信息初始化等业务层无需关注，只需要首页刷新、app启动收的首次加载，切换家庭后的加载，恢复网络后的加载等场景下，需要重新对列表进行处理的场景调用即可。</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleConnectService.html#enterDeviceConsole(String)>enterDeviceConsole</a>(String devId) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleConnectService.html#disconnectAllBleDevices()>disconnectAllBleDevices</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">销毁所有ble的连接，一般在家庭切换或者销毁家庭的时候使用</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleConnectService.html#enterDeviceConsole(String)>enterDeviceConsole</a>(String devId) </code>
+                                            </th>
+                                            <td class="colLast">进入面板的时候，调用。注意面板可能套面板，这里会重复调用，内部已特殊梳理</td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleConnectService.html#exitDeviceConsole(String)>exitDeviceConsole</a>(String devId) </code>
@@ -170,7 +178,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleConnectService.htm
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i3" class="rowColor">
+                                        <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleConnectService.html#takeConnectToDevice(String)>takeConnectToDevice</a>(String devId) </code>
@@ -178,7 +186,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleConnectService.htm
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i4" class="altColor">
+                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleConnectService.html#onApplicationCreate()>onApplicationCreate</a>() </code>
@@ -186,7 +194,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleConnectService.htm
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i5" class="rowColor">
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleConnectService.html#addContinuousConnectDevice(String)>addContinuousConnectDevice</a>(String devId) </code>
@@ -194,7 +202,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleConnectService.htm
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i6" class="altColor">
+                                        <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleConnectService.html#removeContinuousConnectDevice(String)>removeContinuousConnectDevice</a>(String devId) </code>
@@ -244,7 +252,22 @@ public interface <span class="typeNameLabel"><a href=IThingBleConnectService.htm
                                     <li class="blockList">
                                         <h4>displayDeviceList</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleConnectService.html#displayDeviceList(List)>displayDeviceList</a>(List&lt;DeviceBean&gt; devIds)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>家庭的列表展示后，调用该接口，内部会根据列表中的设备，进行处理beacon\网关\ble\双模等设备的不同连接和信息初始化等业务层无需关注，只需要首页刷新、app启动收的首次加载，切换家庭后的加载，恢复网络后的加载等场景下，需要重新对列表进行处理的场景调用即可。</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="disconnectAllBleDevices()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>disconnectAllBleDevices</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleConnectService.html#disconnectAllBleDevices()>disconnectAllBleDevices</a>()</pre>
+                                        <div class="block"><p>销毁所有ble的连接，一般在家庭切换或者销毁家庭的时候使用</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -259,7 +282,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleConnectService.htm
                                     <li class="blockList">
                                         <h4>enterDeviceConsole</h4>
                                         <pre class="methodSignature"> abstract void <a href=IThingBleConnectService.html#enterDeviceConsole(String)>enterDeviceConsole</a>(String devId)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>进入面板的时候，调用。注意面板可能套面板，这里会重复调用，内部已特殊梳理</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

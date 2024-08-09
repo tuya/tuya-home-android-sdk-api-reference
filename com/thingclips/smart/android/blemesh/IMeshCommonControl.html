@@ -149,7 +149,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#publishDps(String,String,String,IResultCallback)>publishDps</a>(String nodeId, String pcc, String dps, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#publishDps(String,String,String,IResultCallback)>publishDps</a>(String nodeId, String pcc, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send mesh message to a device.</td>
                                         </tr>
@@ -157,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#multicastDps(String,String,String,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#multicastDps(String,String,String,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send mesh message to a group address.</td>
                                         </tr>
@@ -165,7 +165,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#querySubDevStatusByLocal(String,String,IResultCallback)>querySubDevStatusByLocal</a>(String pcc, String nodeId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#querySubDevStatusByLocal(String,String,IResultCallback)>querySubDevStatusByLocal</a>(String pcc, String nodeId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Query all status of current mesh device by local.</td>
                                         </tr>
@@ -173,7 +173,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#removeMeshSubDev(String,IResultCallback)>removeMeshSubDev</a>(String devId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#removeMeshSubDev(String,IResultCallback)>removeMeshSubDev</a>(String devId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Delete device from server.</td>
                                         </tr>
@@ -181,7 +181,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#removeMeshSubDevByLocal(String,String,String,IResultCallback)>removeMeshSubDevByLocal</a>(String pcc, String nodeId, String devKey, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#removeMeshSubDevByLocal(String,String,String,IResultCallback)>removeMeshSubDevByLocal</a>(String pcc, String nodeId, String devKey, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Delete device from local.</td>
                                         </tr>
@@ -189,15 +189,15 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#queryAllOnLineStatusByLocal(IResultCallback)>queryAllOnLineStatusByLocal</a>(IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#queryAllOnLineStatusByLocal(IResultCallback)>queryAllOnLineStatusByLocal</a>(<a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
-                                            <td class="colLast">SigMeshQuery the online status of the device according to the getOnlineMode When the getOnlineMode is RESPONSE_ONLINE , query the online status of all devices.</td>
+                                            <td class="colLast">SigMeshQuery the online status of the device according to the <a href=bean/SigMeshConfiguration.html#getOnlineMode()>getOnlineMode</a> When the <a href=bean/SigMeshConfiguration.html#getOnlineMode()>getOnlineMode</a> is RESPONSE_ONLINE , query the online status of all devices.</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract &lt;T extends IMeshDevListener&gt; void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#registerMeshDevListener(T)>registerMeshDevListener</a>(<a href=../../sdk/api/IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a> listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#registerMeshDevListener(T)>registerMeshDevListener</a>(<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a> listener) </code>
                                             </th>
                                             <td class="colLast">Register to listen to devices in mesh reporting data, such as dps, online status, bind status, etc.</td>
                                         </tr>
@@ -211,7 +211,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
-                                            <td class="colFirst"><code>abstract MeshClientStatusEnum</code>
+                                            <td class="colFirst"><code>abstract <a href=bean/MeshClientStatusEnum.html>MeshClientStatusEnum</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#getStatus()>getStatus</a>() </code>
                                             </th>
@@ -229,7 +229,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#connect(MeshConnectBuilder)>connect</a>(MeshConnectBuilder builder) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#connect(MeshConnectBuilder)>connect</a>(<a href=../../sdk/builder/MeshConnectBuilder.html>MeshConnectBuilder</a> builder) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -261,7 +261,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#getMeshGroupLocalId(String,IThingResultCallback<String>)>getMeshGroupLocalId</a>(String meshId, IThingResultCallback&lt;String&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#getMeshGroupLocalId(String,IThingResultCallback)>getMeshGroupLocalId</a>(String meshId, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;String&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Get the local ID of the mesh group</td>
                                         </tr>
@@ -269,7 +269,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                         <tr id="i15" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#addGroup(String,String,String,IAddGroupCallback)>addGroup</a>(String name, String category, String localId, IAddGroupCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshCommonControl.html#addGroup(String,String,String,IAddGroupCallback)>addGroup</a>(String name, String category, String localId, <a href=../../sdk/api/bluemesh/IAddGroupCallback.html>IAddGroupCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Create mesh group of the same category .</td>
                                         </tr>
@@ -331,7 +331,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>publishDps</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#publishDps(String,String,String,IResultCallback)>publishDps</a>(String nodeId, String pcc, String dps, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#publishDps(String,String,String,IResultCallback)>publishDps</a>(String nodeId, String pcc, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send mesh message to a device.</p></div>
                                         
                                         <dl>
@@ -350,7 +350,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for send result <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -367,7 +367,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>multicastDps</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#multicastDps(String,String,String,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#multicastDps(String,String,String,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send mesh message to a group address.</p></div>
                                         
                                         <dl>
@@ -386,7 +386,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for send result <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -403,7 +403,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>querySubDevStatusByLocal</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#querySubDevStatusByLocal(String,String,IResultCallback)>querySubDevStatusByLocal</a>(String pcc, String nodeId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#querySubDevStatusByLocal(String,String,IResultCallback)>querySubDevStatusByLocal</a>(String pcc, String nodeId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Query all status of current mesh device by local.</p></div>
                                         
                                         <dl>
@@ -418,7 +418,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for send result <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -435,7 +435,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>removeMeshSubDev</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#removeMeshSubDev(String,IResultCallback)>removeMeshSubDev</a>(String devId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#removeMeshSubDev(String,IResultCallback)>removeMeshSubDev</a>(String devId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Delete device from server.</p></div>
                                         
                                         <dl>
@@ -446,7 +446,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for result <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -463,7 +463,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>removeMeshSubDevByLocal</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#removeMeshSubDevByLocal(String,String,String,IResultCallback)>removeMeshSubDevByLocal</a>(String pcc, String nodeId, String devKey, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#removeMeshSubDevByLocal(String,String,String,IResultCallback)>removeMeshSubDevByLocal</a>(String pcc, String nodeId, String devKey, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Delete device from local.</p></div>
                                         
                                         <dl>
@@ -482,7 +482,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for result <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -499,14 +499,14 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>queryAllOnLineStatusByLocal</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#queryAllOnLineStatusByLocal(IResultCallback)>queryAllOnLineStatusByLocal</a>(IResultCallback callback)</pre>
-                                        <div class="block">SigMesh<p>Query the online status of the device according to the getOnlineMode When the getOnlineMode is RESPONSE_ONLINE , query the online status of all devices.When the getOnlineMode is DEFAULT, only query the online status of offline devices.</p>Private BlueMesh<p>query all device status</p></div>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#queryAllOnLineStatusByLocal(IResultCallback)>queryAllOnLineStatusByLocal</a>(<a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
+                                        <div class="block">SigMesh<p>Query the online status of the device according to the <a href=bean/SigMeshConfiguration.html#getOnlineMode()>getOnlineMode</a> When the <a href=bean/SigMeshConfiguration.html#getOnlineMode()>getOnlineMode</a> is RESPONSE_ONLINE , query the online status of all devices.When the <a href=bean/SigMeshConfiguration.html#getOnlineMode()>getOnlineMode</a> is DEFAULT, only query the online status of offline devices.</p>Private BlueMesh<p>query all device status</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for send result <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -523,7 +523,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>registerMeshDevListener</h4>
-                                        <pre class="methodSignature"> abstract &lt;T extends IMeshDevListener&gt; void <a href=IMeshCommonControl.html#registerMeshDevListener(T)>registerMeshDevListener</a>(<a href=../../sdk/api/IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback<T>)>T</a> listener)</pre>
+                                        <pre class="methodSignature"> abstract &lt;T extends IMeshDevListener&gt; void <a href=IMeshCommonControl.html#registerMeshDevListener(T)>registerMeshDevListener</a>(<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a> listener)</pre>
                                         <div class="block"><p>Register to listen to devices in mesh reporting data, such as dps, online status, bind status, etc.</p></div>
                                         
                                         <dl>
@@ -571,7 +571,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>getStatus</h4>
-                                        <pre class="methodSignature"> abstract MeshClientStatusEnum <a href=IMeshCommonControl.html#getStatus()>getStatus</a>()</pre>
+                                        <pre class="methodSignature"> abstract <a href=bean/MeshClientStatusEnum.html>MeshClientStatusEnum</a> <a href=IMeshCommonControl.html#getStatus()>getStatus</a>()</pre>
                                         <div class="block"><p>Get current connect status with mesh.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -601,7 +601,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>connect</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#connect(MeshConnectBuilder)>connect</a>(MeshConnectBuilder builder)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#connect(MeshConnectBuilder)>connect</a>(<a href=../../sdk/builder/MeshConnectBuilder.html>MeshConnectBuilder</a> builder)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -662,7 +662,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                     </li>
                                 </ul>
                                 
-                                <a id="getMeshGroupLocalId(String,IThingResultCallback&lt;String&gt;)">
+                                <a id="getMeshGroupLocalId(String,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -670,7 +670,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>getMeshGroupLocalId</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#getMeshGroupLocalId(String,IThingResultCallback<String>)>getMeshGroupLocalId</a>(String meshId, IThingResultCallback&lt;String&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#getMeshGroupLocalId(String,IThingResultCallback)>getMeshGroupLocalId</a>(String meshId, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;String&gt; callback)</pre>
                                         <div class="block"><p>Get the local ID of the mesh group</p></div>
                                         
                                         <dl>
@@ -681,7 +681,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for result IThingResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for result <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -698,7 +698,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                           >
                                     <li class="blockList">
                                         <h4>addGroup</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#addGroup(String,String,String,IAddGroupCallback)>addGroup</a>(String name, String category, String localId, IAddGroupCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshCommonControl.html#addGroup(String,String,String,IAddGroupCallback)>addGroup</a>(String name, String category, String localId, <a href=../../sdk/api/bluemesh/IAddGroupCallback.html>IAddGroupCallback</a> callback)</pre>
                                         <div class="block"><p>Create mesh group of the same category .</p></div>
                                         
                                         <dl>
@@ -717,7 +717,7 @@ public interface <span class="typeNameLabel"><a href=IMeshCommonControl.html>IMe
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for result <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>

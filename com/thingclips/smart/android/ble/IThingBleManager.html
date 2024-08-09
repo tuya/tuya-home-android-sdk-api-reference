@@ -173,7 +173,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#connectBleDevice(List)>connectBleDevice</a>(List&lt;BleConnectBuilder&gt; builderList) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#connectBleDevice(List)>connectBleDevice</a>(List&lt;<a href=builder/BleConnectBuilder.html>BleConnectBuilder</a>&gt; builderList) </code>
                                             </th>
                                             <td class="colLast">* Reconnect the devices, if the BLE device is not connected, it will reconnect the device,if it is already connected, it will be ignored</td>
                                         </tr>
@@ -181,28 +181,36 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#directConnectBleDevice(BleConnectBuilder)>directConnectBleDevice</a>(BleConnectBuilder builder) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#disconnectAllBleDevices()>disconnectAllBleDevices</a>() </code>
                                             </th>
-                                            <td class="colLast">direct connect the device form ble</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#disconnectBleDevice(List)>disconnectBleDevice</a>(List&lt;BleConnectBuilder&gt; builderList) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#directConnectBleDevice(BleConnectBuilder)>directConnectBleDevice</a>(<a href=builder/BleConnectBuilder.html>BleConnectBuilder</a> builder) </code>
                                             </th>
-                                            <td class="colLast">Disconnect device Bluetooth connection.</td>
+                                            <td class="colLast">direct connect the device form ble</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startBleConfig(long,String,Map,IThingBleConfigListener)>startBleConfig</a>(long homeId, String devUuid, Map&lt;String, Object&gt; params, IThingBleConfigListener configListener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#disconnectBleDevice(List)>disconnectBleDevice</a>(List&lt;<a href=builder/BleConnectBuilder.html>BleConnectBuilder</a>&gt; builderList) </code>
+                                            </th>
+                                            <td class="colLast">Disconnect device Bluetooth connection.</td>
+                                        </tr>
+                                        
+                                        <tr id="i7" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startBleConfig(long,String,Map,IThingBleConfigListener)>startBleConfig</a>(long homeId, String devUuid, Map&lt;String, Object&gt; params, <a href=api/IThingBleConfigListener.html>IThingBleConfigListener</a> configListener) </code>
                                             </th>
                                             <td class="colLast">Device activation function, when the device is scanned, you can use this method to activate.</td>
                                         </tr>
                                         
-                                        <tr id="i7" class="rowColor">
+                                        <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#stopBleConfig(String)>stopBleConfig</a>(String devUuid) </code>
@@ -210,7 +218,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast">stop activation</td>
                                         </tr>
                                         
-                                        <tr id="i8" class="altColor">
+                                        <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>abstract boolean</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#isBleLocalOnline(String)>isBleLocalOnline</a>(String devId) </code>
@@ -218,7 +226,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast">Get the device‘s local online status</td>
                                         </tr>
                                         
-                                        <tr id="i9" class="rowColor">
+                                        <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>abstract boolean</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#isBleLocalOnlineByMaster(String)>isBleLocalOnlineByMaster</a>(String devId) </code>
@@ -226,63 +234,63 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i10" class="altColor">
-                                            <td class="colFirst"><code>abstract void</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#removeDeviceLocal(String,IResultCallback)>removeDeviceLocal</a>(String devId, IResultCallback iControlCallback) </code>
-                                            </th>
-                                            <td class="colLast">Remove the Bluetooth device, the device will become to be activated if the device is online locally.</td>
-                                        </tr>
-                                        
                                         <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#resetFactoryLocal(String,IResultCallback)>resetFactoryLocal</a>(String devId, IResultCallback iControlCallback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#removeDeviceLocal(String,IResultCallback)>removeDeviceLocal</a>(String devId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iControlCallback) </code>
                                             </th>
-                                            <td class="colLast">Restore the factory settings of the Bluetooth device, the device will become to be activated if the device is locally online.</td>
+                                            <td class="colLast">Remove the Bluetooth device, the device will become to be activated if the device is online locally.</td>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#publishDps(String,String,IResultCallback)>publishDps</a>(String devId, String dps, IResultCallback iControlCallback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#resetFactoryLocal(String,IResultCallback)>resetFactoryLocal</a>(String devId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iControlCallback) </code>
                                             </th>
-                                            <td class="colLast">send data points to device by bluetooth</td>
+                                            <td class="colLast">Restore the factory settings of the Bluetooth device, the device will become to be activated if the device is locally online.</td>
                                         </tr>
                                         
                                         <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#queryDps(String,List,IResultCallback)>queryDps</a>(String devId, List&lt;String&gt; dpList, IResultCallback iResultCallback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#publishDps(String,String,IResultCallback)>publishDps</a>(String devId, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iControlCallback) </code>
                                             </th>
-                                            <td class="colLast">query data points from device by bluetooth</td>
+                                            <td class="colLast">send data points to device by bluetooth</td>
                                         </tr>
                                         
                                         <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startBleOta(String,int,String,String,OnBleUpgradeListener)>startBleOta</a>(String uuid, int type, String version, String binPackagePath, OnBleUpgradeListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#queryDps(String,List,IResultCallback)>queryDps</a>(String devId, List&lt;String&gt; dpList, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iResultCallback) </code>
                                             </th>
-                                            <td class="colLast">Upgrade the firmware of the device by bluetooth</td>
+                                            <td class="colLast">query data points from device by bluetooth</td>
                                         </tr>
                                         
                                         <tr id="i15" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startBleOta(String,String,int,String,String,OnBleUpgradeListener)>startBleOta</a>(String uuid, String pid, int type, String version, String binPackagePath, OnBleUpgradeListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startBleOta(String,int,String,String,OnBleUpgradeListener)>startBleOta</a>(String uuid, int type, String version, String binPackagePath, <a href=api/OnBleUpgradeListener.html>OnBleUpgradeListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Upgrade the firmware of the device by bluetooth</td>
                                         </tr>
                                         
                                         <tr id="i16" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startBleOta(BleOTABean,OnBleUpgradeListener)>startBleOta</a>(BleOTABean otaBean, OnBleUpgradeListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startBleOta(String,String,int,String,String,OnBleUpgradeListener)>startBleOta</a>(String uuid, String pid, int type, String version, String binPackagePath, <a href=api/OnBleUpgradeListener.html>OnBleUpgradeListener</a> listener) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i17" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startBleOta(BleOTABean,OnBleUpgradeListener)>startBleOta</a>(<a href=bean/BleOTABean.html>BleOTABean</a> otaBean, <a href=api/OnBleUpgradeListener.html>OnBleUpgradeListener</a> listener) </code>
                                             </th>
                                             <td class="colLast">Upgrade the firmware of the device/Accessories by bluetooth</td>
                                         </tr>
                                         
-                                        <tr id="i17" class="rowColor">
+                                        <tr id="i18" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#cancelBleOta(String)>cancelBleOta</a>(String uuid) </code>
@@ -290,7 +298,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast">Stop upgrading firmware</td>
                                         </tr>
                                         
-                                        <tr id="i18" class="altColor">
+                                        <tr id="i19" class="rowColor">
                                             <td class="colFirst"><code>abstract String</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#getDeviceAllDps(String)>getDeviceAllDps</a>(String devId) </code>
@@ -298,7 +306,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast">Get the latest data points status of the current bluetooth device.</td>
                                         </tr>
                                         
-                                        <tr id="i19" class="rowColor">
+                                        <tr id="i20" class="altColor">
                                             <td class="colFirst"><code>abstract String</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#scanFilter(Array,String,String)>scanFilter</a>(Array&lt;byte&gt; scan, String devName, String address) </code>
@@ -306,31 +314,31 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i20" class="altColor">
-                                            <td class="colFirst"><code>abstract void</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#readBleRssi(String,BleRssiListener)>readBleRssi</a>(String devId, BleRssiListener listener) </code>
-                                            </th>
-                                            <td class="colLast">get the rssi of the bluetooth device.</td>
-                                        </tr>
-                                        
                                         <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#postDataChannel(String,String,DataChannelListener)>postDataChannel</a>(String devId, String command, DataChannelListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#readBleRssi(String,BleRssiListener)>readBleRssi</a>(String devId, <a href=api/BleRssiListener.html>BleRssiListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">get the rssi of the bluetooth device.</td>
                                         </tr>
                                         
                                         <tr id="i22" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#postDataChannel(Map,DataChannelListener)>postDataChannel</a>(Map&lt;String, Object&gt; params, DataChannelListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#postDataChannel(String,String,DataChannelListener)>postDataChannel</a>(String devId, String command, <a href=api/DataChannelListener.html>DataChannelListener</a> listener) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i23" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#postDataChannel(Map,DataChannelListener)>postDataChannel</a>(Map&lt;String, Object&gt; params, <a href=api/DataChannelListener.html>DataChannelListener</a> listener) </code>
                                             </th>
                                             <td class="colLast">Big data channel of V4.1 protocal.</td>
                                         </tr>
                                         
-                                        <tr id="i23" class="rowColor">
+                                        <tr id="i24" class="altColor">
                                             <td class="colFirst"><code>abstract int</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#getConfigDeviceFlag(String)>getConfigDeviceFlag</a>(String uuid) </code>
@@ -338,31 +346,31 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i24" class="altColor">
-                                            <td class="colFirst"><code>abstract void</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerBusinessLog(BleLogCallback)>registerBusinessLog</a>(BleLogCallback logCallback) </code>
-                                            </th>
-                                            <td class="colLast">register business log , Can monitor internal communication logs.</td>
-                                        </tr>
-                                        
                                         <tr id="i25" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unregisterBusinessLog(BleLogCallback)>unregisterBusinessLog</a>(BleLogCallback logCallback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerBusinessLog(BleLogCallback)>registerBusinessLog</a>(<a href=api/BleLogCallback.html>BleLogCallback</a> logCallback) </code>
                                             </th>
-                                            <td class="colLast">unregister business log.</td>
+                                            <td class="colLast">register business log , Can monitor internal communication logs.</td>
                                         </tr>
                                         
                                         <tr id="i26" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerDeviceConnectStatus(String,BleConnectStatusListener)>registerDeviceConnectStatus</a>(String devId, BleConnectStatusListener statusListener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unregisterBusinessLog(BleLogCallback)>unregisterBusinessLog</a>(<a href=api/BleLogCallback.html>BleLogCallback</a> logCallback) </code>
+                                            </th>
+                                            <td class="colLast">unregister business log.</td>
+                                        </tr>
+                                        
+                                        <tr id="i27" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerDeviceConnectStatus(String,BleConnectStatusListener)>registerDeviceConnectStatus</a>(String devId, <a href=api/BleConnectStatusListener.html>BleConnectStatusListener</a> statusListener) </code>
                                             </th>
                                             <td class="colLast">register device connection status changes</td>
                                         </tr>
                                         
-                                        <tr id="i27" class="rowColor">
+                                        <tr id="i28" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unregisterDevcieConnectStatus(String)>unregisterDevcieConnectStatus</a>(String devId) </code>
@@ -370,31 +378,31 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast">unregister the monitor</td>
                                         </tr>
                                         
-                                        <tr id="i28" class="altColor">
-                                            <td class="colFirst"><code>abstract void</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerTransferListener(String,OnBleDataTransferListener)>registerTransferListener</a>(String devId, OnBleDataTransferListener listener) </code>
-                                            </th>
-                                            <td class="colLast">Register the custom data channel of some device, the custom data of the device will be returned through the monitoring</td>
-                                        </tr>
-                                        
                                         <tr id="i29" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unregisterTransferListener(String,OnBleDataTransferListener)>unregisterTransferListener</a>(String devId, OnBleDataTransferListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerTransferListener(String,OnBleDataTransferListener)>registerTransferListener</a>(String devId, <a href=api/OnBleDataTransferListener.html>OnBleDataTransferListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast">Unregister the custom data channel of some device</td>
+                                            <td class="colLast">Register the custom data channel of some device, the custom data of the device will be returned through the monitoring</td>
                                         </tr>
                                         
                                         <tr id="i30" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#publishTransferData(String,Array,IResultCallback)>publishTransferData</a>(String devId, Array&lt;byte&gt; raw, IResultCallback iResultCallback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unregisterTransferListener(String,OnBleDataTransferListener)>unregisterTransferListener</a>(String devId, <a href=api/OnBleDataTransferListener.html>OnBleDataTransferListener</a> listener) </code>
+                                            </th>
+                                            <td class="colLast">Unregister the custom data channel of some device</td>
+                                        </tr>
+                                        
+                                        <tr id="i31" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#publishTransferData(String,Array,IResultCallback)>publishTransferData</a>(String devId, Array&lt;byte&gt; raw, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iResultCallback) </code>
                                             </th>
                                             <td class="colLast">Send the custom data to the device</td>
                                         </tr>
                                         
-                                        <tr id="i31" class="rowColor">
+                                        <tr id="i32" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#publishSystemTimeWithDeviceId(String)>publishSystemTimeWithDeviceId</a>(String devId) </code>
@@ -402,7 +410,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast">Get the system time and send it to the device</td>
                                         </tr>
                                         
-                                        <tr id="i32" class="altColor">
+                                        <tr id="i33" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#uploadCacheDataToServer(String)>uploadCacheDataToServer</a>(String devId) </code>
@@ -410,7 +418,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast">upload dps cache data to server,such as when there is no network during data interaction, it will be cached</td>
                                         </tr>
                                         
-                                        <tr id="i33" class="rowColor">
+                                        <tr id="i34" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#clearBleDataCache(List)>clearBleDataCache</a>(List&lt;String&gt; devIdList) </code>
@@ -418,15 +426,15 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast">clear ble connect cache</td>
                                         </tr>
                                         
-                                        <tr id="i34" class="altColor">
+                                        <tr id="i35" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#clearBigDataChannelData(String,int,IResultCallback)>clearBigDataChannelData</a>(String devId, int type, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#clearBigDataChannelData(String,int,IResultCallback)>clearBigDataChannelData</a>(String devId, int type, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i35" class="rowColor">
+                                        <tr id="i36" class="altColor">
                                             <td class="colFirst"><code>abstract List&lt;CommunicationModuleT&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#orderLocalCommunicationList(DeviceRespBean)>orderLocalCommunicationList</a>(DeviceRespBean respBean) </code>
@@ -434,66 +442,58 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast">order the communication list</td>
                                         </tr>
                                         
-                                        <tr id="i36" class="altColor">
-                                            <td class="colFirst"><code>abstract void</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#getDeviceAttribute(String,OnDeviceAttributeListener)>getDeviceAttribute</a>(String deviceId, OnDeviceAttributeListener listener) </code>
-                                            </th>
-                                            <td class="colLast">get device attribute from device info</td>
-                                        </tr>
-                                        
                                         <tr id="i37" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerBleIotListener(OnBleIoTChannelListener)>registerBleIotListener</a>(OnBleIoTChannelListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#getDeviceAttribute(String,OnDeviceAttributeListener)>getDeviceAttribute</a>(String deviceId, <a href=api/OnDeviceAttributeListener.html>OnDeviceAttributeListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast">Register the iot data channel of some device, the iot data of the device will be returned through the monitoring</td>
+                                            <td class="colLast">get device attribute from device info</td>
                                         </tr>
                                         
                                         <tr id="i38" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unregisterBleIotListener(OnBleIoTChannelListener)>unregisterBleIotListener</a>(OnBleIoTChannelListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerBleIotListener(OnBleIoTChannelListener)>registerBleIotListener</a>(<a href=api/OnBleIoTChannelListener.html>OnBleIoTChannelListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast">Unregister the iot data channel listener of some device</td>
+                                            <td class="colLast">Register the iot data channel of some device, the iot data of the device will be returned through the monitoring</td>
                                         </tr>
                                         
                                         <tr id="i39" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#publishIoTTransparentData(String,DevIotDataBean,OnBleSendChannelListener)>publishIoTTransparentData</a>(String deviceId, DevIotDataBean iotData, OnBleSendChannelListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unregisterBleIotListener(OnBleIoTChannelListener)>unregisterBleIotListener</a>(<a href=api/OnBleIoTChannelListener.html>OnBleIoTChannelListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast">Send the iot data to the device</td>
+                                            <td class="colLast">Unregister the iot data channel listener of some device</td>
                                         </tr>
                                         
                                         <tr id="i40" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#publishTransparentData(String,Array,OnBleSendChannelListener)>publishTransparentData</a>(String deviceId, Array&lt;byte&gt; data, OnBleSendChannelListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#publishIoTTransparentData(String,DevIotDataBean,OnBleSendChannelListener)>publishIoTTransparentData</a>(String deviceId, <a href=api/DevIotDataBean.html>DevIotDataBean</a> iotData, <a href=api/OnBleSendChannelListener.html>OnBleSendChannelListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast">push user business data to device by BLE</td>
+                                            <td class="colLast">Send the iot data to the device</td>
                                         </tr>
                                         
                                         <tr id="i41" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerBleRespListener(OnBleToDeviceListener)>registerBleRespListener</a>(OnBleToDeviceListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#publishTransparentData(String,Array,OnBleSendChannelListener)>publishTransparentData</a>(String deviceId, Array&lt;byte&gt; data, <a href=api/OnBleSendChannelListener.html>OnBleSendChannelListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast">register a listener to accept data from device</td>
+                                            <td class="colLast">push user business data to device by BLE</td>
                                         </tr>
                                         
                                         <tr id="i42" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unRegisterBleRespListener(OnBleToDeviceListener)>unRegisterBleRespListener</a>(OnBleToDeviceListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerBleRespListener(OnBleToDeviceListener)>registerBleRespListener</a>(<a href=api/OnBleToDeviceListener.html>OnBleToDeviceListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">register a listener to accept data from device</td>
                                         </tr>
                                         
                                         <tr id="i43" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#getBluetoothState(String,IThingResultCallback<BluetoothBondStateBean>)>getBluetoothState</a>(String devId, IThingResultCallback&lt;BluetoothBondStateBean&gt; response) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unRegisterBleRespListener(OnBleToDeviceListener)>unRegisterBleRespListener</a>(<a href=api/OnBleToDeviceListener.html>OnBleToDeviceListener</a> listener) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -501,7 +501,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                         <tr id="i44" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#bindSlaveDeviceToMaster(String,String,IResultCallback)>bindSlaveDeviceToMaster</a>(String masterDevId, String slaveDevId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#getBluetoothState(String,IThingResultCallback)>getBluetoothState</a>(String devId, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=api/BluetoothBondStateBean.html>BluetoothBondStateBean</a>&gt; response) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -509,7 +509,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                         <tr id="i45" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unbindSlaveDeviceFromMaster(String,String,IResultCallback)>unbindSlaveDeviceFromMaster</a>(String masterDevId, String slaveDevId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#bindSlaveDeviceToMaster(String,String,IResultCallback)>bindSlaveDeviceToMaster</a>(String masterDevId, String slaveDevId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -517,20 +517,28 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                         <tr id="i46" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#activeExtenModuleByBLEActived(String,IResultCallback)>activeExtenModuleByBLEActived</a>(String deviceId, IResultCallback iResultCallback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unbindSlaveDeviceFromMaster(String,String,IResultCallback)>unbindSlaveDeviceFromMaster</a>(String masterDevId, String slaveDevId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
-                                            <td class="colLast">active exten module by BLE</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i47" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#activeExtenModuleByBLEActived(String,Map,IResultCallback)>activeExtenModuleByBLEActived</a>(String devId, Map&lt;String, Object&gt; params, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#activeExtenModuleByBLEActived(String,IResultCallback)>activeExtenModuleByBLEActived</a>(String deviceId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iResultCallback) </code>
+                                            </th>
+                                            <td class="colLast">active exten module by BLE</td>
+                                        </tr>
+                                        
+                                        <tr id="i48" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#activeExtenModuleByBLEActived(String,Map,IResultCallback)>activeExtenModuleByBLEActived</a>(String devId, Map&lt;String, Object&gt; params, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i48" class="altColor">
+                                        <tr id="i49" class="rowColor">
                                             <td class="colFirst"><code>abstract int</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#getExtModuleType(String)>getExtModuleType</a>(String devId) </code>
@@ -538,18 +546,10 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i49" class="rowColor">
-                                            <td class="colFirst"><code>abstract void</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerExtModuleStatus(ExtModuleStatusListener)>registerExtModuleStatus</a>(ExtModuleStatusListener listener) </code>
-                                            </th>
-                                            <td class="colLast"></td>
-                                        </tr>
-                                        
                                         <tr id="i50" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unregisterExtModuleStatus(ExtModuleStatusListener)>unregisterExtModuleStatus</a>(ExtModuleStatusListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerExtModuleStatus(ExtModuleStatusListener)>registerExtModuleStatus</a>(<a href=api/ExtModuleStatusListener.html>ExtModuleStatusListener</a> listener) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -557,31 +557,31 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                         <tr id="i51" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#postFileTransfer(String,FileTransferInfo,ActionProgressResponse<Boolean>)>postFileTransfer</a>(String devId, FileTransferInfo fileTransferInfo, ActionProgressResponse&lt;Boolean&gt; listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#unregisterExtModuleStatus(ExtModuleStatusListener)>unregisterExtModuleStatus</a>(<a href=api/ExtModuleStatusListener.html>ExtModuleStatusListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast">Transfer files to the device</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i52" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerDataLocalProcessingListener(OnDataLocalProcessingListener)>registerDataLocalProcessingListener</a>(OnDataLocalProcessingListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#postFileTransfer(String,FileTransferInfo,ActionProgressResponse)>postFileTransfer</a>(String devId, <a href=../../../sdk/ble/core/bean/FileTransferInfo.html>FileTransferInfo</a> fileTransferInfo, <a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>ActionProgressResponse</a>&lt;Boolean&gt; listener) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Transfer files to the device</td>
                                         </tr>
                                         
                                         <tr id="i53" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#setLocationWeatherAbility(IGetLocationWeather)>setLocationWeatherAbility</a>(IGetLocationWeather iGetLocationWeather) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#registerDataLocalProcessingListener(OnDataLocalProcessingListener)>registerDataLocalProcessingListener</a>(<a href=api/OnDataLocalProcessingListener.html>OnDataLocalProcessingListener</a> listener) </code>
                                             </th>
-                                            <td class="colLast">set location weather</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i54" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#setLocationWeatherAbility(IGetCustomLocationWeather)>setLocationWeatherAbility</a>(IGetCustomLocationWeather iGetLocationWeather) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#setLocationWeatherAbility(IGetLocationWeather)>setLocationWeatherAbility</a>(<a href=api/IGetLocationWeather.html>IGetLocationWeather</a> iGetLocationWeather) </code>
                                             </th>
                                             <td class="colLast">set location weather</td>
                                         </tr>
@@ -589,20 +589,28 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                         <tr id="i55" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#setHomeWeatherAbility(IGetHomeWeather)>setHomeWeatherAbility</a>(IGetHomeWeather iGetHomeWeather) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#setLocationWeatherAbility(IGetCustomLocationWeather)>setLocationWeatherAbility</a>(<a href=api/IGetCustomLocationWeather.html>IGetCustomLocationWeather</a> iGetLocationWeather) </code>
                                             </th>
-                                            <td class="colLast">set home weather</td>
+                                            <td class="colLast">set location weather</td>
                                         </tr>
                                         
                                         <tr id="i56" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#setHomeWeatherAbility(IGetCustomHomeWeather)>setHomeWeatherAbility</a>(IGetCustomHomeWeather iGetHomeWeather) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#setHomeWeatherAbility(IGetHomeWeather)>setHomeWeatherAbility</a>(<a href=api/IGetHomeWeather.html>IGetHomeWeather</a> iGetHomeWeather) </code>
                                             </th>
                                             <td class="colLast">set home weather</td>
                                         </tr>
                                         
                                         <tr id="i57" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#setHomeWeatherAbility(IGetCustomHomeWeather)>setHomeWeatherAbility</a>(<a href=api/IGetCustomHomeWeather.html>IGetCustomHomeWeather</a> iGetHomeWeather) </code>
+                                            </th>
+                                            <td class="colLast">set home weather</td>
+                                        </tr>
+                                        
+                                        <tr id="i58" class="altColor">
                                             <td class="colFirst"><code>abstract int</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#readRssiByCache(String)>readRssiByCache</a>(String uuid) </code>
@@ -610,7 +618,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i58" class="altColor">
+                                        <tr id="i59" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#recoverDeviceStatus(String)>recoverDeviceStatus</a>(String uuid) </code>
@@ -618,18 +626,10 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i59" class="rowColor">
-                                            <td class="colFirst"><code>abstract void</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#queryWifiListForDeviceScan(QueryWifiSetting,IThingResultCallback<List<WiFiInfo>>)>queryWifiListForDeviceScan</a>(QueryWifiSetting setting, IThingResultCallback&lt;List&lt;WiFiInfo&gt;&gt; callback) </code>
-                                            </th>
-                                            <td class="colLast"></td>
-                                        </tr>
-                                        
                                         <tr id="i60" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#fetchDeviceLog(String,IThingResultCallback<byte[]>)>fetchDeviceLog</a>(String uuid, IThingResultCallback&lt;byte[]&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#queryWifiListForDeviceScan(QueryWifiSetting,IThingResultCallback)>queryWifiListForDeviceScan</a>(<a href=bean/QueryWifiSetting.html>QueryWifiSetting</a> setting, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=api/WiFiInfo.html>WiFiInfo</a>&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -637,12 +637,20 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                         <tr id="i61" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#queryActiveStatus(String,IThingResultCallback<byte[]>)>queryActiveStatus</a>(String uuid, IThingResultCallback&lt;byte[]&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#fetchDeviceLog(String,IThingResultCallback)>fetchDeviceLog</a>(String uuid, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;Array&lt;byte&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i62" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#queryActiveStatus(String,IThingResultCallback)>queryActiveStatus</a>(String uuid, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;Array&lt;byte&gt;&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i63" class="rowColor">
                                             <td class="colFirst"><code>abstract Boolean</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#isDeviceInOta(String)>isDeviceInOta</a>(String deviceId) </code>
@@ -650,7 +658,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i63" class="rowColor">
+                                        <tr id="i64" class="altColor">
                                             <td class="colFirst"><code>abstract int</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#getBleConnectAbility(String)>getBleConnectAbility</a>(String devId) </code>
@@ -658,28 +666,36 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i64" class="altColor">
+                                        <tr id="i65" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#checkBleWifiDeviceReset(CheckDeviceSetting,IThingResultCallback<CheckResultBean>)>checkBleWifiDeviceReset</a>(CheckDeviceSetting setting, IThingResultCallback&lt;CheckResultBean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#checkBleWifiDeviceReset(CheckDeviceSetting,IThingResultCallback)>checkBleWifiDeviceReset</a>(<a href=bean/CheckDeviceSetting.html>CheckDeviceSetting</a> setting, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=api/CheckResultBean.html>CheckResultBean</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Whether it can be reset, and whether it still needs to be reset in the cloud-bound state</td>
                                         </tr>
                                         
-                                        <tr id="i65" class="rowColor">
+                                        <tr id="i66" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startResetBleWifiDevice(ResetBleSetting,IResultCallback)>startResetBleWifiDevice</a>(ResetBleSetting setting, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#startResetBleWifiDevice(ResetBleSetting,IResultCallback)>startResetBleWifiDevice</a>(<a href=bean/ResetBleSetting.html>ResetBleSetting</a> setting, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Support Bluetooth scan code reset service</td>
                                         </tr>
                                         
-                                        <tr id="i66" class="altColor">
+                                        <tr id="i67" class="rowColor">
                                             <td class="colFirst"><code>abstract int</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#getBleExpandAttr(String)>getBleExpandAttr</a>(String devId) </code>
                                             </th>
                                             <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i68" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBleManager.html#recordBleConnectEvent(String,int,String)>recordBleConnectEvent</a>(String devId, int src, String traceId) </code>
+                                            </th>
+                                            <td class="colLast">Record ble connect event.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -786,17 +802,32 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>connectBleDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#connectBleDevice(List)>connectBleDevice</a>(List&lt;BleConnectBuilder&gt; builderList)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#connectBleDevice(List)>connectBleDevice</a>(List&lt;<a href=builder/BleConnectBuilder.html>BleConnectBuilder</a>&gt; builderList)</pre>
                                         <div class="block"><p>* Reconnect the devices, if the BLE device is not connected, it will reconnect the device,if it is already connected, it will be ignored</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>builderList</code> - com.thingclips.smart.android.ble.builder.</dd>
+                                            <dd><code>builderList</code> - <a href=builder/BleConnectBuilder.html>com.thingclips.smart.android.ble.builder.BleConnectBuilder</a></dd>
                                             
                                             
                                         </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="disconnectAllBleDevices()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>disconnectAllBleDevices</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#disconnectAllBleDevices()>disconnectAllBleDevices</a>()</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -810,7 +841,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>directConnectBleDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#directConnectBleDevice(BleConnectBuilder)>directConnectBleDevice</a>(BleConnectBuilder builder)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#directConnectBleDevice(BleConnectBuilder)>directConnectBleDevice</a>(<a href=builder/BleConnectBuilder.html>BleConnectBuilder</a> builder)</pre>
                                         <div class="block"><p>direct connect the device form ble</p></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -825,14 +856,14 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>disconnectBleDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#disconnectBleDevice(List)>disconnectBleDevice</a>(List&lt;BleConnectBuilder&gt; builderList)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#disconnectBleDevice(List)>disconnectBleDevice</a>(List&lt;<a href=builder/BleConnectBuilder.html>BleConnectBuilder</a>&gt; builderList)</pre>
                                         <div class="block"><p>Disconnect device Bluetooth connection.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>builderList</code> - com.thingclips.smart.android.ble.builder.</dd>
+                                            <dd><code>builderList</code> - <a href=builder/BleConnectBuilder.html>com.thingclips.smart.android.ble.builder.BleConnectBuilder</a></dd>
                                             
                                             
                                         </dl>
@@ -849,7 +880,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>startBleConfig</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#startBleConfig(long,String,Map,IThingBleConfigListener)>startBleConfig</a>(long homeId, String devUuid, Map&lt;String, Object&gt; params, IThingBleConfigListener configListener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#startBleConfig(long,String,Map,IThingBleConfigListener)>startBleConfig</a>(long homeId, String devUuid, Map&lt;String, Object&gt; params, <a href=api/IThingBleConfigListener.html>IThingBleConfigListener</a> configListener)</pre>
                                         <div class="block"><p>Device activation function, when the device is scanned, you can use this method to activate.</p><p>params:param.put("ssid", "xxxx"); //wifi ssidparam.put("password", "xxxxxx"); //wifi pwdparam.put("token", "xxxxxxxxxxxxx"); // user token</p></div>
                                         
                                         <dl>
@@ -860,7 +891,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>devUuid</code> - device's uuid getUuid</dd>
+                                            <dd><code>devUuid</code> - device's uuid <a href=api/ScanDeviceBean.html#getUuid()>getUuid</a></dd>
                                             
                                             
                                             
@@ -868,7 +899,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>configListener</code> - callback IThingBleConfigListener</dd>
+                                            <dd><code>configListener</code> - callback <a href=api/IThingBleConfigListener.html>IThingBleConfigListener</a></dd>
                                             
                                             
                                         </dl>
@@ -892,7 +923,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>devUuid</code> - device's uuid getUuid</dd>
+                                            <dd><code>devUuid</code> - device's uuid <a href=api/ScanDeviceBean.html#getUuid()>getUuid</a></dd>
                                             
                                             
                                         </dl>
@@ -948,7 +979,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>removeDeviceLocal</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#removeDeviceLocal(String,IResultCallback)>removeDeviceLocal</a>(String devId, IResultCallback iControlCallback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#removeDeviceLocal(String,IResultCallback)>removeDeviceLocal</a>(String devId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iControlCallback)</pre>
                                         <div class="block"><p>Remove the Bluetooth device, the device will become to be activated if the device is online locally.If the device is offline locally, there will be no effect</p></div>
                                         
                                         <dl>
@@ -959,7 +990,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>iControlCallback</code> - IResultCallback</dd>
+                                            <dd><code>iControlCallback</code> - <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -976,7 +1007,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>resetFactoryLocal</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#resetFactoryLocal(String,IResultCallback)>resetFactoryLocal</a>(String devId, IResultCallback iControlCallback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#resetFactoryLocal(String,IResultCallback)>resetFactoryLocal</a>(String devId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iControlCallback)</pre>
                                         <div class="block"><p>Restore the factory settings of the Bluetooth device, the device will become to be activated if the device is locally online.If the device is offline locally, there will be no effect</p></div>
                                         
                                         <dl>
@@ -987,7 +1018,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>iControlCallback</code> - IResultCallback</dd>
+                                            <dd><code>iControlCallback</code> - <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -1004,7 +1035,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>publishDps</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#publishDps(String,String,IResultCallback)>publishDps</a>(String devId, String dps, IResultCallback iControlCallback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#publishDps(String,String,IResultCallback)>publishDps</a>(String devId, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iControlCallback)</pre>
                                         <div class="block"><p>send data points to device by bluetooth</p></div>
                                         
                                         <dl>
@@ -1019,7 +1050,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>iControlCallback</code> - IResultCallback</dd>
+                                            <dd><code>iControlCallback</code> - <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -1036,7 +1067,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>queryDps</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#queryDps(String,List,IResultCallback)>queryDps</a>(String devId, List&lt;String&gt; dpList, IResultCallback iResultCallback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#queryDps(String,List,IResultCallback)>queryDps</a>(String devId, List&lt;String&gt; dpList, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iResultCallback)</pre>
                                         <div class="block"><p>query data points from device by bluetooth</p></div>
                                         
                                         <dl>
@@ -1051,7 +1082,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>iResultCallback</code> - IResultCallback</dd>
+                                            <dd><code>iResultCallback</code> - <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -1068,7 +1099,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>startBleOta</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#startBleOta(String,int,String,String,OnBleUpgradeListener)>startBleOta</a>(String uuid, int type, String version, String binPackagePath, OnBleUpgradeListener listener)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#startBleOta(String,int,String,String,OnBleUpgradeListener)>startBleOta</a>(String uuid, int type, String version, String binPackagePath, <a href=api/OnBleUpgradeListener.html>OnBleUpgradeListener</a> listener)</pre>
                                         <div class="block"><p>Upgrade the firmware of the device by bluetooth</p></div>
                                         
                                         <dl>
@@ -1091,7 +1122,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>listener</code> - ota process callback OnBleUpgradeListener</dd>
+                                            <dd><code>listener</code> - ota process callback <a href=api/OnBleUpgradeListener.html>OnBleUpgradeListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1108,7 +1139,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>startBleOta</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#startBleOta(String,String,int,String,String,OnBleUpgradeListener)>startBleOta</a>(String uuid, String pid, int type, String version, String binPackagePath, OnBleUpgradeListener listener)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#startBleOta(String,String,int,String,String,OnBleUpgradeListener)>startBleOta</a>(String uuid, String pid, int type, String version, String binPackagePath, <a href=api/OnBleUpgradeListener.html>OnBleUpgradeListener</a> listener)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1123,7 +1154,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>startBleOta</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#startBleOta(BleOTABean,OnBleUpgradeListener)>startBleOta</a>(BleOTABean otaBean, OnBleUpgradeListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#startBleOta(BleOTABean,OnBleUpgradeListener)>startBleOta</a>(<a href=bean/BleOTABean.html>BleOTABean</a> otaBean, <a href=api/OnBleUpgradeListener.html>OnBleUpgradeListener</a> listener)</pre>
                                         <div class="block"><p>Upgrade the firmware of the device/Accessories by bluetooth</p></div>
                                         
                                         <dl>
@@ -1134,7 +1165,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>listener</code> - ota process callback OnBleUpgradeListener</dd>
+                                            <dd><code>listener</code> - ota process callback <a href=api/OnBleUpgradeListener.html>OnBleUpgradeListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1214,7 +1245,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>readBleRssi</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#readBleRssi(String,BleRssiListener)>readBleRssi</a>(String devId, BleRssiListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#readBleRssi(String,BleRssiListener)>readBleRssi</a>(String devId, <a href=api/BleRssiListener.html>BleRssiListener</a> listener)</pre>
                                         <div class="block"><p>get the rssi of the bluetooth device.</p><p>If the device is connected, it can be obtained correctly, otherwise an error will be returned</p></div>
                                         
                                         <dl>
@@ -1225,7 +1256,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>listener</code> - backback BleRssiListener</dd>
+                                            <dd><code>listener</code> - backback <a href=api/BleRssiListener.html>BleRssiListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1242,7 +1273,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>postDataChannel</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#postDataChannel(String,String,DataChannelListener)>postDataChannel</a>(String devId, String command, DataChannelListener listener)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#postDataChannel(String,String,DataChannelListener)>postDataChannel</a>(String devId, String command, <a href=api/DataChannelListener.html>DataChannelListener</a> listener)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1257,7 +1288,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>postDataChannel</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#postDataChannel(Map,DataChannelListener)>postDataChannel</a>(Map&lt;String, Object&gt; params, DataChannelListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#postDataChannel(Map,DataChannelListener)>postDataChannel</a>(Map&lt;String, Object&gt; params, <a href=api/DataChannelListener.html>DataChannelListener</a> listener)</pre>
                                         <div class="block"><p>Big data channel of V4.1 protocal. Need equipment support.</p><p>This function can be used for transferring some large amounts of historical data</p></div>
                                         
                                         <dl>
@@ -1268,7 +1299,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>listener</code> - Callback DataChannelListener</dd>
+                                            <dd><code>listener</code> - Callback <a href=api/DataChannelListener.html>DataChannelListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1300,14 +1331,14 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>registerBusinessLog</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#registerBusinessLog(BleLogCallback)>registerBusinessLog</a>(BleLogCallback logCallback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#registerBusinessLog(BleLogCallback)>registerBusinessLog</a>(<a href=api/BleLogCallback.html>BleLogCallback</a> logCallback)</pre>
                                         <div class="block"><p>register business log , Can monitor internal communication logs.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>logCallback</code> - BleLogCallback</dd>
+                                            <dd><code>logCallback</code> - <a href=api/BleLogCallback.html>BleLogCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -1324,7 +1355,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>unregisterBusinessLog</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#unregisterBusinessLog(BleLogCallback)>unregisterBusinessLog</a>(BleLogCallback logCallback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#unregisterBusinessLog(BleLogCallback)>unregisterBusinessLog</a>(<a href=api/BleLogCallback.html>BleLogCallback</a> logCallback)</pre>
                                         <div class="block"><p>unregister business log.</p></div>
                                         
                                         <dl>
@@ -1348,7 +1379,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>registerDeviceConnectStatus</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerDeviceConnectStatus(String,BleConnectStatusListener)>registerDeviceConnectStatus</a>(String devId, BleConnectStatusListener statusListener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerDeviceConnectStatus(String,BleConnectStatusListener)>registerDeviceConnectStatus</a>(String devId, <a href=api/BleConnectStatusListener.html>BleConnectStatusListener</a> statusListener)</pre>
                                         <div class="block"><p>register device connection status changes</p></div>
                                         
                                         <dl>
@@ -1359,7 +1390,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>statusListener</code> - BleConnectStatusListener</dd>
+                                            <dd><code>statusListener</code> - <a href=api/BleConnectStatusListener.html>BleConnectStatusListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1391,7 +1422,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>registerTransferListener</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerTransferListener(String,OnBleDataTransferListener)>registerTransferListener</a>(String devId, OnBleDataTransferListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerTransferListener(String,OnBleDataTransferListener)>registerTransferListener</a>(String devId, <a href=api/OnBleDataTransferListener.html>OnBleDataTransferListener</a> listener)</pre>
                                         <div class="block"><p>Register the custom data channel of some device, the custom data of the device will be returned through the monitoring</p></div>
                                         
                                         <dl>
@@ -1402,7 +1433,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>listener</code> - OnBleDataTransferListener</dd>
+                                            <dd><code>listener</code> - <a href=api/OnBleDataTransferListener.html>OnBleDataTransferListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1419,7 +1450,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>unregisterTransferListener</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unregisterTransferListener(String,OnBleDataTransferListener)>unregisterTransferListener</a>(String devId, OnBleDataTransferListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unregisterTransferListener(String,OnBleDataTransferListener)>unregisterTransferListener</a>(String devId, <a href=api/OnBleDataTransferListener.html>OnBleDataTransferListener</a> listener)</pre>
                                         <div class="block"><p>Unregister the custom data channel of some device</p></div>
                                         
                                         <dl>
@@ -1447,7 +1478,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>publishTransferData</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#publishTransferData(String,Array,IResultCallback)>publishTransferData</a>(String devId, Array&lt;byte&gt; raw, IResultCallback iResultCallback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#publishTransferData(String,Array,IResultCallback)>publishTransferData</a>(String devId, Array&lt;byte&gt; raw, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iResultCallback)</pre>
                                         <div class="block"><p>Send the custom data to the device</p></div>
                                         
                                         <dl>
@@ -1462,7 +1493,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>iResultCallback</code> - send result IResultCallback</dd>
+                                            <dd><code>iResultCallback</code> - send result <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -1542,7 +1573,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>clearBigDataChannelData</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#clearBigDataChannelData(String,int,IResultCallback)>clearBigDataChannelData</a>(String devId, int type, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#clearBigDataChannelData(String,int,IResultCallback)>clearBigDataChannelData</a>(String devId, int type, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1572,7 +1603,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>getDeviceAttribute</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#getDeviceAttribute(String,OnDeviceAttributeListener)>getDeviceAttribute</a>(String deviceId, OnDeviceAttributeListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#getDeviceAttribute(String,OnDeviceAttributeListener)>getDeviceAttribute</a>(String deviceId, <a href=api/OnDeviceAttributeListener.html>OnDeviceAttributeListener</a> listener)</pre>
                                         <div class="block"><p>get device attribute from device info</p></div>
                                         
                                         <dl>
@@ -1583,7 +1614,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>listener</code> - result callback OnDeviceAttributeListener</dd>
+                                            <dd><code>listener</code> - result callback <a href=api/OnDeviceAttributeListener.html>OnDeviceAttributeListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1600,14 +1631,14 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>registerBleIotListener</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerBleIotListener(OnBleIoTChannelListener)>registerBleIotListener</a>(OnBleIoTChannelListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerBleIotListener(OnBleIoTChannelListener)>registerBleIotListener</a>(<a href=api/OnBleIoTChannelListener.html>OnBleIoTChannelListener</a> listener)</pre>
                                         <div class="block"><p>Register the iot data channel of some device, the iot data of the device will be returned through the monitoring</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>listener</code> - OnBleIoTChannelListener</dd>
+                                            <dd><code>listener</code> - <a href=api/OnBleIoTChannelListener.html>OnBleIoTChannelListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1624,14 +1655,14 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>unregisterBleIotListener</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unregisterBleIotListener(OnBleIoTChannelListener)>unregisterBleIotListener</a>(OnBleIoTChannelListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unregisterBleIotListener(OnBleIoTChannelListener)>unregisterBleIotListener</a>(<a href=api/OnBleIoTChannelListener.html>OnBleIoTChannelListener</a> listener)</pre>
                                         <div class="block"><p>Unregister the iot data channel listener of some device</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>listener</code> - the listener what you want unregister OnBleIoTChannelListener</dd>
+                                            <dd><code>listener</code> - the listener what you want unregister <a href=api/OnBleIoTChannelListener.html>OnBleIoTChannelListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1648,7 +1679,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>publishIoTTransparentData</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#publishIoTTransparentData(String,DevIotDataBean,OnBleSendChannelListener)>publishIoTTransparentData</a>(String deviceId, DevIotDataBean iotData, OnBleSendChannelListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#publishIoTTransparentData(String,DevIotDataBean,OnBleSendChannelListener)>publishIoTTransparentData</a>(String deviceId, <a href=api/DevIotDataBean.html>DevIotDataBean</a> iotData, <a href=api/OnBleSendChannelListener.html>OnBleSendChannelListener</a> listener)</pre>
                                         <div class="block"><p>Send the iot data to the device</p></div>
                                         
                                         <dl>
@@ -1663,7 +1694,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>listener</code> - send result OnBleSendChannelListener</dd>
+                                            <dd><code>listener</code> - send result <a href=api/OnBleSendChannelListener.html>OnBleSendChannelListener</a></dd>
                                             
                                             
                                         </dl>
@@ -1680,7 +1711,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>publishTransparentData</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#publishTransparentData(String,Array,OnBleSendChannelListener)>publishTransparentData</a>(String deviceId, Array&lt;byte&gt; data, OnBleSendChannelListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#publishTransparentData(String,Array,OnBleSendChannelListener)>publishTransparentData</a>(String deviceId, Array&lt;byte&gt; data, <a href=api/OnBleSendChannelListener.html>OnBleSendChannelListener</a> listener)</pre>
                                         <div class="block"><p>push user business data to device by BLE</p></div>
                                         
                                         <dl>
@@ -1712,7 +1743,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>registerBleRespListener</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerBleRespListener(OnBleToDeviceListener)>registerBleRespListener</a>(OnBleToDeviceListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerBleRespListener(OnBleToDeviceListener)>registerBleRespListener</a>(<a href=api/OnBleToDeviceListener.html>OnBleToDeviceListener</a> listener)</pre>
                                         <div class="block"><p>register a listener to accept data from device</p></div>
                                         
                                         <dl>
@@ -1736,14 +1767,14 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>unRegisterBleRespListener</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unRegisterBleRespListener(OnBleToDeviceListener)>unRegisterBleRespListener</a>(OnBleToDeviceListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unRegisterBleRespListener(OnBleToDeviceListener)>unRegisterBleRespListener</a>(<a href=api/OnBleToDeviceListener.html>OnBleToDeviceListener</a> listener)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="getBluetoothState(String,IThingResultCallback&lt;BluetoothBondStateBean&gt;)">
+                                <a id="getBluetoothState(String,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -1751,7 +1782,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>getBluetoothState</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#getBluetoothState(String,IThingResultCallback<BluetoothBondStateBean>)>getBluetoothState</a>(String devId, IThingResultCallback&lt;BluetoothBondStateBean&gt; response)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#getBluetoothState(String,IThingResultCallback)>getBluetoothState</a>(String devId, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=api/BluetoothBondStateBean.html>BluetoothBondStateBean</a>&gt; response)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1766,7 +1797,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>bindSlaveDeviceToMaster</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#bindSlaveDeviceToMaster(String,String,IResultCallback)>bindSlaveDeviceToMaster</a>(String masterDevId, String slaveDevId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#bindSlaveDeviceToMaster(String,String,IResultCallback)>bindSlaveDeviceToMaster</a>(String masterDevId, String slaveDevId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1781,7 +1812,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>unbindSlaveDeviceFromMaster</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unbindSlaveDeviceFromMaster(String,String,IResultCallback)>unbindSlaveDeviceFromMaster</a>(String masterDevId, String slaveDevId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unbindSlaveDeviceFromMaster(String,String,IResultCallback)>unbindSlaveDeviceFromMaster</a>(String masterDevId, String slaveDevId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1796,7 +1827,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>activeExtenModuleByBLEActived</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#activeExtenModuleByBLEActived(String,IResultCallback)>activeExtenModuleByBLEActived</a>(String deviceId, IResultCallback iResultCallback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#activeExtenModuleByBLEActived(String,IResultCallback)>activeExtenModuleByBLEActived</a>(String deviceId, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> iResultCallback)</pre>
                                         <div class="block"><p>active exten module by BLE</p></div>
                                         
                                         <dl>
@@ -1807,7 +1838,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>iResultCallback</code> - send result IResultCallback</dd>
+                                            <dd><code>iResultCallback</code> - send result <a href=../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -1824,7 +1855,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>activeExtenModuleByBLEActived</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#activeExtenModuleByBLEActived(String,Map,IResultCallback)>activeExtenModuleByBLEActived</a>(String devId, Map&lt;String, Object&gt; params, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#activeExtenModuleByBLEActived(String,Map,IResultCallback)>activeExtenModuleByBLEActived</a>(String devId, Map&lt;String, Object&gt; params, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1854,7 +1885,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>registerExtModuleStatus</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerExtModuleStatus(ExtModuleStatusListener)>registerExtModuleStatus</a>(ExtModuleStatusListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerExtModuleStatus(ExtModuleStatusListener)>registerExtModuleStatus</a>(<a href=api/ExtModuleStatusListener.html>ExtModuleStatusListener</a> listener)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1869,14 +1900,14 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>unregisterExtModuleStatus</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unregisterExtModuleStatus(ExtModuleStatusListener)>unregisterExtModuleStatus</a>(ExtModuleStatusListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#unregisterExtModuleStatus(ExtModuleStatusListener)>unregisterExtModuleStatus</a>(<a href=api/ExtModuleStatusListener.html>ExtModuleStatusListener</a> listener)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="postFileTransfer(String,FileTransferInfo,ActionProgressResponse&lt;Boolean&gt;)">
+                                <a id="postFileTransfer(String,FileTransferInfo,ActionProgressResponse)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -1884,7 +1915,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>postFileTransfer</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#postFileTransfer(String,FileTransferInfo,ActionProgressResponse<Boolean>)>postFileTransfer</a>(String devId, FileTransferInfo fileTransferInfo, ActionProgressResponse&lt;Boolean&gt; listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#postFileTransfer(String,FileTransferInfo,ActionProgressResponse)>postFileTransfer</a>(String devId, <a href=../../../sdk/ble/core/bean/FileTransferInfo.html>FileTransferInfo</a> fileTransferInfo, <a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>ActionProgressResponse</a>&lt;Boolean&gt; listener)</pre>
                                         <div class="block"><p>Transfer files to the device</p></div>
                                         
                                         <dl>
@@ -1895,11 +1926,11 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                             
                                             
                                             
-                                            <dd><code>fileTransferInfo</code> - File informationFileTransferInfo</dd>
+                                            <dd><code>fileTransferInfo</code> - File information<a href=../../../sdk/ble/core/bean/FileTransferInfo.html>FileTransferInfo</a></dd>
                                             
                                             
                                             
-                                            <dd><code>listener</code> - file transfer result ActionProgressResponse</dd>
+                                            <dd><code>listener</code> - file transfer result <a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>ActionProgressResponse</a></dd>
                                             
                                             
                                         </dl>
@@ -1916,7 +1947,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>registerDataLocalProcessingListener</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerDataLocalProcessingListener(OnDataLocalProcessingListener)>registerDataLocalProcessingListener</a>(OnDataLocalProcessingListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#registerDataLocalProcessingListener(OnDataLocalProcessingListener)>registerDataLocalProcessingListener</a>(<a href=api/OnDataLocalProcessingListener.html>OnDataLocalProcessingListener</a> listener)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -1931,7 +1962,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>setLocationWeatherAbility</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#setLocationWeatherAbility(IGetLocationWeather)>setLocationWeatherAbility</a>(IGetLocationWeather iGetLocationWeather)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#setLocationWeatherAbility(IGetLocationWeather)>setLocationWeatherAbility</a>(<a href=api/IGetLocationWeather.html>IGetLocationWeather</a> iGetLocationWeather)</pre>
                                         <div class="block"><p>set location weather</p></div>
                                         
                                         <dl>
@@ -1955,7 +1986,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>setLocationWeatherAbility</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#setLocationWeatherAbility(IGetCustomLocationWeather)>setLocationWeatherAbility</a>(IGetCustomLocationWeather iGetLocationWeather)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#setLocationWeatherAbility(IGetCustomLocationWeather)>setLocationWeatherAbility</a>(<a href=api/IGetCustomLocationWeather.html>IGetCustomLocationWeather</a> iGetLocationWeather)</pre>
                                         <div class="block"><p>set location weather</p></div>
                                         
                                         <dl>
@@ -1979,7 +2010,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>setHomeWeatherAbility</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#setHomeWeatherAbility(IGetHomeWeather)>setHomeWeatherAbility</a>(IGetHomeWeather iGetHomeWeather)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingBleManager.html#setHomeWeatherAbility(IGetHomeWeather)>setHomeWeatherAbility</a>(<a href=api/IGetHomeWeather.html>IGetHomeWeather</a> iGetHomeWeather)</pre>
                                         <div class="block"><p>set home weather</p></div>
                                         
                                         <dl>
@@ -2003,7 +2034,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>setHomeWeatherAbility</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#setHomeWeatherAbility(IGetCustomHomeWeather)>setHomeWeatherAbility</a>(IGetCustomHomeWeather iGetHomeWeather)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#setHomeWeatherAbility(IGetCustomHomeWeather)>setHomeWeatherAbility</a>(<a href=api/IGetCustomHomeWeather.html>IGetCustomHomeWeather</a> iGetHomeWeather)</pre>
                                         <div class="block"><p>set home weather</p></div>
                                         
                                         <dl>
@@ -2049,7 +2080,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                     </li>
                                 </ul>
                                 
-                                <a id="queryWifiListForDeviceScan(QueryWifiSetting,IThingResultCallback&lt;List&lt;WiFiInfo&gt;&gt;)">
+                                <a id="queryWifiListForDeviceScan(QueryWifiSetting,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -2057,14 +2088,14 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>queryWifiListForDeviceScan</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#queryWifiListForDeviceScan(QueryWifiSetting,IThingResultCallback<List<WiFiInfo>>)>queryWifiListForDeviceScan</a>(QueryWifiSetting setting, IThingResultCallback&lt;List&lt;WiFiInfo&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#queryWifiListForDeviceScan(QueryWifiSetting,IThingResultCallback)>queryWifiListForDeviceScan</a>(<a href=bean/QueryWifiSetting.html>QueryWifiSetting</a> setting, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=api/WiFiInfo.html>WiFiInfo</a>&gt;&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="fetchDeviceLog(String,IThingResultCallback&lt;byte[]&gt;)">
+                                <a id="fetchDeviceLog(String,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -2072,14 +2103,14 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>fetchDeviceLog</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#fetchDeviceLog(String,IThingResultCallback<byte[]>)>fetchDeviceLog</a>(String uuid, IThingResultCallback&lt;byte[]&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#fetchDeviceLog(String,IThingResultCallback)>fetchDeviceLog</a>(String uuid, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;Array&lt;byte&gt;&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="queryActiveStatus(String,IThingResultCallback&lt;byte[]&gt;)">
+                                <a id="queryActiveStatus(String,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -2087,7 +2118,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>queryActiveStatus</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#queryActiveStatus(String,IThingResultCallback<byte[]>)>queryActiveStatus</a>(String uuid, IThingResultCallback&lt;byte[]&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#queryActiveStatus(String,IThingResultCallback)>queryActiveStatus</a>(String uuid, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;Array&lt;byte&gt;&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -2124,7 +2155,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                     </li>
                                 </ul>
                                 
-                                <a id="checkBleWifiDeviceReset(CheckDeviceSetting,IThingResultCallback&lt;CheckResultBean&gt;)">
+                                <a id="checkBleWifiDeviceReset(CheckDeviceSetting,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -2132,7 +2163,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>checkBleWifiDeviceReset</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#checkBleWifiDeviceReset(CheckDeviceSetting,IThingResultCallback<CheckResultBean>)>checkBleWifiDeviceReset</a>(CheckDeviceSetting setting, IThingResultCallback&lt;CheckResultBean&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#checkBleWifiDeviceReset(CheckDeviceSetting,IThingResultCallback)>checkBleWifiDeviceReset</a>(<a href=bean/CheckDeviceSetting.html>CheckDeviceSetting</a> setting, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=api/CheckResultBean.html>CheckResultBean</a>&gt; callback)</pre>
                                         <div class="block"><p>Whether it can be reset, and whether it still needs to be reset in the cloud-bound state</p></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -2147,7 +2178,7 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                           >
                                     <li class="blockList">
                                         <h4>startResetBleWifiDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#startResetBleWifiDevice(ResetBleSetting,IResultCallback)>startResetBleWifiDevice</a>(ResetBleSetting setting, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#startResetBleWifiDevice(ResetBleSetting,IResultCallback)>startResetBleWifiDevice</a>(<a href=bean/ResetBleSetting.html>ResetBleSetting</a> setting, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Support Bluetooth scan code reset service</p></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -2158,12 +2189,44 @@ public interface <span class="typeNameLabel"><a href=IThingBleManager.html>IThin
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>getBleExpandAttr</h4>
                                         <pre class="methodSignature"> abstract int <a href=IThingBleManager.html#getBleExpandAttr(String)>getBleExpandAttr</a>(String devId)</pre>
                                         <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="recordBleConnectEvent(String,int,String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>recordBleConnectEvent</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBleManager.html#recordBleConnectEvent(String,int,String)>recordBleConnectEvent</a>(String devId, int src, String traceId)</pre>
+                                        <div class="block"><p>Record ble connect event.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>src</code> - source, 1 means form lock panel</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>traceId</code> - trace id, It is used to track the source of the event</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
