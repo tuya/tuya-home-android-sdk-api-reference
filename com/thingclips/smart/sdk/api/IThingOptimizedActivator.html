@@ -149,7 +149,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedActivator.html#queryDeviceConfigState(ApQueryBuilder,IThingResultCallback<List<WiFiInfoBean>>)>queryDeviceConfigState</a>(ApQueryBuilder queryBuilder, IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedActivator.html#queryDeviceConfigState(ApQueryBuilder,IThingResultCallback)>queryDeviceConfigState</a>(<a href=../bean/ApQueryBuilder.html>ApQueryBuilder</a> queryBuilder, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../../home/sdk/bean/WiFiInfoBean.html>WiFiInfoBean</a>&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast">start new ap query and check it is can be activator, if you not want to use new ap,please use start() method</td>
                                         </tr>
@@ -157,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedActivator.html#startActivator(ApActivatorBuilder)>startActivator</a>(ApActivatorBuilder activatorBuilder) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedActivator.html#startActivator(ApActivatorBuilder)>startActivator</a>(<a href=../bean/ApActivatorBuilder.html>ApActivatorBuilder</a> activatorBuilder) </code>
                                             </th>
                                             <td class="colLast">start new ap query and check it is can be activatorexample (after call queryDeviceConfigState() , then call startActivator())</td>
                                         </tr>
@@ -173,7 +173,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedActivator.html#resetDevice(IThingResultCallback<Boolean>)>resetDevice</a>(IThingResultCallback&lt;Boolean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedActivator.html#resetDevice(IThingResultCallback)>resetDevice</a>(<a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;Boolean&gt; callback) </code>
                                             </th>
                                             <td class="colLast">reset device</td>
                                         </tr>
@@ -189,7 +189,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedActivator.html#queryWifiList(ApHandlerBean,IThingResultCallback<List<WiFiInfoBean>>)>queryWifiList</a>(ApHandlerBean bean, IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingOptimizedActivator.html#queryWifiList(ApHandlerBean,IThingResultCallback)>queryWifiList</a>(ApHandlerBean bean, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../../home/sdk/bean/WiFiInfoBean.html>WiFiInfoBean</a>&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast">query wifi</td>
                                         </tr>
@@ -227,7 +227,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                             </a>
                                 <h3>Method Detail</h3>
                                 
-                                <a id="queryDeviceConfigState(ApQueryBuilder,IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt;)">
+                                <a id="queryDeviceConfigState(ApQueryBuilder,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -235,7 +235,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                           >
                                     <li class="blockList">
                                         <h4>queryDeviceConfigState</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedActivator.html#queryDeviceConfigState(ApQueryBuilder,IThingResultCallback<List<WiFiInfoBean>>)>queryDeviceConfigState</a>(ApQueryBuilder queryBuilder, IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedActivator.html#queryDeviceConfigState(ApQueryBuilder,IThingResultCallback)>queryDeviceConfigState</a>(<a href=../bean/ApQueryBuilder.html>ApQueryBuilder</a> queryBuilder, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../../home/sdk/bean/WiFiInfoBean.html>WiFiInfoBean</a>&gt;&gt; callback)</pre>
                                         <div class="block"><p>start new ap query and check it is can be activator, if you not want to use new ap,please use start() method</p></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -250,7 +250,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                           >
                                     <li class="blockList">
                                         <h4>startActivator</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedActivator.html#startActivator(ApActivatorBuilder)>startActivator</a>(ApActivatorBuilder activatorBuilder)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedActivator.html#startActivator(ApActivatorBuilder)>startActivator</a>(<a href=../bean/ApActivatorBuilder.html>ApActivatorBuilder</a> activatorBuilder)</pre>
                                         <div class="block"><p>start new ap query and check it is can be activatorexample (after call queryDeviceConfigState() , then call startActivator())</p></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -272,7 +272,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                     </li>
                                 </ul>
                                 
-                                <a id="resetDevice(IThingResultCallback&lt;Boolean&gt;)">
+                                <a id="resetDevice(IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -280,7 +280,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                           >
                                     <li class="blockList">
                                         <h4>resetDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedActivator.html#resetDevice(IThingResultCallback<Boolean>)>resetDevice</a>(IThingResultCallback&lt;Boolean&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedActivator.html#resetDevice(IThingResultCallback)>resetDevice</a>(<a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;Boolean&gt; callback)</pre>
                                         <div class="block"><p>reset device</p></div>
                                         
                                         <dl>
@@ -311,7 +311,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                     </li>
                                 </ul>
                                 
-                                <a id="queryWifiList(ApHandlerBean,IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt;)">
+                                <a id="queryWifiList(ApHandlerBean,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -319,7 +319,7 @@ public interface <span class="typeNameLabel"><a href=IThingOptimizedActivator.ht
                                           >
                                     <li class="blockList">
                                         <h4>queryWifiList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedActivator.html#queryWifiList(ApHandlerBean,IThingResultCallback<List<WiFiInfoBean>>)>queryWifiList</a>(ApHandlerBean bean, IThingResultCallback&lt;List&lt;WiFiInfoBean&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingOptimizedActivator.html#queryWifiList(ApHandlerBean,IThingResultCallback)>queryWifiList</a>(ApHandlerBean bean, <a href=../../home/sdk/callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../../home/sdk/bean/WiFiInfoBean.html>WiFiInfoBean</a>&gt;&gt; callback)</pre>
                                         <div class="block"><p>query wifi</p></div>
                                         
                                         <!-- TODO missing return annotation -->
