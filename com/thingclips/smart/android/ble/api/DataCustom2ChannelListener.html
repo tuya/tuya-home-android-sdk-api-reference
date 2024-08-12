@@ -104,11 +104,21 @@ var pathtoroot = "../../../../../../";
             <ul class="blockList">
                 <li class="blockList">
                     
+                    <dl>
+                        <dt>All Implemented Interfaces:</dt>
+                        <dd>
+                            
+                            <code>com.thingclips.smart.android.ble.api.DataChannelListener</code>
+                            
+                            
+                        </dd>
+                    </dl>
+                    
                     <hr>
                     <pre class="wrap-overflow">
 
 public abstract class <span class="typeNameLabel"><a href=DataCustom2ChannelListener.html>DataCustom2ChannelListener</a></span>
-
+extends <a href=DataCustomChannelListener.html>DataCustomChannelListener</a>
                     </pre>
                     <div class="block"><p>DataCustom2ChannelListener is used to report the received-dps-data to caller, and it will notify the caller with upload progress 、 upload result. </p></div>
                 </li>
@@ -149,7 +159,7 @@ public abstract class <span class="typeNameLabel"><a href=DataCustom2ChannelList
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DataCustom2ChannelListener.html#onDpsReceived(List)>onDpsReceived</a>(List&lt;ChannelDataDps&gt; channelDataDpsList) </code>
+                                            <th class="colSecond" scope="row"><code><a href=DataCustom2ChannelListener.html#onDpsReceived(List)>onDpsReceived</a>(List&lt;<a href=../../../../sdk/ble/core/protocol/entity/ChannelDataDps.html>ChannelDataDps</a>&gt; channelDataDpsList) </code>
                                             </th>
                                             <td class="colLast">a callback for dps receivedonDpsReceived will be called when the dps have been sent from device completely.</td>
                                         </tr>
@@ -167,6 +177,18 @@ public abstract class <span class="typeNameLabel"><a href=DataCustom2ChannelList
                                 </div>
                                 <ul class="blockList">
                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.android.ble.api.DataCustomChannelListener">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.android.ble.api.DataCustomChannelListener</h3>
+                                            <code>onDataFinish, onProgress, onSuccess</code></li>
+                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.android.ble.api.DataChannelListener">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.android.ble.api.DataChannelListener</h3>
+                                            <code>onFail</code></li>
+                                 
                                     <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
                                         <!--   -->
                                     </a>
@@ -203,7 +225,7 @@ public abstract class <span class="typeNameLabel"><a href=DataCustom2ChannelList
                                           >
                                     <li class="blockList">
                                         <h4>onDpsReceived</h4>
-                                        <pre class="methodSignature"> abstract void <a href=DataCustom2ChannelListener.html#onDpsReceived(List)>onDpsReceived</a>(List&lt;ChannelDataDps&gt; channelDataDpsList)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=DataCustom2ChannelListener.html#onDpsReceived(List)>onDpsReceived</a>(List&lt;<a href=../../../../sdk/ble/core/protocol/entity/ChannelDataDps.html>ChannelDataDps</a>&gt; channelDataDpsList)</pre>
                                         <div class="block"><p>a callback for dps receivedonDpsReceived will be called when the dps have been sent from device completely.</p></div>
                                         
                                         <dl>

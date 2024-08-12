@@ -149,7 +149,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#enableDevShare(String,long,IResultCallback)>enableDevShare</a>(String devId, long memberId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#enableDevShare(String,long,IResultCallback)>enableDevShare</a>(String devId, long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Share the device with a user.</td>
                                         </tr>
@@ -157,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#disableDevShare(String,long,IResultCallback)>disableDevShare</a>(String devId, long memberId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#disableDevShare(String,long,IResultCallback)>disableDevShare</a>(String devId, long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Close the sharing to a user's device.</td>
                                         </tr>
@@ -165,7 +165,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#removeReceivedDevShare(String,IResultCallback)>removeReceivedDevShare</a>(String devId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#removeReceivedDevShare(String,IResultCallback)>removeReceivedDevShare</a>(String devId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Remove received device sharing.</td>
                                         </tr>
@@ -173,7 +173,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#addShareWithHomeId(long,String,String,List,IThingResultCallback<SharedUserInfoBean>)>addShareWithHomeId</a>(long homeId, String countryCode, String userAccount, List&lt;String&gt; devIds, IThingResultCallback&lt;SharedUserInfoBean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#addShareWithHomeId(long,String,String,List,IThingResultCallback)>addShareWithHomeId</a>(long homeId, String countryCode, String userAccount, List&lt;String&gt; devIds, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Batch add device sharing with a home (Addendum).</td>
                                         </tr>
@@ -181,7 +181,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryDevShareUserList(String,IThingResultCallback<List<SharedUserInfoBean>>)>queryDevShareUserList</a>(String devId, IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryDevShareUserList(String,IThingResultCallback)>queryDevShareUserList</a>(String devId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Get the list of shared users for a device.</td>
                                         </tr>
@@ -189,7 +189,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#addShare(long,String,String,ShareIdBean,boolean,IThingResultCallback<SharedUserInfoBean>)>addShare</a>(long homeId, String countryCode, String userAccount, ShareIdBean bean, boolean autoSharing, IThingResultCallback&lt;SharedUserInfoBean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#addShare(long,String,String,ShareIdBean,boolean,IThingResultCallback)>addShare</a>(long homeId, String countryCode, String userAccount, <a href=../../../sdk/bean/ShareIdBean.html>ShareIdBean</a> bean, boolean autoSharing, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Share the device with a user.</td>
                                         </tr>
@@ -197,7 +197,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#addShareWithMemberId(long,List,IResultCallback)>addShareWithMemberId</a>(long memberId, List&lt;String&gt; devIds, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#addShareWithMemberId(long,List,IResultCallback)>addShareWithMemberId</a>(long memberId, List&lt;String&gt; devIds, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Batch add device sharing (Data Append).</td>
                                         </tr>
@@ -205,7 +205,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#getUserShareInfo(long,IThingResultCallback<ShareSentUserDetailBean>)>getUserShareInfo</a>(long memberId, IThingResultCallback&lt;ShareSentUserDetailBean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#getUserShareInfo(long,IThingResultCallback)>getUserShareInfo</a>(long memberId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/ShareSentUserDetailBean.html>ShareSentUserDetailBean</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Get user details of the person being shared.</td>
                                         </tr>
@@ -213,7 +213,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#getReceivedShareInfo(long,IThingResultCallback<ShareReceivedUserDetailBean>)>getReceivedShareInfo</a>(long memberId, IThingResultCallback&lt;ShareReceivedUserDetailBean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#getReceivedShareInfo(long,IThingResultCallback)>getReceivedShareInfo</a>(long memberId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/ShareReceivedUserDetailBean.html>ShareReceivedUserDetailBean</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Get user details of the sharer.</td>
                                         </tr>
@@ -221,7 +221,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryUserShareList(long,IThingResultCallback<List<SharedUserInfoBean>>)>queryUserShareList</a>(long homeId, IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryUserShareList(long,IThingResultCallback)>queryUserShareList</a>(long homeId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Get the list of users actively shared by the current user.</td>
                                         </tr>
@@ -229,7 +229,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryShareReceivedUserList(IThingResultCallback<List<SharedUserInfoBean>>)>queryShareReceivedUserList</a>(IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryShareReceivedUserList(IThingResultCallback)>queryShareReceivedUserList</a>(<a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Get the shared relationship received by the current user.</td>
                                         </tr>
@@ -237,7 +237,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryShareDevFromInfo(String,IThingResultCallback<SharedUserInfoBean>)>queryShareDevFromInfo</a>(String devId, IThingResultCallback&lt;SharedUserInfoBean&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryShareDevFromInfo(String,IThingResultCallback)>queryShareDevFromInfo</a>(String devId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Get the user information of the owner of the shared device.</td>
                                         </tr>
@@ -245,7 +245,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#renameShareNickname(long,String,IResultCallback)>renameShareNickname</a>(long memberId, String name, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#renameShareNickname(long,String,IResultCallback)>renameShareNickname</a>(long memberId, String name, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Modify the user information of device sharers.</td>
                                         </tr>
@@ -253,7 +253,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#renameReceivedShareNickname(long,String,IResultCallback)>renameReceivedShareNickname</a>(long memberId, String name, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#renameReceivedShareNickname(long,String,IResultCallback)>renameReceivedShareNickname</a>(long memberId, String name, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Modify the user information of the person being shared.</td>
                                         </tr>
@@ -261,7 +261,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#removeUserShare(long,IResultCallback)>removeUserShare</a>(long memberId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#removeUserShare(long,IResultCallback)>removeUserShare</a>(long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Delete a device share that has been shared to a user.</td>
                                         </tr>
@@ -269,7 +269,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i15" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#removeReceivedUserShare(long,IResultCallback)>removeReceivedUserShare</a>(long memberId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#removeReceivedUserShare(long,IResultCallback)>removeReceivedUserShare</a>(long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Delete a device that previously received a user's share.</td>
                                         </tr>
@@ -285,7 +285,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i17" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#inviteShare(String,String,String,IThingResultCallback<Integer>)>inviteShare</a>(String devId, String userAccount, String countryCode, IThingResultCallback&lt;Integer&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#inviteShare(String,String,String,IThingResultCallback)>inviteShare</a>(String devId, String userAccount, String countryCode, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;Integer&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Send a device sharing invitation.</td>
                                         </tr>
@@ -293,7 +293,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i18" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#confirmShareInviteShare(int,IResultCallback)>confirmShareInviteShare</a>(int shareId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#confirmShareInviteShare(int,IResultCallback)>confirmShareInviteShare</a>(int shareId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Accepting invitations to share device.</td>
                                         </tr>
@@ -301,7 +301,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i19" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryGroupSharedUserList(long,IThingResultCallback<List<SharedUserInfoBean>>)>queryGroupSharedUserList</a>(long groupId, IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#queryGroupSharedUserList(long,IThingResultCallback)>queryGroupSharedUserList</a>(long groupId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Returns a list of device-sharing users by group ID.</td>
                                         </tr>
@@ -309,7 +309,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i20" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#addShareUserForGroup(long,String,String,long,IResultCallback)>addShareUserForGroup</a>(long homeId, String countryCode, String userAccount, long groupId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#addShareUserForGroup(long,String,String,long,IResultCallback)>addShareUserForGroup</a>(long homeId, String countryCode, String userAccount, long groupId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Shares groups to other users.</td>
                                         </tr>
@@ -317,7 +317,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                         <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#removeGroupShare(long,long,IResultCallback)>removeGroupShare</a>(long groupId, long memberId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingHomeDeviceShare.html#removeGroupShare(long,long,IResultCallback)>removeGroupShare</a>(long groupId, long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Removes the device sharing group from a member.</td>
                                         </tr>
@@ -363,7 +363,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>enableDevShare</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingHomeDeviceShare.html#enableDevShare(String,long,IResultCallback)>enableDevShare</a>(String devId, long memberId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingHomeDeviceShare.html#enableDevShare(String,long,IResultCallback)>enableDevShare</a>(String devId, long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Share the device with a user.</p></div>
                                         
                                         <dl>
@@ -395,7 +395,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>disableDevShare</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#disableDevShare(String,long,IResultCallback)>disableDevShare</a>(String devId, long memberId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#disableDevShare(String,long,IResultCallback)>disableDevShare</a>(String devId, long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Close the sharing to a user's device.</p></div>
                                         
                                         <dl>
@@ -427,7 +427,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>removeReceivedDevShare</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#removeReceivedDevShare(String,IResultCallback)>removeReceivedDevShare</a>(String devId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#removeReceivedDevShare(String,IResultCallback)>removeReceivedDevShare</a>(String devId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Remove received device sharing.</p></div>
                                         
                                         <dl>
@@ -447,7 +447,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="addShareWithHomeId(long,String,String,List,IThingResultCallback&lt;SharedUserInfoBean&gt;)">
+                                <a id="addShareWithHomeId(long,String,String,List,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -455,7 +455,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>addShareWithHomeId</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#addShareWithHomeId(long,String,String,List,IThingResultCallback<SharedUserInfoBean>)>addShareWithHomeId</a>(long homeId, String countryCode, String userAccount, List&lt;String&gt; devIds, IThingResultCallback&lt;SharedUserInfoBean&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#addShareWithHomeId(long,String,String,List,IThingResultCallback)>addShareWithHomeId</a>(long homeId, String countryCode, String userAccount, List&lt;String&gt; devIds, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt; callback)</pre>
                                         <div class="block"><p>Batch add device sharing with a home (Addendum).</p></div>
                                         
                                         <dl>
@@ -487,7 +487,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="queryDevShareUserList(String,IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt;)">
+                                <a id="queryDevShareUserList(String,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -495,7 +495,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>queryDevShareUserList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryDevShareUserList(String,IThingResultCallback<List<SharedUserInfoBean>>)>queryDevShareUserList</a>(String devId, IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryDevShareUserList(String,IThingResultCallback)>queryDevShareUserList</a>(String devId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt;&gt; callback)</pre>
                                         <div class="block"><p>Get the list of shared users for a device.</p></div>
                                         
                                         <dl>
@@ -515,7 +515,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="addShare(long,String,String,ShareIdBean,boolean,IThingResultCallback&lt;SharedUserInfoBean&gt;)">
+                                <a id="addShare(long,String,String,ShareIdBean,boolean,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -523,7 +523,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>addShare</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#addShare(long,String,String,ShareIdBean,boolean,IThingResultCallback<SharedUserInfoBean>)>addShare</a>(long homeId, String countryCode, String userAccount, ShareIdBean bean, boolean autoSharing, IThingResultCallback&lt;SharedUserInfoBean&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#addShare(long,String,String,ShareIdBean,boolean,IThingResultCallback)>addShare</a>(long homeId, String countryCode, String userAccount, <a href=../../../sdk/bean/ShareIdBean.html>ShareIdBean</a> bean, boolean autoSharing, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt; callback)</pre>
                                         <div class="block"><p>Share the device with a user. You can customize which devices can be shared.Executing this method will overwrite the previous shared device.</p></div>
                                         
                                         <dl>
@@ -542,7 +542,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                             
                                             
                                             
-                                            <dd><code>bean</code> - The devices you want to share ShareIdBean</dd>
+                                            <dd><code>bean</code> - The devices you want to share <a href=../../../sdk/bean/ShareIdBean.html>ShareIdBean</a></dd>
                                             
                                             
                                             
@@ -567,7 +567,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>addShareWithMemberId</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#addShareWithMemberId(long,List,IResultCallback)>addShareWithMemberId</a>(long memberId, List&lt;String&gt; devIds, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#addShareWithMemberId(long,List,IResultCallback)>addShareWithMemberId</a>(long memberId, List&lt;String&gt; devIds, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Batch add device sharing (Data Append).</p></div>
                                         
                                         <dl>
@@ -591,7 +591,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="getUserShareInfo(long,IThingResultCallback&lt;ShareSentUserDetailBean&gt;)">
+                                <a id="getUserShareInfo(long,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -599,7 +599,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>getUserShareInfo</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#getUserShareInfo(long,IThingResultCallback<ShareSentUserDetailBean>)>getUserShareInfo</a>(long memberId, IThingResultCallback&lt;ShareSentUserDetailBean&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#getUserShareInfo(long,IThingResultCallback)>getUserShareInfo</a>(long memberId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/ShareSentUserDetailBean.html>ShareSentUserDetailBean</a>&gt; callback)</pre>
                                         <div class="block"><p>Get user details of the person being shared.</p></div>
                                         
                                         <dl>
@@ -610,7 +610,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Result callback ShareSentUserDetailBean</dd>
+                                            <dd><code>callback</code> - Result callback <a href=../bean/ShareSentUserDetailBean.html>ShareSentUserDetailBean</a></dd>
                                             
                                             
                                         </dl>
@@ -619,7 +619,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="getReceivedShareInfo(long,IThingResultCallback&lt;ShareReceivedUserDetailBean&gt;)">
+                                <a id="getReceivedShareInfo(long,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -627,7 +627,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>getReceivedShareInfo</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#getReceivedShareInfo(long,IThingResultCallback<ShareReceivedUserDetailBean>)>getReceivedShareInfo</a>(long memberId, IThingResultCallback&lt;ShareReceivedUserDetailBean&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#getReceivedShareInfo(long,IThingResultCallback)>getReceivedShareInfo</a>(long memberId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/ShareReceivedUserDetailBean.html>ShareReceivedUserDetailBean</a>&gt; callback)</pre>
                                         <div class="block"><p>Get user details of the sharer.</p></div>
                                         
                                         <dl>
@@ -638,7 +638,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Result callback ShareReceivedUserDetailBean</dd>
+                                            <dd><code>callback</code> - Result callback <a href=../bean/ShareReceivedUserDetailBean.html>ShareReceivedUserDetailBean</a></dd>
                                             
                                             
                                         </dl>
@@ -647,7 +647,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="queryUserShareList(long,IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt;)">
+                                <a id="queryUserShareList(long,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -655,7 +655,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>queryUserShareList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryUserShareList(long,IThingResultCallback<List<SharedUserInfoBean>>)>queryUserShareList</a>(long homeId, IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryUserShareList(long,IThingResultCallback)>queryUserShareList</a>(long homeId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt;&gt; callback)</pre>
                                         <div class="block"><p>Get the list of users actively shared by the current user.</p></div>
                                         
                                         <dl>
@@ -666,7 +666,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Result callback SharedUserInfoBean</dd>
+                                            <dd><code>callback</code> - Result callback <a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a></dd>
                                             
                                             
                                         </dl>
@@ -675,7 +675,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="queryShareReceivedUserList(IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt;)">
+                                <a id="queryShareReceivedUserList(IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -683,14 +683,14 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>queryShareReceivedUserList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryShareReceivedUserList(IThingResultCallback<List<SharedUserInfoBean>>)>queryShareReceivedUserList</a>(IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryShareReceivedUserList(IThingResultCallback)>queryShareReceivedUserList</a>(<a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt;&gt; callback)</pre>
                                         <div class="block"><p>Get the shared relationship received by the current user.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Result callback SharedUserInfoBean</dd>
+                                            <dd><code>callback</code> - Result callback <a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a></dd>
                                             
                                             
                                         </dl>
@@ -699,7 +699,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="queryShareDevFromInfo(String,IThingResultCallback&lt;SharedUserInfoBean&gt;)">
+                                <a id="queryShareDevFromInfo(String,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -707,7 +707,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>queryShareDevFromInfo</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryShareDevFromInfo(String,IThingResultCallback<SharedUserInfoBean>)>queryShareDevFromInfo</a>(String devId, IThingResultCallback&lt;SharedUserInfoBean&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryShareDevFromInfo(String,IThingResultCallback)>queryShareDevFromInfo</a>(String devId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt; callback)</pre>
                                         <div class="block"><p>Get the user information of the owner of the shared device.</p></div>
                                         
                                         <dl>
@@ -718,7 +718,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Result callback SharedUserInfoBean</dd>
+                                            <dd><code>callback</code> - Result callback <a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a></dd>
                                             
                                             
                                         </dl>
@@ -735,7 +735,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>renameShareNickname</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#renameShareNickname(long,String,IResultCallback)>renameShareNickname</a>(long memberId, String name, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#renameShareNickname(long,String,IResultCallback)>renameShareNickname</a>(long memberId, String name, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Modify the user information of device sharers.</p></div>
                                         
                                         <dl>
@@ -767,7 +767,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>renameReceivedShareNickname</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#renameReceivedShareNickname(long,String,IResultCallback)>renameReceivedShareNickname</a>(long memberId, String name, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#renameReceivedShareNickname(long,String,IResultCallback)>renameReceivedShareNickname</a>(long memberId, String name, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Modify the user information of the person being shared.</p></div>
                                         
                                         <dl>
@@ -799,7 +799,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>removeUserShare</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#removeUserShare(long,IResultCallback)>removeUserShare</a>(long memberId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#removeUserShare(long,IResultCallback)>removeUserShare</a>(long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Delete a device share that has been shared to a user.</p></div>
                                         
                                         <dl>
@@ -827,7 +827,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>removeReceivedUserShare</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#removeReceivedUserShare(long,IResultCallback)>removeReceivedUserShare</a>(long memberId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#removeReceivedUserShare(long,IResultCallback)>removeReceivedUserShare</a>(long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Delete a device that previously received a user's share.</p></div>
                                         
                                         <dl>
@@ -862,7 +862,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="inviteShare(String,String,String,IThingResultCallback&lt;Integer&gt;)">
+                                <a id="inviteShare(String,String,String,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -870,7 +870,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>inviteShare</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#inviteShare(String,String,String,IThingResultCallback<Integer>)>inviteShare</a>(String devId, String userAccount, String countryCode, IThingResultCallback&lt;Integer&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#inviteShare(String,String,String,IThingResultCallback)>inviteShare</a>(String devId, String userAccount, String countryCode, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;Integer&gt; callback)</pre>
                                         <div class="block"><p>Send a device sharing invitation.</p></div>
                                         
                                         <dl>
@@ -906,7 +906,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>confirmShareInviteShare</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#confirmShareInviteShare(int,IResultCallback)>confirmShareInviteShare</a>(int shareId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#confirmShareInviteShare(int,IResultCallback)>confirmShareInviteShare</a>(int shareId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Accepting invitations to share device.</p></div>
                                         
                                         <dl>
@@ -926,7 +926,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                     </li>
                                 </ul>
                                 
-                                <a id="queryGroupSharedUserList(long,IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt;)">
+                                <a id="queryGroupSharedUserList(long,IThingResultCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -934,7 +934,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>queryGroupSharedUserList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryGroupSharedUserList(long,IThingResultCallback<List<SharedUserInfoBean>>)>queryGroupSharedUserList</a>(long groupId, IThingResultCallback&lt;List&lt;SharedUserInfoBean&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#queryGroupSharedUserList(long,IThingResultCallback)>queryGroupSharedUserList</a>(long groupId, <a href=../callback/IThingResultCallback.html>IThingResultCallback</a>&lt;List&lt;<a href=../bean/SharedUserInfoBean.html>SharedUserInfoBean</a>&gt;&gt; callback)</pre>
                                         <div class="block"><p>Returns a list of device-sharing users by group ID. The group ID is displayed on the panel.</p></div>
                                         
                                         <dl>
@@ -962,7 +962,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>addShareUserForGroup</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#addShareUserForGroup(long,String,String,long,IResultCallback)>addShareUserForGroup</a>(long homeId, String countryCode, String userAccount, long groupId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#addShareUserForGroup(long,String,String,long,IResultCallback)>addShareUserForGroup</a>(long homeId, String countryCode, String userAccount, long groupId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Shares groups to other users.</p></div>
                                         
                                         <dl>
@@ -1002,7 +1002,7 @@ public interface <span class="typeNameLabel"><a href=IThingHomeDeviceShare.html>
                                           >
                                     <li class="blockList">
                                         <h4>removeGroupShare</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#removeGroupShare(long,long,IResultCallback)>removeGroupShare</a>(long groupId, long memberId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingHomeDeviceShare.html#removeGroupShare(long,long,IResultCallback)>removeGroupShare</a>(long groupId, long memberId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Removes the device sharing group from a member.</p></div>
                                         
                                         <dl>

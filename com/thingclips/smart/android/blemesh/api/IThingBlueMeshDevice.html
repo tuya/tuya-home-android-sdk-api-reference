@@ -104,11 +104,21 @@ var pathtoroot = "../../../../../../";
             <ul class="blockList">
                 <li class="blockList">
                     
+                    <dl>
+                        <dt>All Implemented Interfaces:</dt>
+                        <dd>
+                            
+                            <code>com.thingclips.smart.sdk.api.bluemesh.IThingBlueMesh</code>
+                            
+                            
+                        </dd>
+                    </dl>
+                    
                     <hr>
                     <pre class="wrap-overflow">
 
 public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>IThingBlueMeshDevice</a></span>
-
+ implements <a href=../../../sdk/api/bluemesh/IThingBlueMesh.html>IThingBlueMesh</a>
                     </pre>
                     <div class="block"><p>Provide functions to operate mesh device.</p></div>
                 </li>
@@ -149,7 +159,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#querySubDevStatusByLocal(String,String,IResultCallback)>querySubDevStatusByLocal</a>(String pcc, String nodeId, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#querySubDevStatusByLocal(String,String,IResultCallback)>querySubDevStatusByLocal</a>(String pcc, String nodeId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Query all status of current mesh device by local.</td>
                                         </tr>
@@ -157,7 +167,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#queryAllStatusByLocal(IResultCallback)>queryAllStatusByLocal</a>(IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#queryAllStatusByLocal(IResultCallback)>queryAllStatusByLocal</a>(<a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Query status of the dps' values of all sub-devices.Only for ThingMesh, SIGMesh doesn't support this method.</td>
                                         </tr>
@@ -165,7 +175,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#queryAllOnLineStatusByLocal(IResultCallback)>queryAllOnLineStatusByLocal</a>(IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#queryAllOnLineStatusByLocal(IResultCallback)>queryAllOnLineStatusByLocal</a>(<a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Query local online status of all sub-devices.</td>
                                         </tr>
@@ -173,7 +183,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#publishDps(String,String,DpsParseBean,IResultCallback)>publishDps</a>(String vendorId, String nodeId, DpsParseBean dpsParseBean, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#publishDps(String,String,DpsParseBean,IResultCallback)>publishDps</a>(String vendorId, String nodeId, <a href=../bean/DpsParseBean.html>DpsParseBean</a> dpsParseBean, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send mesh message by dpId.</td>
                                         </tr>
@@ -189,7 +199,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#registerMeshDevListener(IMeshDeviceListener)>registerMeshDevListener</a>(IMeshDeviceListener listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#registerMeshDevListener(IMeshDeviceListener)>registerMeshDevListener</a>(<a href=../../../sdk/api/bluemesh/IMeshDeviceListener.html>IMeshDeviceListener</a> listener) </code>
                                             </th>
                                             <td class="colLast">Register to listen to device reporting data, such as dps, online status, bind status, etc.</td>
                                         </tr>
@@ -213,7 +223,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#publishCommands(String,String,Map,IResultCallback)>publishCommands</a>(String nodeId, String pcc, Map&lt;String, Object&gt; commands, IResultCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingBlueMeshDevice.html#publishCommands(String,String,Map,IResultCallback)>publishCommands</a>(String nodeId, String pcc, Map&lt;String, Object&gt; commands, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send mesh message by standard dpCode.Only for SIGMesh, ThingMesh doesn't support this method.</td>
                                         </tr>
@@ -223,6 +233,12 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                 </div>
                                 <ul class="blockList">
                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.sdk.api.bluemesh.IThingBlueMesh">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.sdk.api.bluemesh.IThingBlueMesh</h3>
+                                            <code>addGroup, addSubDev, addSubDev, broadcastDps, getDataByDpIds, getMeshSubDevBean, getMeshSubDevBeanByMac, getMeshSubDevBeanByNodeId, getMeshSubDevList, groupDpReport, isCloudOnline, ivIndexReport, multicastDps, multicastDps, onDestroy, publishDps, publishRawData, removeMesh, removeMeshSubDev, renameMesh, renameMeshSubDev, switchProxyStats, switchRelayState</code></li>
+                                 
                                     <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
                                         <!--   -->
                                     </a>
@@ -259,7 +275,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                           >
                                     <li class="blockList">
                                         <h4>querySubDevStatusByLocal</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#querySubDevStatusByLocal(String,String,IResultCallback)>querySubDevStatusByLocal</a>(String pcc, String nodeId, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#querySubDevStatusByLocal(String,String,IResultCallback)>querySubDevStatusByLocal</a>(String pcc, String nodeId, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Query all status of current mesh device by local.</p></div>
                                         
                                         <dl>
@@ -274,7 +290,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for send result <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -291,14 +307,14 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                           >
                                     <li class="blockList">
                                         <h4>queryAllStatusByLocal</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#queryAllStatusByLocal(IResultCallback)>queryAllStatusByLocal</a>(IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#queryAllStatusByLocal(IResultCallback)>queryAllStatusByLocal</a>(<a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Query status of the dps' values of all sub-devices.Only for ThingMesh, SIGMesh doesn't support this method.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for send result <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -315,14 +331,14 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                           >
                                     <li class="blockList">
                                         <h4>queryAllOnLineStatusByLocal</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#queryAllOnLineStatusByLocal(IResultCallback)>queryAllOnLineStatusByLocal</a>(IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#queryAllOnLineStatusByLocal(IResultCallback)>queryAllOnLineStatusByLocal</a>(<a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Query local online status of all sub-devices.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for send result <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -339,7 +355,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                           >
                                     <li class="blockList">
                                         <h4>publishDps</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#publishDps(String,String,DpsParseBean,IResultCallback)>publishDps</a>(String vendorId, String nodeId, DpsParseBean dpsParseBean, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#publishDps(String,String,DpsParseBean,IResultCallback)>publishDps</a>(String vendorId, String nodeId, <a href=../bean/DpsParseBean.html>DpsParseBean</a> dpsParseBean, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send mesh message by dpId. Only for ThingMesh, SIGMesh doesn't support this method.</p></div>
                                         
                                         <dl>
@@ -354,11 +370,11 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                             
                                             
                                             
-                                            <dd><code>dpsParseBean</code> - Contains opCode and parameters DpsParseBean</dd>
+                                            <dd><code>dpsParseBean</code> - Contains opCode and parameters <a href=../bean/DpsParseBean.html>DpsParseBean</a></dd>
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for send result IResultCallback</dd>
+                                            <dd><code>callback</code> - Callback for send result <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a></dd>
                                             
                                             
                                         </dl>
@@ -399,7 +415,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                           >
                                     <li class="blockList">
                                         <h4>registerMeshDevListener</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#registerMeshDevListener(IMeshDeviceListener)>registerMeshDevListener</a>(IMeshDeviceListener listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#registerMeshDevListener(IMeshDeviceListener)>registerMeshDevListener</a>(<a href=../../../sdk/api/bluemesh/IMeshDeviceListener.html>IMeshDeviceListener</a> listener)</pre>
                                         <div class="block"><p>Register to listen to device reporting data, such as dps, online status, bind status, etc.</p></div>
                                         
                                         <dl>
@@ -462,7 +478,7 @@ public interface <span class="typeNameLabel"><a href=IThingBlueMeshDevice.html>I
                                           >
                                     <li class="blockList">
                                         <h4>publishCommands</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#publishCommands(String,String,Map,IResultCallback)>publishCommands</a>(String nodeId, String pcc, Map&lt;String, Object&gt; commands, IResultCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingBlueMeshDevice.html#publishCommands(String,String,Map,IResultCallback)>publishCommands</a>(String nodeId, String pcc, Map&lt;String, Object&gt; commands, <a href=../../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send mesh message by standard dpCode.Only for SIGMesh, ThingMesh doesn't support this method.</p></div>
                                         
                                         <!-- TODO missing return annotation -->

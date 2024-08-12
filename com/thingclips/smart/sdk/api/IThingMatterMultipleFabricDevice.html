@@ -104,11 +104,21 @@ var pathtoroot = "../../../../../";
             <ul class="blockList">
                 <li class="blockList">
                     
+                    <dl>
+                        <dt>All Implemented Interfaces:</dt>
+                        <dd>
+                            
+                            <code>com.thingclips.smart.sdk.api.IThingMatterDevice</code>
+                            
+                            
+                        </dd>
+                    </dl>
+                    
                     <hr>
                     <pre class="wrap-overflow">
 
 public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricDevice.html>IThingMatterMultipleFabricDevice</a></span>
-
+ implements <a href=IThingMatterDevice.html>IThingMatterDevice</a>
                     </pre>
                     <div class="block"></div>
                 </li>
@@ -184,7 +194,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#readSupportedFabrics(IThingDataCallback<Integer>)>readSupportedFabrics</a>(IThingDataCallback&lt;Integer&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#readSupportedFabrics(IThingDataCallback)>readSupportedFabrics</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Integer&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -192,7 +202,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#readCommissionedFabrics(IThingDataCallback<Integer>)>readCommissionedFabrics</a>(IThingDataCallback&lt;Integer&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#readCommissionedFabrics(IThingDataCallback)>readCommissionedFabrics</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Integer&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -200,7 +210,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#readFabrics(IThingDataCallback<List<OperationalFabricInfo>>)>readFabrics</a>(IThingDataCallback&lt;List&lt;OperationalFabricInfo&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#readFabrics(IThingDataCallback)>readFabrics</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;List&lt;<a href=../bean/OperationalFabricInfo.html>OperationalFabricInfo</a>&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -208,7 +218,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#removeFabric(Integer,IThingDataCallback<Integer>)>removeFabric</a>(Integer fabricIndex, IThingDataCallback&lt;Integer&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#removeFabric(Integer,IThingDataCallback)>removeFabric</a>(Integer fabricIndex, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Integer&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -224,7 +234,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#sendEnhancedCommissioningCommand(IThingMatterMultipleFabricDevice.MultipleFabricPasscode,IThingDataCallback<SetupCodePayload>)>sendEnhancedCommissioningCommand</a>(<a href=IThingMatterMultipleFabricDevice.MultipleFabricPasscode.html>IThingMatterMultipleFabricDevice.MultipleFabricPasscode</a> multipleFabricPasscode, IThingDataCallback&lt;SetupCodePayload&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#sendEnhancedCommissioningCommand(IThingMatterMultipleFabricDevice.MultipleFabricPasscode,IThingDataCallback)>sendEnhancedCommissioningCommand</a>(<a href=IThingMatterMultipleFabricDevice.MultipleFabricPasscode.html>IThingMatterMultipleFabricDevice.MultipleFabricPasscode</a> multipleFabricPasscode, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=IThingMatterMultipleFabricDevice.SetupCodePayload.html>IThingMatterMultipleFabricDevice.SetupCodePayload</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">发送ECM指令，打开设备调试窗口</td>
                                         </tr>
@@ -232,7 +242,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#sendEnhancedCommissioningCommand(boolean,IThingMultipleFabricCallback)>sendEnhancedCommissioningCommand</a>(boolean forceRefresh, IThingMultipleFabricCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#sendEnhancedCommissioningCommand(boolean,IThingMultipleFabricCallback)>sendEnhancedCommissioningCommand</a>(boolean forceRefresh, <a href=IThingMultipleFabricCallback.html>IThingMultipleFabricCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">打开设备调试窗口</td>
                                         </tr>
@@ -240,7 +250,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#queryAttributeBasicInfo(IThingDataCallback<ThingMatterAttributeBasicInfo>)>queryAttributeBasicInfo</a>(IThingDataCallback&lt;ThingMatterAttributeBasicInfo&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#queryAttributeBasicInfo(IThingDataCallback)>queryAttributeBasicInfo</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../bean/ThingMatterAttributeBasicInfo.html>ThingMatterAttributeBasicInfo</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -248,7 +258,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#readAccessControlSubjects(IThingDataCallback<List<Long>>)>readAccessControlSubjects</a>(IThingDataCallback&lt;List&lt;Long&gt;&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#readAccessControlSubjects(IThingDataCallback)>readAccessControlSubjects</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;List&lt;Long&gt;&gt; callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -256,7 +266,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#revokeCommissioningCommand(IThingDataCallback<Void>)>revokeCommissioningCommand</a>(IThingDataCallback&lt;Void&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#revokeCommissioningCommand(IThingDataCallback)>revokeCommissioningCommand</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Void&gt; callback) </code>
                                             </th>
                                             <td class="colLast">关闭设备调试窗口</td>
                                         </tr>
@@ -264,7 +274,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscode(IThingDataCallback<MultipleFabricPasscode>)>getMultipleFabricPasscode</a>(IThingDataCallback&lt;MultipleFabricPasscode&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscode(IThingDataCallback)>getMultipleFabricPasscode</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=IThingMatterMultipleFabricDevice.MultipleFabricPasscode.html>IThingMatterMultipleFabricDevice.MultipleFabricPasscode</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">从云端获取passcode</td>
                                         </tr>
@@ -272,7 +282,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscodeForceRefresh(IThingDataCallback<MultipleFabricPasscode>)>getMultipleFabricPasscodeForceRefresh</a>(IThingDataCallback&lt;MultipleFabricPasscode&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscodeForceRefresh(IThingDataCallback)>getMultipleFabricPasscodeForceRefresh</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=IThingMatterMultipleFabricDevice.MultipleFabricPasscode.html>IThingMatterMultipleFabricDevice.MultipleFabricPasscode</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">从云端获取passcode，无视过期时间，每次都获取新的</td>
                                         </tr>
@@ -280,7 +290,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                         <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#getWifiDeviceSsid(IThingDataCallback<String>)>getWifiDeviceSsid</a>(IThingDataCallback&lt;String&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingMatterMultipleFabricDevice.html#getWifiDeviceSsid(IThingDataCallback)>getWifiDeviceSsid</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;String&gt; callback) </code>
                                             </th>
                                             <td class="colLast">获取当前设备 Wifi 名称</td>
                                         </tr>
@@ -290,6 +300,12 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                 </div>
                                 <ul class="blockList">
                                 
+                                    <li class="blockList"><a id="methods.inherited.from.class.com.thingclips.smart.sdk.api.IThingMatterDevice">
+                                            <!--   -->
+                                        </a>
+                                            <h3>Methods inherited from class&nbsp;com.thingclips.smart.sdk.api.IThingMatterDevice</h3>
+                                            <code>checkPipelineAvailable, isMatterOnline, isSubscribe, isThingMatter</code></li>
+                                 
                                     <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
                                         <!--   -->
                                     </a>
@@ -318,7 +334,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                             </a>
                                 <h3>Method Detail</h3>
                                 
-                                <a id="readSupportedFabrics(IThingDataCallback&lt;Integer&gt;)">
+                                <a id="readSupportedFabrics(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -326,14 +342,14 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>readSupportedFabrics</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#readSupportedFabrics(IThingDataCallback<Integer>)>readSupportedFabrics</a>(IThingDataCallback&lt;Integer&gt; callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#readSupportedFabrics(IThingDataCallback)>readSupportedFabrics</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Integer&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="readCommissionedFabrics(IThingDataCallback&lt;Integer&gt;)">
+                                <a id="readCommissionedFabrics(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -341,14 +357,14 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>readCommissionedFabrics</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#readCommissionedFabrics(IThingDataCallback<Integer>)>readCommissionedFabrics</a>(IThingDataCallback&lt;Integer&gt; callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#readCommissionedFabrics(IThingDataCallback)>readCommissionedFabrics</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Integer&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="readFabrics(IThingDataCallback&lt;List&lt;OperationalFabricInfo&gt;&gt;)">
+                                <a id="readFabrics(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -356,14 +372,14 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>readFabrics</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#readFabrics(IThingDataCallback<List<OperationalFabricInfo>>)>readFabrics</a>(IThingDataCallback&lt;List&lt;OperationalFabricInfo&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#readFabrics(IThingDataCallback)>readFabrics</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;List&lt;<a href=../bean/OperationalFabricInfo.html>OperationalFabricInfo</a>&gt;&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="removeFabric(Integer,IThingDataCallback&lt;Integer&gt;)">
+                                <a id="removeFabric(Integer,IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -371,7 +387,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>removeFabric</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#removeFabric(Integer,IThingDataCallback<Integer>)>removeFabric</a>(Integer fabricIndex, IThingDataCallback&lt;Integer&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#removeFabric(Integer,IThingDataCallback)>removeFabric</a>(Integer fabricIndex, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Integer&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -393,7 +409,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                     </li>
                                 </ul>
                                 
-                                <a id="sendEnhancedCommissioningCommand(IThingMatterMultipleFabricDevice.MultipleFabricPasscode,IThingDataCallback&lt;SetupCodePayload&gt;)">
+                                <a id="sendEnhancedCommissioningCommand(IThingMatterMultipleFabricDevice.MultipleFabricPasscode,IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -401,7 +417,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>sendEnhancedCommissioningCommand</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#sendEnhancedCommissioningCommand(IThingMatterMultipleFabricDevice.MultipleFabricPasscode,IThingDataCallback<SetupCodePayload>)>sendEnhancedCommissioningCommand</a>(<a href=IThingMatterMultipleFabricDevice.MultipleFabricPasscode.html>IThingMatterMultipleFabricDevice.MultipleFabricPasscode</a> multipleFabricPasscode, IThingDataCallback&lt;SetupCodePayload&gt; callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#sendEnhancedCommissioningCommand(IThingMatterMultipleFabricDevice.MultipleFabricPasscode,IThingDataCallback)>sendEnhancedCommissioningCommand</a>(<a href=IThingMatterMultipleFabricDevice.MultipleFabricPasscode.html>IThingMatterMultipleFabricDevice.MultipleFabricPasscode</a> multipleFabricPasscode, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=IThingMatterMultipleFabricDevice.SetupCodePayload.html>IThingMatterMultipleFabricDevice.SetupCodePayload</a>&gt; callback)</pre>
                                         <div class="block"><p>发送ECM指令，打开设备调试窗口</p></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -416,14 +432,14 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>sendEnhancedCommissioningCommand</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#sendEnhancedCommissioningCommand(boolean,IThingMultipleFabricCallback)>sendEnhancedCommissioningCommand</a>(boolean forceRefresh, IThingMultipleFabricCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#sendEnhancedCommissioningCommand(boolean,IThingMultipleFabricCallback)>sendEnhancedCommissioningCommand</a>(boolean forceRefresh, <a href=IThingMultipleFabricCallback.html>IThingMultipleFabricCallback</a> callback)</pre>
                                         <div class="block"><p>打开设备调试窗口</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="queryAttributeBasicInfo(IThingDataCallback&lt;ThingMatterAttributeBasicInfo&gt;)">
+                                <a id="queryAttributeBasicInfo(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -431,14 +447,14 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>queryAttributeBasicInfo</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#queryAttributeBasicInfo(IThingDataCallback<ThingMatterAttributeBasicInfo>)>queryAttributeBasicInfo</a>(IThingDataCallback&lt;ThingMatterAttributeBasicInfo&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#queryAttributeBasicInfo(IThingDataCallback)>queryAttributeBasicInfo</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../bean/ThingMatterAttributeBasicInfo.html>ThingMatterAttributeBasicInfo</a>&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="readAccessControlSubjects(IThingDataCallback&lt;List&lt;Long&gt;&gt;)">
+                                <a id="readAccessControlSubjects(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -446,14 +462,14 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>readAccessControlSubjects</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#readAccessControlSubjects(IThingDataCallback<List<Long>>)>readAccessControlSubjects</a>(IThingDataCallback&lt;List&lt;Long&gt;&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IThingMatterMultipleFabricDevice.html#readAccessControlSubjects(IThingDataCallback)>readAccessControlSubjects</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;List&lt;Long&gt;&gt; callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="revokeCommissioningCommand(IThingDataCallback&lt;Void&gt;)">
+                                <a id="revokeCommissioningCommand(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -461,14 +477,14 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>revokeCommissioningCommand</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#revokeCommissioningCommand(IThingDataCallback<Void>)>revokeCommissioningCommand</a>(IThingDataCallback&lt;Void&gt; callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#revokeCommissioningCommand(IThingDataCallback)>revokeCommissioningCommand</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Void&gt; callback)</pre>
                                         <div class="block"><p>关闭设备调试窗口</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="getMultipleFabricPasscode(IThingDataCallback&lt;MultipleFabricPasscode&gt;)">
+                                <a id="getMultipleFabricPasscode(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -476,14 +492,14 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>getMultipleFabricPasscode</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscode(IThingDataCallback<MultipleFabricPasscode>)>getMultipleFabricPasscode</a>(IThingDataCallback&lt;MultipleFabricPasscode&gt; callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscode(IThingDataCallback)>getMultipleFabricPasscode</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=IThingMatterMultipleFabricDevice.MultipleFabricPasscode.html>IThingMatterMultipleFabricDevice.MultipleFabricPasscode</a>&gt; callback)</pre>
                                         <div class="block"><p>从云端获取passcode</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="getMultipleFabricPasscodeForceRefresh(IThingDataCallback&lt;MultipleFabricPasscode&gt;)">
+                                <a id="getMultipleFabricPasscodeForceRefresh(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -491,7 +507,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>getMultipleFabricPasscodeForceRefresh</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscodeForceRefresh(IThingDataCallback<MultipleFabricPasscode>)>getMultipleFabricPasscodeForceRefresh</a>(IThingDataCallback&lt;MultipleFabricPasscode&gt; callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#getMultipleFabricPasscodeForceRefresh(IThingDataCallback)>getMultipleFabricPasscodeForceRefresh</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=IThingMatterMultipleFabricDevice.MultipleFabricPasscode.html>IThingMatterMultipleFabricDevice.MultipleFabricPasscode</a>&gt; callback)</pre>
                                         <div class="block"><p>从云端获取passcode，无视过期时间，每次都获取新的</p></div>
                                         
                                         <dl>
@@ -507,7 +523,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                     </li>
                                 </ul>
                                 
-                                <a id="getWifiDeviceSsid(IThingDataCallback&lt;String&gt;)">
+                                <a id="getWifiDeviceSsid(IThingDataCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -515,7 +531,7 @@ public interface <span class="typeNameLabel"><a href=IThingMatterMultipleFabricD
                                           >
                                     <li class="blockList">
                                         <h4>getWifiDeviceSsid</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#getWifiDeviceSsid(IThingDataCallback<String>)>getWifiDeviceSsid</a>(IThingDataCallback&lt;String&gt; callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IThingMatterMultipleFabricDevice.html#getWifiDeviceSsid(IThingDataCallback)>getWifiDeviceSsid</a>(<a href=IThingDataCallback.html>IThingDataCallback</a>&lt;String&gt; callback)</pre>
                                         <div class="block"><p>获取当前设备 Wifi 名称</p></div>
                                         
                                         <dl>

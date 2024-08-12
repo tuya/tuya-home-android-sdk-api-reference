@@ -147,7 +147,7 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code>abstract SetupPayload</code>
+                                            <td class="colFirst"><code>abstract <a href=SetupPayload.html>SetupPayload</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMatterActivator.html#parseSetupCode(String)>parseSetupCode</a>(String setupCodeString) </code>
                                             </th>
@@ -157,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMatterActivator.html#startDiscover(SetupPayload,long,long,MatterDiscoveryCallback)>startDiscover</a>(SetupPayload setupPayload, long discoveredTimeout, long spaceId, MatterDiscoveryCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMatterActivator.html#startDiscover(SetupPayload,long,long,MatterDiscoveryCallback)>startDiscover</a>(<a href=SetupPayload.html>SetupPayload</a> setupPayload, long discoveredTimeout, long spaceId, <a href=../../../smart/sdk/api/MatterDiscoveryCallback.html>MatterDiscoveryCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">start discover Matter device.</td>
                                         </tr>
@@ -165,7 +165,7 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMatterActivator.html#connectDevice(ConnectDeviceBuilder)>connectDevice</a>(ConnectDeviceBuilder builder) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMatterActivator.html#connectDevice(ConnectDeviceBuilder)>connectDevice</a>(<a href=../../../smart/sdk/bean/ConnectDeviceBuilder.html>ConnectDeviceBuilder</a> builder) </code>
                                             </th>
                                             <td class="colLast">start connect Matter device.</td>
                                         </tr>
@@ -173,7 +173,7 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMatterActivator.html#commissionDevice(CommissioningParameters,MatterActivatorCallback)>commissionDevice</a>(CommissioningParameters commissioningParameters, MatterActivatorCallback listener) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMatterActivator.html#commissionDevice(CommissioningParameters,MatterActivatorCallback)>commissionDevice</a>(<a href=../../../smart/sdk/bean/CommissioningParameters.html>CommissioningParameters</a> commissioningParameters, <a href=../../../smart/sdk/api/MatterActivatorCallback.html>MatterActivatorCallback</a> listener) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -189,7 +189,7 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMatterActivator.html#searchMatterDeviceAvailableWiFiList(ConnectResult,IThingMatterAvailableWiFiListCallback)>searchMatterDeviceAvailableWiFiList</a>(ConnectResult connectResult, IThingMatterAvailableWiFiListCallback callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMatterActivator.html#searchMatterDeviceAvailableWiFiList(ConnectResult,IThingMatterAvailableWiFiListCallback)>searchMatterDeviceAvailableWiFiList</a>(<a href=../../../smart/sdk/bean/ConnectResult.html>ConnectResult</a> connectResult, <a href=../../../smart/sdk/api/IThingMatterAvailableWiFiListCallback.html>IThingMatterAvailableWiFiListCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -243,7 +243,7 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                           >
                                     <li class="blockList">
                                         <h4>parseSetupCode</h4>
-                                        <pre class="methodSignature"> abstract SetupPayload <a href=IMatterActivator.html#parseSetupCode(String)>parseSetupCode</a>(String setupCodeString)</pre>
+                                        <pre class="methodSignature"> abstract <a href=SetupPayload.html>SetupPayload</a> <a href=IMatterActivator.html#parseSetupCode(String)>parseSetupCode</a>(String setupCodeString)</pre>
                                         <div class="block"><p>Parse Matter setup code, support qrcode or manual paring code</p></div>
                                         
                                         <dl>
@@ -267,7 +267,7 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                           >
                                     <li class="blockList">
                                         <h4>startDiscover</h4>
-                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IMatterActivator.html#startDiscover(SetupPayload,long,long,MatterDiscoveryCallback)>startDiscover</a>(SetupPayload setupPayload, long discoveredTimeout, long spaceId, MatterDiscoveryCallback callback)</pre>
+                                        <pre class="methodSignature">@Deprecated() abstract void <a href=IMatterActivator.html#startDiscover(SetupPayload,long,long,MatterDiscoveryCallback)>startDiscover</a>(<a href=SetupPayload.html>SetupPayload</a> setupPayload, long discoveredTimeout, long spaceId, <a href=../../../smart/sdk/api/MatterDiscoveryCallback.html>MatterDiscoveryCallback</a> callback)</pre>
                                         <div class="block"><p>start discover Matter device.</p></div>
                                         
                                         <dl>
@@ -301,14 +301,14 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                           >
                                     <li class="blockList">
                                         <h4>connectDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMatterActivator.html#connectDevice(ConnectDeviceBuilder)>connectDevice</a>(ConnectDeviceBuilder builder)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMatterActivator.html#connectDevice(ConnectDeviceBuilder)>connectDevice</a>(<a href=../../../smart/sdk/bean/ConnectDeviceBuilder.html>ConnectDeviceBuilder</a> builder)</pre>
                                         <div class="block"><p>start connect Matter device.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>builder</code> - ConnectDeviceBuilder</dd>
+                                            <dd><code>builder</code> - <a href=../../../smart/sdk/bean/ConnectDeviceBuilder.html>ConnectDeviceBuilder</a></dd>
                                             
                                             
                                         </dl>
@@ -325,7 +325,7 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                           >
                                     <li class="blockList">
                                         <h4>commissionDevice</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMatterActivator.html#commissionDevice(CommissioningParameters,MatterActivatorCallback)>commissionDevice</a>(CommissioningParameters commissioningParameters, MatterActivatorCallback listener)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMatterActivator.html#commissionDevice(CommissioningParameters,MatterActivatorCallback)>commissionDevice</a>(<a href=../../../smart/sdk/bean/CommissioningParameters.html>CommissioningParameters</a> commissioningParameters, <a href=../../../smart/sdk/api/MatterActivatorCallback.html>MatterActivatorCallback</a> listener)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -355,7 +355,7 @@ public interface <span class="typeNameLabel"><a href=IMatterActivator.html>IMatt
                                           >
                                     <li class="blockList">
                                         <h4>searchMatterDeviceAvailableWiFiList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMatterActivator.html#searchMatterDeviceAvailableWiFiList(ConnectResult,IThingMatterAvailableWiFiListCallback)>searchMatterDeviceAvailableWiFiList</a>(ConnectResult connectResult, IThingMatterAvailableWiFiListCallback callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMatterActivator.html#searchMatterDeviceAvailableWiFiList(ConnectResult,IThingMatterAvailableWiFiListCallback)>searchMatterDeviceAvailableWiFiList</a>(<a href=../../../smart/sdk/bean/ConnectResult.html>ConnectResult</a> connectResult, <a href=../../../smart/sdk/api/IThingMatterAvailableWiFiListCallback.html>IThingMatterAvailableWiFiListCallback</a> callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
