@@ -149,7 +149,7 @@ public interface <span class="typeNameLabel"><a href=IAppDpParserPlugin.html>IAp
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract <a href=../../dp/parser/api/IDeviceDpParser.html>IDeviceDpParser</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IAppDpParserPlugin.html#update(<ERROR CLASS>)>update</a>(&lt;ERROR CLASS&gt; deviceBean) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IAppDpParserPlugin.html#update(DeviceBean)>update</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean) </code>
                                             </th>
                                             <td class="colLast">update device dp info</td>
                                         </tr>
@@ -157,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IAppDpParserPlugin.html>IAp
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract <a href=../../dp/parser/api/IDeviceDpParser.html>IDeviceDpParser</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IAppDpParserPlugin.html#update(<ERROR CLASS>)>update</a>(&lt;ERROR CLASS&gt; groupBean) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IAppDpParserPlugin.html#update(GroupBean)>update</a>(<a href=../../sdk/bean/GroupBean.html>GroupBean</a> groupBean) </code>
                                             </th>
                                             <td class="colLast">update group dp info</td>
                                         </tr>
@@ -219,7 +219,7 @@ public interface <span class="typeNameLabel"><a href=IAppDpParserPlugin.html>IAp
                             </a>
                                 <h3>Method Detail</h3>
                                 
-                                <a id="update(&lt;ERROR CLASS&gt;)">
+                                <a id="update(DeviceBean)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -227,14 +227,14 @@ public interface <span class="typeNameLabel"><a href=IAppDpParserPlugin.html>IAp
                                           >
                                     <li class="blockList">
                                         <h4>update</h4>
-                                        <pre class="methodSignature"> abstract <a href=../../dp/parser/api/IDeviceDpParser.html>IDeviceDpParser</a> <a href=IAppDpParserPlugin.html#update(<ERROR CLASS>)>update</a>(&lt;ERROR CLASS&gt; deviceBean)</pre>
+                                        <pre class="methodSignature"> abstract <a href=../../dp/parser/api/IDeviceDpParser.html>IDeviceDpParser</a> <a href=IAppDpParserPlugin.html#update(DeviceBean)>update</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean)</pre>
                                         <div class="block"><p>update device dp info</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="update(&lt;ERROR CLASS&gt;)">
+                                <a id="update(GroupBean)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -242,7 +242,7 @@ public interface <span class="typeNameLabel"><a href=IAppDpParserPlugin.html>IAp
                                           >
                                     <li class="blockList">
                                         <h4>update</h4>
-                                        <pre class="methodSignature"> abstract <a href=../../dp/parser/api/IDeviceDpParser.html>IDeviceDpParser</a> <a href=IAppDpParserPlugin.html#update(<ERROR CLASS>)>update</a>(&lt;ERROR CLASS&gt; groupBean)</pre>
+                                        <pre class="methodSignature"> abstract <a href=../../dp/parser/api/IDeviceDpParser.html>IDeviceDpParser</a> <a href=IAppDpParserPlugin.html#update(GroupBean)>update</a>(<a href=../../sdk/bean/GroupBean.html>GroupBean</a> groupBean)</pre>
                                         <div class="block"><p>update group dp info</p></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -264,7 +264,7 @@ public interface <span class="typeNameLabel"><a href=IAppDpParserPlugin.html>IAp
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>id</code> - device id DeviceBean.</dd>
+                                            <dd><code>id</code> - device id <a href=../../sdk/bean/DeviceBean.html#getDevId()>DeviceBean.getDevId</a> or group id <a href=../../sdk/bean/GroupBean.html#getId()>GroupBean.getId</a></dd>
                                             
                                             
                                         </dl>
@@ -303,7 +303,7 @@ public interface <span class="typeNameLabel"><a href=IAppDpParserPlugin.html>IAp
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>id</code> - device id DeviceBean.</dd>
+                                            <dd><code>id</code> - device id <a href=../../sdk/bean/DeviceBean.html#getDevId()>DeviceBean.getDevId</a> or group id <a href=../../sdk/bean/GroupBean.html#getId()>GroupBean.getId</a></dd>
                                             
                                             
                                         </dl>

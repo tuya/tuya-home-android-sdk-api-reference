@@ -149,7 +149,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#publishDps(DeviceBean,String,String,String,IResultCallback)>publishDps</a>(DeviceBean deviceBean, String nodeId, String pcc, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#publishDps(DeviceBean,String,String,String,IResultCallback)>publishDps</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, String nodeId, String pcc, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send mesh message to a device.</td>
                                         </tr>
@@ -157,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#publishDps(DeviceBean,String,String,String,boolean,IResultCallback)>publishDps</a>(DeviceBean deviceBean, String nodeId, String pcc, String dps, boolean ack, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#publishDps(DeviceBean,String,String,String,boolean,IResultCallback)>publishDps</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, String nodeId, String pcc, String dps, boolean ack, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send mesh message to a device.</td>
                                         </tr>
@@ -165,7 +165,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#getDpList(DeviceBean,String,String,String,boolean,IResultCallback)>getDpList</a>(DeviceBean deviceBean, String nodeId, String pcc, String dps, boolean ack, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#getDpList(DeviceBean,String,String,String,boolean,IResultCallback)>getDpList</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, String nodeId, String pcc, String dps, boolean ack, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -173,7 +173,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#multicastDps(String,String,String,Map,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, Map&lt;String, SchemaBean&gt; schemaMap, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#multicastDps(String,String,String,Map,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, Map&lt;String, <a href=../device/bean/SchemaBean.html>SchemaBean</a>&gt; schemaMap, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send mesh message to a group address.</td>
                                         </tr>
@@ -189,7 +189,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#switchProxyState(DeviceBean,boolean,IResultCallback)>switchProxyState</a>(DeviceBean deviceBean, boolean openState, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#switchProxyState(DeviceBean,boolean,IResultCallback)>switchProxyState</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, boolean openState, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -197,7 +197,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#switchRelayState(DeviceBean,boolean,IResultCallback)>switchRelayState</a>(DeviceBean deviceBean, boolean openState, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#switchRelayState(DeviceBean,boolean,IResultCallback)>switchRelayState</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, boolean openState, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -221,7 +221,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                         <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#publishCommands(DeviceBean,Map,IResultCallback)>publishCommands</a>(DeviceBean deviceBean, Map&lt;String, Object&gt; commands, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMeshLocalController.html#publishCommands(DeviceBean,Map,IResultCallback)>publishCommands</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, Map&lt;String, Object&gt; commands, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback) </code>
                                             </th>
                                             <td class="colLast">Send mesh message by standard dpCode.</td>
                                         </tr>
@@ -315,7 +315,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                           >
                                     <li class="blockList">
                                         <h4>publishDps</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#publishDps(DeviceBean,String,String,String,IResultCallback)>publishDps</a>(DeviceBean deviceBean, String nodeId, String pcc, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#publishDps(DeviceBean,String,String,String,IResultCallback)>publishDps</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, String nodeId, String pcc, String dps, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send mesh message to a device.</p></div>
                                         
                                         <dl>
@@ -324,11 +324,11 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                             
                                             
                                             
-                                            <dd><code>nodeId</code> - Thing node id getNodeId</dd>
+                                            <dd><code>nodeId</code> - Thing node id <a href=../../sdk/bean/DeviceBean.html#getNodeId()>getNodeId</a></dd>
                                             
                                             
                                             
-                                            <dd><code>pcc</code> - Category of device getCategory</dd>
+                                            <dd><code>pcc</code> - Category of device <a href=../../sdk/bean/DeviceBean.html#getCategory()>getCategory</a></dd>
                                             
                                             
                                             
@@ -353,7 +353,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                           >
                                     <li class="blockList">
                                         <h4>publishDps</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#publishDps(DeviceBean,String,String,String,boolean,IResultCallback)>publishDps</a>(DeviceBean deviceBean, String nodeId, String pcc, String dps, boolean ack, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#publishDps(DeviceBean,String,String,String,boolean,IResultCallback)>publishDps</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, String nodeId, String pcc, String dps, boolean ack, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send mesh message to a device.</p></div>
                                         
                                         <dl>
@@ -362,11 +362,11 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                             
                                             
                                             
-                                            <dd><code>nodeId</code> - Thing node id getNodeId</dd>
+                                            <dd><code>nodeId</code> - Thing node id <a href=../../sdk/bean/DeviceBean.html#getNodeId()>getNodeId</a></dd>
                                             
                                             
                                             
-                                            <dd><code>pcc</code> - Category of device getCategory</dd>
+                                            <dd><code>pcc</code> - Category of device <a href=../../sdk/bean/DeviceBean.html#getCategory()>getCategory</a></dd>
                                             
                                             
                                             
@@ -393,7 +393,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                           >
                                     <li class="blockList">
                                         <h4>getDpList</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#getDpList(DeviceBean,String,String,String,boolean,IResultCallback)>getDpList</a>(DeviceBean deviceBean, String nodeId, String pcc, String dps, boolean ack, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#getDpList(DeviceBean,String,String,String,boolean,IResultCallback)>getDpList</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, String nodeId, String pcc, String dps, boolean ack, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -408,7 +408,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                           >
                                     <li class="blockList">
                                         <h4>multicastDps</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#multicastDps(String,String,String,Map,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, Map&lt;String, SchemaBean&gt; schemaMap, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#multicastDps(String,String,String,Map,IResultCallback)>multicastDps</a>(String localId, String pcc, String dps, Map&lt;String, <a href=../device/bean/SchemaBean.html>SchemaBean</a>&gt; schemaMap, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send mesh message to a group address.</p></div>
                                         
                                         <dl>
@@ -419,7 +419,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                             
                                             
                                             
-                                            <dd><code>pcc</code> - Category of device getCategory</dd>
+                                            <dd><code>pcc</code> - Category of device <a href=../../sdk/bean/DeviceBean.html#getCategory()>getCategory</a></dd>
                                             
                                             
                                             
@@ -453,11 +453,11 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>pcc</code> - Thing category DeviceBean</dd>
+                                            <dd><code>pcc</code> - Thing category <a href=../../sdk/bean/DeviceBean.html>DeviceBean</a></dd>
                                             
                                             
                                             
-                                            <dd><code>nodeId</code> - Thing nodeId DeviceBean</dd>
+                                            <dd><code>nodeId</code> - Thing nodeId <a href=../../sdk/bean/DeviceBean.html>DeviceBean</a></dd>
                                             
                                             
                                             
@@ -478,7 +478,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                           >
                                     <li class="blockList">
                                         <h4>switchProxyState</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#switchProxyState(DeviceBean,boolean,IResultCallback)>switchProxyState</a>(DeviceBean deviceBean, boolean openState, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#switchProxyState(DeviceBean,boolean,IResultCallback)>switchProxyState</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, boolean openState, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -493,7 +493,7 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                           >
                                     <li class="blockList">
                                         <h4>switchRelayState</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#switchRelayState(DeviceBean,boolean,IResultCallback)>switchRelayState</a>(DeviceBean deviceBean, boolean openState, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#switchRelayState(DeviceBean,boolean,IResultCallback)>switchRelayState</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, boolean openState, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
@@ -515,15 +515,15 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>pcc</code> - getCategory}</dd>
+                                            <dd><code>pcc</code> - <a href=../../sdk/bean/DeviceBean.html#getCategory()>getCategory</a>}</dd>
                                             
                                             
                                             
-                                            <dd><code>nodeId</code> - getNodeId</dd>
+                                            <dd><code>nodeId</code> - <a href=../../sdk/bean/DeviceBean.html#getNodeId()>getNodeId</a></dd>
                                             
                                             
                                             
-                                            <dd><code>devKey</code> - getDevKey</dd>
+                                            <dd><code>devKey</code> - <a href=../../sdk/bean/DeviceBean.html#getDevKey()>getDevKey</a></dd>
                                             
                                             
                                             
@@ -568,14 +568,14 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                           >
                                     <li class="blockList">
                                         <h4>publishCommands</h4>
-                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#publishCommands(DeviceBean,Map,IResultCallback)>publishCommands</a>(DeviceBean deviceBean, Map&lt;String, Object&gt; commands, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
+                                        <pre class="methodSignature"> abstract void <a href=IMeshLocalController.html#publishCommands(DeviceBean,Map,IResultCallback)>publishCommands</a>(<a href=../../sdk/bean/DeviceBean.html>DeviceBean</a> deviceBean, Map&lt;String, Object&gt; commands, <a href=../../sdk/api/IResultCallback.html>IResultCallback</a> callback)</pre>
                                         <div class="block"><p>Send mesh message by standard dpCode.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>deviceBean</code> - DeviceBean}</dd>
+                                            <dd><code>deviceBean</code> - <a href=../../sdk/bean/DeviceBean.html>DeviceBean</a>}</dd>
                                             
                                             
                                             
@@ -665,11 +665,11 @@ public interface <span class="typeNameLabel"><a href=IMeshLocalController.html>I
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>meshId</code> - Thing meshId com.thingclips.smart.sdk.bean.</dd>
+                                            <dd><code>meshId</code> - Thing meshId <a href=../../sdk/bean/DeviceBean.html>com.thingclips.smart.sdk.bean.DeviceBean</a></dd>
                                             
                                             
                                             
-                                            <dd><code>nodeId</code> - Thing nodeId com.thingclips.smart.sdk.bean.</dd>
+                                            <dd><code>nodeId</code> - Thing nodeId <a href=../../sdk/bean/DeviceBean.html>com.thingclips.smart.sdk.bean.DeviceBean</a></dd>
                                             
                                             
                                             
