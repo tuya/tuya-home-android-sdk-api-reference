@@ -168,14 +168,11 @@ com.thingclips.smart.home.sdk.utils
 com.thingclips.smart.interior.api
 com.thingclips.smart.interior.bean
 com.thingclips.smart.interior.callback
-com.thingclips.smart.interior.config
-com.thingclips.smart.interior.config.bean
 com.thingclips.smart.interior.device
 com.thingclips.smart.interior.device.bean
 com.thingclips.smart.interior.device.confusebean
 com.thingclips.smart.interior.enums
 com.thingclips.smart.interior.event
-com.thingclips.smart.interior.hardware
 com.thingclips.smart.interior.home
 com.thingclips.smart.interior.mqtt
 com.thingclips.smart.mqttclient.mqttv3

@@ -165,12 +165,20 @@ public interface <span class="typeNameLabel"><a href=IMultiModeParallelActivator
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IMultiModeParallelActivator.html#appendDevice(ScanDeviceBean)>appendDevice</a>(<a href=../../android/ble/api/ScanDeviceBean.html>ScanDeviceBean</a> scanDeviceBean) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IMultiModeParallelActivator.html#appendDevice(ScanDeviceBean,MultiModeExtraParams)>appendDevice</a>(<a href=../../android/ble/api/ScanDeviceBean.html>ScanDeviceBean</a> scanDeviceBean, <a href=MultiModeExtraParams.html>MultiModeExtraParams</a> multiModeExtraParams) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">追加设备</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IMultiModeParallelActivator.html#appendDevice(ScanDeviceBean)>appendDevice</a>(<a href=../../android/ble/api/ScanDeviceBean.html>ScanDeviceBean</a> scanDeviceBean) </code>
+                                            </th>
+                                            <td class="colLast">追加设备</td>
+                                        </tr>
+                                        
+                                        <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMultiModeParallelActivator.html#removeDevice(String)>removeDevice</a>(String uuid) </code>
@@ -178,7 +186,7 @@ public interface <span class="typeNameLabel"><a href=IMultiModeParallelActivator
                                             <td class="colLast">移除设备</td>
                                         </tr>
                                         
-                                        <tr id="i4" class="altColor">
+                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMultiModeParallelActivator.html#addMultiModeParallelListener(IMultiModeParallelListener)>addMultiModeParallelListener</a>(<a href=IMultiModeParallelListener.html>IMultiModeParallelListener</a> listener) </code>
@@ -186,7 +194,7 @@ public interface <span class="typeNameLabel"><a href=IMultiModeParallelActivator
                                             <td class="colLast">添加设备回调消息</td>
                                         </tr>
                                         
-                                        <tr id="i5" class="rowColor">
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMultiModeParallelActivator.html#removeMultiModeParallelListener(IMultiModeParallelListener)>removeMultiModeParallelListener</a>(<a href=IMultiModeParallelListener.html>IMultiModeParallelListener</a> listener) </code>
@@ -194,7 +202,7 @@ public interface <span class="typeNameLabel"><a href=IMultiModeParallelActivator
                                             <td class="colLast">移除设备回调消息监听</td>
                                         </tr>
                                         
-                                        <tr id="i6" class="altColor">
+                                        <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IMultiModeParallelActivator.html#stopConfigWifi()>stopConfigWifi</a>() </code>
@@ -274,6 +282,34 @@ public interface <span class="typeNameLabel"><a href=IMultiModeParallelActivator
                                     </li>
                                 </ul>
                                 
+                                <a id="appendDevice(ScanDeviceBean,MultiModeExtraParams)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>appendDevice</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IMultiModeParallelActivator.html#appendDevice(ScanDeviceBean,MultiModeExtraParams)>appendDevice</a>(<a href=../../android/ble/api/ScanDeviceBean.html>ScanDeviceBean</a> scanDeviceBean, <a href=MultiModeExtraParams.html>MultiModeExtraParams</a> multiModeExtraParams)</pre>
+                                        <div class="block"><p>追加设备</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>scanDeviceBean</code> - 要追加的设备</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>multiModeExtraParams</code> - 额外的扩展参数</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
                                 <a id="appendDevice(ScanDeviceBean)">
                                     <!--   -->
                                 </a>
@@ -283,7 +319,16 @@ public interface <span class="typeNameLabel"><a href=IMultiModeParallelActivator
                                     <li class="blockList">
                                         <h4>appendDevice</h4>
                                         <pre class="methodSignature"> abstract void <a href=IMultiModeParallelActivator.html#appendDevice(ScanDeviceBean)>appendDevice</a>(<a href=../../android/ble/api/ScanDeviceBean.html>ScanDeviceBean</a> scanDeviceBean)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>追加设备</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>scanDeviceBean</code> - 要追加的设备</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
