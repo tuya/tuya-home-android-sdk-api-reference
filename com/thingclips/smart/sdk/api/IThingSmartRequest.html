@@ -157,7 +157,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract &lt;T&gt; void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a>&gt; object, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a>&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=../../android/blemesh/api/IThingMeshCallback.html>T</a>&gt; object, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../../android/blemesh/api/IThingMeshCallback.html>T</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Applicable to api interface request with session.</td>
                                         </tr>
@@ -165,7 +165,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract &lt;T&gt; void</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a>&gt; object, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a>&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=../../android/blemesh/api/IThingMeshCallback.html>T</a>&gt; object, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../../android/blemesh/api/IThingMeshCallback.html>T</a>&gt; callback) </code>
                                             </th>
                                             <td class="colLast">Applies to api interface requests without session.</td>
                                         </tr>
@@ -179,6 +179,22 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#queryDeviceOperateLogs(String,String,int,int,String,String,String,IThingDataCallback)>queryDeviceOperateLogs</a>(String devId, String dpIds, int offset, int limit, String startTime, String endTime, String sortType, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;String&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast">Query the device operate log</td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>abstract void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#sendCacheDps(String,String,long,int,IThingDataCallback)>sendCacheDps</a>(String devId, String dps, long validity, int dpCacheType, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Boolean&gt; listener) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>abstract void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=IThingSmartRequest.html#onDestroy()>onDestroy</a>() </code>
@@ -242,7 +258,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                           >
                                     <li class="blockList">
                                         <h4>requestWithApiName</h4>
-                                        <pre class="methodSignature"> abstract &lt;T&gt; void <a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a>&gt; object, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a>&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract &lt;T&gt; void <a href=IThingSmartRequest.html#requestWithApiName(String,String,Map,Class,IThingDataCallback)>requestWithApiName</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=../../android/blemesh/api/IThingMeshCallback.html>T</a>&gt; object, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../../android/blemesh/api/IThingMeshCallback.html>T</a>&gt; callback)</pre>
                                         <div class="block"><p>Applicable to api interface request with session.</p><p>To call this method, the user needs to log in first.</p></div>
                                         
                                         <dl>
@@ -282,7 +298,7 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                           >
                                     <li class="blockList">
                                         <h4>requestWithApiNameWithoutSession</h4>
-                                        <pre class="methodSignature"> abstract &lt;T&gt; void <a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a>&gt; object, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../../../sdk/ble/core/protocol/api/ActionProgressResponse.html>T</a>&gt; callback)</pre>
+                                        <pre class="methodSignature"> abstract &lt;T&gt; void <a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, Class&lt;<a href=../../android/blemesh/api/IThingMeshCallback.html>T</a>&gt; object, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;<a href=../../android/blemesh/api/IThingMeshCallback.html>T</a>&gt; callback)</pre>
                                         <div class="block"><p>Applies to api interface requests without session.</p></div>
                                         
                                         <dl>
@@ -324,6 +340,71 @@ public interface <span class="typeNameLabel"><a href=IThingSmartRequest.html>ITh
                                         <h4>requestWithApiNameWithoutSession</h4>
                                         <pre class="methodSignature">@Deprecated() abstract void <a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,IRequestCallback)>requestWithApiNameWithoutSession</a>(String apiName, String version, Map&lt;String, Object&gt; postData, <a href=IRequestCallback.html>IRequestCallback</a> request)</pre>
                                         <div class="block"><p>Deprecated.</p><p>Replace by <a href=IThingSmartRequest.html#requestWithApiNameWithoutSession(String,String,Map,Class,IThingDataCallback)>requestWithApiNameWithoutSession</a></p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="queryDeviceOperateLogs(String,String,int,int,String,String,String,IThingDataCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>queryDeviceOperateLogs</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingSmartRequest.html#queryDeviceOperateLogs(String,String,int,int,String,String,String,IThingDataCallback)>queryDeviceOperateLogs</a>(String devId, String dpIds, int offset, int limit, String startTime, String endTime, String sortType, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;String&gt; callback)</pre>
+                                        <div class="block"><p>Query the device operate log</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>devId</code> - device id</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>dpIds</code> - The DPs to be returned, separated with commas (,).</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>offset</code> - The number of entries starting from which entries are returned.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>limit</code> - The number of entries to be returned per page.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>startTime</code> - The time when DP status reporting starts.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>endTime</code> - The time when DP status reporting ends.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>sortType</code> - The method to sort data by time.</dd>
+                                            
+                                            
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="sendCacheDps(String,String,long,int,IThingDataCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>sendCacheDps</h4>
+                                        <pre class="methodSignature"> abstract void <a href=IThingSmartRequest.html#sendCacheDps(String,String,long,int,IThingDataCallback)>sendCacheDps</a>(String devId, String dps, long validity, int dpCacheType, <a href=IThingDataCallback.html>IThingDataCallback</a>&lt;Boolean&gt; listener)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
