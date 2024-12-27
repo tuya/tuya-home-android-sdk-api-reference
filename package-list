@@ -32,6 +32,7 @@ $dokka.location:com.thingclips.smart.android.ble/IThingAudioManager.AudioCategor
 $dokka.location:com.thingclips.smart.android.blemesh.bean/BlueMeshLinkageBean.Builder///PointingToDeclaration/com/thingclips/smart/android/blemesh/bean/BlueMeshLinkageBean.Builder.html
 $dokka.location:com.thingclips.smart.android.blemesh.bean/MeshActionLinkageData.Builder///PointingToDeclaration/com/thingclips/smart/android/blemesh/bean/MeshActionLinkageData.Builder.html
 $dokka.location:com.thingclips.smart.android.blemesh.bean/MeshConditionLinkageData.Builder///PointingToDeclaration/com/thingclips/smart/android/blemesh/bean/MeshConditionLinkageData.Builder.html
+$dokka.location:com.thingclips.smart.android.blemesh.bean/MeshConfigParams.Builder///PointingToDeclaration/com/thingclips/smart/android/blemesh/bean/MeshConfigParams.Builder.html
 $dokka.location:com.thingclips.smart.android.blemesh.bean/SendCommandParams.SendCommandParamsBuilder///PointingToDeclaration/com/thingclips/smart/android/blemesh/bean/SendCommandParams.SendCommandParamsBuilder.html
 $dokka.location:com.thingclips.smart.android.blemesh.bean/SigMeshConfiguration.OnlineMode///PointingToDeclaration/com/thingclips/smart/android/blemesh/bean/SigMeshConfiguration.OnlineMode.html
 $dokka.location:com.thingclips.smart.android.blemesh.bean/TimerDayConditionLinkageData.SunRiseAndSet///PointingToDeclaration/com/thingclips/smart/android/blemesh/bean/TimerDayConditionLinkageData.SunRiseAndSet.html
@@ -168,11 +169,14 @@ com.thingclips.smart.home.sdk.utils
 com.thingclips.smart.interior.api
 com.thingclips.smart.interior.bean
 com.thingclips.smart.interior.callback
+com.thingclips.smart.interior.config
+com.thingclips.smart.interior.config.bean
 com.thingclips.smart.interior.device
 com.thingclips.smart.interior.device.bean
 com.thingclips.smart.interior.device.confusebean
 com.thingclips.smart.interior.enums
 com.thingclips.smart.interior.event
+com.thingclips.smart.interior.hardware
 com.thingclips.smart.interior.home
 com.thingclips.smart.interior.mqtt
 com.thingclips.smart.mqttclient.mqttv3
